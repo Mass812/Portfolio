@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
 import Toolbar from "./Components/Header/Toolbar";
 import FoggedGlass from "./Components/FoggedGlass/FoggedGlass";
@@ -11,12 +11,11 @@ import Bio from "../src/Components/Bio/bio";
 
 const App = () => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
-  // const mainPic = require("./Assets/sunRing.jpg");
-  /* <img className="mainPic" src={mainPic} alt={"Fire Ring"} /> */
 
   const runHideShow = () => {
     setSideDrawerOpen(prev => {
       const value = setSideDrawerOpen(!prev);
+
       console.log(value);
       return value;
     });
@@ -27,7 +26,7 @@ const App = () => {
   };
 
   const expandSide = sideDrawerOpen ? (
-    <SideDrawer hideShow={runHideShow} />
+    <SideDrawer hideShow={runHideShow} closeMenu={runHideShow} />
   ) : null;
   const expandFog = sideDrawerOpen ? (
     <FoggedGlass unFogGlass={exitMenu} />
@@ -40,7 +39,7 @@ const App = () => {
       {expandSide} {expandFog}
       <main style={{ marginTop: "64px" }}>
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact={true} component={Home} />
           <Route path="/about" component={Bio} />
           <Route path="/resume" component={Resume} />
           <Route path="/references" component={KindWords} />

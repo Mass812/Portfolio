@@ -4,13 +4,10 @@ import { Link } from "react-router-dom";
 import Button from "../../Assets/Button";
 
 const SideDrawer = props => {
-  // <nav className="drawer-parent">
-  // <ul className="drawer-ul">
-
   return (
     <nav className="drawer-parent">
-      <ul className="drawer-ul">
-        <Link to="/" exact style={{ textDecoration: "none" }}>
+      <ul className="drawer-ul" onClick={props.closeMenu}>
+        <Link to="/" exact="true" style={{ textDecoration: "none" }}>
           <Button>Home</Button>
         </Link>
         <Link to="/about" style={{ textDecoration: "none" }}>
