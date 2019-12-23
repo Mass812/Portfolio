@@ -1,0 +1,28 @@
+.drawer-parent {
+  display: flex;
+  height: 100vh;
+  width: 350px;
+  background: rgb(0, 0, 0);
+  top: 0;
+  left: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  box-shadow: 2px 0px 0.1rem rgb(7, 0, 0);
+  z-index: 5;
+  position: fixed;
+  align-content: center;
+  justify-content: center;
+  padding-top: 20%;
+}
+
+.drawer-ul {
+  padding: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.drawer-ul li {
+  text-decoration: none;
+}

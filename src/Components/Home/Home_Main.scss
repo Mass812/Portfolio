@@ -1,0 +1,33 @@
+.under-header-area {
+  height: 35px;
+  width: 95%;
+  margin-left: -5px;
+  margin-top: -5px;
+  border-style: ridge;
+  border-color: white;
+  box-shadow: lightness($color: #9c9898);
+  border-width: 1px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.under-header-bar {
+  flex-direction: column;
+  height: 10%;
+  text-decoration: none;
+  align-items: center;
+}
+
+.box {
+  justify-content: center;
+  align-content: space-between;
+}
+
+.box-mini {
+  color: rgb(247, 211, 8);
+  align-self: inherit;
+  flex-direction: column;
+  align-content: space-between;
+}
