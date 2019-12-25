@@ -15,8 +15,10 @@ const Home = () => {
       </div>
       <div className="under">
         <img src={matt} alt={""} className="bobblehead" />
-        <h2>Hi, I am Matt Wellman</h2>
-        <h3>The Man Behind The Legend. Manager, Dad, React Enthusiest</h3>
+        <div className='rightContainer'>
+          <h1>Hi, I am Matt Wellman</h1>
+          <h3>Manager, Dad, React Enthusiest</h3>
+        </div>
       </div>
     </div>
   );
