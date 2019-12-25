@@ -34,8 +34,8 @@ nav ul li span {
   transform: translateY(150%);
   border-radius: 50%;
   left: calc((var(--n) - 1) * 25%);
-  transition: 0.5s;
-  transition-delay: calc((var(--n) - 1) * 0.1s);
+  transition: 0.1s;
+  transition-delay: calc((var(--n) - 1) * 0.05s);
   z-index: -1;
 }
 

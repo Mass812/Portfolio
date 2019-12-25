@@ -1,5 +1,4 @@
 .header_bar {
-  // left: 0;
   // top: 0;
   width: 100%;
   position: fixed;
@@ -9,7 +8,11 @@
   z-index: 100;
 }
 .drawer_parent {
+  flex: 1;
+  flex-direction: row-reverse;
   display: flex;
+  position: relative;
+  right: 0;
   align-items: center;
   height: 100%;
   padding: 0 1rem; // padding zero Top&Bottom 1rem Left&Right
@@ -21,9 +24,10 @@
 .site_name {
   color: white;
   text-decoration: none;
-  padding-left: 10px;
+  padding: 10px;
+  padding-top: 15px;
   box-sizing: border-box; //ensures lines stay inside of button
-  font-size: 1.5rem; //places items in this list next to each other
+  font-size: 1.6rem; //places items in this list next to each other
 }
 
 .header_button_list {

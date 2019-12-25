@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
 import Toolbar from "./Components/Header/Toolbar";
 import FoggedGlass from "./Components/FoggedGlass/FoggedGlass";
@@ -15,10 +15,16 @@ const App = () => {
   const runHideShow = () => {
     setSideDrawerOpen(prev => {
       const value = setSideDrawerOpen(!prev);
-
       console.log(value);
       return value;
     });
+  };
+
+  const timeOut = () => {
+    setTimeout(function() {
+      console.log("timeOut logged");
+      setSideDrawerOpen(false);
+    }, 200);
   };
 
   const exitMenu = () => {
@@ -26,7 +32,7 @@ const App = () => {
   };
 
   const expandSide = sideDrawerOpen ? (
-    <SideDrawer hideShow={runHideShow} closeMenu={runHideShow} />
+    <SideDrawer hideShow={runHideShow} closeMenu={timeOut} />
   ) : null;
   const expandFog = sideDrawerOpen ? (
     <FoggedGlass unFogGlass={exitMenu} />
