@@ -1,12 +1,11 @@
 import React from "react";
 import "./Home_Main.scss";
 
-const Main = () => {
+const Home2 = () => {
   return (
     <div className="under-header-area">
       <div className="under-header-bar">
         <ul className="box">
-          <div className="box-mini">Box</div>
           <div className="box-mini">Box</div>
           <div className="box-mini">Box</div>
         </ul>
@@ -15,4 +14,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Home2;

@@ -1,0 +1,44 @@
+.contactBlockContainer {
+  position: inherit;
+  width: 100%;
+  bottom: 0;
+  justify-content: space-around;
+}
+
+.contactBlockIconBlock li {
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 10%;
+}
+
+section ul {
+  text-decoration: none;
+  display: flex;
+  border: none;
+  justify-content: space-evenly;
+}
+
+section li {
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+}
+
+.IconBar {
+  background-color: rgba($color: black, $alpha: 1);
+  padding: 10px;
+}
+
+.IconBarLi {
+  border: none;
+  justify-content: space-around;
+  display: inline-block;
+  flex: auto;
+  background-color: transparent;
+  color: white;
+}
+
+.IconBarLi:hover {
+  color: goldenrod;
+}

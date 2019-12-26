@@ -1,23 +1,32 @@
 .section {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   width: 100%;
+  height: auto;
   // margin-top: -22px;
-  background-image: url("../../Assets/bp.jpg");
-  background-color: rgba(3, 3, 3, 0.823);
-  z-index: 0;
-  display: grid;
+  background-image: url('../../Assets/businessPlan.jpg');
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(129, 125, 125, 0.8032786885245902) 0%,
+  //   rgba(206, 168, 27, 0.8032786885245902) 12%,
+  //   rgba(37, 36, 36, 1) 6%,
+  //   rgba(0, 0, 0, 1) 65%
+  z-index: 3;
+  
+  // display: grid;
 }
 
 .container {
+  position: inherit;
+  margin-top: -26px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 10px;
 }
 
 .left {
@@ -26,36 +35,29 @@
 }
 
 .right {
-  background-color: transparent;
-  height: 350px;
-  margin-top: -25px;
-  color: white;
+  display: inline;
+  padding-top: 5px;
 }
 
 .bobblehead {
-  height: 250px;
+  height: 200px;
   max-height: 350px;
   padding: 2em;
   margin-top: 4em;
   border-color: black;
   border-radius: 50%;
   border-width: 5px;
-  background-color: rgba(52, 52, 52, 0.891);
 }
 
 .subTitle2 {
-  padding: 45px;
-  color: red;
-  font-size: 82px;
-  line-height: 0.9;
-  font-family: Georgia, serif;
-  font-size: 33px;
-  letter-spacing: 2px;
-  word-spacing: 2.6px;
   color: goldenrod;
-  font-weight: normal;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-family: "Source Code Pro", Courier, monospace;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.subTitle3 {
+  font-family: "Source Code Pro", Courier, monospace;
+  color: #c00;
+  font-weight: 200;
 }

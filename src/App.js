@@ -43,7 +43,7 @@ const App = () => {
       <Toolbar pushShowHide={runHideShow} />
       <hr className="header-break" />
       {expandSide} {expandFog}
-      <main style={{ marginTop: "64px" }}>
+      <main >
         <Switch>
           <Route path="/" exact={true} component={Home} />
           <Route path="/about" component={Bio} />
