@@ -15,7 +15,6 @@ const Toolbar = props => {
           </div>
         </nav>
       </header>
-     
     </div>
   );
 };

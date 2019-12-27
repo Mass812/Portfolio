@@ -6,7 +6,7 @@ function ReviewerPhoto() {
     {
       id: 1,
       name: "Monica Shammel",
-      title: "Human Resource Partner @ Prologistix",
+      title: "Human Resource @ Prologistix",
       link:
         "https://media.licdn.com/dms/image/C5603AQHs0D61hd2bLg/profile-displayphoto-shrink_100_100/0?e=1581552000&v=beta&t=WR1adlO6LVbIYYV9kc3wrsTJPsqdyHzXCFD9zzR6qmU",
       content:
@@ -75,7 +75,12 @@ function ReviewerPhoto() {
     </div>
   ));
 
-  return <div>{copy}</div>;
+  return (
+    <div>
+      <div className="header">Testimonies</div><hr/>
+      {copy}
+    </div>
+  );
 }
 
 export default ReviewerPhoto;

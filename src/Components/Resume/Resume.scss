@@ -99,7 +99,7 @@ a {
   width: 200px;
   float: left;
   position: left;
-  margin-left: 50px;
+  margin-left: 20px;
   size: contain;
   border: groove;
   border-radius: 10px;
@@ -115,6 +115,7 @@ a {
   margin: 0 0 0.2em 0;
   text-transform: uppercase;
   white-space: nowrap;
+  padding-right: 12px;
 }
 /*----- TIMELINE MARKER -----*/
 
@@ -163,6 +164,7 @@ a {
   padding-bottom: 40px;
   p:last-child {
     margin-bottom: 0;
+    padding-right: 12px;
   }
 }
 
@@ -237,6 +239,11 @@ a {
   }
 }
 
+.ExperienceListParent {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 300px;
+}
 /*----------------------------------------------
         MOD: TIMELINE CENTERED
     ----------------------------------------------*/

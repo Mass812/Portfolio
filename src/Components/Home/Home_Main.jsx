@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home_Main.scss";
+import Footer from "../Footer/Footer";
 
 const Home2 = () => {
   return (
