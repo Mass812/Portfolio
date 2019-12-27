@@ -1,44 +1,50 @@
 .contactBlockContainer {
-  position: inherit;
-  width: 100%;
-  bottom: 0;
-  justify-content: space-around;
+  position: absolute;
+  flex: 1;
+  box-sizing: content-box;
+  bottom: 0px;
+  z-index: 10;
 }
 
 .contactBlockIconBlock li {
   flex: 1;
-  justify-content: space-evenly;
+  display: flex;
   align-items: center;
-  padding-left: 10%;
+  padding: 0 1rem;
+}
+
+.section {
+  box-sizing: content-box;
+  justify-content: start;
 }
 
 section ul {
+  box-sizing: content-box;
   text-decoration: none;
   display: flex;
   border: none;
-  justify-content: space-evenly;
 }
 
 section li {
   text-decoration: none;
-  display: inline-block;
   border: none;
+  justify-content: space-evenly;
 }
 
 .IconBar {
-  background-color: rgba($color: black, $alpha: 1);
-  padding: 10px;
+  box-sizing: content-box;
+  background-color: goldenrod;
+  border-style: outset;
+  padding: 10px 0;
+  justify-content: space-evenly;
 }
 
 .IconBarLi {
+  box-sizing: content-box;
   border: none;
-  justify-content: space-around;
-  display: inline-block;
-  flex: auto;
-  background-color: transparent;
-  color: white;
+  color: black;
 }
 
 .IconBarLi:hover {
-  color: goldenrod;
+  color: white;
 }

@@ -20,22 +20,22 @@ const FontAwesome = () => {
             <FontAwesomeIcon
               icon={faFacebookF}
               className="IconBarLi"
-              size="2x"
+              size="lg"
             />
           </li>
           <li>
             <FontAwesomeIcon
               icon={faLinkedin}
               className="IconBarLi"
-              size="2x"
+              size="lg"
             />
           </li>
           <li>
-            <FontAwesomeIcon icon={faCircle} className="IconBarLi" size="2x" />
+            <FontAwesomeIcon icon={faCircle} className="IconBarLi" size="lg" />
           </li>
 
           <li>
-            <FontAwesomeIcon icon={faGithub} className="IconBarLi" size="2x" />
+            <FontAwesomeIcon icon={faGithub} className="IconBarLi" size="lg" />
           </li>
         </ul>
       </div>
