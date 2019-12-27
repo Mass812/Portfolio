@@ -1,3 +1,11 @@
+:root {
+  --main-color: goldenrod;
+  --main-secondary: white;
+  --home-background: url("../../Assets/businessPlan.jpg");
+}
+
+/* At the top level of your code */
+
 .section {
   position: absolute;
   box-sizing: content-box;
@@ -8,8 +16,10 @@
   bottom: 0;
   width: 100%;
   // margin-top: -22px;
-  background-image: url("../../Assets/businessPlan.jpg") opacity;
-  
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    var(--home-background) center center;
+  background-size: cover;
   // background: linear-gradient(
   //   180deg,
   //   rgba(129, 125, 125, 0.8032786885245902) 0%,
@@ -35,21 +45,18 @@
 .left {
   box-sizing: content-box;
   background-color: transparent;
-  justify-self: center;
+  justify-self: start;
   box-sizing: content-box;
 }
 
 .right {
-  flex-flow: wrap;
   box-sizing: content-box;
-  display: inline-block;
   box-sizing: content-box;
   align-items: center;
 }
 
 .bobblehead {
-  height: 270px;
-  max-height: 250px;
+  height: 200px;
   padding: 2em;
   margin-top: 4em;
   border-color: black;
@@ -58,27 +65,151 @@
 }
 
 .subTitle2 {
-  padding: 15px 0;
-  color: goldenrod;
+  padding: 5px 0;
+  color: var(--main-color);
   font-family: "Source Code Pro", Courier, monospace;
-  background-color: goldenrod;
   background: transparent;
-  text-shadow: #000000 1px 1px 0;
+  text-shadow: #d0d0cd 1px 1px 0;
   font-weight: 700;
   line-height: 1;
-  font-size: 44px;
+  font-size: 42px;
+  align-self: center;
   font-family: "Cinzel", serif;
+  margin: 26px;
 }
 
 .subTitle3 {
-  padding: 15px 0;
-  padding-left: 20px;
+  padding: 0px 25px;
   font-size: 22px;
   font-family: "Source Code Pro", Courier, monospace;
   font-family: "Cinzel", serif;
-  color: goldenrod;
+  color: var(--main-secondary);
   font-family: "Source Code Pro", Courier, monospace;
-  background-color: goldenrod;
+  background-color: var(--main-secondary);
   background: transparent;
-  text-shadow: #000000 1px 1px 0;
+  text-shadow: #6f6f6e 1px 1px 0;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    margin: 1%;
+    box-sizing: content-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bobblehead {
+    height: 370px;
+    padding: 2em;
+    margin-top: 4em;
+    border-width: 5px;
+  }
+
+  .left {
+    box-sizing: content-box;
+    background-color: transparent;
+    justify-self: left;
+    align-items: flex-start;
+    box-sizing: content-box;
+  }
+
+  .right {
+    border-width: 3px;
+    border-color: white;
+    border-style: inset;
+    flex-flow: wrap;
+    box-sizing: content-box;
+    display: inline-block;
+    box-sizing: content-box;
+    align-items: left;
+    padding: 20px;
+  }
+
+  .subTitle2 {
+    padding: 15px 0;
+    color: goldenrod;
+    font-family: "Source Code Pro", Courier, monospace;
+    background-color: goldenrod;
+    background: transparent;
+    text-shadow: #b5b5b5 1px 1px 0;
+    font-weight: 700;
+    line-height: 0;
+    font-size: 56px;
+    font-family: "Cinzel", serif;
+  }
+
+  .subTitle3 {
+    padding-left: 2px;
+    font-size: 36px;
+    font-family: "Source Code Pro", Courier, monospace;
+    font-family: "Cinzel", serif;
+    color: var(--main-secondary);
+    font-family: "Source Code Pro", Courier, monospace;
+    background-color: white;
+    background: transparent;
+    text-shadow: #000000 1px 1px 0;
+  }
+}
+@media screen and (min-width: 720) {
+  .container {
+    margin: 1%;
+    box-sizing: content-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bobblehead {
+    height: 300px;
+    padding: 2em;
+    margin-top: 4em;
+    border-width: 5px;
+  }
+
+  .left {
+    box-sizing: content-box;
+    background-color: transparent;
+    float: left;
+    box-sizing: content-box;
+  }
+
+  .right {
+    border-width: 3px;
+    border-color: white;
+    border-style: inset;
+    flex-flow: wrap;
+    box-sizing: content-box;
+    display: inline-block;
+    box-sizing: content-box;
+    align-items: left;
+    padding: 20px;
+  }
+
+  .subTitle2 {
+    padding: 15px 0;
+    color: goldenrod;
+    font-family: "Source Code Pro", Courier, monospace;
+    background-color: goldenrod;
+    background: transparent;
+    text-shadow: #000000 1px 1px 0;
+    font-weight: 700;
+    line-height: 0;
+    font-size: 56px;
+    font-family: "Cinzel", serif;
+  }
+
+  .subTitle3 {
+    padding-left: 2px;
+    font-size: 36px;
+    font-family: "Source Code Pro", Courier, monospace;
+    font-family: "Cinzel", serif;
+    color: goldenrod;
+    font-family: "Source Code Pro", Courier, monospace;
+    background-color: goldenrod;
+    background: transparent;
+    text-shadow: #000000 1px 1px 0;
+  }
 }
