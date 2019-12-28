@@ -33,7 +33,7 @@
 }
 
 .container {
-  margin: 5%;
+  margin: 0;
   box-sizing: content-box;
   width: 100%;
   display: flex;
@@ -43,7 +43,6 @@
 }
 
 .left {
-  box-sizing: content-box;
   background-color: transparent;
   justify-self: start;
   box-sizing: content-box;
@@ -51,21 +50,21 @@
 
 .right {
   box-sizing: content-box;
-  box-sizing: content-box;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
 }
 
 .bobblehead {
-  height: 200px;
-  padding: 2em;
-  margin-top: 4em;
+  height: 220px;
+  padding: 4em;
+  margin-top: 4.4em;
   border-color: black;
   border-radius: 50%;
-  border-width: 5px;
 }
 
 .subTitle2 {
-  padding: 5px 0;
   color: var(--main-color);
   font-family: "Source Code Pro", Courier, monospace;
   background: transparent;
@@ -73,16 +72,18 @@
   font-weight: 700;
   line-height: 1;
   font-size: 42px;
-  align-self: center;
+  justify-content: center;
+  align-items: center;
+
   font-family: "Cinzel", serif;
-  margin: 26px;
+  margin: 1px;
 }
 
 .subTitle3 {
-  padding: 0px 25px;
+  padding: 2px 10px;
+  width: 100%;
+  justify-self: center;
   font-size: 22px;
-  font-family: "Source Code Pro", Courier, monospace;
-  font-family: "Cinzel", serif;
   color: var(--main-secondary);
   font-family: "Source Code Pro", Courier, monospace;
   background-color: var(--main-secondary);
@@ -90,6 +91,7 @@
   text-shadow: #6f6f6e 1px 1px 0;
 }
 
+//big screen
 @media screen and (min-width: 800px) {
   .container {
     margin: 1%;
@@ -148,67 +150,6 @@
     color: var(--main-secondary);
     font-family: "Source Code Pro", Courier, monospace;
     background-color: white;
-    background: transparent;
-    text-shadow: #000000 1px 1px 0;
-  }
-}
-@media screen and (min-width: 720) {
-  .container {
-    margin: 1%;
-    box-sizing: content-box;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .bobblehead {
-    height: 300px;
-    padding: 2em;
-    margin-top: 4em;
-    border-width: 5px;
-  }
-
-  .left {
-    box-sizing: content-box;
-    background-color: transparent;
-    float: left;
-    box-sizing: content-box;
-  }
-
-  .right {
-    border-width: 3px;
-    border-color: white;
-    border-style: inset;
-    flex-flow: wrap;
-    box-sizing: content-box;
-    display: inline-block;
-    box-sizing: content-box;
-    align-items: left;
-    padding: 20px;
-  }
-
-  .subTitle2 {
-    padding: 15px 0;
-    color: goldenrod;
-    font-family: "Source Code Pro", Courier, monospace;
-    background-color: goldenrod;
-    background: transparent;
-    text-shadow: #000000 1px 1px 0;
-    font-weight: 700;
-    line-height: 0;
-    font-size: 56px;
-    font-family: "Cinzel", serif;
-  }
-
-  .subTitle3 {
-    padding-left: 2px;
-    font-size: 36px;
-    font-family: "Source Code Pro", Courier, monospace;
-    font-family: "Cinzel", serif;
-    color: goldenrod;
-    font-family: "Source Code Pro", Courier, monospace;
-    background-color: goldenrod;
     background: transparent;
     text-shadow: #000000 1px 1px 0;
   }

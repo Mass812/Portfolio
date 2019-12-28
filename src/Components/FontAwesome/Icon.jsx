@@ -7,7 +7,8 @@ const Icon = props => {
       <FontAwesomeIcon
         icon={props.icon}
         size={props.size}
-        style={{marginRight: "10px" }}
+        style={{marginRight: "10px", color: 'Brown', backgroundColor: 'white' }}
+        
       />
       {` ${props.children}`}
     </div>

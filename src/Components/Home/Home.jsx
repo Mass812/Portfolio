@@ -15,7 +15,13 @@ const Home = () => {
           </div>
           <div className="right">
             <h1 className="subTitle2">Matt Wellman</h1>
-            <h3 className="subTitle3">Manager, Dad, JavaScript Enthusiest</h3>
+            {/* <h3 className="subTitle3"> Dad, Manager, JavaScript Enthusiest</h3> */}
+            <blockquote>
+              <h3 className="subTitle3">
+                {" "}
+                Dad, Manager, JavaScript Enthusiest
+              </h3>
+            </blockquote>
           </div>
         </div>
         <FontAwesome />

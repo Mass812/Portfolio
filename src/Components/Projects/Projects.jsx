@@ -5,11 +5,12 @@ import "./Projects.scss";
 //import "../../Assets/bhm.png";
 
 const Projects = () => {
-  const iconImage = require("../../Assets/512px.png");
+  const iconImage = require("../../Assets/192px.png");
   return (
     <div className="parent">
-      <img src={iconImage} alt={"icon"} styles={{ size: "contain" }} />
-      Projects
+      <img src={iconImage} alt={"icon"} />
+      <br />
+      <q>Projects Coming Soon . . . </q>
     </div>
   );
 };

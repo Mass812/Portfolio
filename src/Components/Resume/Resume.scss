@@ -116,6 +116,8 @@ a {
   text-transform: uppercase;
   white-space: nowrap;
   padding-right: 12px;
+  color: goldenrod;
+  text-shadow: black 1px 1px;
 }
 /*----- TIMELINE MARKER -----*/
 
@@ -199,7 +201,7 @@ a {
     padding: 15px 70px;
   }
   .timeline-title {
-    margin: 0;
+    margin: 5px;
   }
 }
 
@@ -227,14 +229,16 @@ a {
       position: relative;
     }
     .timeline-content {
-      padding-left: 30px;
+      padding-left: 10px;
     }
     .timeline-info {
-      padding-right: 30px;
+      padding-right: 10px;
+     
     }
     .period .timeline-title {
       position: relative;
       left: -45px;
+      padding-right: 20px;
     }
   }
 }
@@ -248,74 +252,7 @@ a {
         MOD: TIMELINE CENTERED
     ----------------------------------------------*/
 
-// .timeline-centered {
-//   @extend .timeline-split;
-//   @media (min-width: 1292px) {
-//     &,
-//     .timeline-item,
-//     .timeline-info,
-//     .timeline-marker,
-//     .timeline-content {
-//       display: block;
-//       margin: 0;
-//       padding: 0;
-//     }
-//     .timeline-item {
-//       padding-bottom: 40px;
-//       overflow: hidden;
-//     }
-//     .timeline-marker {
-//       position: absolute;
-//       left: 50%;
-//       margin-left: -7.5px;
-//     }
-//     .timeline-info,
-//     .timeline-content {
-//       width: 50%;
-//     }
-//     > .timeline-item:nth-child(odd) .timeline-info {
-//       float: left;
-//       text-align: right;
-//       padding-right: 30px;
-//     }
-//     > .timeline-item:nth-child(odd) .timeline-content {
-//       float: right;
-//       text-align: left;
-//       padding-left: 30px;
-//     }
-//     > .timeline-item:nth-child(even) .timeline-info {
-//       float: right;
-//       text-align: left;
-//       padding-left: 30px;
-//     }
-//     > .timeline-item:nth-child(even) .timeline-content {
-//       float: left;
-//       text-align: right;
-//       padding-right: 30px;
-//     }
-//     > .timeline-item.period .timeline-content {
-//       float: none;
-//       padding: 0;
-//       width: 100%;
-//       text-align: center;
-//     }
-//     .timeline-item.period {
-//       padding: 50px 0 90px;
-//     }
-//     .period .timeline-marker:after {
-//       height: 30px;
-//       bottom: 0;
-//       top: auto;
-//     }
-//     .period .timeline-title {
-//       left: auto;
-//     }
-//   }
-// }
-
-/*----------------------------------------------
-        MOD: MARKER OUTLINE
-    ----------------------------------------------*/
+//
 
 .marker-outline {
   .timeline-marker {
