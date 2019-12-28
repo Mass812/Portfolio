@@ -19,6 +19,9 @@ const SideDrawer = props => {
         <Link to="/references" style={{ textDecoration: "none" }}>
           <Button>Refs</Button>
         </Link>
+        <Link to="/projects" style={{ textDecoration: "none" }}>
+          <Button>Projects</Button>
+        </Link>
       </ul>
     </nav>
   );

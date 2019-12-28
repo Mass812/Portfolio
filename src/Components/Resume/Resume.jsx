@@ -2,13 +2,15 @@ import React from "react";
 import "./Resume.scss";
 import "../../Assets/Disney2018.jpeg";
 import { Disney } from "../Pics/Pics";
+import Icon from "../FontAwesome/Icon";
+import { faUps, faAndroid, faShield, faReact } from "@fortawesome/free-brands-svg-icons";
 
 const Resume = () => {
   return (
     <div className="container-fluid">
       <div className="row example-centered">
         <div className="col-md-12 example-title">
-        <Disney styles={{'margin': '25px'}}/>
+          <Disney styles={{ margin: "25px" }} />
           <h2>Experience Timeline</h2>
         </div>
         <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
@@ -23,7 +25,9 @@ const Resume = () => {
                   Comprehensive Health & Safety Committee (CHSP)
                 </h3>
                 <h4 className="timeline-title">
-                  <strong>UPS (World Port)</strong>
+                  <p>
+                    UPS (World Port)
+                  </p>
                 </h4>
                 <blockquote>
                   Yep, built this site line by line. I was fortunate to be given
@@ -33,22 +37,22 @@ const Resume = () => {
                   from scratch.
                 </blockquote>
                 <ul className="ExperienceListParent">
-                  <li>
-                    Oversee Aircraft Loading, Machinery Operation and Personnel
-                    Conduct Safety
-                  </li>
-                  <li>Act as a Support to Throughput Operations </li>
-                  <li>
-                    Train all new Ramp Employees on Wing D (12 plane docks)
-                  </li>
-                  <li>
-                    Analyze Safety Concerns via Safety Audits and Create Action
-                    Plans{" "}
-                  </li>
+                  <Icon size={"sm"} icon={faUps}>
+                    Developed UIs via React-Native for iOS and Android
+                  </Icon>
+                  <Icon size={"sm"} icon={faUps}>
+                    Responsibilty 2{" "}
+                  </Icon>
+                  <Icon size={"sm"} icon={faUps}>
+                    Responsibilty 3{" "}
+                  </Icon>
+                  <Icon size={"sm"} icon={faUps}>
+                    Responsibilty 3{" "}
+                  </Icon>
                 </ul>
               </div>
             </li>
-            <li className="timeline-item">
+            <div className="timeline-item">
               <div className="timeline-info">
                 <span>March => October 23, 2019</span>
               </div>
@@ -58,7 +62,10 @@ const Resume = () => {
                   Full Stack Mobile App Developer
                 </h3>
                 <p>
-                  <strong>Parsed.io</strong>
+                
+                  <p>
+                    Parsed.io
+                  </p>
                 </p>
                 <blockquote>
                   Yep, built this site line by line. I was fortunate to be given
@@ -68,13 +75,21 @@ const Resume = () => {
                   from scratch.
                 </blockquote>
                 <ul className="ExperienceListParent">
-                  <li>Developed UI's via React-Native for iOS and Android</li>
-                  <li>Responsibilty 2 </li>
-                  <li>Responsibilty 3 </li>
-                  <li>Responsibilty 3 </li>
+                  <Icon size={"sm"} icon={faReact}>
+                    Developed UIs via React-Native for iOS and Android
+                  </Icon>
+                  <Icon size={"sm"} icon={faReact}>
+                    Responsibilty 2{" "}
+                  </Icon>
+                  <Icon size={"sm"} icon={faReact}>
+                    Responsibilty 3{" "}
+                  </Icon>
+                  <Icon size={"sm"} icon={faReact}>
+                    Responsibilty 3{" "}
+                  </Icon>
                 </ul>
               </div>
-            </li>
+            </div>
             <li className="timeline-item period">
               <div className="timeline-info"></div>
               <div className="timeline-marker"></div>
@@ -103,10 +118,18 @@ const Resume = () => {
                   from scratch.
                 </blockquote>
                 <ul className="ExperienceListParent">
-                  <li>Developed UI's via React-Native for iOS and Android</li>
-                  <li>Responsibilty 2 </li>
-                  <li>Responsibilty 3 </li>
-                  <li>Responsibilty 3 </li>
+                  <Icon size={"sm"} icon={faReact}>
+                    Developed UIs via React-Native for iOS and Android
+                  </Icon>
+                  <Icon size={"sm"} icon={faReact}>
+                    Responsibilty 2{" "}
+                  </Icon>
+                  <Icon size={"sm"} icon={faReact}>
+                    Responsibilty 3{" "}
+                  </Icon>
+                  <Icon size={"sm"} icon={faReact}>
+                    Responsibilty 3{" "}
+                  </Icon>
                 </ul>
               </div>
             </li>
@@ -124,6 +147,20 @@ const Resume = () => {
                   sapien ut libero venenatis faucibus. ullam dictum felis eu
                   pede mollis pretium. Pellentesque ut neque.{" "}
                 </p>
+                <ul className="ExperienceListParent">
+                  <Icon size={"sm"} icon={faReact}>
+                    Developed UIs via React-Native for iOS and Android
+                  </Icon>
+                  <Icon size={"sm"} icon={faReact}>
+                    Responsibilty 2{" "}
+                  </Icon>
+                  <Icon size={"sm"} icon={faReact}>
+                    Responsibilty 3{" "}
+                  </Icon>
+                  <Icon size={"sm"} icon={faReact}>
+                    Responsibilty 3{" "}
+                  </Icon>
+                </ul>
               </div>
             </li>
           </ul>

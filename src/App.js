@@ -8,6 +8,7 @@ import KindWords from "./Components/KindWords/KindWords";
 import Home from "./Components/Home/Home";
 import Resume from "./Components/Resume/Resume";
 import Bio from "../src/Components/Bio/bio";
+import Projects from "../src/Components/Projects/Projects";
 
 const App = () => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
@@ -20,19 +21,12 @@ const App = () => {
     });
   };
 
-  const timeOut = () => {
-    setTimeout(function() {
-      console.log("timeOut logged");
-      setSideDrawerOpen(false);
-    }, 200);
-  };
-
   const exitMenu = () => {
     setSideDrawerOpen(false);
   };
 
   const expandSide = sideDrawerOpen ? (
-    <SideDrawer hideShow={runHideShow} closeMenu={timeOut} />
+    <SideDrawer hideShow={runHideShow} closeMenu={exitMenu} />
   ) : null;
   const expandFog = sideDrawerOpen ? (
     <FoggedGlass unFogGlass={exitMenu} />
@@ -43,12 +37,13 @@ const App = () => {
       <Toolbar pushShowHide={runHideShow} />
       <hr className="header-break" />
       {expandSide} {expandFog}
-      <main >
+      <main>
         <Switch>
           <Route path="/" exact={true} component={Home} />
           <Route path="/about" component={Bio} />
           <Route path="/resume" component={Resume} />
           <Route path="/references" component={KindWords} />
+          <Route path="/projects" component={Projects} />
         </Switch>
       </main>
     </div>
