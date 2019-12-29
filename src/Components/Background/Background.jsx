@@ -11,12 +11,7 @@ const Background = () => {
           years of trial and error.
         </h2>
         <ul className='fade'>
-            <li>pppppp</li>
-            <li>pppppp</li>
-            <li>pppppp</li>
-            <li>pppppp</li>
-            <li>pppppp</li>
-            <li>pppppp</li>
+         
         </ul>
       </div>
     </div>

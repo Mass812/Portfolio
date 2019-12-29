@@ -1,19 +1,27 @@
 $primary-color: goldenrod;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
-body {
-  font-family: "Effra", Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
+#tag {
+  color: blue;
+  font-size: 0.9rem;
+  font-style: bold;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #3d4351;
-  margin-top: 0;
+#tagged {
+  display: none;
 }
+#intel {
+  color: blue;
+  font-size: 0.9rem;
+  font-style: bold;
+}
+#no-intel {
+  display: none;
+}
+
+.ExperienceListParent {
+  font-style: oblique;
+}
+
 a {
   color: $primary-color;
   &:hover {
@@ -144,7 +152,7 @@ a {
   &:after {
     content: "";
     width: 3px;
-    background:rgba(28, 30, 59, 0.51);
+    background: #ccd5db;
     display: block;
     position: absolute;
     top: 24px;

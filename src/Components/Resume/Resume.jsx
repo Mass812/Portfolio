@@ -1,23 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Resume.scss";
 import "../../Assets/Disney2018.jpeg";
 import Icon from "../FontAwesome/Icon";
-import {
-  faUps,
-  faReact,
-  faJs,
-  faGooglePlay
-} from "@fortawesome/free-brands-svg-icons";
+import { faUps, faReact, faJs } from "@fortawesome/free-brands-svg-icons";
+
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
+  const [change, setChange] = useState(false);
+  const [intel, setIntel] = useState(false);
+
+  const classChange = () => {
+    setChange(prevState => setChange(!change));
+  };
+
+  const bubble = () => {};
+
+  const moreIntel = () => {
+    setIntel(!intel);
+  };
+
   return (
     <div className="container-fluid">
       <div className="row example-centered">
         <div className="col-sm-12 example-title">
           <h2>Experience Timeline</h2>
         </div>
-
-        <h2 className="timeline-title"> 2019</h2>
 
         <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
           <ul className="timeline timeline-centered">
@@ -81,12 +89,26 @@ const Resume = () => {
                 </h3>
 
                 <blockquote>
-                  Yep, built this site line by line. I was fortunate to be given
-                  a seat on such a great team. I worked on both large and small
-                  scale projects ranging from internationalizing currently
-                  existing applications to creating video streaming applications
-                  from scratch.
+                  Since this is here, it does kind of beg the question
+                  <b style={{ color: "goldenrod" }}>?</b> Yes, I did fully dev
+                  this site (using JS, JSX, React, React-Router Flux, etc, . .
+                  .) I was fortunate to be given a seat among such a great team.
+                  I worked on both large and small scale projects ranging from
+                  internationalizing currently existing applications to creating
+                  video streaming applications from scratch.
+                  <tag id={!intel ? "intel" : "no-intel"} onClick={moreIntel}>
+                    ...continue reading
+                  </tag>
                 </blockquote>
+                {intel ? (
+                  <blockquote>
+                    I love technology and for may years I swore I would take the
+                    time to learn it! I have always had more than a natural
+                    aptitude towards the Internet of Things, apparently that
+                    term is a real thing (smh). I learned SQL inadvertently
+                    ✨through google sheets ✨ while at Techstyle [scroll down].
+                  </blockquote>
+                ) : null}
                 <ul className="ExperienceListParent">
                   <Icon size={"sm"} icon={faReact}>
                     Developed UIs via React-Native for iOS and Android
@@ -111,7 +133,6 @@ const Resume = () => {
             </li>
             <br />
             <br />
-            <h2 className="timeline-title">2011-2018</h2>
 
             <li className="timeline-item">
               <div className="timeline-info">
@@ -127,24 +148,95 @@ const Resume = () => {
                 </p>
 
                 <blockquote>
-                  Yep, built this site line by line. I was fortunate to be given
-                  a seat on such a great team. I worked on both large and small
-                  scale projects ranging from internationalizing currently
-                  existing applications to creating video streaming applications
-                  from scratch.
+                  "Company’s rightly focus on product quality and customer
+                  service. From my management experience those two driving
+                  forces are only two factors in a company’s economy. On the
+                  ground, managing shrinkage and loss is crucial to maintaining
+                  those profits. My focus was on the losses generated from
+                  employee turn-over, injury, theft and damage to create a
+                  positive company impact.{" "}
+                  <tag id={!change ? "tag" : "tagged"} onClick={classChange}>
+                    ...continue reading
+                  </tag>
                 </blockquote>
+                {change ? (
+                  <blockquote>
+                    {" "}
+                    <p>
+                      Nearing the end of college I stepped into a position of an
+                      area manager for a security firm in Louisville.
+                      Opportunity presented itself and I usurped a position as
+                      the Security Operations Manager for Techstyle Fashion
+                      Group.{" "}
+                    </p>
+                    <p>
+                      {" "}
+                      A lot of growth occurred while I was there:
+                      <br /> the acquisition of Shoe Dazzle and Madden
+                      Shoes...horizontal growth--beyond footwear--into other
+                      areas of fashion... Kate Hudson launched her athletic
+                      apparel brand: Fabletics . . . then the launch Rhianna’s
+                      Savage X Finty brand.{" "}
+                    </p>
+                    <p>
+                      I mention that here because with the kind of growth and
+                      rapid success that Techstyle enjoyed, came with its own
+                      challenges: management constantly trying to keep pace with
+                      its own evolution. As such my role continually evolved
+                      over the course of my 6 years there into their Security
+                      Director.{" "}
+                    </p>
+                    Working alongside three staffing agencies and seven internal
+                    operational departments, for a company consisting of 1000+
+                    employees. I effectively coordinated a 40+ member security
+                    team.{" "}
+                    <p>
+                      {" "}
+                      I was wholly responsible for evaluating, mentoring, and
+                      developing managers/supervisors. All Scheduling; Hiring,
+                      on-boarding & developing employees; Managing workload and
+                      streamlining operations; RFPs ; Data compiling and
+                      analysis; Integrating SOPs into and throughout multiple
+                      departments / areas.{" "}
+                    </p>
+                    I injected modernity into the security program by Fully
+                    developing Web Technologies that leveraged complete
+                    workflows & streamlined operations. Which: <br /> <br />
+                    1] watered-down operational complexities (Lessened Skill Set
+                    requirements)
+                    <br />
+                    2] markedly decreased training & development time (Better
+                    On-Boarding)
+                    <br /> 3] automated security reporting and auditing
+                    (Modernized Security)
+                    <br /> 4] yielded clearer insights to areas of focus (Data
+                    Analysis)
+                    <br /> 5] immeasurably increased oversight (Operational
+                    Control) <br />
+                    6] created absolute transparency between security and other
+                    departments. (Synergy)
+                    <br /> After maturing at Techstyle I wanted to delve further
+                    into coding, not just to expand on knowledge of frameworks,
+                    languages and API's but to better understand the technology
+                    side of the operational workflow (i.e., its struggles and
+                    possibilities). This choice certainly broadened my overall
+                    knowledge-base being all companies heavily leverage
+                    technology into their work models."
+                  </blockquote>
+                ) : null}
+                <h3>Highlights</h3>
                 <ul className="ExperienceListParent">
-                  <Icon size={"sm"} icon={faGooglePlay}>
-                    Developed UIs via React-Native for iOS and Android
+                  <Icon size={"sm"} icon={faAngleRight}>
+                    Maintained a 87% Employee Retention Rate over 6.5 years
                   </Icon>
-                  <Icon size={"sm"} icon={faGooglePlay}>
-                    Responsibilty 2{" "}
+                  <Icon size={"sm"} icon={faAngleRight}>
+                    Kept Shrinkage at or below 1.8
                   </Icon>
-                  <Icon size={"sm"} icon={faGooglePlay}>
-                    Responsibilty 3{" "}
+                  <Icon size={"sm"} icon={faAngleRight}>
+                    Exceeded expectations on quarterly / annual reviews
                   </Icon>
-                  <Icon size={"sm"} icon={faGooglePlay}>
-                    Responsibilty 3{" "}
+                  <Icon size={"sm"} icon={faAngleRight}>
+                    Continually decreased department budgets
                   </Icon>
                 </ul>
               </div>
