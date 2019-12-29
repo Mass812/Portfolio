@@ -1,0 +1,35 @@
+.fade {
+  color: blue;
+}
+
+.fade li {
+  list-style: none;
+  transition: all 3s;
+  margin: 0px 10px;
+  animation-name: item-load;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3000ms;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+  transform: translateX(-1000%);
+}
+
+@keyframes item-load {
+  0% {
+    transform: translateX(-1000%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes item-load {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

@@ -129,8 +129,8 @@ a {
   width: 15px;
   margin-left: 15px;
   &:before {
-    background: $primary-color;
-    border: 3px solid black;
+    background: rgba(218, 165, 32, 0.728);
+    border: 1.5px groove black;
     border-radius: 100%;
     content: "";
     display: block;
@@ -144,12 +144,12 @@ a {
   &:after {
     content: "";
     width: 3px;
-    background: #ccd5db;
+    background:rgba(28, 30, 59, 0.51);
     display: block;
     position: absolute;
     top: 24px;
     bottom: 0;
-    left: 16px;
+    left: 7px;
   }
   .timeline-item:last-child &:after {
     content: none;
@@ -201,45 +201,7 @@ a {
     padding: 15px 70px;
   }
   .timeline-title {
-    margin: 5px;
-  }
-}
-
-/*----------------------------------------------
-        MOD: TIMELINE SPLIT
-    ----------------------------------------------*/
-
-.timeline-split {
-  @media (min-width: 768px) {
-    .timeline {
-      display: table;
-    }
-    .timeline-item {
-      display: table-row;
-      padding: 0;
-    }
-    .timeline-info,
-    .timeline-marker,
-    .timeline-content,
-    .period .timeline-info {
-      display: table-cell;
-      vertical-align: top;
-    }
-    .timeline-marker {
-      position: relative;
-    }
-    .timeline-content {
-      padding-left: 10px;
-    }
-    .timeline-info {
-      padding-right: 10px;
-     
-    }
-    .period .timeline-title {
-      position: relative;
-      left: -45px;
-      padding-right: 20px;
-    }
+    padding-left: 25px;
   }
 }
 
@@ -247,21 +209,4 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   max-width: 300px;
-}
-/*----------------------------------------------
-        MOD: TIMELINE CENTERED
-    ----------------------------------------------*/
-
-//
-
-.marker-outline {
-  .timeline-marker {
-    &:before {
-      background: transparent;
-      border-color: $primary-color;
-    }
-  }
-  .timeline-item:hover .timeline-marker:before {
-    background: $primary-color;
-  }
 }
