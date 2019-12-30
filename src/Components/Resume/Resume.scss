@@ -5,6 +5,9 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   color: blue;
   font-size: 0.9rem;
   font-style: bold;
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
 }
 #tagged {
   display: none;
@@ -12,6 +15,9 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 #intel {
   color: blue;
   font-size: 0.9rem;
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
   font-style: bold;
 }
 #no-intel {
@@ -21,19 +27,34 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   color: blue;
   font-size: 0.9rem;
   font-style: bold;
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
 }
 #no-safe {
   display: none;
 }
 
-blockquote {
-  margin: 0;
-  font-family: "Source Sans Pro", sans-serif, "semi-bold 600";
-  font-weight: 900px;
+#why {
+  padding-left: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0;
 }
 
-//
+#sep {
+  border-width: 7px;
+}
 
+#text {
+  padding: 0px;
+  margin-left: -10px;
+  flex: 1;
+}
+//
+p {
+  text-indent: 25px;
+}
 a {
   color: $primary-color;
   &:hover {
@@ -44,7 +65,7 @@ a {
 #padSpan {
   padding: 10px 0px;
   margin-left: -15px;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 .example-header {
   background: #3d4351;
@@ -73,17 +94,20 @@ a {
   }
 }
 #push {
-  padding-left: 40px;
+  padding-left: 0px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .example-title {
-  margin-left: 8%;
-  text-align: left;
-  align-self: left;
-  justify-content: left;
-  margin-bottom: 10px;
-  padding: 1.3em 5px;
-  border-bottom: 0.1px solid #e4eaec;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding-top: 35px;
+  color: goldenrod;
+  text-shadow: black 1.2px 1.3px;
   p {
     margin: 0 auto;
     font-size: 16px;
@@ -118,6 +142,7 @@ a {
 .timeline-item {
   padding-left: 30px;
   padding-right: 15px;
+  margin: -20px 0px;
   position: relative;
   &:last-child {
     padding-bottom: 0;
@@ -154,8 +179,8 @@ a {
   width: 15px;
   margin-left: 15px;
   &:before {
-    background: rgba(218, 165, 32, 0.728);
-    border: 1.5px groove black;
+    background: goldenrod;
+    border: 2.5px groove black;
     border-radius: 100%;
     content: "";
     display: block;
@@ -169,7 +194,7 @@ a {
   &:after {
     content: "";
     width: 3px;
-    background: #ccd5db;
+    background: rgba(225, 167, 20, 0.224);
     display: block;
     position: absolute;
     top: 24px;
@@ -188,7 +213,7 @@ a {
 /*----- TIMELINE CONTENT -----*/
 
 .timeline-content {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   p:last-child {
     margin-bottom: 0;
     padding-right: 12px;
@@ -231,7 +256,11 @@ a {
 }
 
 .ExperienceListParent {
+  font-weight: 850;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: bold;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 300px;
+  padding-bottom: 25px;
 }

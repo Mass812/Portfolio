@@ -3,7 +3,10 @@ import "./Resume.scss";
 import "../../Assets/Disney2018.jpeg";
 import Icon from "../FontAwesome/Icon";
 import { faUps, faReact } from "@fortawesome/free-brands-svg-icons";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleRight,
+  faCaretSquareRight
+} from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
   const [change, setChange] = useState(false);
@@ -11,11 +14,11 @@ const Resume = () => {
   const [safe, setSafe] = useState(false);
 
   const classChange = () => {
-    setChange(prevState => setChange(!change));
+    setChange(prevState => setChange(!prevState));
   };
 
   const moreSafe = () => {
-    setChange(preState => setSafe(!safe));
+    setChange(prevState => setSafe(!prevState));
   };
 
   const moreIntel = () => {
@@ -28,7 +31,9 @@ const Resume = () => {
         <div className="col-sm-12 example-title">
           <h2 id="push"> Experience Timeline </h2>
         </div>
-
+        <hr id="sep" />
+        <br />
+        <br />
         <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
           <ul className="timeline timeline-centered">
             <li className="timeline-item">
@@ -44,8 +49,8 @@ const Resume = () => {
                   Comprehensive Health & Safety Process Committee (CHSP)
                 </h3>
 
-                <blockquote>
-                  <q>
+                <div id="why">
+                  <p>
                     Training is the cornerstone of safety at UPS, and management
                     training is the logical precursor to an informed and safe
                     workforce. UPS invests $175 million per year on safety
@@ -53,25 +58,33 @@ const Resume = () => {
                     safety training annually, including Safe Work Methods. UPS
                     Safe Work Methods have been developed to help address the
                     major sources of known risk to our employees.
-                  </q>
-                </blockquote>
-                <p id={!safe ? "safe" : "no-safe"} onClick={moreSafe}>
+                  </p>
+                </div>
+
+                <span id={!safe ? "safe" : "no-safe"} onClick={moreSafe}>
                   ...continue reading
-                </p>
+                </span>
                 <br />
+
                 {safe ? (
-                  <blockquote>
-                    {" "}
-                    I wanted to join UPS for a few reasons, first the benefits.
-                    Secondly I have LOVED airplanes since boyhood--Mavrick &
-                    Goose forever changed my life. Third, I truely wanted to
-                    know how that kind of operation is run! Its so different
-                    from the normal operation, as soon as I considered the
-                    position--I was all in. I currently work only part-time,
-                    enough to experience the administrative aspects, gain the
-                    benefits and feel the tarmac adrenaline.
-                  </blockquote>
+                  <div id="why">
+                    <p>
+                      I wanted to join UPS for a few reasons, first the benefits
+                      (You will find that I am always honest). Secondly I have
+                      LOVED airplanes since boyhood--Top Gun in the 90's forever
+                      ignited my amazement of flying steel. Lastly, I truly
+                      wanted to know How that kind of operation is run! I had a
+                      friend of mine reach out to me about the safety team there
+                      wanting to onboard some experienced individuals with
+                      safety-aligned work experience. Its so different from the
+                      normal operation, as soon as I considered the position--I
+                      was all in. I currently work only part-time, enough to
+                      experience the administrative aspects, gain the benefits
+                      and feel the tarmac adrenaline.
+                    </p>
+                  </div>
                 ) : null}
+
                 <h3>Highlights</h3>
 
                 <ul className="ExperienceListParent">
@@ -98,6 +111,10 @@ const Resume = () => {
               <div className="timeline-marker"></div>
             </li>
             <br />
+            <br />
+            <hr id="sep" />
+            <br />
+            <br />
 
             <div className="timeline-item">
               <div className="timeline-info">
@@ -109,27 +126,33 @@ const Resume = () => {
                   Parsed.io <br></br>Mobile App Developer
                 </h3>
 
-                <blockquote>
-                  Since this is here, it does kind of beg the question
-                  <b style={{ color: "goldenrod" }}>?</b> Yes, I did fully dev
-                  this site (using JS, JSX, React, React-Router Flux, etc, . .
-                  .) I was fortunate to be given a seat among such a great team.
-                  I worked on both large and small scale projects ranging from
-                  internationalizing currently existing applications to creating
-                  video streaming applications from scratch.
-                  <p id={!intel ? "intel" : "no-intel"} onClick={moreIntel}>
-                    ...continue reading
+                <div id="why">
+                  <p>
+                    Since this is here, it does kind of beg the question
+                    <b style={{ color: "goldenrod" }}>?</b> Yes, I did fully dev
+                    this site (using JS, JSX, React, React-Router Flux, etc, . .
+                    .) I was fortunate to be given a seat among such a great
+                    team. I worked on both large and small scale projects
+                    ranging from internationalizing currently existing
+                    applications to creating video streaming applications from
+                    scratch.
                   </p>
-                </blockquote>
+                </div>
+                <span id={!intel ? "intel" : "no-intel"} onClick={moreIntel}>
+                  ...continue reading
+                </span>
                 {intel ? (
-                  <blockquote>
-                    I love technology and for many years I swore I would take
-                    the time to learn it! I have always had more than a natural
-                    aptitude towards the Internet of Things, apparently that
-                    term is a real thing (smh). I learned SQL inadvertently
-                    through google sheets while at Techstyle Fashion Group.
+                  <div id="why">
+                    <p>
+                      I love technology and for many years I swore I would take
+                      the time to learn it! I have always had more than a
+                      natural aptitude towards the Internet of Things,
+                      apparently that term is a real thing (smh). I learned SQL
+                      inadvertently through google sheets while at Techstyle
+                      Fashion Group.
+                    </p>
                     <br />
-                  </blockquote>
+                  </div>
                 ) : null}
                 <h3>Highlights</h3>
 
@@ -157,6 +180,9 @@ const Resume = () => {
             </li>
             <br />
             <br />
+            <hr id="sep" />
+            <br />
+            <br />
 
             <li className="timeline-item">
               <div className="timeline-info">
@@ -165,89 +191,152 @@ const Resume = () => {
               <div className="timeline-marker"></div>
               <div className="timeline-content">
                 <h3 className="timeline-title">
-                  Director of Security Operations
+                  Techstyle Fashion Group
+                  <br></br>
+                  <i>Director of Security Operations</i>
                 </h3>
-                <p>
-                  <strong>Techstyle Fashion Group</strong>
-                </p>
-
-                <blockquote>
-                  "Company’s rightly focus on product quality and customer
-                  service. From my management experience those two driving
-                  forces are only two factors in a company’s economy. On the
-                  ground, managing shrinkage and loss is crucial to maintaining
-                  those profits. My focus was on the losses generated from
-                  employee turn-over, injury, theft and damage to create a
-                  positive company impact.{" "}
-                  <p id={!change ? "tag" : "tagged"} onClick={classChange}>
+                <>
+                  <div id="why">
+                    <p>
+                      "Company’s rightly focus on product quality and customer
+                      service. From my management experience those two driving
+                      forces are only two factors in a company’s economy. On the
+                      ground, managing shrinkage and loss is crucial to
+                      maintaining those profits. My focus was on the losses
+                      generated from employee turn-over, injury, theft and
+                      damage to create a positive company impact.
+                    </p>
+                  </div>
+                </>
+                <>
+                  <span id={!change ? "tag" : "tagged"} onClick={classChange}>
                     ...continue reading
-                  </p>
-                </blockquote>
-                {change ? (
-                  <blockquote>
-                    {" "}
-                    <p>
-                      Nearing the end of college I stepped into a position of an
-                      area manager for a security firm in Louisville.
-                      Opportunity presented itself and I usurped a position as
-                      the Security Operations Manager for Techstyle Fashion
-                      Group.{" "}
-                    </p>
-                    <p>
-                      {" "}
-                      A lot of growth occurred while I was there:
-                      <br /> the acquisition of Shoe Dazzle and Madden
-                      Shoes...horizontal growth--beyond footwear--into other
-                      areas of fashion... Kate Hudson launched her athletic
-                      apparel brand: Fabletics . . . then the launch Rhianna’s
-                      Savage X Finty brand.{" "}
-                    </p>
-                    <p>
-                      I mention that here because with the kind of growth and
-                      rapid success that Techstyle enjoyed, came with its own
-                      challenges: management constantly trying to keep pace with
-                      its own evolution. As such my role continually evolved
-                      over the course of my 6 years there into their Security
-                      Director.{" "}
-                    </p>
-                    Working alongside three staffing agencies and seven internal
-                    operational departments, for a company consisting of 1000+
-                    employees. I effectively coordinated a 40+ member security
-                    team.{" "}
-                    <p>
-                      {" "}
-                      I was wholly responsible for evaluating, mentoring, and
-                      developing managers/supervisors. All Scheduling; Hiring,
-                      on-boarding & developing employees; Managing workload and
-                      streamlining operations; RFPs ; Data compiling and
-                      analysis; Integrating SOPs into and throughout multiple
-                      departments / areas.{" "}
-                    </p>
-                    I injected modernity into the security program by Fully
-                    developing Web Technologies that leveraged complete
-                    workflows & streamlined operations. Which: <br /> <br />
-                    1] watered-down operational complexities (Lessened Skill Set
-                    requirements)
-                    <br />
-                    2] markedly decreased training & development time (Better
-                    On-Boarding)
-                    <br /> 3] automated security reporting and auditing
-                    (Modernized Security)
-                    <br /> 4] yielded clearer insights to areas of focus (Data
-                    Analysis)
-                    <br /> 5] immeasurably increased oversight (Operational
-                    Control) <br />
-                    6] created absolute transparency between security and other
-                    departments. (Synergy)
-                    <br /> After maturing at Techstyle I wanted to delve further
-                    into coding, not just to expand on knowledge of frameworks,
-                    languages and API's but to better understand the technology
-                    side of the operational workflow (i.e., its struggles and
-                    possibilities). This choice certainly broadened my overall
-                    knowledge-base being all companies heavily leverage
-                    technology into their work models."
-                  </blockquote>
-                ) : null}
+                  </span>
+                </>
+                <div>
+                  {change ? (
+                    <>
+                      <div id="why">
+                        <div>
+                          <p>
+                            Nearing the end of college I stepped into a position
+                            of an area manager for a security firm in
+                            Louisville. Opportunity presented itself and I
+                            usurped a position as the Security Operations
+                            Manager for Techstyle Fashion Group.
+                          </p>
+                        </div>
+                        <div>
+                          <p>
+                            A lot of growth occurred while I was there:
+                            <br /> the acquisition of Shoe Dazzle and Madden
+                            Shoes...horizontal growth--beyond footwear--into
+                            other areas of fashion... Kate Hudson launched her
+                            athletic apparel brand: Fabletics . . . then the
+                            launch Rhianna’s Savage X Finty brand.
+                          </p>
+                        </div>
+                        <div>
+                          <p>
+                            I mention that here because with the kind of growth
+                            and rapid success that Techstyle enjoyed, came with
+                            its own challenges: management constantly trying to
+                            keep pace with its own evolution. As such my role
+                            continually evolved over the course of my 6 years
+                            there into their Security Director.
+                          </p>
+                        </div>
+                        <div>
+                          <p>
+                            Working alongside three staffing agencies and seven
+                            internal operational departments, for a company
+                            consisting of 1000+ employees. I effectively
+                            coordinated a 40+ member security team.
+                          </p>
+                        </div>
+                        <div>
+                          <p>
+                            <b>I was wholly responsible for:</b>{" "}
+                          </p>
+                          <ul>
+                            <Icon icon={faCaretSquareRight} size={"sm"}>
+                              evaluating, mentoring, and developing
+                              managers/supervisors.{" "}
+                            </Icon>
+                            <Icon icon={faCaretSquareRight} size={"sm"}>
+                              All Scheduling; Hiring, On-boarding & Developing
+                              employees
+                            </Icon>
+                            <Icon icon={faCaretSquareRight} size={"sm"}>
+                              Managing Daily Workloads
+                            </Icon>
+                            <Icon icon={faCaretSquareRight} size={"sm"}>
+                              RFP Budgeting
+                            </Icon>
+                            <Icon icon={faCaretSquareRight} size={"sm"}>
+                              Integrating SOPs into and throughout multiple
+                              Departments / Areas.
+                            </Icon>
+                            <Icon icon={faCaretSquareRight} size={"sm"}>
+                              Data Compiling and Analysis;
+                            </Icon>
+                          </ul>
+                          <br />
+                        </div>
+                        <div>
+                          <p>
+                            I injected modernity into the security program by
+                            <i>
+                              <u>
+                                Fully developing Web Technologies that leveraged
+                                complete workflows
+                              </u>
+                            </i>{" "}
+                            & streamlined operations. Which:
+                          </p>
+                          <br />
+                        </div>
+                        <ul>
+                          <Icon icon={faCaretSquareRight} size={"sm"}>
+                            watered-down operational complexities (Lessened
+                            Skill Set requirements)
+                          </Icon>
+                          <Icon icon={faCaretSquareRight} size={"sm"}>
+                            markedly decreased training & development time
+                            (Better On-Boarding)
+                          </Icon>
+                          <Icon icon={faCaretSquareRight} size={"sm"}>
+                            automated security reporting and auditing
+                            (Modernized Security)
+                          </Icon>
+                          <Icon icon={faCaretSquareRight} size={"sm"}>
+                            yielded clearer insights to areas of focus (Data
+                            Analysis)
+                          </Icon>
+                          <Icon icon={faCaretSquareRight} size={"sm"}>
+                            immeasurably increased oversight (Operational
+                            Control)
+                          </Icon>
+                          <Icon icon={faCaretSquareRight} size={"sm"}>
+                            created absolute transparency between security and
+                            other departments. (Synergy)
+                          </Icon>
+                        </ul>
+
+                        <p>
+                          After maturing at Techstyle I wanted to delve further
+                          into coding, not just to expand on knowledge of
+                          frameworks, languages and API's but to better
+                          understand the technology side of the operational
+                          workflow (i.e., its struggles and possibilities). This
+                          choice certainly broadened my overall knowledge-base
+                          being all companies heavily leverage technology into
+                          their work models.
+                        </p>
+                      </div>
+                    </>
+                  ) : null}
+                </div>
                 <h3>Highlights</h3>
                 <ul className="ExperienceListParent">
                   <Icon size={"sm"} icon={faAngleRight}>
