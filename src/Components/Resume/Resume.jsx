@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Resume.scss";
 import "../../Assets/Disney2018.jpeg";
 import Icon from "../FontAwesome/Icon";
-import { faUps, faReact, faJs } from "@fortawesome/free-brands-svg-icons";
+import { faUps, faReact } from "@fortawesome/free-brands-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
@@ -26,7 +26,7 @@ const Resume = () => {
     <div className="container-fluid">
       <div className="row example-centered">
         <div className="col-sm-12 example-title">
-          <h2 id='push'> Experience Timeline </h2>
+          <h2 id="push"> Experience Timeline </h2>
         </div>
 
         <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
@@ -55,9 +55,9 @@ const Resume = () => {
                     major sources of known risk to our employees.
                   </q>
                 </blockquote>
-                <tag id={!safe ? "safe" : "no-safe"} onClick={moreSafe}>
+                <p id={!safe ? "safe" : "no-safe"} onClick={moreSafe}>
                   ...continue reading
-                </tag>
+                </p>
                 <br />
                 {safe ? (
                   <blockquote>
@@ -117,9 +117,9 @@ const Resume = () => {
                   I worked on both large and small scale projects ranging from
                   internationalizing currently existing applications to creating
                   video streaming applications from scratch.
-                  <tag id={!intel ? "intel" : "no-intel"} onClick={moreIntel}>
+                  <p id={!intel ? "intel" : "no-intel"} onClick={moreIntel}>
                     ...continue reading
-                  </tag>
+                  </p>
                 </blockquote>
                 {intel ? (
                   <blockquote>
@@ -179,9 +179,9 @@ const Resume = () => {
                   those profits. My focus was on the losses generated from
                   employee turn-over, injury, theft and damage to create a
                   positive company impact.{" "}
-                  <tag id={!change ? "tag" : "tagged"} onClick={classChange}>
+                  <p id={!change ? "tag" : "tagged"} onClick={classChange}>
                     ...continue reading
-                  </tag>
+                  </p>
                 </blockquote>
                 {change ? (
                   <blockquote>
