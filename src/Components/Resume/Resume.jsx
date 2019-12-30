@@ -138,11 +138,11 @@ const Resume = () => {
                       {" "}
                       <b>?</b>
                     </i>{" "}
-                    Yes, I did (code this site) I was
-                    fortunate to be given a seat on such a great team. I
-                    worked on both large and small scale projects, ranging from
-                    'internationalizing' currently existing applications . . . to
-                    creating video streaming applications from scratch.
+                    Yes, I did (code this site) I was fortunate to be given a
+                    seat on such a great team. I worked on both large and small
+                    scale projects, ranging from 'internationalizing' currently
+                    existing applications . . . to creating video streaming
+                    applications from scratch.
                   </p>
                 </div>
                 <span id={!intel ? "intel" : "no-intel"} onClick={moreIntel}>
@@ -158,7 +158,6 @@ const Resume = () => {
                       inadvertently through google sheets while at Techstyle
                       Fashion Group.
                     </p>
-                    <br />
                   </div>
                 ) : null}
                 <h3>Highlights</h3>
@@ -232,11 +231,10 @@ const Resume = () => {
                             usurped a position as the Security Operations
                             Manager for Techstyle Fashion Group.
                           </p>
-                          <br/>
                         </div>
                         <div>
-                            A lot of growth occurred while I was there:
-                            <br /> 
+                          A lot of growth occurred while I was there:
+                          <br />
                           <p>
                             The acquisition of Shoe Dazzle and Madden
                             Shoes...horizontal growth--beyond footwear--into
