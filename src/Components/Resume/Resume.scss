@@ -17,10 +17,22 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 #no-intel {
   display: none;
 }
-
-.ExperienceListParent {
-  font-style: oblique;
+#safe {
+  color: blue;
+  font-size: 0.9rem;
+  font-style: bold;
 }
+#no-safe {
+  display: none;
+}
+
+blockquote {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif, "semi-bold 600";
+  font-weight: 900px;
+}
+
+//
 
 a {
   color: $primary-color;
@@ -30,7 +42,9 @@ a {
   }
 }
 #padSpan {
-  padding: 10px;
+  padding: 10px 0px;
+  margin-left: -15px;
+  font-size: 0.5rem;
 }
 .example-header {
   background: #3d4351;
@@ -58,12 +72,18 @@ a {
     }
   }
 }
+#push {
+  padding-left: 40px;
+}
 
 .example-title {
-  text-align: center;
-  margin-bottom: 60px;
-  padding: 3em 0;
-  border-bottom: 1px solid #e4eaec;
+  margin-left: 8%;
+  text-align: left;
+  align-self: left;
+  justify-content: left;
+  margin-bottom: 10px;
+  padding: 1.3em 5px;
+  border-bottom: 0.1px solid #e4eaec;
   p {
     margin: 0 auto;
     font-size: 16px;
@@ -96,7 +116,8 @@ a {
 /*----- TIMELINE ITEM -----*/
 
 .timeline-item {
-  padding-left: 50px;
+  padding-left: 30px;
+  padding-right: 15px;
   position: relative;
   &:last-child {
     padding-bottom: 0;
@@ -104,10 +125,6 @@ a {
 }
 
 #expPic {
-  width: 200px;
-  float: left;
-  position: left;
-  margin-left: 20px;
   size: contain;
   border: groove;
   border-radius: 10px;
@@ -123,7 +140,7 @@ a {
   margin: 0 0 0.2em 0;
   text-transform: uppercase;
   white-space: nowrap;
-  padding-right: 12px;
+  padding-left: 22px;
   color: goldenrod;
   text-shadow: black 1px 1px;
 }

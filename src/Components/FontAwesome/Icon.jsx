@@ -1,17 +1,22 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './Icon.css';
+
+
 
 const Icon = props => {
   return (
-    <div>
+    
+    <div className='icon-parent'>
+    {}
       <FontAwesomeIcon
         icon={props.icon}
         size={props.size}
-        style={{marginRight: "10px", color: 'black', backgroundColor: 'white' }}
-        
+        className='res'
       />
       {` ${props.children}`}
-    </div>
+      </div>
+  
   );
 };
 

@@ -3,18 +3,20 @@ import "./Resume.scss";
 import "../../Assets/Disney2018.jpeg";
 import Icon from "../FontAwesome/Icon";
 import { faUps, faReact, faJs } from "@fortawesome/free-brands-svg-icons";
-
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
   const [change, setChange] = useState(false);
   const [intel, setIntel] = useState(false);
+  const [safe, setSafe] = useState(false);
 
   const classChange = () => {
     setChange(prevState => setChange(!change));
   };
 
-  const bubble = () => {};
+  const moreSafe = () => {
+    setChange(preState => setSafe(!safe));
+  };
 
   const moreIntel = () => {
     setIntel(!intel);
@@ -24,7 +26,7 @@ const Resume = () => {
     <div className="container-fluid">
       <div className="row example-centered">
         <div className="col-sm-12 example-title">
-          <h2>Experience Timeline</h2>
+          <h2 id='push'> Experience Timeline </h2>
         </div>
 
         <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
@@ -53,6 +55,25 @@ const Resume = () => {
                     major sources of known risk to our employees.
                   </q>
                 </blockquote>
+                <tag id={!safe ? "safe" : "no-safe"} onClick={moreSafe}>
+                  ...continue reading
+                </tag>
+                <br />
+                {safe ? (
+                  <blockquote>
+                    {" "}
+                    I wanted to join UPS for a few reasons, first the benefits.
+                    Secondly I have LOVED airplanes since boyhood--Mavrick &
+                    Goose forever changed my life. Third, I truely wanted to
+                    know how that kind of operation is run! Its so different
+                    from the normal operation, as soon as I considered the
+                    position--I was all in. I currently work only part-time,
+                    enough to experience the administrative aspects, gain the
+                    benefits and feel the tarmac adrenaline.
+                  </blockquote>
+                ) : null}
+                <h3>Highlights</h3>
+
                 <ul className="ExperienceListParent">
                   <Icon size={"sm"} icon={faUps} color={"red"}>
                     Facility and equipment audits
@@ -72,7 +93,7 @@ const Resume = () => {
 
             <li className="timeline-item">
               <div className="timeline-info">
-                <span>July 2, 2019</span>
+                <span id="padSpan">&lt;= July 2, 2019</span>
               </div>
               <div className="timeline-marker"></div>
             </li>
@@ -80,7 +101,7 @@ const Resume = () => {
 
             <div className="timeline-item">
               <div className="timeline-info">
-                <span> => October 23, 2019</span>
+                <span id="padSpan"> => October 23, 2019</span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content">
@@ -102,32 +123,35 @@ const Resume = () => {
                 </blockquote>
                 {intel ? (
                   <blockquote>
-                    I love technology and for may years I swore I would take the
-                    time to learn it! I have always had more than a natural
+                    I love technology and for many years I swore I would take
+                    the time to learn it! I have always had more than a natural
                     aptitude towards the Internet of Things, apparently that
                     term is a real thing (smh). I learned SQL inadvertently
-                    ✨through google sheets ✨ while at Techstyle [scroll down].
+                    through google sheets while at Techstyle Fashion Group.
+                    <br />
                   </blockquote>
                 ) : null}
+                <h3>Highlights</h3>
+
                 <ul className="ExperienceListParent">
                   <Icon size={"sm"} icon={faReact}>
                     Developed UIs via React-Native for iOS and Android
                   </Icon>
                   <Icon size={"sm"} icon={faReact}>
-                    Responsibilty 2{" "}
+                    Learn, Learn, Learn
                   </Icon>
                   <Icon size={"sm"} icon={faReact}>
-                    Responsibilty 3{" "}
+                    Fulfill sprints and assigned tickets
                   </Icon>
                   <Icon size={"sm"} icon={faReact}>
-                    Responsibilty 3{" "}
+                    make amazing Apps
                   </Icon>
                 </ul>
               </div>
             </div>
             <li className="timeline-item">
               <div className="timeline-info">
-                <span>March 1, 2019 </span>
+                <span id="padSpan">&lt;= March 1, 2019 </span>
               </div>
               <div className="timeline-marker"></div>
             </li>
@@ -136,7 +160,7 @@ const Resume = () => {
 
             <li className="timeline-item">
               <div className="timeline-info">
-                <span>=> October 02, 2018</span>
+                <span id="padSpan">=> October 02, 2018</span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content">
@@ -244,7 +268,7 @@ const Resume = () => {
 
             <li className="timeline-item">
               <div className="timeline-info">
-                <span>Feb 28, 2011</span>
+                <span id="padSpan">&lt;= Feb 28, 2011</span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content"></div>
