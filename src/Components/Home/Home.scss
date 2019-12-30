@@ -1,7 +1,7 @@
 :root {
   --main-color: goldenrod;
   --main-secondary: white;
-  --home-background: url("../../Assets/businessPlan.jpg");
+  --home-background: url("../../Assets/grey1.jpg");
 }
 
 /* At the top level of your code */
@@ -17,7 +17,7 @@
   width: 100%;
   // margin-top: -22px;
 
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.99)),
     var(--home-background) center center;
   background-size: cover;
   // background: linear-gradient(
@@ -59,9 +59,10 @@
 .bobblehead {
   height: 220px;
   padding: 4em;
-  margin-top: 4.4em;
+  margin-top: 3.0em;
   border-color: black;
   border-radius: 50%;
+  opacity: 0.95;
 }
 
 .subTitle2 {

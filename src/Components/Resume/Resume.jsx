@@ -32,8 +32,8 @@ const Resume = () => {
           <h2 id="push"> Experience Timeline </h2>
           <q style={{ color: "black", textShadow: "none" }}>
             A man with purpose never settles for a job just because it is there
-            . . . feel free to read about why I chose each job I have had.
-          </q>
+            . . . do what you love
+          </q> --mw--
         </div>
         <hr id="sep" />
         <br />
