@@ -30,6 +30,10 @@ const Resume = () => {
       <div className="row example-centered">
         <div className="col-sm-12 example-title">
           <h2 id="push"> Experience Timeline </h2>
+          <q style={{ color: "black", textShadow: "none" }}>
+            Milestones, Lessons and the Reasons I chose to work where I have
+            worked
+          </q>
         </div>
         <hr id="sep" />
         <br />
@@ -51,13 +55,18 @@ const Resume = () => {
 
                 <div id="why">
                   <p>
-                    Training is the cornerstone of safety at UPS, and management
-                    training is the logical precursor to an informed and safe
-                    workforce. UPS invests $175 million per year on safety
-                    training. UPS employees receive nearly 3.8 million hours of
-                    safety training annually, including Safe Work Methods. UPS
-                    Safe Work Methods have been developed to help address the
-                    major sources of known risk to our employees.
+                    I wanted to join UPS for a few reasons, first the benefits
+                    (You will find that I am always honest). Secondly I have
+                    LOVED airplanes since boyhood--Top Gun in the 90's forever
+                    ignited my amazement of flying steel. Lastly, I truly wanted
+                    to know: <b>how</b> is an operation of that kind run<b>!</b>{" "}
+                    I had a friend of mine reach out to me about the safety team
+                    there wanting to onboard some experienced individuals with
+                    safety-aligned work experience. It's so different from the
+                    <i>'normal'</i> operation, as soon as I considered the
+                    position--I was all in. I currently work only part-time,
+                    enough to experience the administrative aspects, gain the
+                    amazing benefits and fee; the tarmac adrenaline.
                   </p>
                 </div>
 
@@ -69,18 +78,14 @@ const Resume = () => {
                 {safe ? (
                   <div id="why">
                     <p>
-                      I wanted to join UPS for a few reasons, first the benefits
-                      (You will find that I am always honest). Secondly I have
-                      LOVED airplanes since boyhood--Top Gun in the 90's forever
-                      ignited my amazement of flying steel. Lastly, I truly
-                      wanted to know How that kind of operation is run! I had a
-                      friend of mine reach out to me about the safety team there
-                      wanting to onboard some experienced individuals with
-                      safety-aligned work experience. Its so different from the
-                      normal operation, as soon as I considered the position--I
-                      was all in. I currently work only part-time, enough to
-                      experience the administrative aspects, gain the benefits
-                      and feel the tarmac adrenaline.
+                      Training is the cornerstone of safety at UPS, and
+                      management training is the logical precursor to an
+                      informed and safe workforce. UPS invests $175 million per
+                      year on safety training. UPS employees receive nearly 3.8
+                      million hours of safety training annually, including Safe
+                      Work Methods. UPS Safe Work Methods have been developed to
+                      help address the major sources of known risk to our
+                      employees. I am glad to be part of this process.
                     </p>
                   </div>
                 ) : null}
@@ -128,14 +133,16 @@ const Resume = () => {
 
                 <div id="why">
                   <p>
-                    Since this is here, it does kind of beg the question
-                    <b style={{ color: "goldenrod" }}>?</b> Yes, I did fully dev
-                    this site (using JS, JSX, React, React-Router Flux, etc, . .
-                    .) I was fortunate to be given a seat among such a great
-                    team. I worked on both large and small scale projects
-                    ranging from internationalizing currently existing
-                    applications to creating video streaming applications from
-                    scratch.
+                    Since this job is here, it does kind of beg the question
+                    <i style={{ color: "goldenrod" }}>
+                      {" "}
+                      <b>?</b>
+                    </i>{" "}
+                    Yes, I did (code this site) I was
+                    fortunate to be given a seat on such a great team. I
+                    worked on both large and small scale projects, ranging from
+                    'internationalizing' currently existing applications . . . to
+                    creating video streaming applications from scratch.
                   </p>
                 </div>
                 <span id={!intel ? "intel" : "no-intel"} onClick={moreIntel}>
@@ -204,7 +211,7 @@ const Resume = () => {
                       ground, managing shrinkage and loss is crucial to
                       maintaining those profits. My focus was on the losses
                       generated from employee turn-over, injury, theft and
-                      damage to create a positive company impact.
+                      damage to create a positive company impact."
                     </p>
                   </div>
                 </>
@@ -225,11 +232,13 @@ const Resume = () => {
                             usurped a position as the Security Operations
                             Manager for Techstyle Fashion Group.
                           </p>
+                          <br/>
                         </div>
                         <div>
-                          <p>
                             A lot of growth occurred while I was there:
-                            <br /> the acquisition of Shoe Dazzle and Madden
+                            <br /> 
+                          <p>
+                            The acquisition of Shoe Dazzle and Madden
                             Shoes...horizontal growth--beyond footwear--into
                             other areas of fashion... Kate Hudson launched her
                             athletic apparel brand: Fabletics . . . then the
@@ -284,18 +293,16 @@ const Resume = () => {
                           <br />
                         </div>
                         <div>
-                          <p>
-                            I injected modernity into the security program by
-                            <i>
-                              <u>
-                                Fully developing Web Technologies that leveraged
-                                complete workflows
-                              </u>
-                            </i>{" "}
-                            & streamlined operations. Which:
-                          </p>
-                          <br />
+                          I injected modernity into the security program by
+                          <i>
+                            <u>
+                              Fully developing Web Technologies that leveraged
+                              complete workflows
+                            </u>
+                          </i>{" "}
+                          & streamlined operations. Which:
                         </div>
+                        <br />
                         <ul>
                           <Icon icon={faCaretSquareRight} size={"sm"}>
                             watered-down operational complexities (Lessened
