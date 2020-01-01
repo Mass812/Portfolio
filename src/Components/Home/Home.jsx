@@ -20,15 +20,16 @@ const Home = () => {
     const headline2 = statement.children[1];
     const headline3 = statement.children[2];
 
-    tl.staggerFrom(
+    window.TweenMax.staggerFrom(
       img,
       1,
       {
-        x: 20,
-        y: 30,
-
-        height: 300,
-        ease: Power1.easeIn
+        css: {
+          x: 20,
+          y: 30,
+          height: 300,
+          ease: "Power1.easeIn"
+        }
       },
       1.2
     ).from(
@@ -36,22 +37,25 @@ const Home = () => {
       1,
       {
         opacity: 0,
-        ease: Power1.easeIn
+        ease: "Power1.easeIn"
       },
       0.5
     );
 
-    TweenMax.staggerFrom(
+    window.TweenMax.staggerFrom(
       [headline1, headline2, headline3, statement],
       2.25,
-      { opacity: 0, height: 0, y: 0, x: 74, ease: "slow(0.7, 0.7, false)" },
+      {
+        css: {
+          opacity: 0,
+          height: 0,
+          y: 0,
+          x: 74,
+          ease: "slow(0.7, 0.7, false)"
+        }
+      },
       0.1
-    ).to(name, 1, { x: -100, ease: Power3.easeOut, opacity: 0 });
-
-    TweenMax.staggerTo([headline1, headline2, headline3, statement], 1, {
-      ease: Power1.easeIn,
-      opacity: 0
-    });
+    ).to(name, 0.75, { css: { x: -50, ease: "Power3.easeOut", opacity: 0 } });
 
     return () => {
       console.log("cleaned");
