@@ -54,8 +54,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 //
 p {
   text-indent: 20px;
-  word-spacing: 0px;
-  line-height: 1.5em;
+  font-family: 'Sans Source Pro';
 }
 a {
   color: $primary-color;
@@ -64,10 +63,10 @@ a {
     text-decoration: none;
   }
 }
-#padSpan {
+#dateOf {
   padding: 10px 0px;
   margin-left: -15px;
-  font-size: 1rem;
+  
 }
 .example-header {
   background: #3d4351;
@@ -178,11 +177,11 @@ a {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 15px;
-  margin-left: 15px;
+  width: 5px;
+  margin-left: 5px;
   &:before {
     background: goldenrod;
-    border: 2.5px groove black;
+    border: 2px solid black;
     border-radius: 100%;
     content: "";
     display: block;

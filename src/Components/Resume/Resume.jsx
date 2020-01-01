@@ -30,10 +30,6 @@ const Resume = () => {
       <div className="row example-centered">
         <div className="col-sm-12 example-title">
           <h2 id="push"> Experience Timeline </h2>
-          <q style={{ color: "black", textShadow: "none" }}>
-            A man with purpose never settles for a job just because it is there
-            . . . do what you love
-          </q> --mw--
         </div>
         <hr id="sep" />
         <br />
@@ -42,7 +38,7 @@ const Resume = () => {
           <ul className="timeline timeline-centered">
             <li className="timeline-item">
               <div className="timeline-info">
-                <span id="padSpan"> => Present</span>
+                <span id="dateOf"> => Present</span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content">
@@ -111,7 +107,7 @@ const Resume = () => {
 
             <li className="timeline-item">
               <div className="timeline-info">
-                <span id="padSpan">&lt;= July 2, 2019</span>
+                <span id="dateOf">&lt;= July 2, 2019</span>
               </div>
               <div className="timeline-marker"></div>
             </li>
@@ -123,7 +119,7 @@ const Resume = () => {
 
             <div className="timeline-item">
               <div className="timeline-info">
-                <span id="padSpan"> => October 23, 2019</span>
+                <span id="dateOf"> => October 23, 2019</span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content">
@@ -180,7 +176,7 @@ const Resume = () => {
             </div>
             <li className="timeline-item">
               <div className="timeline-info">
-                <span id="padSpan">&lt;= March 1, 2019 </span>
+                <span id="dateOf">&lt;= March 1, 2019 </span>
               </div>
               <div className="timeline-marker"></div>
             </li>
@@ -192,7 +188,7 @@ const Resume = () => {
 
             <li className="timeline-item">
               <div className="timeline-info">
-                <span id="padSpan">=> October 02, 2018</span>
+                <span id="dateOf">=> October 02, 2018</span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content">
@@ -233,8 +229,9 @@ const Resume = () => {
                           </p>
                         </div>
                         <div>
-                          A lot of growth occurred while I was there:
-                          <br />
+                          <p> A lot of growth occurred while I was there:</p>
+
+                  
                           <p>
                             The acquisition of Shoe Dazzle and Madden
                             Shoes...horizontal growth--beyond footwear--into
@@ -362,7 +359,7 @@ const Resume = () => {
 
             <li className="timeline-item">
               <div className="timeline-info">
-                <span id="padSpan">&lt;= Feb 28, 2011</span>
+                <span id="dateOf">&lt;= Feb 28, 2011</span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content"></div>

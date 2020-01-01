@@ -1,10 +1,13 @@
 import React from "react";
-
 import "./Projects.scss";
+
 //import "../../Assets/bhm.png";
 
 const Projects = () => {
-  return <div className="parent">hello world</div>;
+ 
+  return(
+    <h1>Hello</h1>
+  );
 };
 
 export default Projects;
