@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import "./Home.scss";
 import FontAwesome from "../FontAwesome/FontAwesome";
-import { Power1, Power3 } from "gsap";
+import { TweenMax, Power1, Power3 } from "gsap";
 import Footer from "../Footer/Footer";
 import { Timeline } from "gsap/gsap-core";
 
@@ -41,14 +41,14 @@ const Home = () => {
       0.5
     );
 
-    tl.staggerFrom(
+    TweenMax.staggerFrom(
       [headline1, headline2, headline3, statement],
       2.25,
       { opacity: 0, height: 0, y: 0, x: 74, ease: "slow(0.7, 0.7, false)" },
       0.1
     ).to(name, 1, { x: -100, ease: Power3.easeOut, opacity: 0 });
 
-    tl.staggerTo([headline1, headline2, headline3, statement], 1, {
+    TweenMax.staggerTo([headline1, headline2, headline3, statement], 1, {
       ease: Power1.easeIn,
       opacity: 0
     });
