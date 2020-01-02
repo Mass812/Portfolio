@@ -1,20 +1,45 @@
-.parent{
-    visibility: none;
-    background-color: rgb(68, 61, 61);
-    color: white;
-    box-sizing: content-box;
-    z-index: 10;
-    margin-top: 50px;
-    flex: 1;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+*{box-sizing: content-box;}
+
+.project-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  color: rgb(56, 53, 50);
+  background-color: rgb(224, 222, 222);
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+
 }
 
-.photo {
-    width: 200px;
+.project-parent {
+  width: 100%;
+  font-family: 'Titillium Web';
+  padding-top: 50px;
+ 
+
 }
 
-.line-content-inner{
-    visibility: visible;
+.project-title-area {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: slategray;
+  
+}
+
+.project-main-title {
+  font-size: 24px;
+  font-family: 'Titillium Web';
+  padding: 10px;
+}
+.project-subtitle {
+  font-size:18px;
+  font-family: 'Titillium Web';
+  padding: 10px;
 }

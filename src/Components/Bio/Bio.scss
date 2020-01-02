@@ -1,5 +1,42 @@
-#swath {
-  color: rgb(0, 0, 0);
-  padding: 40px;
-  font-size: 1.2rem;
+* {
+  box-sizing: content-box;
+}
+
+.bio-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  color: rgb(56, 53, 50);
+  background-color: rgb(224, 222, 222);
+
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+}
+
+.bio-parent {
+  width: 100%;
+}
+
+.bio-title-area {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: slategray;
+}
+
+.bio-main-title {
+  font-size: 24px;
+  font-family: "Titillium Web";
+  padding: 10px;
+}
+.bio-subtitle {
+  font-size: 18px;
+  font-family: "Titillium Web";
+  padding: 10px;
 }
