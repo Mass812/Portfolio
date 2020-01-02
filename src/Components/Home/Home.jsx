@@ -3,7 +3,6 @@ import "./Home.scss";
 import FontAwesome from "../FontAwesome/FontAwesome";
 import { TweenMax, Power1, Power3 } from "gsap";
 import Footer from "../Footer/Footer";
-import { Timeline } from "gsap/gsap-core";
 
 const matt = require("../../Assets/MWlogo1.jpg");
 
@@ -13,16 +12,14 @@ const Home = () => {
   let statement = useRef(null);
 
   useEffect(() => {
-    const tl = new Timeline();
-    const height = window.innerHeight;
-    const width = window.innerWidth;
+
     const headline1 = statement.children[0];
     const headline2 = statement.children[1];
     const headline3 = statement.children[2];
 
     window.TweenMax.staggerFrom(
       img,
-      1,
+      .5,
       {
         css: {
           x: 20,
@@ -31,31 +28,31 @@ const Home = () => {
           ease: "Power1.easeIn"
         }
       },
-      1.2
-    ).from(
+      1
+    ).staggerFrom(
       name,
       1,
       {
         opacity: 0,
         ease: "Power1.easeIn"
       },
-      0.5
+3
     );
 
     window.TweenMax.staggerFrom(
-      [headline1, headline2, headline3, statement],
+      [headline1, headline2, headline3],
       2.25,
       {
         css: {
           opacity: 0,
           height: 0,
           y: 0,
-          x: 74,
-          ease: "slow(0.7, 0.7, false)"
+          x: 7,
+          ease: "slow(0.7, 0.7, true)"
         }
-      },
-      0.1
-    ).to(name, 0.75, { css: { x: -50, ease: "Power3.easeOut", opacity: 0 } });
+      }
+
+    ).to(name, 0.75, { css: { x: -30, ease: "Power3.easeOut", opacity: 0 } });
 
     return () => {
       console.log("cleaned");
@@ -81,7 +78,7 @@ const Home = () => {
           </div>
           <div className="menu"></div>
           <span className="bottom" ref={cr => (statement = cr)}>
-            <div className="subTitle2"> Manager</div>
+            <div className="subTitle2"> Manager,</div>
 
             <div className="subTitle2"> Dad &</div>
 

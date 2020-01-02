@@ -5,16 +5,16 @@ nav ul {
 }
 
 nav ul li {
-  --c: goldenrod;
+  --c: white;
   color: var(--c);
   font-size: 12px;
-  border: 0.1em solid var(--c);
+  border: 1px solid var(--c);
   border-radius: 0.5em;
   width: 100px;
   height: 1.4em;
   text-transform: uppercase;
-  font-weight: bold;
-  font-family: sans-serif;
+  font-weight: normal;
+  font-family: "Cinzel";
   letter-spacing: 0.1em;
   text-align: center;
   line-height: 1.3em;
@@ -24,6 +24,10 @@ nav ul li {
   transition: 0.1s;
   margin: 2em;
   padding-top: 0.3em;
+  &:hover {
+    width: 105px;
+    height: 1.4em;
+  }
 }
 
 nav ul li span {

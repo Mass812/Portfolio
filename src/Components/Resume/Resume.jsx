@@ -5,7 +5,9 @@ import Icon from "../FontAwesome/Icon";
 import { faUps, faReact } from "@fortawesome/free-brands-svg-icons";
 import {
   faAngleRight,
-  faCaretSquareRight
+  faCaretSquareRight,
+  faArrowCircleLeft,
+  faArrowCircleght
 } from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
@@ -25,6 +27,14 @@ const Resume = () => {
     setIntel(!intel);
   };
 
+  const question = () => {
+    return (
+      <div className="question">
+        I programmed this site with React, React-Router, JavaScript & JSX
+      </div>
+    );
+  };
+
   return (
     <div className="container-fluid">
       <div className="row example-centered">
@@ -38,7 +48,7 @@ const Resume = () => {
           <ul className="timeline timeline-centered">
             <li className="timeline-item">
               <div className="timeline-info">
-                <span id="dateOf"> => Present</span>
+                <span className="dateOf"> => Present</span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content">
@@ -107,7 +117,7 @@ const Resume = () => {
 
             <li className="timeline-item">
               <div className="timeline-info">
-                <span id="dateOf">&lt;= July 2, 2019</span>
+                <span className="dateOf">&lt;= July 2, 2019</span>
               </div>
               <div className="timeline-marker"></div>
             </li>
@@ -119,7 +129,7 @@ const Resume = () => {
 
             <div className="timeline-item">
               <div className="timeline-info">
-                <span id="dateOf"> => October 23, 2019</span>
+                <span className="dateOf"> => October 23, 2019</span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content">
@@ -130,15 +140,18 @@ const Resume = () => {
                 <div id="why">
                   <p>
                     Since this job is here, it does kind of beg the question
-                    <i style={{ color: "goldenrod" }}>
+                    <i
+                      style={{ color: "goldenrod" }}
+                      id="question"
+                      onMouseEnter={question}>
                       {" "}
                       <b>?</b>
                     </i>{" "}
-                    Yes, I did (code this site) I was fortunate to be given a
-                    seat on such a great team. I worked on both large and small
-                    scale projects, ranging from 'internationalizing' currently
-                    existing applications . . . to creating video streaming
-                    applications from scratch.
+                    The answer is Yes. (hover the question mark) I was fortunate
+                    to be given a seat on such a great team. I worked on both
+                    large and small scale projects, ranging from
+                    'internationalizing' currently existing applications . . .
+                    to creating video streaming applications from scratch.
                   </p>
                 </div>
                 <span id={!intel ? "intel" : "no-intel"} onClick={moreIntel}>
@@ -169,14 +182,14 @@ const Resume = () => {
                     Fulfill sprints and assigned tickets
                   </Icon>
                   <Icon size={"sm"} icon={faReact}>
-                    make amazing Apps
+                    Make amazing Apps
                   </Icon>
                 </ul>
               </div>
             </div>
             <li className="timeline-item">
               <div className="timeline-info">
-                <span id="dateOf">&lt;= March 1, 2019 </span>
+                <span className="dateOf">&lt;= March 1, 2019 </span>
               </div>
               <div className="timeline-marker"></div>
             </li>
@@ -188,7 +201,7 @@ const Resume = () => {
 
             <li className="timeline-item">
               <div className="timeline-info">
-                <span id="dateOf">=> October 02, 2018</span>
+                <span className="dateOf">=> October 02, 2018</span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content">
@@ -231,7 +244,6 @@ const Resume = () => {
                         <div>
                           <p> A lot of growth occurred while I was there:</p>
 
-                  
                           <p>
                             The acquisition of Shoe Dazzle and Madden
                             Shoes...horizontal growth--beyond footwear--into
@@ -358,9 +370,7 @@ const Resume = () => {
             </li>
 
             <li className="timeline-item">
-              <div className="timeline-info">
-                <span id="dateOf">&lt;= Feb 28, 2011</span>
-              </div>
+              <div className="timeline-info"></div>
               <div className="timeline-marker"></div>
               <div className="timeline-content"></div>
             </li>

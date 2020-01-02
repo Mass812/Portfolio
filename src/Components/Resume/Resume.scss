@@ -1,9 +1,29 @@
 $primary-color: goldenrod;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
+
+.question {
+position: inherit;
+width: 50px;
+height: 20px;
+font-size: 8px;
+z-index: 10;
+background-color: goldenrod;
+
+
+
+  &::hover {
+    font-size: 1.2rem;
+  }
+}
+
 #tag {
-  color: blue;
+  color: rgb(208, 160, 39);
+  text-decoration: underline;
+
   font-size: 0.9rem;
+  padding: 10px;
+  line-height: 3px;
   font-style: bold;
   flex: 1;
   display: flex;
@@ -13,19 +33,26 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   display: none;
 }
 #intel {
-  color: blue;
+  color: rgb(208, 160, 39);
+  text-decoration: underline;
   font-size: 0.9rem;
+  padding: 10px;
+  line-height: 3px;
+  font-style: bold;
   flex: 1;
   display: flex;
   flex-direction: row-reverse;
-  font-style: bold;
 }
 #no-intel {
   display: none;
 }
 #safe {
-  color: blue;
+  color: rgb(208, 160, 39);
+  text-decoration: underline;
+
   font-size: 0.9rem;
+  padding: 10px;
+  line-height: 3px;
   font-style: bold;
   flex: 1;
   display: flex;
@@ -37,7 +64,6 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
 #why {
   padding-left: 3px;
-  font-family: "Source Sans Pro", sans-serif;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 0;
 }
@@ -54,7 +80,9 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 //
 p {
   text-indent: 20px;
-  font-family: 'Sans Source Pro';
+  font-family: "Rajdhani";
+  color: rgb(59, 56, 53);
+  font-weight: 700;
 }
 a {
   color: $primary-color;
@@ -63,11 +91,16 @@ a {
     text-decoration: none;
   }
 }
-#dateOf {
+.dateOf {
   padding: 10px 0px;
   margin-left: -15px;
+  &::first-letter {
+    font-size: 32px;
+    font-style: bold;
+  }
   
 }
+
 .example-header {
   background: #3d4351;
   color: #fff;
@@ -96,11 +129,11 @@ a {
 }
 #push {
   padding-left: 0px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Rajdhani";
 }
 
 .example-title {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Rajdhani";
   font-size: 18px;
   text-align: center;
   align-self: center;
@@ -164,7 +197,6 @@ a {
   font-weight: 700;
   letter-spacing: 3px;
   margin: 0 0 0.2em 0;
-  text-transform: uppercase;
   white-space: nowrap;
   padding-left: 22px;
   color: goldenrod;
@@ -257,8 +289,8 @@ a {
 }
 
 .ExperienceListParent {
-  font-weight: 850;
-  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 650;
+  font-family: 'Rajdhani';
   font-style: bold;
   padding-left: 20px;
   padding-right: 20px;
