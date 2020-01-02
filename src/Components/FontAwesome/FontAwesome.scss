@@ -1,6 +1,15 @@
+.a {
+  margin: 0px;
+  padding: 0px 20px;
+  box-sizing: content-box;
+  text-decoration: none;
+  border: none;
+  justify-content: space-evenly;
+}
+
 .contactBlockContainer {
   position: absolute;
-  flex: 1;
+  width:170px;
   box-sizing: content-box;
   bottom: 0px;
   z-index: 10;

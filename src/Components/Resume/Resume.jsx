@@ -64,15 +64,15 @@ const Resume = () => {
                     I wanted to join UPS for a few reasons, first the benefits
                     (You will find that I am always honest). Secondly I have
                     LOVED airplanes since boyhood--Top Gun in the 90's forever
-                    ignited my amazement of flying steel. Lastly, I truly wanted
+                    ignited my amazement of getting tons of steel to fly through the air. Lastly, I truly wanted
                     to know: <b>how</b> is an operation of that kind run<b>!</b>{" "}
                     I had a friend of mine reach out to me about the safety team
                     there wanting to onboard some experienced individuals with
                     safety-aligned work experience. It's so different from the
                     <i>'normal'</i> operation, as soon as I considered the
                     position--I was all in. I currently work only part-time,
-                    enough to experience the administrative aspects, gain the
-                    amazing benefits and fee; the tarmac adrenaline.
+                    enough to experience the administrative aspects, form and nurture relationships with others, gain the
+                    amazing benefits and feel the tarmac adrenaline.
                   </p>
                 </div>
 
@@ -148,7 +148,7 @@ const Resume = () => {
                       <b>?</b>
                     </i>{" "}
                     The answer is Yes. (hover the question mark) I was fortunate
-                    to be given a seat on such a great team. I worked on both
+                    in being granted a position on such a great team. I worked on both
                     large and small scale projects, ranging from
                     'internationalizing' currently existing applications . . .
                     to creating video streaming applications from scratch.

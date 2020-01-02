@@ -1,5 +1,5 @@
 :root {
-  --main-color:  #BBA15F;
+  --main-color: #bba15f;
   --main-secondary: #363636;
   --home-background: url("../../Assets/grey1.jpg");
 }
@@ -78,7 +78,6 @@
 .menu {
   flex: 1;
   height: 20px;
- 
 }
 
 .bottom {
@@ -106,65 +105,115 @@
 }
 
 //big screen
-@media screen and (min-width: 800px) {
+@media (min-width: 450px) {
+  .section {
+    position: absolute;
+    box-sizing: content-box;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    bottom: 0;
+    width: 100%;
+    // margin-top: -22px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+      var(--home-background) center center;
+    background-size: cover;
+    // background: linear-gradient(
+    //   180deg,
+    //   rgba(129, 125, 125, 0.8032786885245902) 0%,
+    //   rgba(206, 168, 27, 0.8032786885245902) 12%,
+    //   rgba(37, 36, 36, 1) 6%,
+    //   rgba(0, 0, 0, 1) 65%
+    z-index: 3;
+    overflow: hidden;
+
+    // display: grid;
+  }
+
   .container {
-    margin: 1%;
+    margin: 0;
     box-sizing: content-box;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
   }
 
-  .bobblehead {
-    height: 370px;
-    padding: 2em;
-    margin-top: 4em;
-    border-width: 5px;
-  }
-
-  .left {
-    box-sizing: content-box;
+  .top {
     background-color: transparent;
-    justify-self: left;
-    align-items: flex-start;
-    box-sizing: content-box;
-  }
-
-  .right {
-    border-width: 3px;
-    border-color: white;
-    border-style: inset;
-    flex-flow: wrap;
     box-sizing: content-box;
     display: inline-block;
+    flex-direction: column;
+  }
+
+  .frame {
+    margin: 50px 30px;
+    width: 25%;
+  }
+  .icon {
+    float: left;
+    height: 120px;
+    size: contain;
+    margin-top: 3em;
+    border-color: rgb(255, 255, 255);
+    border-style: inset;
+    border-radius: 20%;
+    image-rendering: optimizeQuality;
+  }
+
+  .name {
+    flex: 1;
+    color: var(--main-color);
+    background: transparent;
+    text-shadow: #000000 1px 1px 0;
+    font-weight: 600;
+    line-height: 1;
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+    margin-top: 2.5em;
+    margin-left: 130px;
+  }
+
+  .menu {
+    flex: 1;
+    height: 20px;
+  }
+
+  .bottom {
     box-sizing: content-box;
-    align-items: left;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-top: 30px;
   }
 
   .subTitle2 {
-    padding: 15px 0;
-    color:  #BBA15F;
-    font-family: "Source Code Pro", Courier, monospace;
-    background-color:  #BBA15F;
+    visibility: visible;
+    align-self: center;
+    padding: 12px 0px;
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--main-secondary);
+    font-family: "Cinzel";
+
+    background-color: var(--main-secondary);
     background: transparent;
-    text-shadow: #b5b5b5 1px 1px 0;
-    font-weight: 700;
-    line-height: 0;
-    font-size: 172px;
-    font-family: "Cinzel", serif;
+    text-shadow: #e4e1e1 1px 1.4px 1px;
   }
 
-  .subTitle3 {
-    padding-left: 2px;
-    font-size: 60px;
-    font-family: "Source Code Pro", Courier, monospace;
-    font-family: "Cinzel", serif;
-    color: var(--main-secondary);
-    font-family: "Source Code Pro", Courier, monospace;
-    background-color: white;
-    background: transparent;
-    text-shadow: #000000 1px 1px 0;
+  .contactBlockContainer {
+    position: absolute;
+   
+    
+
+ 
+  }
+
+  .contactBlockIconBlock {
+    height: 70px;
+    width: 500px;
   }
 }
