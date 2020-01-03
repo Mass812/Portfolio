@@ -4,7 +4,7 @@ import FontAwesome from "../FontAwesome/FontAwesome";
 import { TweenMax, Power1, Power3 } from "gsap";
 import Footer from "../Footer/Footer";
 
-const matt = require("../../Assets/MWlogo1.jpg");
+const matt = require("../../Assets/MWlogo2.jpg");
 
 const Home = () => {
   let img = useRef(null);
@@ -12,14 +12,13 @@ const Home = () => {
   let statement = useRef(null);
 
   useEffect(() => {
-
     const headline1 = statement.children[0];
     const headline2 = statement.children[1];
     const headline3 = statement.children[2];
 
     window.TweenMax.staggerFrom(
       img,
-      .5,
+      0.5,
       {
         css: {
           x: 20,
@@ -36,23 +35,18 @@ const Home = () => {
         opacity: 0,
         ease: "Power1.easeIn"
       },
-3
+      3
     );
 
-    window.TweenMax.staggerFrom(
-      [headline1, headline2, headline3],
-      2.25,
-      {
-        css: {
-          opacity: 0,
-          height: 0,
-          y: 0,
-          x: 7,
-          ease: "slow(0.7, 0.7, true)"
-        }
+    window.TweenMax.staggerFrom([headline1, headline2, headline3], 2.25, {
+      css: {
+        opacity: 0,
+        height: 0,
+        y: 0,
+        x: 7,
+        ease: "slow(0.7, 0.7, true)"
       }
-
-    ).to(name, 0.75, { css: { x: -30, ease: "Power3.easeOut", opacity: 0 } });
+    }).to(name, 0.75, { css: { x: -30, ease: "Power3.easeOut", opacity: 0 } });
 
     return () => {
       console.log("cleaned");

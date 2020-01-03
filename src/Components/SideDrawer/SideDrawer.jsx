@@ -1,8 +1,10 @@
 import React, {useRef, useEffect} from "react";
 import "./SideDrawer.scss";
-import { Power1} from 'gsap';
 import { Link } from "react-router-dom";
 import Button from "../../Assets/Button";
+
+
+
 
 const SideDrawer = props => {
 let parent = useRef(null);
@@ -11,21 +13,21 @@ useEffect(() => {
   
 
 
-window.TweenMax.staggerFrom(parent, .75, { ease: "slow(0.7, 0.7, false)", y: -25})
+window.TweenMax.staggerFrom(parent, .75, { ease: "slow(0.7, 0.7, false)", y: -45})
 
 
   return () => {
-    console.log('sidedrawer')
   };
 }, [])
 
 
 
-
+//prev props.close menu
 
   return (
+    
     <nav className="drawer-parent" ref={cr=>parent=cr}>
-      <ul className="drawer-ul" onClick={props.closeMenu}>
+      <ul className="drawer-ul" onClick={props.onClick}>
         <Link to="/" exact="true" style={{ textDecoration: "none" }}>
           <Button>Home</Button>
         </Link>
@@ -42,6 +44,7 @@ window.TweenMax.staggerFrom(parent, .75, { ease: "slow(0.7, 0.7, false)", y: -25
           <Button>Projects</Button>
         </Link>
       </ul>
+      
     </nav>
   );
 };

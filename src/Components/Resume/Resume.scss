@@ -1,16 +1,13 @@
 $primary-color: goldenrod;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
-
 .question {
-position: inherit;
-width: 50px;
-height: 20px;
-font-size: 8px;
-z-index: 10;
-background-color: goldenrod;
-
-
+  position: inherit;
+  width: 50px;
+  height: 20px;
+  font-size: 8px;
+  z-index: 10;
+  background-color: goldenrod;
 
   &::hover {
     font-size: 1.2rem;
@@ -62,13 +59,13 @@ background-color: goldenrod;
   display: none;
 }
 
-#why {
+.why {
   padding-left: 3px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 0;
 }
 
-#sep {
+.sep {
   border-width: 7px;
 }
 
@@ -98,7 +95,6 @@ a {
     font-size: 32px;
     font-style: bold;
   }
-  
 }
 
 .example-header {
@@ -290,7 +286,7 @@ a {
 
 .ExperienceListParent {
   font-weight: 650;
-  font-family: 'Rajdhani';
+  font-family: "Rajdhani";
   font-style: bold;
   padding-left: 20px;
   padding-right: 20px;

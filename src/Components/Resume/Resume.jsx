@@ -5,9 +5,7 @@ import Icon from "../FontAwesome/Icon";
 import { faUps, faReact } from "@fortawesome/free-brands-svg-icons";
 import {
   faAngleRight,
-  faCaretSquareRight,
-  faArrowCircleLeft,
-  faArrowCircleght
+  faCaretSquareRight
 } from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
@@ -41,7 +39,7 @@ const Resume = () => {
         <div className="col-sm-12 example-title">
           <h2 id="push"> Experience Timeline </h2>
         </div>
-        <hr id="sep" />
+        <hr className="sep" />
         <br />
         <br />
         <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
@@ -59,20 +57,22 @@ const Resume = () => {
                   Comprehensive Health & Safety Process Committee (CHSP)
                 </h3>
 
-                <div id="why">
+                <div className="why">
                   <p>
                     I wanted to join UPS for a few reasons, first the benefits
                     (You will find that I am always honest). Secondly I have
                     LOVED airplanes since boyhood--Top Gun in the 90's forever
-                    ignited my amazement of getting tons of steel to fly through the air. Lastly, I truly wanted
-                    to know: <b>how</b> is an operation of that kind run<b>!</b>{" "}
-                    I had a friend of mine reach out to me about the safety team
-                    there wanting to onboard some experienced individuals with
-                    safety-aligned work experience. It's so different from the
+                    ignited my amazement of getting tons of steel to fly through
+                    the air. Lastly, I truly wanted to know: <b>how</b> is an
+                    operation of that kind run<b>!</b> I had a friend of mine
+                    reach out to me about the safety team there wanting to
+                    onboard some experienced individuals with safety-aligned
+                    work experience. It's so different from the
                     <i>'normal'</i> operation, as soon as I considered the
                     position--I was all in. I currently work only part-time,
-                    enough to experience the administrative aspects, form and nurture relationships with others, gain the
-                    amazing benefits and feel the tarmac adrenaline.
+                    enough to experience the administrative aspects, form and
+                    nurture relationships with others, gain the amazing benefits
+                    and feel the tarmac adrenaline.
                   </p>
                 </div>
 
@@ -82,7 +82,7 @@ const Resume = () => {
                 <br />
 
                 {safe ? (
-                  <div id="why">
+                  <div className="why">
                     <p>
                       Training is the cornerstone of safety at UPS, and
                       management training is the logical precursor to an
@@ -123,7 +123,7 @@ const Resume = () => {
             </li>
             <br />
             <br />
-            <hr id="sep" />
+            <hr className="sep" />
             <br />
             <br />
 
@@ -137,7 +137,7 @@ const Resume = () => {
                   Parsed.io <br></br>Mobile App Developer
                 </h3>
 
-                <div id="why">
+                <div className="why">
                   <p>
                     Since this job is here, it does kind of beg the question
                     <i
@@ -148,8 +148,8 @@ const Resume = () => {
                       <b>?</b>
                     </i>{" "}
                     The answer is Yes. (hover the question mark) I was fortunate
-                    in being granted a position on such a great team. I worked on both
-                    large and small scale projects, ranging from
+                    in being granted a position on such a great team. I worked
+                    on both large and small scale projects, ranging from
                     'internationalizing' currently existing applications . . .
                     to creating video streaming applications from scratch.
                   </p>
@@ -158,7 +158,7 @@ const Resume = () => {
                   ...continue reading
                 </span>
                 {intel ? (
-                  <div id="why">
+                  <div className="why">
                     <p>
                       I love technology and for many years I swore I would take
                       the time to learn it! I have always had more than a
@@ -195,7 +195,7 @@ const Resume = () => {
             </li>
             <br />
             <br />
-            <hr id="sep" />
+            <hr className="sep" />
             <br />
             <br />
 
@@ -211,7 +211,7 @@ const Resume = () => {
                   <i>Director of Security Operations</i>
                 </h3>
                 <>
-                  <div id="why">
+                  <div className="why">
                     <p>
                       "Company’s rightly focus on product quality and customer
                       service. From my management experience those two driving
@@ -231,7 +231,7 @@ const Resume = () => {
                 <div>
                   {change ? (
                     <>
-                      <div id="why">
+                      <div className="why">
                         <div>
                           <p>
                             Nearing the end of college I stepped into a position
