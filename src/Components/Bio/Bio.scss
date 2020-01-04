@@ -40,3 +40,19 @@
   font-family: "Titillium Web";
   padding: 10px;
 }
+
+.icon-splay {
+  justify-content: space-evenly;
+  flex: 1;
+  display: flex;
+  padding: 0px, 10px;
+}
+.icon-splay li {
+  justify-content: space-evenly;
+  padding: 0px, 10px;
+
+  &:hover {
+    color: black;
+    background-color: black;
+  }
+}

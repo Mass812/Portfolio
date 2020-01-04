@@ -1,7 +1,10 @@
-
 /*logo brown #363435
   logo tan #BBA15F
 */
+
+html {
+  scroll-behavior: smooth;
+}
 
 .App {
   text-align: center;
@@ -13,12 +16,7 @@
 }
 
 @media screen and (max-width: 400px) {
-
-  
 }
-
-
-
 
 .App-header {
   background-color: #282c34;
@@ -30,5 +28,3 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-

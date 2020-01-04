@@ -74,7 +74,7 @@ const Home = () => {
           <span className="bottom" ref={cr => (statement = cr)}>
             <div className="subTitle2"> Manager,</div>
 
-            <div className="subTitle2"> Dad &</div>
+            <div className="subTitle2"> Solution Expert &</div>
 
             <div className="subTitle2">JavaScript Enthusiast </div>
           </span>
