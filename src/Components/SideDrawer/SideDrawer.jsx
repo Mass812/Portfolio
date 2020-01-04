@@ -13,7 +13,7 @@ useEffect(() => {
   
 
 
-window.TweenMax.staggerFrom(parent, .75, { ease: "slow(0.7, 0.7, false)", y: -45})
+window.TweenMax.staggerFrom(parent, .35, { ease: "slow(0.7, 0.7, false)", y: -45})
 
 
   return () => {

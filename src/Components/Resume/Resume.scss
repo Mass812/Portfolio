@@ -14,50 +14,57 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   }
 }
 
-#tag {
-  color: rgb(208, 160, 39);
-  text-decoration: underline;
+.tooltip {
+  position: relative;
+  display: inline;
+  white-space: text-wrap;
+  border-bottom: 1px dotted blue;
+  font-family: "Cinzel";
+  font-size: 17px;
+  padding: 0;
+  color: goldenrod;
+}
 
-  font-size: 0.9rem;
-  padding: 10px;
-  line-height: 3px;
-  font-style: bold;
-  flex: 1;
-  display: flex;
-  flex-direction: row-reverse;
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 220px;
+  bottom: 100%;
+  font-size: 8px;
+  font-family: 'Rajdhani';
+  font-weight: 0;
+  left: 50%;
+  font-weight: 0;
+  margin-left: -120px;
+  background-color: black;
+  color: goldenrod;
+  text-align: center;
+  padding: 5px;
+  border-radius: 7px;
+  position: absolute;
+  z-index: 3;
 }
-#tagged {
-  display: none;
-}
-#intel {
-  color: rgb(208, 160, 39);
-  text-decoration: underline;
-  font-size: 0.9rem;
-  padding: 10px;
-  line-height: 3px;
-  font-style: bold;
-  flex: 1;
-  display: flex;
-  flex-direction: row-reverse;
-}
-#no-intel {
-  display: none;
-}
-#safe {
-  color: rgb(208, 160, 39);
-  text-decoration: underline;
 
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+#tag, #intel, #safe {
+  color: rgb(208, 160, 39);
+  font-family: "Telium Web";
+  text-decoration: underline;
   font-size: 0.9rem;
   padding: 10px;
+  padding-right: 10%;
   line-height: 3px;
-  font-style: bold;
+  font-weight: 400;
   flex: 1;
   display: flex;
   flex-direction: row-reverse;
 }
-#no-safe {
+#tagged, #no-intel, #no-safe {
   display: none;
 }
+
 
 .why {
   padding-left: 3px;
@@ -208,8 +215,9 @@ a {
   width: 5px;
   margin-left: 5px;
   &:before {
-    background: goldenrod;
-    border: 2px solid black;
+    background: rgb(226, 180, 62);
+    border: 2.2px solid rgb(0, 0, 0);
+   
     border-radius: 100%;
     content: "";
     display: block;
@@ -223,7 +231,7 @@ a {
   &:after {
     content: "";
     width: 3px;
-    background: rgba(225, 167, 20, 0.224);
+    background: rgba(225, 167, 20, 0.857);
     display: block;
     position: absolute;
     top: 24px;

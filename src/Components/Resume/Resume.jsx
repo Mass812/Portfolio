@@ -139,15 +139,13 @@ const Resume = () => {
 
                 <div className="why">
                   <p>
-                    Since this job is here, it does kind of beg the question
-                    <i
-                      style={{ color: "goldenrod" }}
-                      id="question"
-                      onMouseEnter={question}>
-                      {" "}
-                      <b>?</b>
-                    </i>{" "}
-                    The answer is Yes. (hover the question mark) I was fortunate
+                    Since this job is here, it does kind of beg the question {" "} 
+                    <div className="tooltip"> ? 
+                      <i className="tooltip-text">I utilized React, React-Router & Javascript to create this site</i>
+                       
+                      
+                    </div>
+                    {" "} The answer is Yes. (hover the question mark) I was fortunate
                     in being granted a position on such a great team. I worked
                     on both large and small scale projects, ranging from
                     'internationalizing' currently existing applications . . .
@@ -155,7 +153,7 @@ const Resume = () => {
                   </p>
                 </div>
                 <span id={!intel ? "intel" : "no-intel"} onClick={moreIntel}>
-                  ...continue reading
+                  ..continue reading 
                 </span>
                 {intel ? (
                   <div className="why">
@@ -370,7 +368,10 @@ const Resume = () => {
             </li>
 
             <li className="timeline-item">
-              <div className="timeline-info"></div>
+              <div className="timeline-info">
+              <span className="dateOf">&lt;= February 28, 2012 </span>
+
+              </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content"></div>
             </li>
