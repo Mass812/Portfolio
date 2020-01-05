@@ -17,11 +17,11 @@ const Home = () => {
     const headline2 = statement.children[1];
     const headline3 = statement.children[2];
 
-    window.TweenMax.staggerFrom(frame, 2, { css: { opacity: 0 } })
+    window.TweenMax.staggerFrom(frame, .25, { css: { opacity: 0 } })
 
       .staggerFrom(
         img,
-        0.75,
+        2.75,
         {
           css: {
             x: 20,
@@ -29,17 +29,16 @@ const Home = () => {
             height: 500,
             ease: "Power1.easeIn"
           }
-        },
-        1
-      )
-      .staggerFrom(
+        }
+      );
+      window.gsap.timeline(
         name,
-        1,
+        4,
         {
           opacity: 0,
           ease: "Power1.easeIn"
         },
-        3
+
       );
 
     window.TweenMax.staggerFrom([headline1, headline2, headline3], 2.25, {
