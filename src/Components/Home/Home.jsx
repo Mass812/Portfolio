@@ -18,12 +18,12 @@ const Home = () => {
 
     window.TweenMax.staggerFrom(
       img,
-      0.5,
+      .75,
       {
         css: {
           x: 20,
           y: 30,
-          height: 300,
+          height: 500,
           ease: "Power1.easeIn"
         }
       },

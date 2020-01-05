@@ -77,7 +77,7 @@ function ReviewerPhoto() {
 
   return (
     <div>
-      <div className="header">Testimonies</div><hr/>
+      <div className="header">References</div><hr/>
       {copy}
     </div>
   );

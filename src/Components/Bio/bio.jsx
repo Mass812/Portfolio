@@ -81,11 +81,7 @@ const Bio = () => {
                   className="icon-bar-li-bio"
                   size="lg"
                 />
-                <FontAwesomeIcon
-                  icon={faMicrosoft}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
+              
               </ul>
             </div>
           </div>
@@ -138,13 +134,13 @@ const Bio = () => {
           <hr />
           <div className="bio-subtitle">
             Greatest Weakness & Strength
-            <p>
+            <p className='weakness'>
               <q>
-                Internally, I am not always an easy personality, I thrive in
+                Inwardly, contending with my self, I am not an easy personality. I thrive in
                 progress and stagnate in idleness. I am healthiest when I can
                 operate at the edge of my capabilities, pushing myself to learn,
-                commit, do and achieve more. I give myself over so completely at
-                times to my work that I have to literally <i>mentally nudge</i>{" "}
+                commit, do and achieve more. The downside is that I give myself over to my work so completely at
+                points that I have to literally <i>mentally-nudge</i>{" "}
                 myself to back off the throttle enough to enjoy the fruits of
                 those labors.
               </q>
