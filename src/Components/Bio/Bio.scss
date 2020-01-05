@@ -58,9 +58,11 @@
 }
 
 .icon-splay {
-  justify-content: space-evenly;
-  padding: 0px;
+  justify-content: space-around;
+  margin: 10px -25px;
   flex: 1;
+  height: 70px;
+
   width: 100%;
   display: flex;
   flex-wrap: wrap;
