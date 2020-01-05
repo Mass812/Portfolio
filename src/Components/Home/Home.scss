@@ -93,11 +93,12 @@
 .subTitle2 {
   visibility: visible;
   align-self: center;
-  padding: 12px 0px;
+  padding: 22px 0px;
   font-size: 26px;
   font-weight: bold;
   color: var(--main-secondary);
   font-family: "Cinzel";
+  margin-top: 15px;
 
   background-color: var(--main-secondary);
   background: transparent;
@@ -172,7 +173,7 @@
     font-size: 50px;
     font-family: "Cinzel", serif;
     margin-top: 2.5em;
-    margin-left: 130px;
+    margin-left: 170px;
   }
 
   .menu {

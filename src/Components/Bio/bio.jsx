@@ -81,7 +81,6 @@ const Bio = () => {
                   className="icon-bar-li-bio"
                   size="lg"
                 />
-              
               </ul>
             </div>
           </div>
@@ -129,61 +128,64 @@ const Bio = () => {
             </ul>
           </div>
         </div>
-      
+
         <div>
           <hr />
           <div className="bio-subtitle">
             Greatest Weakness & Strength
-            <p className='weakness'>
+            <p className="weakness">
               <q>
-                Inwardly, contending with my self, I am not an easy personality. I thrive in
+                Inwardly, contending with my self can be difficult. I thrive in
                 progress and stagnate in idleness. I am healthiest when I can
                 operate at the edge of my capabilities, pushing myself to learn,
-                commit, do and achieve more. The downside is that I give myself over to my work so completely at
-                points that I have to literally <i>mentally-nudge</i>{" "}
-                myself to back off the throttle enough to enjoy the fruits of
-                those labors.
+                commit, do and achieve more. The downside is that I give myself
+                over to my work so completely at points that I have to literally{" "}
+                <i>mentally-nudge</i> myself to back off the throttle enough to
+                enjoy the fruits of those labors.
               </q>
             </p>
-            
           </div>
         </div>
-    
-        <div className="bio-subtitle">
-          Certifications
-          <div className="business-characteristic-parent">
-            <ul className="business-characteristic-ul">
-          
-              <div>
-                <img className="bullet" src={bullet} alt="bullet point" />
-                <span className="bullet-pint-description">
-                  {" "}
-                  React-Native, JavaScript, Node.js
-                </span>
-              </div>
+        <div>
+          <hr />
+          <div className="bio-subtitle">
+            Certifications
+            <div className="business-characteristic-parent">
+              <ul className="business-characteristic-ul">
+                <hr />
+                <div>
+                  <img className="bullet" src={bullet} alt="bullet point" />
+                  <span className="bullet-pint-description">
+                    {" "}
+                    React-Native, JavaScript, Node.js
+                  </span>
+                </div>
 
-              <div>
-                <img className="bullet" src={bullet} alt="bullet point" />
-                <span className="bullet-pint-description"> AED, CPR, BBP</span>
-              </div>
-              <div>
-                <img className="bullet" src={bullet} alt="bullet point" />
-                <span className="bullet-pint-description">
-                  {" "}
-                  Yellow-Belt Lean Sigma Six
-                </span>
-              </div>
-              <div>
-                <img className="bullet" src={bullet} alt="bullet point" />
-                <span className="bullet-pint-description">
-                  {" "}
-                  Project Management Certification
-                </span>
-              </div>
-              
-            </ul>
+                <div>
+                  <img className="bullet" src={bullet} alt="bullet point" />
+                  <span className="bullet-pint-description">
+                    {" "}
+                    AED, CPR, BBP
+                  </span>
+                </div>
+                <div>
+                  <img className="bullet" src={bullet} alt="bullet point" />
+                  <span className="bullet-pint-description">
+                    {" "}
+                    Yellow-Belt Lean Sigma Six
+                  </span>
+                </div>
+                <div>
+                  <img className="bullet" src={bullet} alt="bullet point" />
+                  <span className="bullet-pint-description">
+                    {" "}
+                    Project Management Certification
+                  </span>
+                </div>
+                <hr />
+              </ul>
+            </div>
           </div>
-         
         </div>
       </div>
     </div>
