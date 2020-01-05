@@ -10,33 +10,37 @@ const Home = () => {
   let img = useRef(null);
   let name = useRef(null);
   let statement = useRef(null);
+  let frame = useRef(null);
 
   useEffect(() => {
     const headline1 = statement.children[0];
     const headline2 = statement.children[1];
     const headline3 = statement.children[2];
 
-    window.TweenMax.staggerFrom(
-      img,
-      .75,
-      {
-        css: {
-          x: 20,
-          y: 30,
-          height: 500,
+    window.TweenMax.staggerFrom(frame, 2, { css: { opacity: 0 } })
+
+      .staggerFrom(
+        img,
+        0.75,
+        {
+          css: {
+            x: 20,
+            y: 30,
+            height: 500,
+            ease: "Power1.easeIn"
+          }
+        },
+        1
+      )
+      .staggerFrom(
+        name,
+        1,
+        {
+          opacity: 0,
           ease: "Power1.easeIn"
-        }
-      },
-      1
-    ).staggerFrom(
-      name,
-      1,
-      {
-        opacity: 0,
-        ease: "Power1.easeIn"
-      },
-      3
-    );
+        },
+        3
+      );
 
     window.TweenMax.staggerFrom([headline1, headline2, headline3], 2.25, {
       css: {
@@ -58,7 +62,7 @@ const Home = () => {
       <section className="section">
         <div className="container">
           <div className="top">
-            <div className="frame">
+            <div className="frame" ref={cr => (frame = cr)}>
               <img
                 src={matt}
                 alt={""}

@@ -145,7 +145,7 @@ const Bio = () => {
                 those labors.
               </q>
             </p>
-            <hr />
+            
           </div>
         </div>
     
@@ -153,7 +153,7 @@ const Bio = () => {
           Certifications
           <div className="business-characteristic-parent">
             <ul className="business-characteristic-ul">
-            <hr/>
+          
               <div>
                 <img className="bullet" src={bullet} alt="bullet point" />
                 <span className="bullet-pint-description">
@@ -180,7 +180,7 @@ const Bio = () => {
                   Project Management Certification
                 </span>
               </div>
-              <hr/>
+              
             </ul>
           </div>
          
