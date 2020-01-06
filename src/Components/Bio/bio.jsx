@@ -136,7 +136,7 @@ const Bio = () => {
             <p className="weakness">
               <q>
                 Inwardly, contending with my self can be difficult. I thrive in
-                progress and stagnate in idleness. I am healthiest when I can
+                progress and stagnate in idleness. In a word I am healthiest when I can
                 operate at the edge of my capabilities, pushing myself to learn,
                 commit, do and achieve more. The downside is that I give myself
                 over to my work so completely at points that I have to literally{" "}

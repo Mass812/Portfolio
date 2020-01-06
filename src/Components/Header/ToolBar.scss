@@ -8,7 +8,7 @@
   z-index: 100;
 }
 .drawer_parent {
-  flex: 1;
+ // flex: 1;
   flex-direction: row-reverse;
   display: flex;
   position: relative;
@@ -31,7 +31,6 @@
 }
 
 .header_button_list {
-  margin: 0;
   padding: 0;
   display: flex;
   text-decoration: none;

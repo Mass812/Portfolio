@@ -1,91 +1,76 @@
 .bio-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   box-sizing: content-box;
   color: rgb(56, 53, 50);
-  background-color:  white;
-
-  box-sizing: border-box;
-  justify-content: center;
-  text-align: center;
-  justify-content: center;
 }
 
 .bio-parent {
-  position: relative;
-  width: 100%;
+  box-sizing: content-box;
   text-align: center;
-  margin-top: 50px;
-  height: 0%;
+  margin-top: 40px;
+
+  background-color: white;
+  justify-content: center;
+  text-align: center;
 }
 
 .bio-title-area {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(14, 13, 13);
+  background-color: #363636;
 }
 
 .bio-main-title {
   font-size: 28px;
   font-family: "Titillium Web";
-  padding-top: 10px;
-  
+  padding-top: 20px;
 }
 
 .bio-subtitle-main {
   font-size: 28px;
   font-family: "Courgette";
-  color: rgb(184, 182, 176);
-  padding: 5px 4px;
+  color: rgb(251, 252, 249);
+  font-weight: 0;
 }
 
 .bio-subtitle {
   font-size: 26px;
   font-family: "Courgette";
   padding-top: 5px;
-  background-color: white;
-  color: rgb(54, 54, 52);
-  color: goldenrod;
-  text-shadow: black 2px 0.5px;
+  background-color: rgb(255, 255, 255);
+  color: #363636;
+  text-shadow: rgba(218, 165, 32, 0.514) 0.5px 0.5px;
 
   // padding-top: 20px;
 }
 
 .icon-splay {
-  justify-content: space-around;
-  margin: 10px -25px;
-  flex: 1;
-  height: 70px;
-
-  width: 100%;
-  display: flex;
+  height: auto;
+  max-width: 85%;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .icon-bar-li-bio {
-  justify-content: space-evenly;
   pointer-events: none;
-  margin-right: 0;
-  padding-right: 0;
+  padding: 20px;
+  height: auto;
+  justify-content: space-evenly;
   color: goldenrod;
 
   &::after {
     content: "";
   }
 }
-
 .microsoft {
-  height: 25px;
+  height: 34px;
   background-color: goldenrod;
+  margin: 20px;
+  border-radius: 4px;
+ 
 }
 
 .business-characteristic-parent {
-  width: 90%;
+  width: 100%;
   text-align: left;
   justify-content: center;
   text-shadow: none;
@@ -96,7 +81,7 @@
   font-size: 18px;
   justify-content: "left";
 
-  text-align: "left";
+  text-align: "center";
 }
 
 .bullet {
@@ -115,9 +100,13 @@
 .weakness {
   text-shadow: none;
   font-family: "Courgette";
+  font-style: bold;
   font-weight: 100;
-  font-size: 18px;
-  padding: 0px 30px;
+  font-size: 20px;
+  word-spacing: 1;
+  padding: 10px 50px;
+  color: #363636;
+  //text-shadow: rgba(0, 0, 0, 0.514) .2px 0.2px 2px;
 }
 
 @media screen and (max-width: 450px) {
@@ -126,14 +115,14 @@
     flex: 1;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
   }
   .icon-bar-li-bio {
     justify-content: space-evenly;
     pointer-events: none;
     margin-right: 0;
-    padding-right: 5px;
-    color: goldenrod;
+    padding-right: 15px;
+    color: rgba(218, 165, 32, 0.809);
     height: 25px;
 
     &::after {
@@ -142,7 +131,7 @@
   }
   .microsoft {
     height: 23px;
-    background-color: goldenrod;
+    background-color: rgba(218, 165, 32, 0.801);
     justify-content: space-evenly;
     pointer-events: none;
     margin-right: inherit;
