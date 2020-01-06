@@ -55,7 +55,6 @@
   height: auto;
   max-width: 85%;
   flex-wrap: wrap;
-  overflow: hidden;
 }
 .icon-bar-li-bio {
   pointer-events: none;
@@ -68,12 +67,7 @@
     content: "";
   }
 }
-.microsoft {
-  height: 34px;
-  background-color: goldenrod;
-  margin: 20px;
-  border-radius: 4px;
-}
+
 
 .business-characteristic-parent {
   width: 100%;
@@ -118,7 +112,7 @@
   text-shadow: rgb(0, 0, 0) .3px .3px 10px ;
 }
 
-@media screen and (max-width: 450px) {
+@media (max-width: 1450px) {
   .icon-splay {
     justify-content: space-evenly;
     flex: 1;
@@ -142,13 +136,5 @@
       content: "";
     }
   }
-  .microsoft {
-    height: 23px;
-    background-color: rgba(218, 165, 32, 0.801);
-    justify-content: space-evenly;
-    pointer-events: none;
-    margin-right: inherit;
-    padding-right: 0px;
-    margin-right: 25px;
-  }
+ 
 }

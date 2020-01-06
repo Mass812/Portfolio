@@ -64,15 +64,15 @@
 
 .name {
   flex: 1;
-  color: var(--main-color);
+  color: goldenrod;
   background: transparent;
-  text-shadow: #000000 1px 1px 0;
+  text-shadow: #000000 1.5px 1.5px 0;
   font-weight: 600;
   line-height: 1;
   font-size: 30px;
   font-family: "Cinzel", serif;
-  margin-top: 3.9em;
-  margin-left: 130px;
+  margin-top: 4em;
+  margin-left: 140px;
 }
 
 .menu {
@@ -91,18 +91,17 @@
 }
 
 .subTitle2 {
-  visibility: visible;
   align-self: center;
-  padding: 22px 0px;
-  font-size: 26px;
-  font-weight: bold;
+  padding: 0px 0px;
+  font-weight: 9;
   color: var(--main-secondary);
-  font-family: "Cinzel";
+  font-family: "Rajdhani";
   margin-top: 15px;
 
   background-color: var(--main-secondary);
   background: transparent;
-  text-shadow: #e4e1e1 1px 1.4px 1px;
+  text-shadow: #d39f30 0.5px 0.5px 10px;
+  font-size: 30px;
 }
 
 //big screen
@@ -207,10 +206,6 @@
 
   .contactBlockContainer {
     position: relative;
-   
-    
-
- 
   }
 
   .contactBlockIconBlock {

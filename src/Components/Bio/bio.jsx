@@ -49,8 +49,8 @@ const Bio = () => {
 
     const x = '';
 
-    window.gsap.timeline([titleArea, characteristics],)
-    .from(titleArea, 0.1, {position: 'absolute', height: '100%', width: '100%'})
+    window.gsap.timeline([ icon],)
+    .from(icon, 0.1, {display: 'flex'})
     .from([icon,
       js,
       github,
