@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Bio.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -23,100 +23,190 @@ import { faCaretSquareRight } from "@fortawesome/free-regular-svg-icons";
 
 const Bio = () => {
   const bullet = require("../../Assets/iconBullet.png");
+  let 
+    characteristics,
+    titleArea,
+    icon,
+    js,
+    git,
+    react,
+    html5,
+    node,
+    py,
+    sass,
+    st,
+    mdb,
+    github,
+    npm,
+    ms,
+    gdrive,
+    jira,
+    less
+   = useRef();
+
+  useEffect(() => {
+
+
+    const x = '';
+
+    window.gsap.timeline([titleArea, characteristics],)
+    .from(titleArea, 0.1, {position: 'absolute', height: '100%', width: '100%'})
+    .from([icon,
+      js,
+      github,
+      st,
+      git,
+      less,
+      react,
+      node,
+      py,
+      sass,
+      mdb,
+      npm,
+      html5,
+      ms,
+      gdrive,
+      jira,
+    ], {scale: 0.01,
+                    duration: 0.1,
+                    stagger: 0.04,
+                    ease: "power1",
+                    force3d: 'true',
+                    
+      })
+      .fromTo(characteristics, 0.5, {visibility: 'hidden', y:300}, {visibility: 'visible', y: 0})
+    
+
+    return () => {
+      console.log("fired useEffect gsap effects");
+    };
+  }, []);
 
   return (
     <div className="bio-wrapper">
       <div className="bio-parent">
-
-
-
-      
-        <div className="bio-title-area">
+        <div className="bio-title-area" ref={cr=>(titleArea)}>
           <div className="bio-subtitle-main">
             High Acuity
             <div>
-              <ul className="icon-splay">
-                <FontAwesomeIcon
-                  icon={faJsSquare}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faGit}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faReact}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faHtml5}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faJira}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faNode}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faPython}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faSass}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faSourcetree}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faLess}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faMdb}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faGithubSquare}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faNpm}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faMicrosoft}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  icon={faGoogleDrive}
-                  className="icon-bar-li-bio"
-                  size="lg"
-                />
+              <ul className="icon-splay" ref={cr => (icon = cr)}>
+                <div ref={cr => (js = cr)}>
+                  <FontAwesomeIcon
+                    icon={faJsSquare}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+
+                <div ref={cr => (git = cr)}>
+                  <FontAwesomeIcon
+                    icon={faGit}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (react = cr)}>
+                  <FontAwesomeIcon
+                    icon={faReact}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (html5 = cr)}>
+                  <FontAwesomeIcon
+                    icon={faHtml5}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (jira = cr)}>
+                  <FontAwesomeIcon
+                    icon={faJira}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (node = cr)}>
+                  <FontAwesomeIcon
+                    icon={faNode}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (py = cr)}>
+                  <FontAwesomeIcon
+                    icon={faPython}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (sass = cr)}>
+                  <FontAwesomeIcon
+                    icon={faSass}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (st = cr)}>
+                  <FontAwesomeIcon
+                    icon={faSourcetree}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (less = cr)}>
+                  <FontAwesomeIcon
+                    icon={faLess}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (mdb = cr)}>
+                  <FontAwesomeIcon
+                    icon={faMdb}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (github = cr)}>
+                  <FontAwesomeIcon
+                    icon={faGithubSquare}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (npm = cr)}>
+                  <FontAwesomeIcon
+                    icon={faNpm}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (ms = cr)}>
+                  <FontAwesomeIcon
+                    icon={faMicrosoft}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (gdrive = cr)}>
+                  <FontAwesomeIcon
+                    icon={faGoogleDrive}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
               </ul>
             </div>
           </div>
-          <hr />
+        
         </div>
-        <div className="bio-subtitle">
+
+
+        <div ref={cr=>(characteristics=cr)}>
+
+       
+        <div className="bio-subtitle" >
           Business Characteristics
           <div className="business-characteristic-parent">
             <ul className="business-characteristic-ul">
@@ -180,8 +270,8 @@ const Bio = () => {
           </div>
         </div>
         <div>
+          <div className="bio-subtitle" ref={cr=>(characteristics=cr)}>
           <hr />
-          <div className="bio-subtitle">
             Greatest Weakness & Strength
             <p className="weakness">
               <q>
@@ -202,7 +292,7 @@ const Bio = () => {
             Certifications
             <div className="business-characteristic-parent">
               <ul className="business-characteristic-ul">
-                <hr />
+                
                 <div>
                   <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                   <span className="bullet-pint-description">
@@ -236,6 +326,7 @@ const Bio = () => {
               </ul>
             </div>
           </div>
+        </div>
         </div>
         {/*  hello  */}
       </div>

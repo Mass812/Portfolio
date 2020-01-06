@@ -18,6 +18,9 @@
   align-items: center;
   text-align: center;
   background-color: #363636;
+  height: auto;
+  width: auto;
+  position: relative;
 }
 
 .bio-main-title {
@@ -110,7 +113,7 @@
   font-weight: 2;
   font-size: 22px;
   word-spacing: 1;
-  padding: 10px 30px;
+  padding: 10px 10%;
   color: rgba(240, 189, 62, 0.979);
   text-shadow: rgb(0, 0, 0) .3px .3px 10px ;
 }
