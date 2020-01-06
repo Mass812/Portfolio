@@ -23,8 +23,7 @@ import { faCaretSquareRight } from "@fortawesome/free-regular-svg-icons";
 
 const Bio = () => {
   const bullet = require("../../Assets/iconBullet.png");
-  let 
-    characteristics,
+  let characteristics,
     titleArea,
     icon,
     js,
@@ -41,41 +40,47 @@ const Bio = () => {
     ms,
     gdrive,
     jira,
-    less
-   = useRef();
+    less = useRef();
 
   useEffect(() => {
+    const x = "";
 
-
-    const x = '';
-
-    window.gsap.timeline([ icon],)
-    .from(icon, 0.1, {display: 'flex'})
-    .from([icon,
-      js,
-      github,
-      st,
-      git,
-      less,
-      react,
-      node,
-      py,
-      sass,
-      mdb,
-      npm,
-      html5,
-      ms,
-      gdrive,
-      jira,
-    ], {scale: 0.01,
-                    duration: 0.1,
-                    stagger: 0.04,
-                    ease: "power1",
-                    force3d: 'true',
-                    
-      })
-      .fromTo(characteristics, 0.5, {visibility: 'hidden', y:300}, {visibility: 'visible', y: 0})
-    
+    window.gsap
+      .timeline([icon])
+      .from(icon, 0.1, { display: "flex" })
+      .from(
+        [
+          icon,
+          js,
+          github,
+          st,
+          git,
+          less,
+          react,
+          node,
+          py,
+          sass,
+          mdb,
+          npm,
+          html5,
+          ms,
+          gdrive,
+          jira
+        ],
+        {
+          scale: 0.01,
+          duration: 1.5,
+          stagger: 0.14,
+          ease: "power1",
+          force3d: "true"
+        }
+      )
+      .fromTo(
+        characteristics,
+        0.5,
+        { visibility: "hidden", y: 300 },
+        { visibility: "visible", y: 0 }
+      );
 
     return () => {
       console.log("fired useEffect gsap effects");
@@ -85,7 +90,7 @@ const Bio = () => {
   return (
     <div className="bio-wrapper">
       <div className="bio-parent">
-        <div className="bio-title-area" ref={cr=>(titleArea)}>
+        <div className="bio-title-area" ref={cr => titleArea}>
           <div className="bio-subtitle-main">
             High Acuity
             <div>
@@ -199,134 +204,130 @@ const Bio = () => {
               </ul>
             </div>
           </div>
-        
         </div>
 
-
-        <div ref={cr=>(characteristics=cr)}>
-
-       
-        <div className="bio-subtitle" >
-          Business Characteristics
-          <div className="business-characteristic-parent">
-            <ul className="business-characteristic-ul">
-              <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
-                <span className="bullet-pint-description">
-                  {" "}
-                  6 Years Operations Management
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
-                <span className="bullet-pint-description">
-                  {" "}
-                  2 Years Area Management
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
-                <span className="bullet-pint-description">
-                  {" "}
-                  Broad Experience
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
-                <span className="bullet-pint-description">
-                  {" "}
-                  High Business Acumen
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
-                <span className="bullet-pint-description">
-                  {" "}
-                  Amazing Ability to Learn Fast
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
-                <span className="bullet-pint-description">
-                  {" "}
-                  Affable and Well Spoken
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
-                <span className="bullet-pint-description">
-                  {" "}
-                  Embrace & Endorse Change
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
-                <span className="bullet-pint-description">
-                  {" "}
-                  Very Strong Work Ethic
-                </span>
-              </div>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <div className="bio-subtitle" ref={cr=>(characteristics=cr)}>
-          <hr />
-            Greatest Weakness & Strength
-            <p className="weakness">
-              <q>
-                Inwardly, contending with my self can be difficult. I thrive in
-                progress and stagnate in idleness. In a word I am healthiest
-                when I can operate at the edge of my capabilities, pushing
-                myself to learn, commit, do and achieve more. The downside is
-                that I give myself over to my work so completely at points that
-                I have to literally <i>mentally-nudge</i> myself to back off the
-                throttle enough to enjoy the fruits of those labors.
-              </q>
-            </p>
-          </div>
-        </div>
-        <div>
-          <hr />
+        <div ref={cr => (characteristics = cr)}>
           <div className="bio-subtitle">
-            Certifications
+            Business Characteristics
             <div className="business-characteristic-parent">
               <ul className="business-characteristic-ul">
-                
                 <div>
                   <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                   <span className="bullet-pint-description">
                     {" "}
-                    React-Native, JavaScript, Node.js
-                  </span>
-                </div>
-
-                <div>
-                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
-                  <span className="bullet-pint-description">
-                    {" "}
-                    AED, CPR, BBP
+                    6 Years Operations Management
                   </span>
                 </div>
                 <div>
                   <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                   <span className="bullet-pint-description">
                     {" "}
-                    Yellow-Belt Lean Sigma Six
+                    2 Years Area Management
                   </span>
                 </div>
                 <div>
                   <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                   <span className="bullet-pint-description">
                     {" "}
-                    Project Management Certification
+                    Broad Experience
                   </span>
                 </div>
-                <hr />
+                <div>
+                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                  <span className="bullet-pint-description">
+                    {" "}
+                    High Business Acumen
+                  </span>
+                </div>
+                <div>
+                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                  <span className="bullet-pint-description">
+                    {" "}
+                    Amazing Ability to Learn Fast
+                  </span>
+                </div>
+                <div>
+                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                  <span className="bullet-pint-description">
+                    {" "}
+                    Affable and Well Spoken
+                  </span>
+                </div>
+                <div>
+                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                  <span className="bullet-pint-description">
+                    {" "}
+                    Embrace & Endorse Change
+                  </span>
+                </div>
+                <div>
+                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                  <span className="bullet-pint-description">
+                    {" "}
+                    Very Strong Work Ethic
+                  </span>
+                </div>
               </ul>
             </div>
           </div>
-        </div>
+          <div>
+            <div className="bio-subtitle" ref={cr => (characteristics = cr)}>
+              <hr />
+              Greatest Weakness & Strength
+              <p className="weakness">
+                <q>
+                  Inwardly, contending with my self can be difficult. I thrive
+                  in progress and stagnate in idleness. In a word I am
+                  healthiest when I can operate at the edge of my capabilities,
+                  pushing myself to learn, commit, do and achieve more. The
+                  downside is that I give myself over to my work so completely
+                  at points that I have to literally <i>mentally-nudge</i>{" "}
+                  myself to back off the throttle enough to enjoy the fruits of
+                  those labors.
+                </q>
+              </p>
+            </div>
+          </div>
+          <div>
+            <hr />
+            <div className="bio-subtitle">
+              Certifications
+              <div className="business-characteristic-parent">
+                <ul className="business-characteristic-ul">
+                  <div>
+                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                    <span className="bullet-pint-description">
+                      {" "}
+                      React-Native, JavaScript, Node.js
+                    </span>
+                  </div>
+
+                  <div>
+                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                    <span className="bullet-pint-description">
+                      {" "}
+                      AED, CPR, BBP
+                    </span>
+                  </div>
+                  <div>
+                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                    <span className="bullet-pint-description">
+                      {" "}
+                      Yellow-Belt Lean Sigma Six
+                    </span>
+                  </div>
+                  <div>
+                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                    <span className="bullet-pint-description">
+                      {" "}
+                      Project Management Certification
+                    </span>
+                  </div>
+                  <hr />
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
         {/*  hello  */}
       </div>
