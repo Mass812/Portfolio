@@ -12,25 +12,30 @@ import {
   faPython,
   faSass,
   faSourcetree,
-  faMicrosoft
+  faMicrosoft,
+  faMdb,
+  faNpm,
+  faGithubSquare,
+  faGoogleDrive
 } from "@fortawesome/free-brands-svg-icons";
-//import { faCircle } from "@fortawesome/free-regular-svg-icons";
+
+import { faCaretSquareRight } from "@fortawesome/free-regular-svg-icons";
 
 const Bio = () => {
-  const word = require("../../Assets/microsoftWord.png");
-  const excel = require("../../Assets/excel.png");
   const bullet = require("../../Assets/iconBullet.png");
 
   return (
     <div className="bio-wrapper">
       <div className="bio-parent">
+
+
+
+      
         <div className="bio-title-area">
           <div className="bio-subtitle-main">
             High Acuity
             <div>
               <ul className="icon-splay">
-                <img className="microsoft" src={word} alt="Microsoft Word" />
-                <img className="microsoft" src={excel} alt="Microsoft Excel" />
                 <FontAwesomeIcon
                   icon={faJsSquare}
                   className="icon-bar-li-bio"
@@ -81,45 +86,91 @@ const Bio = () => {
                   className="icon-bar-li-bio"
                   size="lg"
                 />
+                <FontAwesomeIcon
+                  icon={faMdb}
+                  className="icon-bar-li-bio"
+                  size="lg"
+                />
+                <FontAwesomeIcon
+                  icon={faGithubSquare}
+                  className="icon-bar-li-bio"
+                  size="lg"
+                />
+                <FontAwesomeIcon
+                  icon={faNpm}
+                  className="icon-bar-li-bio"
+                  size="lg"
+                />
+                <FontAwesomeIcon
+                  icon={faMicrosoft}
+                  className="icon-bar-li-bio"
+                  size="lg"
+                />
+                <FontAwesomeIcon
+                  icon={faGoogleDrive}
+                  className="icon-bar-li-bio"
+                  size="lg"
+                />
               </ul>
             </div>
           </div>
+          <hr />
         </div>
-
         <div className="bio-subtitle">
           Business Characteristics
           <div className="business-characteristic-parent">
             <ul className="business-characteristic-ul">
               <div>
-                <img className="bullet" src={bullet} alt="bullet point" />
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                <span className="bullet-pint-description">
+                  {" "}
+                  6 Years Operations Management
+                </span>
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                <span className="bullet-pint-description">
+                  {" "}
+                  2 Years Area Management
+                </span>
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                <span className="bullet-pint-description">
+                  {" "}
+                  Broad Experience
+                </span>
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                 <span className="bullet-pint-description">
                   {" "}
                   High Business Acumen
                 </span>
               </div>
               <div>
-                <img className="bullet" src={bullet} alt="bullet point" />
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                 <span className="bullet-pint-description">
                   {" "}
                   Amazing Ability to Learn Fast
                 </span>
               </div>
               <div>
-                <img className="bullet" src={bullet} alt="bullet point" />
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                 <span className="bullet-pint-description">
                   {" "}
                   Affable and Well Spoken
                 </span>
               </div>
               <div>
-                <img className="bullet" src={bullet} alt="bullet point" />
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                 <span className="bullet-pint-description">
                   {" "}
                   Embrace & Endorse Change
                 </span>
               </div>
               <div>
-                <img className="bullet" src={bullet} alt="bullet point" />
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                 <span className="bullet-pint-description">
                   {" "}
                   Very Strong Work Ethic
@@ -128,7 +179,6 @@ const Bio = () => {
             </ul>
           </div>
         </div>
-
         <div>
           <hr />
           <div className="bio-subtitle">
@@ -136,12 +186,12 @@ const Bio = () => {
             <p className="weakness">
               <q>
                 Inwardly, contending with my self can be difficult. I thrive in
-                progress and stagnate in idleness. In a word I am healthiest when I can
-                operate at the edge of my capabilities, pushing myself to learn,
-                commit, do and achieve more. The downside is that I give myself
-                over to my work so completely at points that I have to literally{" "}
-                <i>mentally-nudge</i> myself to back off the throttle enough to
-                enjoy the fruits of those labors.
+                progress and stagnate in idleness. In a word I am healthiest
+                when I can operate at the edge of my capabilities, pushing
+                myself to learn, commit, do and achieve more. The downside is
+                that I give myself over to my work so completely at points that
+                I have to literally <i>mentally-nudge</i> myself to back off the
+                throttle enough to enjoy the fruits of those labors.
               </q>
             </p>
           </div>
@@ -154,7 +204,7 @@ const Bio = () => {
               <ul className="business-characteristic-ul">
                 <hr />
                 <div>
-                  <img className="bullet" src={bullet} alt="bullet point" />
+                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                   <span className="bullet-pint-description">
                     {" "}
                     React-Native, JavaScript, Node.js
@@ -162,21 +212,21 @@ const Bio = () => {
                 </div>
 
                 <div>
-                  <img className="bullet" src={bullet} alt="bullet point" />
+                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                   <span className="bullet-pint-description">
                     {" "}
                     AED, CPR, BBP
                   </span>
                 </div>
                 <div>
-                  <img className="bullet" src={bullet} alt="bullet point" />
+                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                   <span className="bullet-pint-description">
                     {" "}
                     Yellow-Belt Lean Sigma Six
                   </span>
                 </div>
                 <div>
-                  <img className="bullet" src={bullet} alt="bullet point" />
+                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                   <span className="bullet-pint-description">
                     {" "}
                     Project Management Certification
@@ -187,6 +237,7 @@ const Bio = () => {
             </div>
           </div>
         </div>
+        {/*  hello  */}
       </div>
     </div>
   );
