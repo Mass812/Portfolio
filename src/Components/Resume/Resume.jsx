@@ -22,24 +22,24 @@ const Resume = () => {
   useEffect(() => {
     window.gsap
       .timeline({ duration: 0.5 })
-      .fromTo(title, 1, { scale: 1.1 }, { scale: 1, ease: "Power1.easeOut" })
+      .fromTo(title, .25, { scale: 1.1 }, { scale: 1, ease: "Power1.easeOut" })
       .fromTo(
         arrow2,
-        0.55,
-        { opacity: 0, ease: "Back.easeOut" },
-        { opacity: 1, ease: "Back.easeOut" }
+        0.25,
+        { opacity: 0, ease: "Back.easeOut", scale: 1.1 },
+        { opacity: 1, ease: "Back.easeOut", scale: 1 }
       )
       .fromTo(
         [marker, body],
-        2,
+        1,
         { scale: 0, visibility: "hidden" },
         { visibility: "visible", scale: 1 }
       )
       .fromTo(
         arrow,
-        0.5,
-        { opacity: 0, ease: "Back.easeOut" },
-        { opacity: 1, ease: "Back.easeOut" }
+        0.75,
+        { opacity: 0, ease: "Back.easeOut", scale: 1.1 },
+        { opacity: 1, ease: "Back.easeOut", scale: 1 }
       );
 
     return () => {

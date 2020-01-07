@@ -24,13 +24,13 @@ const Home = () => {
         {
           duration: 2,
           height: 330,
-          borderWidth: 10,
+          borderWidth: 5,
           ease: "smooth"
         },
         {
           delay: 1,
           height: 100,
-          borderWidth: 4,
+          borderWidth: 2,
           ease: "Power1.easeIn"
         }
       )

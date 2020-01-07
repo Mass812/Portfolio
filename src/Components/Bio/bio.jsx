@@ -227,7 +227,7 @@ const Bio = () => {
                   <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
                   <span className="bullet-pint-description">
                     {" "}
-                    Broad Experience
+                    Keen Inductive & Deductive Logic
                   </span>
                 </div>
                 <div>
@@ -275,7 +275,7 @@ const Bio = () => {
               <p className="weakness">
                 <q>
                   Inwardly, contending with my self can be difficult. I thrive
-                  in progress and stagnate in idleness. In a word I am
+                  in progress and stagnate in idleness. Succinctly, I am
                   healthiest when I can operate at the edge of my capabilities,
                   pushing myself to learn, commit, do and achieve more. The
                   downside is that I give myself over to my work so completely
