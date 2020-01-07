@@ -96,8 +96,8 @@ a {
   }
 }
 .dateOf {
-  padding: 10px 0px;
-  margin-left: -15px;
+  padding: 30px 0px;
+  margin-left: 1px;
   &::first-letter {
     font-size: 32px;
     font-style: bold;
@@ -193,9 +193,12 @@ a {
   box-shadow: 2px 2px 5px rgb(85, 83, 83);
 }
 
+
+
 /*----- TIMELINE INFO -----*/
 
 .timeline-info {
+  display: contents;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 3px;

@@ -35,7 +35,7 @@
 .bio-subtitle-main {
   font-size: 28px;
   font-family: "Courgette";
-  color: rgb(117, 117, 115);
+  color: rgba(194, 191, 191, 0.822);
   font-weight: 0;
   text-shadow: rgba(14, 13, 13, 0.836) 3.9px 1.5px 0px;
 }
@@ -101,15 +101,15 @@
 }
 
 .weakness {
-  font-family: "Caveat";
-  font-weight: 1;
-  font-size: 26px;
-  // word-spacing: 1;
-  padding: 2px 40px;
+  font-family: "Josefin Slab";
+  font-weight: 400;
+  font-size: 22px;
+  word-spacing: 6px;
+  padding: 2px 30px;
   color: rgba(194, 191, 191, 0.822);
   // text-shadow: rgba(15, 15, 15, 0.849) 1.5px 1.3px .3px ;
   // color: rgba(186, 143, 36, 0.849);
-  text-shadow: rgb(0, 0, 0) 5.5px 5.3px 5px ;
+  text-shadow: rgb(0, 0, 0) 2.5px 2.3px 4px ;
 }
 
 @media (max-width: 1450px) {

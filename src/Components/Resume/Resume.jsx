@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Resume.scss";
 import "../../Assets/Disney2018.jpeg";
 import Icon from "../FontAwesome/Icon";
@@ -13,6 +13,40 @@ const Resume = () => {
   const [intel, setIntel] = useState(false);
   const [safe, setSafe] = useState(false);
 
+  let marker = useRef(null);
+  let body = useRef(null);
+  let title = useRef(null);
+  let arrow = useRef(null);
+  let arrow2 = useRef(null);
+
+  useEffect(() => {
+    window.gsap
+      .timeline({ duration: 0.5 })
+      .fromTo(title, 1, { scale: 1.1 }, { scale: 1, ease: "Power1.easeOut" })
+      .fromTo(
+        arrow2,
+        0.55,
+        { opacity: 0, ease: "Back.easeOut" },
+        { opacity: 1, ease: "Back.easeOut" }
+      )
+      .fromTo(
+        [marker, body],
+        2,
+        { scale: 0, visibility: "hidden" },
+        { visibility: "visible", scale: 1 }
+      )
+      .fromTo(
+        arrow,
+        0.5,
+        { opacity: 0, ease: "Back.easeOut" },
+        { opacity: 1, ease: "Back.easeOut" }
+      );
+
+    return () => {
+      console.log("useEffect in Resume has fired");
+    };
+  }, []);
+
   const classChange = () => {
     setChange(prevState => setChange(!prevState));
   };
@@ -25,19 +59,14 @@ const Resume = () => {
     setIntel(!intel);
   };
 
-  const question = () => {
-    return (
-      <div className="question">
-        I programmed this site with React, React-Router, JavaScript & JSX
-      </div>
-    );
-  };
-
   return (
     <div className="container-fluid">
       <div className="row example-centered">
         <div className="col-sm-12 example-title">
-          <h2 id="push"> Experience Timeline </h2>
+          <h2 id="push" ref={cr => (title = cr)}>
+            {" "}
+            Experience Timeline{" "}
+          </h2>
         </div>
         <hr className="sep" />
         <br />
@@ -46,10 +75,13 @@ const Resume = () => {
           <ul className="timeline timeline-centered">
             <li className="timeline-item">
               <div className="timeline-info">
-                <span className="dateOf"> => Present</span>
+                <span className="dateOf" ref={cr => (arrow = cr)}>
+                  {" "}
+                  => Present
+                </span>
               </div>
-              <div className="timeline-marker"></div>
-              <div className="timeline-content">
+              <div className="timeline-marker" ref={cr => (marker = cr)}></div>
+              <div className="timeline-content" ref={cr => (body = cr)}>
                 <h3 className="timeline-title">
                   <b>
                     UPS (World Port) <br></br>
@@ -115,12 +147,13 @@ const Resume = () => {
               </div>
             </li>
 
-            <li className="timeline-item">
+            <li className="timeline-item" ref={cr => (arrow2 = cr)}>
               <div className="timeline-info">
                 <span className="dateOf">&lt;= July 2, 2019</span>
               </div>
               <div className="timeline-marker"></div>
             </li>
+
             <br />
             <br />
             <hr className="sep" />
@@ -139,13 +172,16 @@ const Resume = () => {
 
                 <div className="why">
                   <p>
-                    Since this job is here, it does kind of beg the question {" "} 
-                    <div className="tooltip"> ? 
-                      <i className="tooltip-text">I utilized React, React-Router & Javascript to create this site</i>
-                       
-                      
-                    </div>
-                    {" "} The answer is Yes. (hover the question mark) I was fortunate
+                    Since this job is here, it does kind of beg the question{" "}
+                    <i className="tooltip">
+                      {" "}
+                      ?
+                      <i className="tooltip-text">
+                        I utilized React, React-Router & Javascript to create
+                        this site
+                      </i>
+                    </i>{" "}
+                    The answer is Yes. (hover the question mark) I was fortunate
                     in being granted a position on such a great team. I worked
                     on both large and small scale projects, ranging from
                     'internationalizing' currently existing applications . . .
@@ -153,7 +189,7 @@ const Resume = () => {
                   </p>
                 </div>
                 <span id={!intel ? "intel" : "no-intel"} onClick={moreIntel}>
-                  ..continue reading 
+                  ..continue reading
                 </span>
                 {intel ? (
                   <div className="why">
@@ -369,8 +405,7 @@ const Resume = () => {
 
             <li className="timeline-item">
               <div className="timeline-info">
-              <span className="dateOf">&lt;= February 28, 2012 </span>
-
+                <span className="dateOf">&lt;= February 28, 2012 </span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content"></div>

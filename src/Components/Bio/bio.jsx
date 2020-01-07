@@ -22,7 +22,6 @@ import {
 import { faCaretSquareRight } from "@fortawesome/free-regular-svg-icons";
 
 const Bio = () => {
-  const bullet = require("../../Assets/iconBullet.png");
   let characteristics,
     titleArea,
     icon,
@@ -43,7 +42,6 @@ const Bio = () => {
     less = useRef();
 
   useEffect(() => {
-    const x = "";
 
     window.gsap
       .timeline([icon])
