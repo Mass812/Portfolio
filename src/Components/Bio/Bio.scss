@@ -35,17 +35,17 @@
 .bio-subtitle-main {
   font-size: 28px;
   font-family: "Courgette";
-  color: rgb(251, 252, 249);
+  color: rgb(117, 117, 115);
   font-weight: 0;
   text-shadow: rgba(14, 13, 13, 0.836) 3.9px 1.5px 0px;
 }
 
 .bio-subtitle {
   font-size: 26px;
-  font-family: "Cinzel";
+  font-family: "Josefin Slab";
   padding-top: 5px;
   background-color: #363636;
-  color: rgb(251, 252, 249);
+  color: rgba(184, 168, 26, 0.822);
   text-shadow: rgba(14, 13, 13, 0.936) 3.9px 1.5px 0px;
 
   // padding-top: 20px;
@@ -68,20 +68,21 @@
   }
 }
 
-
 .business-characteristic-parent {
   width: 100%;
   text-align: left;
   justify-content: center;
-  text-shadow: none;
+  text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
 }
 
 .business-characteristic-ul {
-  font-family: "Cinzel";
+  font-family: "Indie Flower";
   font-size: 18px;
   justify-content: "left";
-  
+  padding: 10px;
   text-align: "center";
+
+  text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
 }
 
 .bullet {
@@ -93,23 +94,22 @@
 }
 
 .bullet-pint-description {
-  padding-left: 10px;
+  padding: 10px;
   font-weight: 2;
-  color: rgba(240, 189, 62, 0.979);
-  text-shadow: rgb(0, 0, 0) .3px .3px 10px ;
-
+  color: rgb(189, 188, 185);
+  text-shadow: rgb(10, 10, 10) 2.83px 0.53px 1.3px;
 }
 
 .weakness {
-  text-shadow: none;
-  font-family: "Cinzel";
-  font-style: bold;
-  font-weight: 2;
-  font-size: 18px;
-  word-spacing: 1;
-  padding: 10px 10%;
-  color: rgba(240, 189, 62, 0.979);
-  text-shadow: rgb(0, 0, 0) .3px .3px 10px ;
+  font-family: "Caveat";
+  font-weight: 1;
+  font-size: 26px;
+  // word-spacing: 1;
+  padding: 2px 60px;
+  color: rgba(194, 191, 191, 0.822);
+  // text-shadow: rgba(15, 15, 15, 0.849) 1.5px 1.3px .3px ;
+  // color: rgba(186, 143, 36, 0.849);
+  text-shadow: rgb(0, 0, 0) 3.5px 5.3px 5px ;
 }
 
 @media (max-width: 1450px) {
@@ -127,14 +127,11 @@
     padding-right: 15px;
     color: rgba(218, 165, 32, 0.809);
     height: 25px;
-   // color: rgba(240, 189, 62, 0.979);
-    box-shadow: rgb(0, 0, 0) .9px 1.8px 5px ;
-  
-
+    // color: rgba(240, 189, 62, 0.979);
+    box-shadow: rgb(0, 0, 0) 0.9px 1.8px 5px;
 
     &::after {
       content: "";
     }
   }
- 
 }
