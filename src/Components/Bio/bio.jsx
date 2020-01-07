@@ -68,7 +68,7 @@ const Bio = () => {
           jira
         ],
         {
-          scale: 0.01,
+          scale: 0.02,
           duration: 1.5,
           stagger: 0.14,
           ease: "power1",
