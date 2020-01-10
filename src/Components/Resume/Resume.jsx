@@ -13,9 +13,9 @@ const Resume = () => {
   const [intel, setIntel] = useState(false);
   const [safe, setSafe] = useState(false);
 
+  let title = useRef(null);
   let marker = useRef(null);
   let body = useRef(null);
-  let title = useRef(null);
   let arrow = useRef(null);
   let arrow2 = useRef(null);
 

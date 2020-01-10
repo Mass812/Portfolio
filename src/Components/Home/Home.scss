@@ -84,24 +84,27 @@
   box-sizing: content-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
   margin: 10px;
-  margin-top: 60%;
+  height: 50%;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+ 
 }
 
 .subTitle2 {
   align-self: center;
-  padding: 0px 0px;
   font-weight: 300;
   color: black;
   font-family: "Titillium Web";
   padding-top: 5px;
- 
+  
   background-color: var(--main-secondary);
   background: transparent;
   text-shadow: #4d4c4b 0.5px 0.5px 0px;
   font-size: 26px;
+ 
 }
 
 //big screen

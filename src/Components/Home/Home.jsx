@@ -51,35 +51,28 @@ const Home = () => {
 
         {
           stagger: 0.5,
-          delay: 0.01,
+          delay: 0.51,
           opacity: 0,
           height: 0,
           fontSize: 3,
-          ease: "Bounce.easeOut",
+          ease: "Power1.easeIn",
           color: "rgb(210,181,113)"
         }
       )
-      // .to(name, {
-      //   duration: 1,
-      //   x: -30,
-      //   ease: "Back.easeOut",
-      //   opacity: 0,
-      //   delay: 3
-      // });
-      // .to([headline1, headline2, headline3], {
-      //   duration: 0.7,
-      //   y: 300,
-      //   ease: "bounce.easeOut",
-      //   opacity: 0,
-      //   delay: 0
-      // });
-
-     
-  
-  
-
-
-
+      .to(name, {
+        duration: 1,
+        x: -30,
+        ease: "Back.easeOut",
+        opacity: 0,
+        delay: 1
+      });
+    // .to([headline1, headline2, headline3], {
+    //   duration: 0.7,
+    //   y: 300,
+    //   ease: "bounce.easeOut",
+    //   opacity: 0,
+    //   delay: 0
+    // });
 
     return () => {
       console.log("cleaned");
@@ -105,9 +98,7 @@ const Home = () => {
           </div>
           <div className="menu"></div>
           <span className="bottom" ref={cr => (statement = cr)}>
-            <div className="subTitle2"> Manager,</div>
-
-            <div className="subTitle2"> Erudite &</div>
+            <div className="subTitle2"> Operations Manager &</div>
 
             <div className="subTitle2">JavaScript Enthusiast </div>
           </span>

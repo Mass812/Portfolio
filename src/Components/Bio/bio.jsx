@@ -16,12 +16,23 @@ import {
   faMdb,
   faNpm,
   faGithubSquare,
-  faGoogleDrive
+  faGoogleDrive,
+  faDochub,
+  faGoogle
 } from "@fortawesome/free-brands-svg-icons";
 
 import { faCaretSquareRight } from "@fortawesome/free-regular-svg-icons";
+import {
+  faFilePowerpoint,
+  faFileWord,
+  faFileExcel,
+  faChartPie,
+  faHandMiddleFinger
+} from "@fortawesome/free-solid-svg-icons";
 
 const Bio = () => {
+  const random = Math.floor(Math.random() * 12);
+
   let characteristics,
     titleArea,
     icon,
@@ -34,51 +45,62 @@ const Bio = () => {
     sass,
     st,
     mdb,
+    excel,
     github,
     npm,
     ms,
     gdrive,
     jira,
+    word,
+    powerpoint,
+    pie,
+    google,
+    dochub,
     less = useRef();
 
   useEffect(() => {
-
     window.gsap
-      .timeline([icon])
-      .from(icon, 0.1, { display: "flex" })
-      .from(
+      .timeline([icon, { duration: 0.5 }])
+      .fromTo(
         [
-          icon,
+          word,
           js,
           github,
           st,
           git,
           less,
           react,
+          excel,
           node,
           py,
+          dochub,
           sass,
           mdb,
           npm,
           html5,
+          google,
           ms,
           gdrive,
-          jira
+          powerpoint,
+          jira,
+          pie
         ],
         {
-          scale: 0.02,
-          duration: 1.5,
-          stagger: 0.14,
-          ease: "power1",
-          force3d: "true"
+          scale: 0,
+          duration: 0.5,
+          ease: "Sine.easeIn",
+           display: 'inline-block',
+          stagger: 0.2,
+        },
+        {
+          scale: 1,
+          stagger: .19,
+          duration: 0.5,
         }
-      )
-      .fromTo(
-        characteristics,
-        0.5,
-        { visibility: "hidden", y: 300 },
-        { visibility: "visible", y: 0 }
       );
+
+      
+      
 
     return () => {
       console.log("fired useEffect gsap effects");
@@ -89,10 +111,39 @@ const Bio = () => {
     <div className="bio-wrapper">
       <div className="bio-parent">
         <div className="bio-title-area" ref={cr => titleArea}>
-          <div className="bio-subtitle-main">
-            High Acuity
+          <div className="bio-subtitle-main"><br/>
+            Proficient in the Following:  
             <div>
               <ul className="icon-splay" ref={cr => (icon = cr)}>
+                <div ref={cr => (excel = cr)}>
+                  <FontAwesomeIcon
+                    icon={faFileExcel}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (word = cr)}>
+                  <FontAwesomeIcon
+                    icon={faFileWord}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (powerpoint = cr)}>
+                  <FontAwesomeIcon
+                    icon={faFilePowerpoint}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+
+                <div ref={cr => (dochub = cr)}>
+                  <FontAwesomeIcon
+                    icon={faDochub}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
                 <div ref={cr => (js = cr)}>
                   <FontAwesomeIcon
                     icon={faJsSquare}
@@ -122,13 +173,7 @@ const Bio = () => {
                     size="lg"
                   />
                 </div>
-                <div ref={cr => (jira = cr)}>
-                  <FontAwesomeIcon
-                    icon={faJira}
-                    className="icon-bar-li-bio"
-                    size="lg"
-                  />
-                </div>
+
                 <div ref={cr => (node = cr)}>
                   <FontAwesomeIcon
                     icon={faNode}
@@ -150,13 +195,7 @@ const Bio = () => {
                     size="lg"
                   />
                 </div>
-                <div ref={cr => (st = cr)}>
-                  <FontAwesomeIcon
-                    icon={faSourcetree}
-                    className="icon-bar-li-bio"
-                    size="lg"
-                  />
-                </div>
+
                 <div ref={cr => (less = cr)}>
                   <FontAwesomeIcon
                     icon={faLess}
@@ -185,6 +224,20 @@ const Bio = () => {
                     size="lg"
                   />
                 </div>
+                <div ref={cr => (pie = cr)}>
+                  <FontAwesomeIcon
+                    icon={faChartPie}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
+                <div ref={cr => (google = cr)}>
+                  <FontAwesomeIcon
+                    icon={faGoogle}
+                    className="icon-bar-li-bio"
+                    size="lg"
+                  />
+                </div>
                 <div ref={cr => (ms = cr)}>
                   <FontAwesomeIcon
                     icon={faMicrosoft}
@@ -205,6 +258,38 @@ const Bio = () => {
         </div>
 
         <div ref={cr => (characteristics = cr)}>
+          <div>
+            <div className="bio-subtitle" ref={cr => (characteristics = cr)}>
+            
+              About Me
+              <p className="weakness">
+                <q>
+                  I am an Operations Manager with an exceptional record of
+                  proven site management. Working alongside three staffing
+                  agencies and seven internal operational departments, for a
+                  company consisting of 1000+ employees, I have usurped a
+                  wellspring of working knowledge. My experience permeates into
+                  operations/distribution/logistics in a
+                  warehouse/retail/customer service environment; Effectively
+                  coordinating a 40+ personnel team; evaluating, mentoring, and
+                  developing managers/supervisors; Mass Scheduling; On-boarding,
+                  Hiring and Developing employees; Managing workload and
+                  streamlining operations; RFPs ; Data compiling and analysis;
+                  Integrating SOPs into and throughout multiple departments /
+                  areas.
+                </q>
+                <br />
+                <br />
+                <q>
+                  I am skilled in Excel / Google Sheets, Word / Docs &
+                  PowerPoint. I am also a skilled mobile app & web developer
+                  using React & React-Native frameworks with Javascript , as an
+                  aside.
+                </q>
+              </p>
+            </div>
+          </div>
+
           <div className="bio-subtitle">
             Business Characteristics
             <div className="business-characteristic-parent">
@@ -270,7 +355,7 @@ const Bio = () => {
           </div>
           <div>
             <div className="bio-subtitle" ref={cr => (characteristics = cr)}>
-              <hr />
+              
               Greatest Weakness & Strength
               <p className="weakness">
                 <q>
@@ -287,7 +372,7 @@ const Bio = () => {
             </div>
           </div>
           <div>
-            <hr />
+            
             <div className="bio-subtitle">
               Certifications
               <div className="business-characteristic-parent">
