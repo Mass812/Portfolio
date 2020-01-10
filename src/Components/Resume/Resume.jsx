@@ -22,12 +22,12 @@ const Resume = () => {
   useEffect(() => {
     window.gsap
       .timeline({ duration: 0.5 })
-      .fromTo(title, .25, { scale: 1.1 }, { scale: 1, ease: "Power1.easeOut" })
+      .fromTo(title, 0.25, { scale: 1.1 }, { scale: 1, ease: "Power1.easeOut" })
       .fromTo(
         arrow2,
-        0.25,
+     
         { opacity: 0, ease: "Back.easeOut", scale: 1.1 },
-        { opacity: 1, ease: "Back.easeOut", scale: 1 }
+        {  delay: .5, duration: .50, opacity: 1, ease: "Back.easeOut", scale: 1 }
       )
       .fromTo(
         [marker, body],
@@ -37,9 +37,9 @@ const Resume = () => {
       )
       .fromTo(
         arrow,
-        0.75,
+      
         { opacity: 0, ease: "Back.easeOut", scale: 1.1 },
-        { opacity: 1, ease: "Back.easeOut", scale: 1 }
+        { delay: .3, duration: .30, opacity: 1, ease: "Back.easeOut", scale: 1 }
       );
 
     return () => {
@@ -78,6 +78,14 @@ const Resume = () => {
                 <span className="dateOf" ref={cr => (arrow = cr)}>
                   {" "}
                   => Present
+                  <span
+                    style={{
+                      fontSize: "8px",
+                      color: "#74726B",
+                      textShadow: "none"
+                    }}>
+                    {"    "}1 year
+                  </span>
                 </span>
               </div>
               <div className="timeline-marker" ref={cr => (marker = cr)}></div>
@@ -86,8 +94,12 @@ const Resume = () => {
                   <b>
                     UPS (World Port) <br></br>
                   </b>
-                  Comprehensive Health & Safety Process Committee (CHSP)
                 </h3>
+
+                <h4 style={{ marginTop: "-15px", color: "#74756B" }}>
+                  Comprehensive Health & Safety Process Committee (CHSP)
+                  <br />
+                </h4>
 
                 <div className="why">
                   <p>
@@ -128,20 +140,20 @@ const Resume = () => {
                   </div>
                 ) : null}
 
-                <h3>Highlights</h3>
+                <h3>Key Responsibilities</h3>
 
                 <ul className="ExperienceListParent">
                   <Icon size={"sm"} icon={faUps} color={"red"}>
-                    Facility and equipment audits
+                    Facility, Equipment & Employee audits
                   </Icon>
                   <Icon size={"sm"} icon={faUps}>
-                    Safety compliance training
+                    Safety Compliance Training / New Hire Training
                   </Icon>
                   <Icon size={"sm"} icon={faUps}>
-                    Audit root cause analysis
+                    Root Cause Analysis Reporting
                   </Icon>
                   <Icon size={"sm"} icon={faUps}>
-                    Safety Outreach
+                    Create Safety Outreach Events / Programs
                   </Icon>
                 </ul>
               </div>
@@ -163,12 +175,24 @@ const Resume = () => {
             <div className="timeline-item">
               <div className="timeline-info">
                 <span className="dateOf"> => October 23, 2019</span>
+                <span
+                  style={{
+                    fontSize: "8px",
+                    color: "#74726B",
+                    textShadow: "none"
+                  }}>
+                  {"    "}1 year
+                </span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content">
                 <h3 className="timeline-title">
-                  Parsed.io <br></br>Mobile App Developer
+                  Parsed.io <br></br>
                 </h3>
+                <h4 style={{ marginTop: "-15px", color: "#74756B" }}>
+                 Mobile App Developer
+                  <br />
+                </h4>
 
                 <div className="why">
                   <p>
@@ -203,20 +227,20 @@ const Resume = () => {
                     </p>
                   </div>
                 ) : null}
-                <h3>Highlights</h3>
+                <h4>Key Responsibilities</h4>
 
                 <ul className="ExperienceListParent">
                   <Icon size={"sm"} icon={faReact}>
-                    Developed UIs via React-Native for iOS and Android
+                    Developed React-Native Applications for iOS and Android to client specs
                   </Icon>
                   <Icon size={"sm"} icon={faReact}>
-                    Learn, Learn, Learn
+                    Resolve Merge Conflicts and Testing Failures
                   </Icon>
                   <Icon size={"sm"} icon={faReact}>
-                    Fulfill sprints and assigned tickets
+                    Work with 3rd party Back-end Companies to validate / resolve / create endpoints
                   </Icon>
                   <Icon size={"sm"} icon={faReact}>
-                    Make amazing Apps
+                    Make Amazing Apps
                   </Icon>
                 </ul>
               </div>
@@ -236,14 +260,26 @@ const Resume = () => {
             <li className="timeline-item">
               <div className="timeline-info">
                 <span className="dateOf">=> October 02, 2018</span>
+                <span
+                  style={{
+                    fontSize: "8px",
+                    color: "#74726B",
+                    textShadow: "none"
+                  }}>
+                  {"    "}6.5 years
+                </span>
               </div>
               <div className="timeline-marker"></div>
               <div className="timeline-content">
                 <h3 className="timeline-title">
                   Techstyle Fashion Group
                   <br></br>
-                  <i>Director of Security Operations</i>
+                  
                 </h3>
+                <h4 style={{ marginTop: "-15px", color: "#74756B" }}>
+                 Operations Manager of Physical Security
+                  <br />
+                </h4>
                 <>
                   <div className="why">
                     <p>
@@ -385,7 +421,7 @@ const Resume = () => {
                     </>
                   ) : null}
                 </div>
-                <h3>Highlights</h3>
+                <h3>Key Responsibilities</h3>
                 <ul className="ExperienceListParent">
                   <Icon size={"sm"} icon={faAngleRight}>
                     Maintained a 87% Employee Retention Rate over 6.5 years

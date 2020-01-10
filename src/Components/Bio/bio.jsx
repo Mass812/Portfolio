@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./Bio.scss";
+import {useLocation} from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGit,
@@ -58,9 +59,14 @@ const Bio = () => {
     dochub,
     less = useRef();
 
+
+ const reload = useLocation();
+ console.log(reload);
+
+
   useEffect(() => {
     window.gsap
-      .timeline([icon, { duration: 0.5 }])
+    
       .fromTo(
         [
           word,
@@ -87,15 +93,57 @@ const Bio = () => {
         ],
         {
           scale: 0,
-          duration: 0.5,
+          duration: 0.3,
           ease: "Sine.easeIn",
            display: 'inline-block',
           stagger: 0.2,
         },
         {
           scale: 1,
-          stagger: .19,
-          duration: 0.5,
+          stagger: .1,
+          duration: 0.3,
+          
+        }, 
+      );
+    window.gsap
+      .timeline([icon, { duration: 0.3, delay: 5, }])
+      .staggerTo(
+        [
+          excel,
+          word,
+          powerpoint,
+          dochub,
+          js,
+          git,
+          react,
+          html5,
+          node,
+          py,
+          github,
+          sass,
+          less,
+          mdb,
+          npm,
+          google,
+          ms,
+          gdrive,
+          jira,
+          st,
+          pie
+        ],
+        {
+          
+        },
+        {
+          delay:4,
+          duration: .2,
+          scale: .9,
+          stagger: 0.08,
+          color: 'white',
+           display: 'inline-block',
+           ease: 'Power0.easeInOut',
+          yoyo: true,
+          repeat: 1
         }
       );
 
@@ -105,14 +153,14 @@ const Bio = () => {
     return () => {
       console.log("fired useEffect gsap effects");
     };
-  }, []);
+  }, [reload.pathname]);
 
   return (
     <div className="bio-wrapper">
       <div className="bio-parent">
         <div className="bio-title-area" ref={cr => titleArea}>
           <div className="bio-subtitle-main"><br/>
-            Proficient in the Following:  
+            Proficiencies 
             <div>
               <ul className="icon-splay" ref={cr => (icon = cr)}>
                 <div ref={cr => (excel = cr)}>
@@ -264,28 +312,11 @@ const Bio = () => {
               About Me
               <p className="weakness">
                 <q>
-                  I am an Operations Manager with an exceptional record of
-                  proven site management. Working alongside three staffing
-                  agencies and seven internal operational departments, for a
-                  company consisting of 1000+ employees, I have usurped a
-                  wellspring of working knowledge. My experience permeates into
-                  operations/distribution/logistics in a
-                  warehouse/retail/customer service environment; Effectively
-                  coordinating a 40+ personnel team; evaluating, mentoring, and
-                  developing managers/supervisors; Mass Scheduling; On-boarding,
-                  Hiring and Developing employees; Managing workload and
-                  streamlining operations; RFPs ; Data compiling and analysis;
-                  Integrating SOPs into and throughout multiple departments /
-                  areas.
+                  I am 
                 </q>
                 <br />
                 <br />
-                <q>
-                  I am skilled in Excel / Google Sheets, Word / Docs &
-                  PowerPoint. I am also a skilled mobile app & web developer
-                  using React & React-Native frameworks with Javascript , as an
-                  aside.
-                </q>
+             
               </p>
             </div>
           </div>

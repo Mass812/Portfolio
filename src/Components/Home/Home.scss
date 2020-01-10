@@ -53,7 +53,7 @@
 }
 .icon {
   float: left;
-  height: 90px;
+  height: 70px;
   size: contain;
   margin-top: 3em;
   border-color: rgb(255, 255, 255);
@@ -85,10 +85,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: 10px;
-  height: 50%;
-  width: 100%;
-  position: fixed;
+  margin: 30px;
+ 
+
+  position: relative;
   align-items: center;
  
 }
@@ -185,12 +185,12 @@
 
   .bottom {
     box-sizing: content-box;
-    display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 10px;
-    margin-top: 30px;
+    margin-top: 180px;
   }
 
   .subTitle2 {
