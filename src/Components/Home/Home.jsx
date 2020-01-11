@@ -22,29 +22,27 @@ const Home = () => {
       .fromTo(
         img,
         {
+        
+          y:100,
           duration: 2,
           height: 330,
           borderWidth: 5,
-          ease: "smooth"
+          ease: "Power0",
+       
         },
         {
-          delay: 1,
-          height: 100,
+          y:0,
+          delay: 1.5,
+          duration: 1.5,
+          height: 150,
           borderWidth: 2,
-          ease: "Power1.easeIn"
+          ease: "Power1.easeOut",
+          rotate: 180,
+        
+        
         }
       )
-      .fromTo(
-        name,
-        {
-          duration: 1,
-          opacity: 0,
-          ease: "Power1.easeIn"
-        },
-        {
-          opacity: 1
-        }
-      )
+   
 
       .from(
         [headline1, headline2, headline3],
@@ -58,14 +56,14 @@ const Home = () => {
           ease: "Power1.easeIn",
           color: "rgb(210,181,113)"
         }
-      )
-      .to(name, {
-        duration: 1,
-        x: -30,
-        ease: "Back.easeOut",
-        opacity: 0,
-        delay: 1
-      });
+      );
+      // .to(name, {
+      //   duration: 1,
+      //   x: -30,
+      //   ease: "Back.easeOut",
+      //   opacity: 0,
+      //   delay: 1
+      // });
     // .to([headline1, headline2, headline3], {
     //   duration: 0.7,
     //   y: 300,
@@ -83,6 +81,7 @@ const Home = () => {
     <div>
       <section className="section">
         <div className="container">
+            
           <div className="top">
             <div className="frame" ref={cr => (frame = cr)}>
               <img
@@ -92,20 +91,20 @@ const Home = () => {
                 ref={cr => (img = cr)}
               />
             </div>
-            <h1 className="name" ref={cr => (name = cr)}>
-              Matt Wellman
-            </h1>
           </div>
-          <div className="menu"></div>
-          <span className="bottom" ref={cr => (statement = cr)}>
+         
+          <div className="bottom" ref={cr => (statement = cr)}>
+            <div className="name" ref={cr => (name = cr)} style={{fontSize: 50}}>
+             Matt Wellman
+            </div>
             <div className="subTitle2"> Operations Manager &</div>
 
             <div className="subTitle2">JavaScript Enthusiast </div>
-          </span>
+          </div>
         </div>
         <FontAwesome />
       </section>
-      <Footer />
+    
     </div>
   );
 };

@@ -36,43 +36,34 @@
   margin: 0;
   box-sizing: content-box;
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .top {
   background-color: transparent;
   box-sizing: content-box;
-  display: inline-block;
-  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  align-items: flex-end;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  padding-bottom: 10px;
 }
 
 .frame {
-  margin: 50px 30px;
-  width: 25%;
+  align-items: flex-end;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
 }
 .icon {
-  float: left;
-  height: 70px;
   size: contain;
   margin-top: 3em;
   border-color: rgb(255, 255, 255);
   border-style: inset;
-  border-radius: 10px;
+  border-radius: 50%;
   image-rendering: optimizeQuality;
-}
-
-.name {
-  flex: 1;
-  color: goldenrod;
-  background: transparent;
-  text-shadow: #000000 1.5px 1.5px 0;
-  font-weight: 600;
-  line-height: 1;
-  font-size: 30px;
-  font-family: "Cinzel";
-  margin-top: 4.4em;
-  margin-left: 140px;
 }
 
 .menu {
@@ -84,13 +75,17 @@
   box-sizing: content-box;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  margin: 30px;
- 
-
-  position: relative;
   align-items: center;
- 
+}
+.name {
+  color: goldenrod;
+  background: transparent;
+  text-shadow: #000000 1.5px 1.5px 0;
+  font-weight: 100;
+  font-size: 60px;
+  word-spacing: 7px;
+  //margin-top: 4.4em;
+  font-family: "Dr Sugiyama", cursive;
 }
 
 .subTitle2 {
@@ -99,13 +94,38 @@
   color: black;
   font-family: "Titillium Web";
   padding-top: 5px;
-  
+
   background-color: var(--main-secondary);
   background: transparent;
   text-shadow: #4d4c4b 0.5px 0.5px 0px;
-  font-size: 26px;
- 
+  font-size: 20px;
 }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 //big screen
 @media (min-width: 450px) {
@@ -146,61 +166,52 @@
   .top {
     background-color: transparent;
     box-sizing: content-box;
-    display: inline-block;
-    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    padding-bottom: 10px;
   }
 
   .frame {
-    margin: 50px 30px;
-    width: 25%;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
   }
   .icon {
-    float: left;
-    height: 120px;
     size: contain;
     margin-top: 3em;
     border-color: rgb(255, 255, 255);
     border-style: inset;
-    border-radius: 20%;
+    border-radius: 50%;
     image-rendering: optimizeQuality;
   }
 
-  .name {
-    flex: 1;
-    color: var(--main-color);
-    background: transparent;
-    text-shadow: #000000 1px 1px 0;
-    font-weight: 600;
-    line-height: 1;
-    font-size: 50px;
-    font-family: "Cinzel", serif;
-    margin-top: 2.5em;
-    margin-left: 170px;
-  }
-
-  .menu {
-    flex: 1;
-    height: 20px;
-  }
-
   .bottom {
-    box-sizing: content-box;
-
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin: 10px;
-    margin-top: 180px;
   }
 
+  .name {
+    color: goldenrod;
+    background: transparent;
+    text-shadow: #000000 1.5px 1.5px 0;
+    font-weight: 200;
+    font-size: 40px;
+    word-spacing: 7px;
+    //margin-top: 4.4em;
+    font-family: "Dr Sugiyama", cursive;
+  }
   .subTitle2 {
     visibility: visible;
-    align-self: center;
     padding: 12px 0px;
     font-size: 26px;
-    font-weight: bold;
     color: var(--main-secondary);
-    font-family: "Cinzel";
 
     background-color: var(--main-secondary);
     background: transparent;
