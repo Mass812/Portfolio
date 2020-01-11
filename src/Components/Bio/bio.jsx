@@ -95,15 +95,13 @@ const Bio = () => {
         ease: "Sine.easeIn",
         display: "inline-block",
         stagger: 0.2,
-        color: "#70807a"
+        color: "#566b75"
       },
       {
         scale: 1,
         stagger: 0.1,
         duration: 0.3,
-        color: "#566b75",
-      
-
+        color: "rgba(218, 165, 32, 0.714)"
       }
     );
     window.gsap.timeline([icon, { duration: 0.3, delay: 5 }]).staggerTo(
@@ -133,14 +131,13 @@ const Bio = () => {
       {},
       {
         delay: 2.4,
-        duration: .8,
+        duration: 0.8,
         scale: 1,
-      
+
         stagger: 0.03,
-        color: "#7b7d7c",
+        color: "rgba(218, 165, 32, 0.714)",
         display: "inline-block",
-        ease: "Power0.easeInOut",
-       
+        ease: "Power0.easeInOut"
       }
     );
 
@@ -152,11 +149,10 @@ const Bio = () => {
   return (
     <div className="bio-wrapper">
       <div className="bio-parent">
-        <div className="bio-title-area" ref={cr => titleArea}>
-          <div className="bio-subtitle-main">
-            <br />
-            Proficiencies
-            <div>
+        <div className="bio-subtitle">Proficiencies</div>
+        <div>
+          <div className="bio-title-area" ref={cr => titleArea}>
+            <div className="bio-subtitle-main">
               <ul className="icon-splay" ref={cr => (icon = cr)}>
                 <div ref={cr => (excel = cr)}>
                   <FontAwesomeIcon
@@ -309,7 +305,7 @@ const Bio = () => {
                   There is a lot of things that make me unique to a workforce. I
                   have a college background in Chemistry & Biology, have red a
                   library of books, Know technology intimately & always try to
-                  work at least twice as hard as the guy working next to me. 
+                  work at least twice as hard as the guy working next to me.
                 </q>
                 <br />
                 <br />

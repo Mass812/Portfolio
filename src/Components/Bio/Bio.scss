@@ -1,5 +1,5 @@
 $main-title-color: rgba(218, 165, 32, 0.741);
-$sub-title-color: rgba(218, 165, 32, 0.741);
+$sub-title-color: rgba(218, 165, 32, 0.714);
 $font-color: #bec2c0;
 $icon-color: #7b7d7c;
 $background-icon-color: rgb(191, 190, 190);
@@ -23,8 +23,8 @@ $icon-color: "goldenrod";
   background-color: $background-body-color;
   justify-content: center;
   text-align: center;
-  padding: 20px;
-  padding-top: 50px;
+  padding: 2px;
+  padding-top: 30px;
 }
 
 .bio-title-area {
@@ -34,7 +34,7 @@ $icon-color: "goldenrod";
   background: $background-main-body-color;
   height: auto;
   background: linear-gradient(rgba(68, 67, 67, 0), rgba(0, 0, 0, 0)),
-    var(--bio-background) center center;
+    var(--bio-background) cover center;
 
   overflow: hidden;
   position: relative;
@@ -45,30 +45,31 @@ $icon-color: "goldenrod";
 }
 
 .bio-subtitle-main {
-  font-size: 18px;
+  margin: 2px;
+  font-size: 12px;
   font-family: "Dosis";
-  font-weight: 500;
+  font-weight: 00;
   color: $main-title-color;
   border-radius: 20px;
-  box-shadow: 9px 9px 3px 0 rgb(123, 125, 124, 1),
+  box-shadow: 3px 3px 3px 0 rgb(123, 125, 124, 1),
     -4px 4px 3px 0 rgba(0, 0, 0, 0.3);
-  border-right: thick;
-  border-color: rgb(123, 125, 124, 1);
+
+
 }
 
 .bio-subtitle {
-  font-size: 36px;
-  font-family: "Source Sans Pro", cursive;
-    font-weight: 2;
+  font-size: 20px;
+  font-family: "Cormorant Garamond";
+    font-weight: 0;
   letter-spacing: 2px;
-  padding: 5px;
+  padding: 15px;
   margin: 20px;
   background-color: $background-body-color;
   color: $sub-title-color;
   text-shadow: rgba(41, 40, 40, 0.836) 1.3px 0.5px 0.5px;
-  border-radius: 0.5em;
-  box-shadow: -4px -4px 3px 0 rgb(123, 125, 124, 1),
-    4px 4px 3px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  box-shadow: 1px 3px 1px 0 rgb(123, 125, 124, 1),
+    -4px -4px 16px -1px rgba(0, 0, 0, 0.3);
 
   // padding-top: 20px;
 }
@@ -76,7 +77,7 @@ $icon-color: "goldenrod";
 .icon-splay {
   height: auto;
   max-width: 100%;
-  padding: 25px;
+  padding: 5px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -101,14 +102,13 @@ $icon-color: "goldenrod";
 }
 
 .business-characteristic-ul {
-  font-family: "Source Sans Pro";
+
   color: #bec2c0;
-  font-size: 16px;
+  font-size: 12px;
   padding: 10px;
-  padding-left: 5px;
+  padding-left: 15px;
   line-height: 26px;
   letter-spacing: 1px;
-  font-weight: 700;
 
   // text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
 }
@@ -134,13 +134,17 @@ $icon-color: "goldenrod";
   font-family: "Source Sans Pro";
   text-align: left;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
   word-spacing: 4px;
   letter-spacing: 1px;
   line-height: 24px;
-  padding: 2px 3px;
+  padding: 15px;
   color: $font-color;
   text-shadow: none;
+  border-radius: 0.5em;
+  box-shadow: -2px -2px 2px 0 rgb(123, 125, 124, 1),
+    4px 4px 3px 0 rgba(0, 0, 0, 0.3);
+
 }
 
 @media (min-width: 800px) {
@@ -157,7 +161,7 @@ $icon-color: "goldenrod";
 
   .business-characteristic-ul {
     font-family: "Source Sans Pro";
-    font-size: 18px;
+    font-size: 12px;
     padding-left: 15px;
     padding-left: 15%;
     line-height: 25px;
