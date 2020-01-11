@@ -1,10 +1,10 @@
-$main-title-color: goldenrod;
-$sub-title-color: goldenrod;
-$font-color: rgb(0, 0, 0);
-$icon-color: goldenrod;
-$background-icon-color: white;
+$main-title-color: rgba(218, 165, 32, 0.741);
+$sub-title-color: rgba(218, 165, 32, 0.741);
+$font-color: #bec2c0;
+$icon-color: #7b7d7c;
+$background-icon-color: rgb(191, 190, 190);
 $background-body-color:
-white;
+transparent;
 $background-main-body-color: 
  transparent;
 
@@ -12,8 +12,13 @@ $icon-color: "goldenrod";
 
 .bio-wrapper {
   box-sizing: content-box;
-  padding: 50px;
-  border: 2px solid transparent;
+  background-image: url(../../Assets/DeepSpace1.jpg);
+  // background-clip: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  
 }
 
 .bio-parent {
@@ -22,6 +27,9 @@ $icon-color: "goldenrod";
   background-color: $background-body-color;
   justify-content: center;
   text-align: center;
+  padding: 20px;
+  padding-top:50px;
+  
 }
 
 .bio-title-area {
@@ -30,15 +38,12 @@ $icon-color: "goldenrod";
   text-align: center;
   background: $background-main-body-color;
   height: auto;
-  width: 130%;
-  left: -15%;
+
+ 
   margin-top: -20px;
   overflow: hidden;
   position: relative;
-background-image: url(../../Assets/grey1.jpg);
-background-size: fill;
-background-repeat: no-repeat;
-background-clip: content-box;
+
 }
 
 .bio-main-title {
@@ -50,6 +55,7 @@ background-clip: content-box;
   font-family: "Dosis";
   font-weight: 500;
   color: $main-title-color;
+
 }
 
 .bio-subtitle {
@@ -61,6 +67,8 @@ background-clip: content-box;
   background-color: $background-body-color;
   color: $sub-title-color;
   text-shadow: rgba(41, 40, 40, 0.836) 1.3px .5px .5px;
+  opacity: .8
+
 
   // padding-top: 20px;
 }
@@ -95,7 +103,7 @@ background-clip: content-box;
 
 .business-characteristic-ul {
   font-family: "Dosis";
-  color: black;
+  color: #bec2c0;
   font-size: 16px;
   padding: 10px;
   padding-left: 5px;

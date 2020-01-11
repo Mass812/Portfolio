@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./Bio.scss";
-import {useLocation} from 'react-router-dom'
+import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGit,
@@ -59,95 +59,84 @@ const Bio = () => {
     dochub,
     less = useRef();
 
-
- const reload = useLocation();
- console.log(reload);
-
+  const reload = useLocation();
+  console.log(reload);
 
   useEffect(() => {
-    window.gsap
-    
-      .fromTo(
-        [
-          word,
-          js,
-          github,
-          st,
-          git,
-          less,
-          react,
-          excel,
-          node,
-          py,
-          dochub,
-          sass,
-          mdb,
-          npm,
-          html5,
-          google,
-          ms,
-          gdrive,
-          powerpoint,
-          jira,
-          pie
-        ],
-        {
-          scale: 0,
-          duration: 0.3,
-          ease: "Sine.easeIn",
-           display: 'inline-block',
-          stagger: 0.2,
-        },
-        {
-          scale: 1,
-          stagger: .1,
-          duration: 0.3,
-          
-        }, 
-      );
-    window.gsap
-      .timeline([icon, { duration: 0.3, delay: 5, }])
-      .staggerTo(
-        [
-          excel,
-          word,
-          powerpoint,
-          dochub,
-          js,
-          git,
-          react,
-          html5,
-          node,
-          py,
-          github,
-          sass,
-          less,
-          mdb,
-          npm,
-          google,
-          ms,
-          gdrive,
-          jira,
-          st,
-          pie
-        ],
-        {
-          
-        },
-        {
-          delay:4,
-          duration: .2,
-          scale: 1,
-          stagger: 0.08,
-          color: 'goldenrod',
-           display: 'inline-block',
-           ease: 'Power0.easeInOut',
-      
-        }
-      );
-
-      
-      
+    window.gsap.fromTo(
+      [
+        word,
+        js,
+        github,
+        st,
+        git,
+        less,
+        react,
+        excel,
+        node,
+        py,
+        dochub,
+        sass,
+        mdb,
+        npm,
+        html5,
+        google,
+        ms,
+        gdrive,
+        powerpoint,
+        jira,
+        pie
+      ],
+      {
+        scale: 0,
+        duration: 0.3,
+        ease: "Sine.easeIn",
+        display: "inline-block",
+        stagger: 0.2,
+        color: "#70807a"
+      },
+      {
+        scale: 1,
+        stagger: 0.1,
+        duration: 0.3,
+        color: '#566b75',
+      }
+    );
+    window.gsap.timeline([icon, { duration: 0.3, delay: 5 }]).staggerTo(
+      [
+        excel,
+        word,
+        powerpoint,
+        dochub,
+        js,
+        git,
+        react,
+        html5,
+        node,
+        py,
+        github,
+        sass,
+        less,
+        mdb,
+        npm,
+        google,
+        ms,
+        gdrive,
+        jira,
+        st,
+        pie
+      ],
+      {},
+      {
+        delay: 4,
+        duration: 0.2,
+        scale: 1,
+        stagger: 0.08,
+        color: "#7b7d7c",
+        display: "inline-block",
+        ease: "Power0.easeInOut"
+      }
+    );
 
     return () => {
       console.log("fired useEffect gsap effects");
@@ -158,8 +147,9 @@ const Bio = () => {
     <div className="bio-wrapper">
       <div className="bio-parent">
         <div className="bio-title-area" ref={cr => titleArea}>
-          <div className="bio-subtitle-main"><br/>
-            Proficiencies 
+          <div className="bio-subtitle-main">
+            <br />
+            Proficiencies
             <div>
               <ul className="icon-splay" ref={cr => (icon = cr)}>
                 <div ref={cr => (excel = cr)}>
@@ -307,15 +297,11 @@ const Bio = () => {
         <div ref={cr => (characteristics = cr)}>
           <div>
             <div className="bio-subtitle" ref={cr => (characteristics = cr)}>
-            
               About Me
               <p className="weakness">
-                <q>
-                  I am 
-                </q>
+                <q>I am</q>
                 <br />
                 <br />
-             
               </p>
             </div>
           </div>
@@ -325,56 +311,88 @@ const Bio = () => {
             <div className="business-characteristic-parent">
               <ul className="business-characteristic-ul">
                 <div>
-                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
-                  <span className="bullet-pint-description" >
+                  <FontAwesomeIcon
+                    icon={faCaretSquareRight}
+                    size="sm"
+                    style={{ color: "goldenrod" }}
+                  />
+                  <span className="bullet-pint-description">
                     {" "}
                     6 Years Operations Management
                   </span>
                 </div>
                 <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
+                  <FontAwesomeIcon
+                    icon={faCaretSquareRight}
+                    size="sm"
+                    style={{ color: "goldenrod" }}
+                  />
                   <span className="bullet-pint-description">
                     {" "}
                     2 Years Area Management
                   </span>
                 </div>
                 <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
+                  <FontAwesomeIcon
+                    icon={faCaretSquareRight}
+                    size="sm"
+                    style={{ color: "goldenrod" }}
+                  />
                   <span className="bullet-pint-description">
                     {" "}
                     Keen Inductive & Deductive Logic
                   </span>
                 </div>
                 <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
+                  <FontAwesomeIcon
+                    icon={faCaretSquareRight}
+                    size="sm"
+                    style={{ color: "goldenrod" }}
+                  />
                   <span className="bullet-pint-description">
                     {" "}
                     High Business Acumen
                   </span>
                 </div>
                 <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
+                  <FontAwesomeIcon
+                    icon={faCaretSquareRight}
+                    size="sm"
+                    style={{ color: "goldenrod" }}
+                  />
                   <span className="bullet-pint-description">
                     {" "}
                     Amazing Ability to Learn Fast
                   </span>
                 </div>
                 <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
+                  <FontAwesomeIcon
+                    icon={faCaretSquareRight}
+                    size="sm"
+                    style={{ color: "goldenrod" }}
+                  />
                   <span className="bullet-pint-description">
                     {" "}
                     Affable and Well Spoken
                   </span>
                 </div>
                 <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
+                  <FontAwesomeIcon
+                    icon={faCaretSquareRight}
+                    size="sm"
+                    style={{ color: "goldenrod" }}
+                  />
                   <span className="bullet-pint-description">
                     {" "}
                     Embrace & Endorse Change
                   </span>
                 </div>
                 <div>
-                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod', }} />
+                  <FontAwesomeIcon
+                    icon={faCaretSquareRight}
+                    size="sm"
+                    style={{ color: "goldenrod" }}
+                  />
                   <span className="bullet-pint-description">
                     {" "}
                     Very Strong Work Ethic
@@ -385,7 +403,6 @@ const Bio = () => {
           </div>
           <div>
             <div className="bio-subtitle" ref={cr => (characteristics = cr)}>
-              
               Greatest Weakness & Strength
               <p className="weakness">
                 <q>
@@ -402,13 +419,16 @@ const Bio = () => {
             </div>
           </div>
           <div>
-            
             <div className="bio-subtitle">
               Certifications
               <div className="business-characteristic-parent">
                 <ul className="business-characteristic-ul">
                   <div>
-                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}}/>
+                    <FontAwesomeIcon
+                      icon={faCaretSquareRight}
+                      size="sm"
+                      style={{ color: "goldenrod" }}
+                    />
                     <span className="bullet-pint-description">
                       {" "}
                       React-Native, JavaScript, Node.js
@@ -416,27 +436,38 @@ const Bio = () => {
                   </div>
 
                   <div>
-                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
+                    <FontAwesomeIcon
+                      icon={faCaretSquareRight}
+                      size="sm"
+                      style={{ color: "goldenrod" }}
+                    />
                     <span className="bullet-pint-description">
                       {" "}
                       AED, CPR, BBP
                     </span>
                   </div>
                   <div>
-                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}}/>
+                    <FontAwesomeIcon
+                      icon={faCaretSquareRight}
+                      size="sm"
+                      style={{ color: "goldenrod" }}
+                    />
                     <span className="bullet-pint-description">
                       {" "}
                       Yellow-Belt Lean Sigma Six
                     </span>
                   </div>
                   <div>
-                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}}/>
+                    <FontAwesomeIcon
+                      icon={faCaretSquareRight}
+                      size="sm"
+                      style={{ color: "goldenrod" }}
+                    />
                     <span className="bullet-pint-description">
                       {" "}
                       Project Management Certification
                     </span>
                   </div>
-              
                 </ul>
               </div>
             </div>
