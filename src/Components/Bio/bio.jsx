@@ -132,7 +132,7 @@ const Bio = () => {
       {
         delay: 2.4,
         duration: 0.8,
-        scale: 1,
+        scale: 1.1,
 
         stagger: 0.03,
         color: "rgba(218, 165, 32, 0.714)",

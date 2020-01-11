@@ -26,7 +26,7 @@ const Home = () => {
           y:100,
           duration: 2,
           height: 330,
-          borderWidth: 5,
+         
           ease: "Power0",
        
         },
@@ -35,9 +35,9 @@ const Home = () => {
           delay: 1.5,
           duration: 1.5,
           height: 150,
-          borderWidth: 2,
+          borderWidth: 5,
           ease: "Power1.easeOut",
-          rotate: 180,
+          rotate: 540,
         
         
         }
@@ -97,9 +97,9 @@ const Home = () => {
             <div className="name" ref={cr => (name = cr)} style={{fontSize: 50}}>
              Matt Wellman
             </div>
-            <div className="subTitle2"> Operations Manager &</div>
+            Manager
 
-            <div className="subTitle2">JavaScript Enthusiast </div>
+            <div className="subTitle2">Full Stack Mern Developer</div>
           </div>
         </div>
         <FontAwesome />
