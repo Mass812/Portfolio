@@ -3,22 +3,18 @@ $sub-title-color: rgba(218, 165, 32, 0.741);
 $font-color: #bec2c0;
 $icon-color: #7b7d7c;
 $background-icon-color: rgb(191, 190, 190);
-$background-body-color:
-transparent;
-$background-main-body-color: 
- transparent;
+$background-body-color: rgba(57, 57, 57, 0.898);
+$background-main-body-color: transparent;
+
+:root {
+  --bio-background: url("../../Assets/by2.jpg");
+}
 
 $icon-color: "goldenrod";
 
 .bio-wrapper {
   box-sizing: content-box;
-  background-image: url(../../Assets/DeepSpace1.jpg);
-  // background-clip: padding-box;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-
-  
+  background-color: black;
 }
 
 .bio-parent {
@@ -28,8 +24,7 @@ $icon-color: "goldenrod";
   justify-content: center;
   text-align: center;
   padding: 20px;
-  padding-top:50px;
-  
+  padding-top: 50px;
 }
 
 .bio-title-area {
@@ -38,16 +33,15 @@ $icon-color: "goldenrod";
   text-align: center;
   background: $background-main-body-color;
   height: auto;
+  background: linear-gradient(rgba(68, 67, 67, 0), rgba(0, 0, 0, 0)),
+    var(--bio-background) center center;
 
- 
-  margin-top: -20px;
   overflow: hidden;
   position: relative;
-
 }
 
 .bio-main-title {
-  font-family: "Dosis";
+  font-family: "Dr Sugiyama, cursive";
 }
 
 .bio-subtitle-main {
@@ -55,20 +49,26 @@ $icon-color: "goldenrod";
   font-family: "Dosis";
   font-weight: 500;
   color: $main-title-color;
-
+  border-radius: 20px;
+  box-shadow: 9px 9px 3px 0 rgb(123, 125, 124, 1),
+    -4px 4px 3px 0 rgba(0, 0, 0, 0.3);
+  border-right: thick;
+  border-color: rgb(123, 125, 124, 1);
 }
 
 .bio-subtitle {
-  font-size: 26px;
-  font-family: "Dosis";
-  font-weight: 200;
+  font-size: 36px;
+  font-family: "Source Sans Pro", cursive;
+    font-weight: 2;
   letter-spacing: 2px;
-  padding-top: 5px;
+  padding: 5px;
+  margin: 20px;
   background-color: $background-body-color;
   color: $sub-title-color;
-  text-shadow: rgba(41, 40, 40, 0.836) 1.3px .5px .5px;
-  opacity: .98
-
+  text-shadow: rgba(41, 40, 40, 0.836) 1.3px 0.5px 0.5px;
+  border-radius: 0.5em;
+  box-shadow: -4px -4px 3px 0 rgb(123, 125, 124, 1),
+    4px 4px 3px 0 rgba(0, 0, 0, 0.3);
 
   // padding-top: 20px;
 }
@@ -79,7 +79,6 @@ $icon-color: "goldenrod";
   padding: 25px;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 .icon-bar-li-bio {
   pointer-events: none;
@@ -102,7 +101,7 @@ $icon-color: "goldenrod";
 }
 
 .business-characteristic-ul {
-  font-family: "Dosis";
+  font-family: "Source Sans Pro";
   color: #bec2c0;
   font-size: 16px;
   padding: 10px;
@@ -127,12 +126,12 @@ $icon-color: "goldenrod";
   padding: 5px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  opacity: .89;
+  opacity: 0.89;
   //text-shadow: rgb(10, 10, 10) 2.83px 0.53px 1.3px;
 }
 
 .weakness {
-  font-family: "Dosis";
+  font-family: "Source Sans Pro";
   text-align: left;
   font-weight: 700;
   font-size: 16px;
@@ -142,7 +141,6 @@ $icon-color: "goldenrod";
   padding: 2px 3px;
   color: $font-color;
   text-shadow: none;
-
 }
 
 @media (min-width: 800px) {
@@ -158,7 +156,7 @@ $icon-color: "goldenrod";
   }
 
   .business-characteristic-ul {
-    font-family: "Dosis";
+    font-family: "Source Sans Pro";
     font-size: 18px;
     padding-left: 15px;
     padding-left: 15%;

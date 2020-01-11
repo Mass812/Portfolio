@@ -132,10 +132,11 @@ const Bio = () => {
       ],
       {},
       {
-        delay: 4.4,
-        duration: 0.3,
+        delay: 2.4,
+        duration: .8,
         scale: 1,
-        stagger: 0.04,
+      
+        stagger: 0.03,
         color: "#7b7d7c",
         display: "inline-block",
         ease: "Power0.easeInOut",
