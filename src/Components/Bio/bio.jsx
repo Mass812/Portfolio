@@ -30,6 +30,7 @@ import {
   faChartPie,
   faHandMiddleFinger
 } from "@fortawesome/free-solid-svg-icons";
+import { reverse } from "dns";
 
 const Bio = () => {
   const random = Math.floor(Math.random() * 12);
@@ -89,6 +90,7 @@ const Bio = () => {
       ],
       {
         scale: 0,
+        delay: 10,
         duration: 0.3,
         ease: "Sine.easeIn",
         display: "inline-block",
@@ -99,7 +101,9 @@ const Bio = () => {
         scale: 1,
         stagger: 0.1,
         duration: 0.3,
-        color: '#566b75',
+        color: "#566b75",
+      
+
       }
     );
     window.gsap.timeline([icon, { duration: 0.3, delay: 5 }]).staggerTo(
@@ -128,13 +132,14 @@ const Bio = () => {
       ],
       {},
       {
-        delay: 4,
-        duration: 0.2,
+        delay: 4.4,
+        duration: 0.3,
         scale: 1,
-        stagger: 0.08,
+        stagger: 0.04,
         color: "#7b7d7c",
         display: "inline-block",
-        ease: "Power0.easeInOut"
+        ease: "Power0.easeInOut",
+       
       }
     );
 
@@ -299,7 +304,12 @@ const Bio = () => {
             <div className="bio-subtitle" ref={cr => (characteristics = cr)}>
               About Me
               <p className="weakness">
-                <q>I am</q>
+                <q>
+                  There is a lot of things that make me unique to a workforce. I
+                  have a college background in Chemistry & Biology, have red a
+                  library of books, Know technology intimately & always try to
+                  work at least twice as hard as the guy working next to me. 
+                </q>
                 <br />
                 <br />
               </p>
