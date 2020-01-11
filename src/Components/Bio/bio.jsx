@@ -137,9 +137,9 @@ const Bio = () => {
         {
           delay:4,
           duration: .2,
-          scale: 1.3,
+          scale: 1,
           stagger: 0.08,
-          color: 'black',
+          color: 'goldenrod',
            display: 'inline-block',
            ease: 'Power0.easeInOut',
       
@@ -408,7 +408,7 @@ const Bio = () => {
               <div className="business-characteristic-parent">
                 <ul className="business-characteristic-ul">
                   <div>
-                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}}/>
                     <span className="bullet-pint-description">
                       {" "}
                       React-Native, JavaScript, Node.js
@@ -416,21 +416,21 @@ const Bio = () => {
                   </div>
 
                   <div>
-                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
                     <span className="bullet-pint-description">
                       {" "}
                       AED, CPR, BBP
                     </span>
                   </div>
                   <div>
-                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}}/>
                     <span className="bullet-pint-description">
                       {" "}
                       Yellow-Belt Lean Sigma Six
                     </span>
                   </div>
                   <div>
-                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                    <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}}/>
                     <span className="bullet-pint-description">
                       {" "}
                       Project Management Certification

@@ -1,4 +1,4 @@
-$main-title-color: rgb(0, 0, 0);
+$main-title-color: goldenrod;
 $sub-title-color: goldenrod;
 $font-color: rgb(0, 0, 0);
 $icon-color: goldenrod;
@@ -6,13 +6,13 @@ $background-icon-color: white;
 $background-body-color:
 white;
 $background-main-body-color: 
- white;
+ transparent;
 
 $icon-color: "goldenrod";
 
 .bio-wrapper {
   box-sizing: content-box;
-  padding: 40px;
+  padding: 50px;
   border: 2px solid transparent;
 }
 
@@ -30,8 +30,15 @@ $icon-color: "goldenrod";
   text-align: center;
   background: $background-main-body-color;
   height: auto;
-  width: 100%;
+  width: 130%;
+  left: -15%;
+  margin-top: -20px;
+  overflow: hidden;
   position: relative;
+background-image: url(../../Assets/grey1.jpg);
+background-size: fill;
+background-repeat: no-repeat;
+background-clip: content-box;
 }
 
 .bio-main-title {
@@ -64,6 +71,7 @@ $icon-color: "goldenrod";
   padding: 25px;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 .icon-bar-li-bio {
   pointer-events: none;
