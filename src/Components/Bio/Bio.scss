@@ -1,21 +1,24 @@
-$main-title-color: goldenrod;
+$main-title-color: rgb(0, 0, 0);
 $sub-title-color: goldenrod;
-$font-color: rgb(209, 209, 209);
-$background-icon-color: black;
-$background-body-color: #363636;
-$background-main-body-color: black;
+$font-color: rgb(0, 0, 0);
 $icon-color: goldenrod;
+$background-icon-color: white;
+$background-body-color:
+white;
+$background-main-body-color: 
+ white;
+
+$icon-color: "goldenrod";
 
 .bio-wrapper {
   box-sizing: content-box;
+  padding: 40px;
+  border: 2px solid transparent;
 }
 
 .bio-parent {
   box-sizing: content-box;
   text-align: center;
-  margin-top: 40px;
-
-
   background-color: $background-body-color;
   justify-content: center;
   text-align: center;
@@ -25,9 +28,9 @@ $icon-color: goldenrod;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: $background-main-body-color;
+  background: $background-main-body-color;
   height: auto;
-  width: auto;
+  width: 100%;
   position: relative;
 }
 
@@ -38,26 +41,27 @@ $icon-color: goldenrod;
 .bio-subtitle-main {
   font-size: 18px;
   font-family: "Dosis";
-  color: $sub-title-color;
   font-weight: 500;
+  color: $main-title-color;
 }
 
 .bio-subtitle {
   font-size: 26px;
   font-family: "Dosis";
-  font-weight: bold;
+  font-weight: 200;
   letter-spacing: 2px;
   padding-top: 5px;
   background-color: $background-body-color;
   color: $sub-title-color;
-  text-shadow: rgba(41, 40, 40, 0.836) 1.2px 0.9px 1px;
+  text-shadow: rgba(41, 40, 40, 0.836) 1.3px .5px .5px;
 
   // padding-top: 20px;
 }
 
 .icon-splay {
   height: auto;
-  max-width: 85%;
+  max-width: 100%;
+  padding: 25px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -74,19 +78,22 @@ $icon-color: goldenrod;
 }
 
 .business-characteristic-parent {
-  width: 80%;
+  width: 100%;
   text-align: left;
   justify-content: center;
+
   // text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
 }
 
 .business-characteristic-ul {
   font-family: "Dosis";
+  color: black;
   font-size: 16px;
   padding: 10px;
-  padding-left: 40px;
+  padding-left: 5px;
   line-height: 26px;
   letter-spacing: 1px;
+  font-weight: 700;
 
   // text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
 }
@@ -94,44 +101,40 @@ $icon-color: goldenrod;
 .bullet {
   flex: 1;
   flex-direction: column;
-  height: 10px;
   size: inherit;
   display: inline-block;
 }
 
 .bullet-pint-description {
+  text-shadow: none;
+  color: $icon-color;
   padding: 5px;
-  font-weight: 100;
+  font-weight: 700;
   letter-spacing: 1.5px;
-  color: $font-color;
-  // text-shadow: rgb(10, 10, 10) 2.83px 0.53px 1.3px;
+  //text-shadow: rgb(10, 10, 10) 2.83px 0.53px 1.3px;
 }
 
 .weakness {
   font-family: "Dosis";
   text-align: left;
-  font-weight: 100;
+  font-weight: 700;
   font-size: 16px;
   word-spacing: 4px;
   letter-spacing: 1px;
   line-height: 24px;
-  padding: 2px 30px;
+  padding: 2px 3px;
   color: $font-color;
- // text-shadow: rgba(252, 250, 250, 0.936) 0.3px 0.5px 0px;
+  text-shadow: none;
 
-  // text-shadow: rgba(15, 15, 15, 0.849) 1.5px 1.3px .3px ;
-  // color: rgba(186, 143, 36, 0.849);
-  // text-shadow: rgb(0, 0, 0) 2.5px 2.3px 4px ;
 }
 
 @media (min-width: 800px) {
-
   .bio-parent {
     box-sizing: content-box;
     text-align: center;
     margin-top: 40px;
     padding: 40px;
-  
+
     background-color: $background-body-color;
     justify-content: center;
     text-align: center;
@@ -144,10 +147,9 @@ $icon-color: goldenrod;
     padding-left: 15%;
     line-height: 25px;
 
-  
     // text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
   }
-  
+
   .bullet {
     flex: 1;
     flex-direction: column;
@@ -155,7 +157,7 @@ $icon-color: goldenrod;
     size: inherit;
     display: inline-block;
   }
-  
+
   .bullet-pint-description {
     padding: 10px;
     font-weight: 300;
@@ -163,7 +165,6 @@ $icon-color: goldenrod;
     color: $font-color;
     // text-shadow: rgb(10, 10, 10) 2.83px 0.53px 1.3px;
   }
-
 
   .icon-splay {
     align-items: center;
@@ -177,7 +178,7 @@ $icon-color: goldenrod;
     margin-right: 0;
     //padding-right: 45px;
     color: $icon-color;
-    height: 25px;
+    height: 35px;
 
     &::after {
       content: "";

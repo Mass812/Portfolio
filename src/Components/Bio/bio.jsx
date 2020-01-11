@@ -137,13 +137,12 @@ const Bio = () => {
         {
           delay:4,
           duration: .2,
-          scale: .9,
+          scale: 1.3,
           stagger: 0.08,
-          color: 'white',
+          color: 'black',
            display: 'inline-block',
            ease: 'Power0.easeInOut',
-          yoyo: true,
-          repeat: 1
+      
         }
       );
 
@@ -326,56 +325,56 @@ const Bio = () => {
             <div className="business-characteristic-parent">
               <ul className="business-characteristic-ul">
                 <div>
-                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
-                  <span className="bullet-pint-description">
+                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
+                  <span className="bullet-pint-description" >
                     {" "}
                     6 Years Operations Management
                   </span>
                 </div>
                 <div>
-                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
                   <span className="bullet-pint-description">
                     {" "}
                     2 Years Area Management
                   </span>
                 </div>
                 <div>
-                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
                   <span className="bullet-pint-description">
                     {" "}
                     Keen Inductive & Deductive Logic
                   </span>
                 </div>
                 <div>
-                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
                   <span className="bullet-pint-description">
                     {" "}
                     High Business Acumen
                   </span>
                 </div>
                 <div>
-                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
                   <span className="bullet-pint-description">
                     {" "}
                     Amazing Ability to Learn Fast
                   </span>
                 </div>
                 <div>
-                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
                   <span className="bullet-pint-description">
                     {" "}
                     Affable and Well Spoken
                   </span>
                 </div>
                 <div>
-                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod'}} />
                   <span className="bullet-pint-description">
                     {" "}
                     Embrace & Endorse Change
                   </span>
                 </div>
                 <div>
-                  <FontAwesomeIcon icon={faCaretSquareRight} size="sm" />
+                <FontAwesomeIcon icon={faCaretSquareRight} size="sm" style={{color: 'goldenrod', }} />
                   <span className="bullet-pint-description">
                     {" "}
                     Very Strong Work Ethic
@@ -437,7 +436,7 @@ const Bio = () => {
                       Project Management Certification
                     </span>
                   </div>
-                  <hr />
+              
                 </ul>
               </div>
             </div>
