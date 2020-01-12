@@ -1,9 +1,9 @@
 $main-title-color: rgba(218, 165, 32, 0.741);
-$sub-title-color: rgba(218, 165, 32, 0.714);
-$font-color: #bec2c0;
+$sub-title-color: rgb(230, 177, 43);
+$font-color: rgb(237, 229, 197);
 $icon-color: #7b7d7c;
-$background-icon-color: rgb(191, 190, 190);
-$background-body-color: rgba(57, 57, 57, 0.898);
+$background-icon-color: rgb(91, 89, 89);
+$background-body-color: rgb(83, 81, 81);
 $background-main-body-color: transparent;
 
 :root {
@@ -33,7 +33,7 @@ $icon-color: "goldenrod";
   text-align: center;
   background: $background-main-body-color;
   height: auto;
-  background: linear-gradient(rgba(68, 67, 67, 0), rgba(0, 0, 0, 0)),
+   background: linear-gradient(rgba(68, 67, 67, 0), rgba(0, 0, 0, 0)),
     var(--bio-background) cover center;
 
   overflow: hidden;
@@ -51,8 +51,8 @@ $icon-color: "goldenrod";
   font-weight: 00;
   color: $main-title-color;
   border-radius: 20px;
-  box-shadow: 3px 3px 3px 0 rgb(123, 125, 124, 1),
-    -4px 4px 3px 0 rgba(0, 0, 0, 0.3);
+  //  box-shadow: 3px 3px 3px 0 rgb(123, 125, 124, 1),
+  //    -4px 4px 3px 0 rgba(0, 0, 0, 0.3);
 
 
 }
@@ -68,8 +68,8 @@ $icon-color: "goldenrod";
   color: $sub-title-color;
   text-shadow: rgba(41, 40, 40, 0.836) 1.3px 0.5px 0.5px;
   border-radius: 20px;
-  box-shadow: 1px 3px 1px 0 rgb(123, 125, 124, 1),
-    -4px -4px 16px -1px rgba(0, 0, 0, 0.3);
+   box-shadow: 1px 3px 1px 0 rgb(123, 125, 124, 1),
+     -4px -4px 1px -1px rgba(0, 0, 0, 0.3);
 
   // padding-top: 20px;
 }
@@ -103,7 +103,7 @@ $icon-color: "goldenrod";
 
 .business-characteristic-ul {
 
-  color: #bec2c0;
+  color: rgb(237, 229, 197);
   font-size: 12px;
   padding: 10px;
   padding-left: 15px;
