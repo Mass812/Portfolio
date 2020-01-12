@@ -138,12 +138,12 @@ $icon-color: "goldenrod";
   word-spacing: 4px;
   letter-spacing: 1px;
   line-height: 24px;
-  padding: 15px;
+  padding: 5px;
   color: $font-color;
   text-shadow: none;
-  border-radius: 0.5em;
-  box-shadow: -2px -2px 2px 0 rgb(123, 125, 124, 1),
-    4px 4px 3px 0 rgba(0, 0, 0, 0.3);
+ // border-radius: 0.5em;
+  // box-shadow: -2px -2px 2px 0 rgb(123, 125, 124, 1),
+  //   4px 4px 3px 0 rgba(0, 0, 0, 0.3);
 
 }
 
@@ -183,9 +183,43 @@ $icon-color: "goldenrod";
     text-align: center;
   }
 
+  .bio-main-title {
+    font-family: "Dr Sugiyama, cursive";
+  }
+  
+  .bio-subtitle-main {
+    margin: 2px;
+    font-size: 22px;
+    font-family: "Dosis";
+    font-weight: 00;
+    color: $main-title-color;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 0 rgb(123, 125, 124, 1),
+      -4px 4px 3px 0 rgba(0, 0, 0, 0.3);
+  
+  
+  }
+  
+  .bio-subtitle {
+    font-size: 30px;
+    font-family: "Cormorant Garamond";
+      font-weight: 0;
+    letter-spacing: 2px;
+    padding: 15px;
+    margin: 20px;
+    background-color: $background-body-color;
+    color: $sub-title-color;
+    text-shadow: rgba(41, 40, 40, 0.836) 1.3px 0.5px 0.5px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 1px 0 rgb(123, 125, 124, 1),
+      -4px -4px 16px -1px rgba(0, 0, 0, 0.3);
+  
+    // padding-top: 20px;
+  }
+
   .business-characteristic-ul {
     font-family: "Source Sans Pro";
-    font-size: 12px;
+    font-size: 18px;
     padding-left: 15px;
     padding-left: 15%;
     line-height: 25px;
@@ -227,4 +261,20 @@ $icon-color: "goldenrod";
       content: "";
     }
   }
+
+  .weakness {
+    font-family: "Source Sans Pro";
+    text-align: left;
+    font-weight: 200;
+    font-size: 22px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    padding: 5px;
+    color: $font-color;
+    text-shadow: none;
+   // border-radius: 0.5em;
+    // box-shadow: -2px -2px 2px 0 rgb(123, 125, 124, 1),
+    //   4px 4px 3px 0 rgba(0, 0, 0, 0.3);
+}
 }

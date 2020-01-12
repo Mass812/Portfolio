@@ -22,27 +22,22 @@ const Home = () => {
       .fromTo(
         img,
         {
-        
-          y:100,
+          y: 100,
           duration: 2,
           height: 330,
-         
-          ease: "Power0",
-       
+
+          ease: "Power0"
         },
         {
-          y:0,
+          y: 0,
           delay: 1.5,
           duration: 1.5,
           height: 150,
-          borderWidth: 5,
+          borderWidth: 2,
           ease: "Power1.easeOut",
-          rotate: 540,
-        
-        
+          rotate: 540
         }
       )
-   
 
       .from(
         [headline1, headline2, headline3],
@@ -57,13 +52,13 @@ const Home = () => {
           color: "rgb(210,181,113)"
         }
       );
-      // .to(name, {
-      //   duration: 1,
-      //   x: -30,
-      //   ease: "Back.easeOut",
-      //   opacity: 0,
-      //   delay: 1
-      // });
+    // .to(name, {
+    //   duration: 1,
+    //   x: -30,
+    //   ease: "Back.easeOut",
+    //   opacity: 0,
+    //   delay: 1
+    // });
     // .to([headline1, headline2, headline3], {
     //   duration: 0.7,
     //   y: 300,
@@ -79,32 +74,32 @@ const Home = () => {
 
   return (
     <div>
-      <section className="section">
-        <div className="container">
-            
-          <div className="top">
-            <div className="frame" ref={cr => (frame = cr)}>
+      <section className="home-section">
+        <div className="home-container">
+          <div className="home-top">
+            <div className="home-frame" ref={cr => (frame = cr)}>
               <img
                 src={matt}
                 alt={""}
-                className="icon"
+                className="home-icon"
                 ref={cr => (img = cr)}
               />
             </div>
           </div>
-         
-          <div className="bottom" ref={cr => (statement = cr)}>
-            <div className="name" ref={cr => (name = cr)} style={{fontSize: 50}}>
-             Matt Wellman
+
+          <div className="home-bottom" ref={cr => (statement = cr)}>
+            <div
+              className="home-name"
+              ref={cr => (name = cr)}
+              style={{ fontSize: 50 }}>
+              Matt Wellman
             </div>
             Manager
-
-            <div className="subTitle2">Full Stack Mern Developer</div>
+            <div className="home-subTitle2">Full Stack Mern Developer</div>
           </div>
         </div>
         <FontAwesome />
       </section>
-    
     </div>
   );
 };

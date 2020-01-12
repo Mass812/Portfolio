@@ -302,8 +302,8 @@ const Bio = () => {
               About Me
               <p className="weakness">
                 <q>
-                  There is a lot of things that make me unique to a workforce. I
-                  have a college background in Chemistry & Biology, have red a
+                  There are a lot of things that make me unique to a workforce. I
+                  have a college background in Chemistry & Biology, have read a
                   library of books, Know technology intimately & always try to
                   work at least twice as hard as the guy working next to me.
                 </q>
