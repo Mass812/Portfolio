@@ -44,7 +44,7 @@ $icon-color: "goldenrod";
 
 .education-list{
 
-margin-left: -45px;
+margin-left: -25px;
 margin-top: 25px;
 
 
@@ -75,7 +75,7 @@ margin-top: 25px;
   font-family: "Cinzel";
   font-weight: 0;
   letter-spacing: 2px;
-  padding: 15px;
+  padding: 10px;
   margin: 20px;
   background-color: $background-body-color;
   color: $sub-title-color;
@@ -139,9 +139,10 @@ margin-top: 25px;
   font-family: "Cormorant Garamond";
   text-align: left;
  font-weight: 100;
-  font-size: 13px;
+  font-size: 16px;
   word-spacing: 1.5px;
-  letter-spacing: 1.75px;
+  letter-spacing: 2px;
+  padding-right: -5px;
 }
 
 .weakness {

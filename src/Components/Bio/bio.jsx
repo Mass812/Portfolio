@@ -87,7 +87,7 @@ const Bio = () => {
         color: "#566b75"
       },
       {
-        scale: 1,
+        scale: 1.5,
         stagger: 0.1,
         duration: 0.3,
         color: "#566b75"
@@ -119,7 +119,7 @@ const Bio = () => {
       {
         delay: 2.2,
         duration: 1.8,
-        scale: 1.3,
+        scale: 1.8,
 
         stagger: 0.03,
         color: "rgba(255,255,255,.4)",
@@ -478,7 +478,7 @@ const Bio = () => {
                       size="sm"
                       style={{ color: "goldenrod" }}
                     />
-                    <span className="bullet-pint-description">
+                    <span className="bullet-pint-description" >
                       {" "}
                       React-Native, JavaScript, Node.js
                     </span>
