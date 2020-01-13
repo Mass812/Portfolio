@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import "./Home.scss";
 import FontAwesome from "../FontAwesome/FontAwesome";
+import Button from "../../Assets/Button";
+import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 
 const matt = require("../../Assets/MWlogo2.jpg");
@@ -52,25 +54,17 @@ const Home = () => {
           color: "rgb(210,181,113)"
         }
       );
-    // .to(name, {
-    //   duration: 1,
-    //   x: -30,
-    //   ease: "Back.easeOut",
-    //   opacity: 0,
-    //   delay: 1
-    // });
-    // .to([headline1, headline2, headline3], {
-    //   duration: 0.7,
-    //   y: 300,
-    //   ease: "bounce.easeOut",
-    //   opacity: 0,
-    //   delay: 0
-    // });
 
     return () => {
       console.log("cleaned");
     };
   }, []);
+
+  (() => {
+    let windowWidth = window.innerWidth;
+    console.log(windowWidth);
+  })();
+  console.log();
 
   return (
     <div>

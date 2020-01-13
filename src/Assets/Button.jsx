@@ -3,8 +3,8 @@ import "./Button.scss";
 
 const Button = (props = "Default") => {
   return (
-    <ul>
-      <li>
+    <ul className = 'button-ul'>
+      <li className = 'button-li'>
         {props.children}
         <span></span>
         <span></span>

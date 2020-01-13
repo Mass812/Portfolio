@@ -101,7 +101,7 @@ const Bio = () => {
         scale: 1,
         stagger: 0.1,
         duration: 0.3,
-        color: "#766b75"
+        color: "#566b75"
       }
     );
     window.gsap.timeline([icon, { duration: 0.3, delay: 5 }]).staggerTo(
@@ -135,7 +135,7 @@ const Bio = () => {
         scale: 1.3,
 
         stagger: 0.03,
-        color: "#766b95",
+        color: "rgba(255,255,255,.4)",
         display: "inline-block",
         ease: "Power0.easeInOut"
       }

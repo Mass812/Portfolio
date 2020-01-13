@@ -1,13 +1,13 @@
 $main-title-color: rgba(218, 165, 32, 0.741);
-$sub-title-color: rgb(230, 177, 43);
-$font-color: rgb(237, 229, 197);
+$sub-title-color: rgb(255, 187, 0);
+$font-color: rgba(255, 255, 255, 0.939);
 $icon-color: #7b7d7c;
 $background-icon-color: rgb(91, 89, 89);
-$background-body-color: rgb(83, 81, 81);
+$background-body-color: rgba(255, 255, 255, 0.224);
 $background-main-body-color: transparent;
 
 :root {
-  --bio-background: url("../../Assets/by2.jpg");
+  --bio-background: url("../../Assets/grey1.jpg");
 }
 
 $icon-color: "goldenrod";
@@ -33,7 +33,7 @@ $icon-color: "goldenrod";
   text-align: center;
   background: $background-main-body-color;
   height: auto;
-   background: linear-gradient(rgba(68, 67, 67, 0), rgba(0, 0, 0, 0)),
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)),
     var(--bio-background) cover center;
 
   overflow: hidden;
@@ -41,26 +41,23 @@ $icon-color: "goldenrod";
 }
 
 .bio-main-title {
-  font-family: "Dr Sugiyama, cursive";
+  font-family: "Mr Dafoe", cursive;
 }
 
 .bio-subtitle-main {
   margin: 2px;
   font-size: 12px;
-  font-family: "Dosis";
   font-weight: 00;
   color: $main-title-color;
   border-radius: 20px;
   //  box-shadow: 3px 3px 3px 0 rgb(123, 125, 124, 1),
   //    -4px 4px 3px 0 rgba(0, 0, 0, 0.3);
-
-
 }
 
 .bio-subtitle {
   font-size: 20px;
-  font-family: "Cormorant Garamond";
-    font-weight: 0;
+  font-family: "Cinzel";
+  font-weight: 0;
   letter-spacing: 2px;
   padding: 15px;
   margin: 20px;
@@ -68,8 +65,8 @@ $icon-color: "goldenrod";
   color: $sub-title-color;
   text-shadow: rgba(41, 40, 40, 0.836) 1.3px 0.5px 0.5px;
   border-radius: 20px;
-   box-shadow: 1px 3px 1px 0 rgb(123, 125, 124, 1),
-     -4px -4px 1px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 3px 1px 0 rgb(123, 125, 124, 1),
+    -4px -4px 1px -1px rgba(0, 0, 0, 0.3);
 
   // padding-top: 20px;
 }
@@ -96,19 +93,18 @@ $icon-color: "goldenrod";
 .business-characteristic-parent {
   width: 100%;
   text-align: left;
-  justify-content: center;
+  justify-content: left;
 
   // text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
 }
 
 .business-characteristic-ul {
-
-  color: rgb(237, 229, 197);
-  font-size: 12px;
-  padding: 10px;
-  padding-left: 15px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  padding: 1px;
+  padding-left: 1px;
   line-height: 26px;
-  letter-spacing: 1px;
+  letter-spacing: .75px;
 
   // text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
 }
@@ -124,54 +120,55 @@ $icon-color: "goldenrod";
   text-shadow: none;
   color: $icon-color;
   padding: 5px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  opacity: 0.89;
-  //text-shadow: rgb(10, 10, 10) 2.83px 0.53px 1.3px;
+  font-family: "Cormorant Garamond";
+  text-align: left;
+ font-weight: 100;
+  font-size: 14px;
+  word-spacing: 4px;
+  letter-spacing: 1.75px;
 }
 
 .weakness {
-  font-family: "Source Sans Pro";
+  font-family: "Cormorant Garamond";
   text-align: left;
-  font-weight: 700;
-  font-size: 12px;
-  word-spacing: 4px;
-  letter-spacing: 1px;
-  line-height: 24px;
+  font-weight: 200;
+  font-size: 16px;
+  word-spacing: 1px;
+  letter-spacing: 1.75px;
+  line-height: 26px;
   padding: 5px;
   color: $font-color;
   text-shadow: none;
- // border-radius: 0.5em;
+  // border-radius: 0.5em;
   // box-shadow: -2px -2px 2px 0 rgb(123, 125, 124, 1),
   //   4px 4px 3px 0 rgba(0, 0, 0, 0.3);
-
 }
 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .bio-parent {
     box-sizing: content-box;
     text-align: center;
@@ -186,7 +183,7 @@ $icon-color: "goldenrod";
   .bio-main-title {
     font-family: "Dr Sugiyama, cursive";
   }
-  
+
   .bio-subtitle-main {
     margin: 2px;
     font-size: 22px;
@@ -196,14 +193,12 @@ $icon-color: "goldenrod";
     border-radius: 20px;
     box-shadow: 3px 3px 3px 0 rgb(123, 125, 124, 1),
       -4px 4px 3px 0 rgba(0, 0, 0, 0.3);
-  
-  
   }
-  
+
   .bio-subtitle {
     font-size: 30px;
     font-family: "Cormorant Garamond";
-      font-weight: 0;
+    font-weight: 0;
     letter-spacing: 2px;
     padding: 15px;
     margin: 20px;
@@ -213,20 +208,19 @@ $icon-color: "goldenrod";
     border-radius: 20px;
     box-shadow: 1px 3px 1px 0 rgb(123, 125, 124, 1),
       -4px -4px 16px -1px rgba(0, 0, 0, 0.3);
-  
+
     // padding-top: 20px;
   }
 
   .business-characteristic-ul {
-    font-family: "Source Sans Pro";
-    font-size: 18px;
-    padding-left: 15px;
-    padding-left: 15%;
-    line-height: 25px;
-
+ 
+    font-size: 20px;
+    padding-left: 1px;
+    padding-left: 1%;
+    
     // text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
   }
-
+  
   .bullet {
     flex: 1;
     flex-direction: column;
@@ -234,12 +228,15 @@ $icon-color: "goldenrod";
     size: inherit;
     display: inline-block;
   }
-
+  
   .bullet-pint-description {
+    font-family: "Cormorant Garamond";
+    font-size: 22px;
     padding: 10px;
     font-weight: 300;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     color: $font-color;
+    line-height: 25px;
     // text-shadow: rgb(10, 10, 10) 2.83px 0.53px 1.3px;
   }
 
@@ -263,18 +260,19 @@ $icon-color: "goldenrod";
   }
 
   .weakness {
-    font-family: "Source Sans Pro";
+    font-family: "Cormorant Garamond";
     text-align: left;
     font-weight: 200;
     font-size: 22px;
-    word-spacing: 4px;
-    letter-spacing: 1px;
-    line-height: 24px;
+    word-spacing: 1px;
+    letter-spacing: 1.75px;
+    line-height: 26px;
     padding: 5px;
     color: $font-color;
     text-shadow: none;
-   // border-radius: 0.5em;
+    // border-radius: 0.5em;
     // box-shadow: -2px -2px 2px 0 rgb(123, 125, 124, 1),
     //   4px 4px 3px 0 rgba(0, 0, 0, 0.3);
-}
-}
+  }
+  }
+

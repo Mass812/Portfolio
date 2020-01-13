@@ -13,6 +13,7 @@ const Toolbar = props => {
           <div className="site_name">
             M<span id="W">W</span>
           </div>
+          
         </nav>
       </header>
     </div>
