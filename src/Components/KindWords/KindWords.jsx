@@ -15,7 +15,7 @@ function ReviewerPhoto() {
     {
       id: 2,
       name: "Angel West",
-      title: "Senior Function Manager @ Techstyle Fashion Group",
+      title: "Senior Function Manager @ Techstyle",
       link:
         "https://media.licdn.com/dms/image/C4E03AQHu0zxpDCzC_w/profile-displayphoto-shrink_100_100/0?e=1581552000&v=beta&t=jJ-cR9SdTGnkNXka82aB5FzVQy3iIxaExWzgxzZ4ppY",
       content:

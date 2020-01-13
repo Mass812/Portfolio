@@ -14,7 +14,7 @@
   height: 1.2em;
   text-transform: uppercase;
   font-weight: normal;
-  font-family: "Cinzel";
+  font-family: "Cormorant Garamond";
   letter-spacing: 0.1em;
   text-align: center;
   line-height: 1.3em;
@@ -23,7 +23,7 @@
   z-index: 1;
   transition: 0.1s;
   margin: 1.6em;
-  padding-top: 0.3em;
+  padding: 0.3em;
   &:hover, &:active {
     color: goldenrod;
   }
@@ -102,7 +102,7 @@
     height: 1.2em;
     text-transform: uppercase;
     font-weight: normal;
-    font-family: "Cinzel";
+    font-family: "Cormorant Garamond";
     letter-spacing: 0.1em;
     text-align: center;
     line-height: 1.3em;

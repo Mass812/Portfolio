@@ -19,7 +19,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   display: inline;
   white-space: text-wrap;
   border-bottom: 1px dotted blue;
-  font-family: "Cinzel";
+  font-family: "Cormorant Garamond";
   font-size: 17px;
   padding: 0;
   color: goldenrod;
@@ -50,7 +50,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
 #tag, #intel, #safe {
   color: rgb(208, 160, 39);
-  font-family: "Telium Web";
+  font-family: "Cormorant Garamond";
   text-decoration: underline;
   font-size: 0.9rem;
   padding: 10px;
@@ -68,7 +68,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
 .why {
   padding-left: 3px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Cormorant Garamond';
   margin-bottom: 0;
 }
 
@@ -84,9 +84,10 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 //
 p {
   text-indent: 20px;
-  font-family: "Rajdhani";
+  font-family: "Cormorant Garamond";
   color: rgb(59, 56, 53);
   font-weight: 700;
+  letter-spacing: 1px;
 }
 a {
   color: $primary-color;
@@ -98,10 +99,18 @@ a {
 .dateOf {
   padding: 30px 0px;
   margin-left: 1px;
+  font-size: 14px;
   &::first-letter {
-    font-size: 32px;
+    font-size: 52px;
     font-style: bold;
   }
+}
+
+.innerList{
+  padding-left: 5px;
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+  color: black;
 }
 
 .example-header {
@@ -132,7 +141,8 @@ a {
 }
 #push {
   padding-left: 0px;
-  font-family: "Rajdhani";
+  font-family: "Cormorant Garamond";
+  letter-spacing: 5px;
 }
 
 .example-title {
@@ -145,11 +155,7 @@ a {
   padding-top: 35px;
   color: goldenrod;
   text-shadow: black 1.2px 1.3px;
-  p {
-    margin: 0 auto;
-    font-size: 16px;
-    max-width: 400px;
-  }
+
 }
 
 /*==================================
@@ -297,7 +303,7 @@ a {
 
 .ExperienceListParent {
   font-weight: 650;
-  font-family: "Rajdhani";
+  font-family: "Cormorant Garamond";
   font-style: bold;
   padding-left: 20px;
   padding-right: 20px;

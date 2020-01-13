@@ -40,8 +40,24 @@ $icon-color: "goldenrod";
   position: relative;
 }
 
-.bio-main-title {
-  font-family: "Mr Dafoe", cursive;
+
+
+.education-list{
+
+margin-left: -35px;
+margin-top: 25px;
+
+
+  p {
+    padding: 0;
+    margin: 6px;
+    padding-left: 40px;
+    line-height: 22px;
+    color: tan;
+    font-size: 16px;
+
+
+  }
 }
 
 .bio-subtitle-main {
@@ -123,8 +139,8 @@ $icon-color: "goldenrod";
   font-family: "Cormorant Garamond";
   text-align: left;
  font-weight: 100;
-  font-size: 14px;
-  word-spacing: 4px;
+  font-size: 15px;
+  word-spacing: 1.5px;
   letter-spacing: 1.75px;
 }
 
@@ -132,8 +148,8 @@ $icon-color: "goldenrod";
   font-family: "Cormorant Garamond";
   text-align: left;
   font-weight: 200;
-  font-size: 16px;
-  word-spacing: 1px;
+  font-size: 18px;
+  word-spacing: 2px;
   letter-spacing: 1.75px;
   line-height: 26px;
   padding: 5px;
@@ -221,6 +237,25 @@ $icon-color: "goldenrod";
     // text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
   }
   
+
+  .education-list{
+    font-size: 22px;
+    margin-left: -35px;
+    margin-top: 25px;
+    
+    
+      p {
+        font-size: 22px;
+        padding: 0;
+        margin: 6px;
+        padding-left: 40px;
+        line-height: 22px;
+        color: tan;
+        font-size: 22px;
+    
+    
+      }
+    }
   .bullet {
     flex: 1;
     flex-direction: column;
@@ -236,7 +271,7 @@ $icon-color: "goldenrod";
     font-weight: 300;
     letter-spacing: 1px;
     color: $font-color;
-    line-height: 25px;
+    line-height: 30px;
     // text-shadow: rgb(10, 10, 10) 2.83px 0.53px 1.3px;
   }
 
@@ -263,10 +298,10 @@ $icon-color: "goldenrod";
     font-family: "Cormorant Garamond";
     text-align: left;
     font-weight: 200;
-    font-size: 22px;
+    font-size: 24px;
     word-spacing: 1px;
-    letter-spacing: 1.75px;
-    line-height: 26px;
+    letter-spacing: 1px;
+    line-height: 34px;
     padding: 5px;
     color: $font-color;
     text-shadow: none;

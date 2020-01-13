@@ -28,14 +28,12 @@ import {
   faFileWord,
   faFileExcel,
   faChartPie,
-  faHandMiddleFinger
 } from "@fortawesome/free-solid-svg-icons";
-import { reverse } from "dns";
 
 const Bio = () => {
-  const random = Math.floor(Math.random() * 12);
 
-  let characteristics,
+  let 
+    coined,
     titleArea,
     icon,
     js,
@@ -141,18 +139,25 @@ const Bio = () => {
       }
     );
 
+
+
+
+
     return () => {
       console.log("fired useEffect gsap effects");
     };
-  }, [reload.pathname]);
+  }, );
 
   return (
     <div className="bio-wrapper">
       <div className="bio-parent">
-        <div className="bio-subtitle">Proficiencies</div>
+        <div className="bio-subtitle">
+        <div> Proficiencies </div>
+        
+        </div>
         <div>
           <div className="bio-title-area" ref={cr => titleArea}>
-            <div className="bio-subtitle-main">
+            <div>
               <ul className="icon-splay" ref={cr => (icon = cr)}>
                 <div ref={cr => (excel = cr)}>
                   <FontAwesomeIcon
@@ -296,9 +301,9 @@ const Bio = () => {
           </div>
         </div>
 
-        <div ref={cr => (characteristics = cr)}>
+        <div >
           <div>
-            <div className="bio-subtitle" ref={cr => (characteristics = cr)}>
+            <div className="bio-subtitle" >
               About Me
               <p className="weakness">
                 <q>
@@ -409,7 +414,7 @@ const Bio = () => {
             </div>
           </div>
           <div>
-            <div className="bio-subtitle" ref={cr => (characteristics = cr)}>
+            <div className="bio-subtitle" >
               Greatest Weakness & Strength
               <p className="weakness">
                 <q>
@@ -425,6 +430,60 @@ const Bio = () => {
               </p>
             </div>
           </div>
+
+      
+          <div>
+            <div className="bio-subtitle" >
+              Education
+              <div className="business-characteristic-parent">
+                <ul className="business-characteristic-ul">
+
+
+                 <ul className='education-list'>  University of Kentucky 
+                 
+                 <p><b>Major: </b> Chemistry & Biology</p>
+                 <p><b>GPA:</b> 3.2</p>
+                 <p><b>Attended:</b> 2005-2007</p>
+                 
+                 
+                  </ul> 
+                 <ul className='education-list'>   Indiana University 
+                 
+                 <p><b>Major: </b> Biochemistry</p>
+                 <p><b>GPA:</b> 3.0</p>
+                 <p><b>Attended:</b> 2004-2005</p>
+                 
+                 
+                  </ul> 
+                 <ul className='education-list'>     Ivy Tech Community
+                 
+                 <p><b>Major: </b> Prerequisites</p>
+                 <p><b>GPA:</b> 3.9</p>
+                 <p><b>Attended:</b> 2003-2004</p>
+                 
+                 
+                  </ul> 
+                 
+               
+                </ul>
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
           <div>
             <div className="bio-subtitle">
               Certifications
@@ -481,6 +540,13 @@ const Bio = () => {
           </div>
         </div>
         {/*  hello  */}
+
+
+
+
+
+
+        
       </div>
     </div>
   );

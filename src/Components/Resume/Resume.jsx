@@ -80,7 +80,7 @@ const Resume = () => {
                   => Present
                   <span
                     style={{
-                      fontSize: "8px",
+                      fontSize: "12px",
                       color: "#74726B",
                       textShadow: "none"
                     }}>
@@ -177,7 +177,7 @@ const Resume = () => {
                 <span className="dateOf"> => October 23, 2019</span>
                 <span
                   style={{
-                    fontSize: "8px",
+                    fontSize: "12px",
                     color: "#74726B",
                     textShadow: "none"
                   }}>
@@ -262,7 +262,7 @@ const Resume = () => {
                 <span className="dateOf">=> October 02, 2018</span>
                 <span
                   style={{
-                    fontSize: "8px",
+                    fontSize: "12px",
                     color: "#74726B",
                     textShadow: "none"
                   }}>
@@ -344,7 +344,7 @@ const Resume = () => {
                           <p>
                             <b>I was wholly responsible for:</b>{" "}
                           </p>
-                          <ul>
+                          <ul className='innerList'>
                             <Icon icon={faCaretSquareRight} size={"sm"}>
                               evaluating, mentoring, and developing
                               managers/supervisors.{" "}
@@ -369,7 +369,7 @@ const Resume = () => {
                           </ul>
                           <br />
                         </div>
-                        <div>
+                        <p>
                           I injected modernity into the security program by
                           <i>
                             <u>
@@ -378,9 +378,9 @@ const Resume = () => {
                             </u>
                           </i>{" "}
                           & streamlined operations. Which:
-                        </div>
+                        </p>
                         <br />
-                        <ul>
+                        <ul className='innerList'>
                           <Icon icon={faCaretSquareRight} size={"sm"}>
                             watered-down operational complexities (Lessened
                             Skill Set requirements)
@@ -394,8 +394,8 @@ const Resume = () => {
                             (Modernized Security)
                           </Icon>
                           <Icon icon={faCaretSquareRight} size={"sm"}>
-                            yielded clearer insights to areas of focus (Data
-                            Analysis)
+                            <p> yielded clearer insights to areas of focus (Data
+                            Analysis) </p> 
                           </Icon>
                           <Icon icon={faCaretSquareRight} size={"sm"}>
                             immeasurably increased oversight (Operational
