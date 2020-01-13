@@ -86,7 +86,7 @@ p {
   text-indent: 20px;
   font-family: "Cormorant Garamond";
   color: rgb(59, 56, 53);
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 a {
@@ -165,7 +165,7 @@ a {
 /*-- GENERAL STYLES
     ------------------------------*/
 .timeline {
-  line-height: 1.4em;
+  line-height: 1.2em;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -205,7 +205,7 @@ a {
 
 .timeline-info {
   display: contents;
-  font-size: 12px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: 3px;
   margin: 0 0 0.2em 0;
@@ -260,7 +260,10 @@ a {
 
 .timeline-content {
   padding-bottom: 30px;
+  color: black;
   p:last-child {
+    color: black;
+    
     margin-bottom: 0;
     padding-right: 12px;
   }
@@ -295,6 +298,10 @@ a {
   }
   .timeline-content {
     padding: 15px 70px;
+    font-weight: 650;
+    font-family: "Cormorant Garamond";
+    color: black;
+
   }
   .timeline-title {
     padding-left: 25px;
@@ -304,7 +311,7 @@ a {
 .ExperienceListParent {
   font-weight: 650;
   font-family: "Cormorant Garamond";
-  font-style: bold;
+  font-style: normal;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 300px;
