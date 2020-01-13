@@ -30,7 +30,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   width: 220px;
   bottom: 100%;
   font-size: 8px;
-  font-family: 'Rajdhani';
+  font-family: "Rajdhani";
   font-weight: 0;
   left: 50%;
   font-weight: 0;
@@ -48,7 +48,9 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   visibility: visible;
 }
 
-#tag, #intel, #safe {
+#tag,
+#intel,
+#safe {
   color: rgb(208, 160, 39);
   font-family: "Cormorant Garamond";
   text-decoration: underline;
@@ -61,15 +63,17 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   display: flex;
   flex-direction: row-reverse;
 }
-#tagged, #no-intel, #no-safe {
+#tagged,
+#no-intel,
+#no-safe {
   display: none;
 }
 
-
 .why {
   padding-left: 3px;
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   margin-bottom: 0;
+  font-size: 12px;
 }
 
 .sep {
@@ -85,8 +89,8 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 p {
   text-indent: 20px;
   font-family: "Cormorant Garamond";
-  color: rgb(59, 56, 53);
-  font-weight: 300;
+  color: rgb(2, 2, 2);
+  font-weight: 200;
   letter-spacing: 1px;
 }
 a {
@@ -106,7 +110,7 @@ a {
   }
 }
 
-.innerList{
+.innerList {
   padding-left: 5px;
   font-family: "Cormorant Garamond";
   font-weight: 600;
@@ -141,8 +145,8 @@ a {
 }
 #push {
   padding-left: 0px;
-  font-family: "Cormorant Garamond";
-  letter-spacing: 5px;
+  font-family: "Rajdhani";
+  letter-spacing: 2px;
 }
 
 .example-title {
@@ -155,7 +159,6 @@ a {
   padding-top: 35px;
   color: goldenrod;
   text-shadow: black 1.2px 1.3px;
-
 }
 
 /*==================================
@@ -199,8 +202,6 @@ a {
   box-shadow: 2px 2px 5px rgb(85, 83, 83);
 }
 
-
-
 /*----- TIMELINE INFO -----*/
 
 .timeline-info {
@@ -226,7 +227,7 @@ a {
   &:before {
     background: rgb(226, 180, 62);
     border: 2.2px solid rgb(0, 0, 0);
-   
+
     border-radius: 100%;
     content: "";
     display: block;
@@ -262,8 +263,10 @@ a {
   padding-bottom: 30px;
   color: black;
   p:last-child {
-    color: black;
-    
+    font-family: "Cormorant Garamond";
+    color: rgb(105, 98, 98);
+    font-weight: 600;
+    font-size: 16px;
     margin-bottom: 0;
     padding-right: 12px;
   }
@@ -301,7 +304,6 @@ a {
     font-weight: 650;
     font-family: "Cormorant Garamond";
     color: black;
-
   }
   .timeline-title {
     padding-left: 25px;

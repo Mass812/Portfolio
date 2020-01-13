@@ -65,7 +65,7 @@ const Resume = () => {
         <div className="col-sm-12 example-title">
           <h2 id="push" ref={cr => (title = cr)}>
             {" "}
-            Experience Timeline{" "}
+            Experience{" "}
           </h2>
         </div>
         <hr className="sep" />
