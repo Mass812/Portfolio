@@ -7,12 +7,10 @@ import {
   faJsSquare,
   faReact,
   faHtml5,
-  faJira,
   faLess,
   faNode,
   faPython,
   faSass,
-  faSourcetree,
   faMicrosoft,
   faMdb,
   faNpm,
@@ -27,14 +25,11 @@ import {
   faFilePowerpoint,
   faFileWord,
   faFileExcel,
-  faChartPie,
+  faChartPie
 } from "@fortawesome/free-solid-svg-icons";
 
 const Bio = () => {
-
-  let 
-    coined,
-    titleArea,
+  let titleArea,
     icon,
     js,
     git,
@@ -43,14 +38,12 @@ const Bio = () => {
     node,
     py,
     sass,
-    st,
     mdb,
     excel,
     github,
     npm,
     ms,
     gdrive,
-    jira,
     word,
     powerpoint,
     pie,
@@ -67,7 +60,6 @@ const Bio = () => {
         word,
         js,
         github,
-        st,
         git,
         less,
         react,
@@ -83,7 +75,6 @@ const Bio = () => {
         ms,
         gdrive,
         powerpoint,
-        jira,
         pie
       ],
       {
@@ -122,8 +113,6 @@ const Bio = () => {
         google,
         ms,
         gdrive,
-        jira,
-        st,
         pie
       ],
       {},
@@ -139,21 +128,17 @@ const Bio = () => {
       }
     );
 
-
-
-
-
     return () => {
       console.log("fired useEffect gsap effects");
     };
-  }, );
+    /* eslint-disable-next-line no-alert, quotes, semi */
+  }, []); /* eslint-disable-line no-alert, quotes, semi */
 
   return (
     <div className="bio-wrapper">
       <div className="bio-parent">
         <div className="bio-subtitle">
-        <div> Proficiencies </div>
-        
+          <div> Proficiencies </div>
         </div>
         <div>
           <div className="bio-title-area" ref={cr => titleArea}>
@@ -301,15 +286,15 @@ const Bio = () => {
           </div>
         </div>
 
-        <div >
+        <div>
           <div>
-            <div className="bio-subtitle" >
+            <div className="bio-subtitle">
               About Me
               <p className="weakness">
                 <q>
-                  There are a lot of things that make me unique to a workforce. I
-                  have a college background in Chemistry & Biology, have read a
-                  library of books, Know technology intimately & always try to
+                  There are a lot of things that make me unique to a workforce.
+                  I have a college background in Chemistry & Biology, have read
+                  a library of books, Know technology intimately & always try to
                   work at least twice as hard as the guy working next to me.
                 </q>
                 <br />
@@ -414,7 +399,7 @@ const Bio = () => {
             </div>
           </div>
           <div>
-            <div className="bio-subtitle" >
+            <div className="bio-subtitle">
               Greatest Weakness & Strength
               <p className="weakness">
                 <q>
@@ -431,58 +416,56 @@ const Bio = () => {
             </div>
           </div>
 
-      
           <div>
-            <div className="bio-subtitle" >
+            <div className="bio-subtitle">
               Education
               <div className="business-characteristic-parent">
                 <ul className="business-characteristic-ul">
-
-
-                 <ul className='education-list'>  University of Kentucky 
-                 
-                 <p><b>Major: </b> Chemistry & Biology</p>
-                 <p><b>GPA:</b> 3.2</p>
-                 <p><b>Attended:</b> 2005-2007</p>
-                 
-                 
-                  </ul> 
-                 <ul className='education-list'>   Indiana University 
-                 
-                 <p><b>Major: </b> Biochemistry</p>
-                 <p><b>GPA:</b> 3.0</p>
-                 <p><b>Attended:</b> 2004-2005</p>
-                 
-                 
-                  </ul> 
-                 <ul className='education-list'>     Ivy Tech Community
-                 
-                 <p><b>Major: </b> Prerequisites</p>
-                 <p><b>GPA:</b> 3.9</p>
-                 <p><b>Attended:</b> 2003-2004</p>
-                 
-                 
-                  </ul> 
-                 
-               
+                  <ul className="education-list">
+                    {" "}
+                    University of Kentucky
+                    <p>
+                      <b>Major: </b> Chemistry & Biology
+                    </p>
+                    <p>
+                      <b>GPA:</b> 3.2
+                    </p>
+                    <p>
+                      <b>Attended:</b> 2005-2007
+                    </p>
+                  </ul>
+                  <ul className="education-list">
+                    {" "}
+                    Indiana University
+                    <p>
+                      <b>Major: </b> Biochemistry
+                    </p>
+                    <p>
+                      <b>GPA:</b> 3.0
+                    </p>
+                    <p>
+                      <b>Attended:</b> 2004-2005
+                    </p>
+                  </ul>
+                  <ul className="education-list">
+                    {" "}
+                    Ivy Tech Community
+                    <p>
+                      <b>Major: </b> Prerequisites
+                    </p>
+                    <p>
+                      <b>GPA:</b> 3.9
+                    </p>
+                    <p>
+                      <b>Attended:</b> 2003-2004
+                    </p>
+                  </ul>
                 </ul>
                 <br />
                 <br />
               </div>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
           <div>
             <div className="bio-subtitle">
@@ -540,13 +523,6 @@ const Bio = () => {
           </div>
         </div>
         {/*  hello  */}
-
-
-
-
-
-
-        
       </div>
     </div>
   );

@@ -1,22 +1,17 @@
 import React, { useRef, useEffect } from "react";
 import "./Home.scss";
 import FontAwesome from "../FontAwesome/FontAwesome";
-import Button from "../../Assets/Button";
-import { Link } from "react-router-dom";
-import Footer from "../Footer/Footer";
 
-const matt = require("../../Assets/MWlogo2.jpg");
 
 const Home = () => {
+  const matt = require("../../Assets/MWlogo2.jpg");
   let img = useRef(null);
   let name = useRef(null);
   let statement = useRef(null);
   let frame = useRef(null);
 
   useEffect(() => {
-    const headline1 = statement.children[0];
     const headline2 = statement.children[1];
-    const headline3 = statement.children[2];
 
     window.gsap
       .timeline(frame, { opacity: 0, duration: 3 })
@@ -42,7 +37,7 @@ const Home = () => {
       )
 
       .from(
-        [headline1, headline2, headline3],
+         [name, headline2],
 
         {
           stagger: 0.5,

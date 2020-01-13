@@ -1,6 +1,6 @@
 {
-  "short_name": "MW Bio",
-  "name": "Matt Wellman Portfolio",
+  "short_name": "MW React Bio",
+  "name": "Matt Wellman React Bio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,7 +9,7 @@
     }
   ],
   "start_url": ".",
-  "display": "full screen",
+  "display": "standalone",
   "theme_color": "black",
   "background_color": "#ffffff"
 }
