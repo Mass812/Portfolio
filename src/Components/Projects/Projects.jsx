@@ -4,9 +4,9 @@ import "./Projects.scss";
 //import "../../Assets/bhm.png";
 
 const Projects = () => {
-  const rambo = require("../../Assets/movieThumbNail.png");
+  const rambo = require("../../Assets/movieThumbNail.PNG");
   const handleRambo = () => {
-    window.open("https://matt-wellman-movie@netlify.com");
+    window.open("https://matt-wellman-imbd.netlify.com/");
   };
   return (
     <div className="project-wrapper">
