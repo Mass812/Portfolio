@@ -14,14 +14,18 @@ const Projects = () => {
         <div className="project-title-area">
           <div className="project-main-title">Project Bio</div>
         </div>
-        <div>
-          IMBD Mimic ...in progress
+        <div className='project-card'>
+          <h3>Very Generic Just sketched Out the Movie App</h3>
           <img
             src={rambo}
             className="movie-thumb"
             alt="movie search"
             onClick={handleRambo}
+            
           />
+          </div>
+        <div>
+          
         </div>
         <br />
         <div>Amazon Mimic</div>
