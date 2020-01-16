@@ -4,30 +4,33 @@ import "./Projects.scss";
 //import "../../Assets/bhm.png";
 
 const Projects = () => {
- 
-return(
+  const rambo = require("../../Assets/movieThumbNail.png");
+  const handleRambo = () => {
+    window.open("https://matt-wellman-movie@netlify.com");
+  };
+  return (
     <div className="project-wrapper">
       <div className="project-parent">
         <div className="project-title-area">
           <div className="project-main-title">Project Bio</div>
         </div>
         <div>
-          IMBD Mimic
-        </div>
-        <br/>
-        <div>
-          Amazon Mimic
+          IMBD Mimic ...in progress
+          <img
+            src={rambo}
+            className="movie-thumb"
+            alt="movie search"
+            onClick={handleRambo}
+          />
         </div>
         <br />
-        <div>
-          Air BnB Mimic
-        </div>
+        <div>Amazon Mimic</div>
+        <br />
+        <div>Air BnB Mimic</div>
         <br />
       </div>
     </div>
   );
 };
-
-
 
 export default Projects;

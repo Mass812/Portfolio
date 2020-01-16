@@ -1,4 +1,6 @@
-*{box-sizing: content-box;}
+* {
+  box-sizing: content-box;
+}
 
 .project-wrapper {
   position: absolute;
@@ -12,15 +14,22 @@
   box-sizing: border-box;
   justify-content: center;
   text-align: center;
-
 }
 
+.movie-thumb {
+  height: 200px;
+  width: 200px;
+  size: contain;
+
+  &:active,
+  &:hover {
+    box-shadow: 5px 5px 7px red;
+  }
+}
 .project-parent {
   width: 100%;
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   padding-top: 50px;
- 
-
 }
 
 .project-title-area {
@@ -30,16 +39,15 @@
   margin: 0;
   padding: 0;
   background-color: rgb(224, 204, 17);
-  
 }
 
 .project-main-title {
   font-size: 24px;
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   padding: 10px;
 }
 .project-subtitle {
-  font-size:18px;
-  font-family: 'Titillium Web';
+  font-size: 18px;
+  font-family: "Titillium Web";
   padding: 10px;
 }
