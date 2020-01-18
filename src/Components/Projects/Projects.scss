@@ -16,19 +16,6 @@
   text-align: center;
 }
 
-.movie-thumb {
-  height: 200px;
-  width: 200px;
-  size: fill;
-
-  border-radius: 10px;
-  border: 6px inset goldenrod;
-
-  &:active,
-  &:hover {
-    box-shadow: 5px 5px 7px red;
-  }
-}
 .project-parent {
   width: 100%;
   font-family: "Titillium Web";
@@ -62,9 +49,36 @@
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+
   border: 2px inset black;
   padding: 45px;
   box-shadow: 5px 2px 5px grey;
   margin: 25px;
-  background-color: rgba(139, 139, 3, 0.651);
+  background-color: rgba(119, 139, 116, 0.993);
+}
+
+.project-name {
+  flex: 1;
+  align-self: flex-start;
+  font-style: "Cormorant Garamond", serif;
+  font-size: 40px;
+
+ &::first-letter{
+    font-size: 55px;
+    font-style: 'Indie Flower';
+  }
+}
+.movie-thumb {
+  align-self: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+  border: 3px inset goldenrod;
+
+  &:active,
+  &:hover {
+    box-shadow: 5px 5px 7px red;
+  }
 }

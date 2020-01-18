@@ -4,8 +4,8 @@ import "./Projects.scss";
 //import "../../Assets/bhm.png";
 
 const Projects = () => {
-  const rambo = require("../../Assets/movieThumbNail.PNG");
-  const handleRambo = () => {
+  const greenLantern = require("../../Assets/greenLanternMWlogo.jpg");
+  const handleGreenLantern = () => {
     window.open("https://matt-wellman-imbd.netlify.com/");
   };
   return (
@@ -14,19 +14,24 @@ const Projects = () => {
         <div className="project-title-area">
           <div className="project-main-title">Project Bio</div>
         </div>
-        <div className='project-card'>
-          <h3>Very Generic Just sketched Out the Movie App</h3>
+        <div className="project-card">
+          <div className='project-name'>
+          IMBD using TMDB API
+          </div>
           <img
-            src={rambo}
+            src={greenLantern}
             className="movie-thumb"
             alt="movie search"
-            onClick={handleRambo}
-            
+            onClick={handleGreenLantern}
           />
-          </div>
-        <div>
-          
+            <h4><i>Under Construction</i></h4>
+          <span>
+          <br/>
+        "This product uses the TMDb API but is not endorsed or certified by
+        TMDb."
+      </span>
         </div>
+        <div></div>
         <br />
         <div>Amazon Mimic</div>
         <br />
