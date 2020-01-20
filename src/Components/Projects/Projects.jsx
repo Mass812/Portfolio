@@ -5,8 +5,9 @@ import "./Projects.scss";
 
 const Projects = () => {
   const greenLantern = require("../../Assets/greenLanternMWlogo.PNG");
-  const handleGreenLantern = () => {
+  const handleGreenLantern = (e) => {
     window.open("https://matt-wellman-imbd.netlify.com/");
+    e.target.blur();
   };
   return (
     <div className="project-wrapper">
