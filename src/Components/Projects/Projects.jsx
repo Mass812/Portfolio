@@ -4,7 +4,7 @@ import "./Projects.scss";
 //import "../../Assets/bhm.png";
 
 const Projects = () => {
-  const greenLantern = require("../../Assets/greenLanternMWlogo.jpg");
+  const greenLantern = require("../../Assets/greenLanternMWlogo.PNG");
   const handleGreenLantern = () => {
     window.open("https://matt-wellman-imbd.netlify.com/");
   };
