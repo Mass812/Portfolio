@@ -52,8 +52,8 @@
   display: flex;
   flex-direction: column;
 
-  border: 2px inset black;
-  padding: 45px;
+  border: .03px inset black;
+ 
   box-shadow: 5px 2px 5px grey;
   margin: 25px;
   background-color: rgba(255, 255, 255, 0.993);
@@ -61,24 +61,27 @@
 
 .project-name {
   flex: 1;
-  align-self: flex-start;
+  align-self: center;
   font-style: "Cormorant Garamond", serif;
-  font-size: 40px;
+  font-size: 30px;
+  padding: 20px;
+
 
  &::first-letter{
-    font-size: 55px;
+  
     font-style: 'Indie Flower';
   }
 }
 .movie-thumb {
   align-self: center;
-  height: 500px;
+  height: 200px;
+  width: 100%;
   width: auto;
-  border-radius: 15px;
-  border: 3px inset rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 0;
   cursor: pointer;
   &:active,
   &:hover {
-    box-shadow: 5px 5px 7px red;
+    box-shadow: .4px .5px 7px rgb(71, 64, 64);
   }
 }
