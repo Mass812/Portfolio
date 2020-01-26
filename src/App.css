@@ -2,10 +2,11 @@
   logo tan #BBA15F
 */
 
-*{font-family: "Source Sans Pro";}
+* {
+  font-family: 'Cormorant Garamond';
+}
 
 html {
- 
 }
 
 .App {

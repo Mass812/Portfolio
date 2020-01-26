@@ -83,8 +83,8 @@ const Home = () => {
               style={{ fontSize: 50 }}>
               Matt Wellman
             </div>
-            Manager
-            <div className="home-subTitle2">Full Stack Mern Developer</div>
+           JavaScript Enthusiast & 
+            <div className="home-subTitle2">Full Stack React Developer</div>
           </div>
         </div>
         <FontAwesome />

@@ -51,7 +51,7 @@
 .project-card {
   display: flex;
   flex-direction: column;
-
+  height: 450px;
   border: 2px inset black;
   padding: 45px;
   box-shadow: 5px 2px 5px grey;
@@ -63,16 +63,16 @@
   flex: 1;
   align-self: flex-start;
   font-style: 'Cormorant Garamond', serif;
-  font-size: 40px;
+  font-size: 30px;
 
   &::first-letter {
-    font-size: 55px;
+    font-size: 45px;
     font-style: 'Indie Flower';
   }
 }
 .movie-thumb {
   align-self: center;
-  height: 500px;
+  height: 200px;
   width: auto;
   border-radius: 15px;
   border: 3px inset rgb(255, 255, 255);

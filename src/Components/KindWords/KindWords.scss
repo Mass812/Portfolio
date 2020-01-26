@@ -96,7 +96,7 @@ hr {
   box-sizing: content-box;
   margin-bottom: 25px;
   background-color: transparent;
-  font-size: 1.25rem;
+  font-size: 16px;
   font-family: "Cormorant Garamond";
   font-weight: 700;
   max-width: 80%;
@@ -105,7 +105,7 @@ hr {
   position: relative;
   color: rgb(77, 75, 75);
   float: left;
-  padding-left: 100px;
+  padding-left: 110px;
 }
 .picture {
   float: left;
@@ -179,7 +179,7 @@ hr {
     display: table;
   }
 
-  @media all and (max-width: 900px) {
+  @media all and (min-width: 900px) {
     /* For tablets: */
     .parent {
       width: 91.66%;
@@ -236,7 +236,7 @@ hr {
   .bioCard > span {
     margin-top: 15px;
     background-color: transparent;
-    font-size: 1.75rem;
+    font-size: 26px;
     font-family: "Cormorant Garamond";
     font-weight: 900;
     max-width: 80%;
