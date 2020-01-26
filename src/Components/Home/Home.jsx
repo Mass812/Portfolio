@@ -1,10 +1,9 @@
-import React, { useRef, useEffect } from "react";
-import "./Home.scss";
-import FontAwesome from "../FontAwesome/FontAwesome";
-
+import React, { useRef, useEffect } from 'react';
+import './Home.scss';
+import FontAwesome from '../FontAwesome/FontAwesome';
 
 const Home = () => {
-  const matt = require("../../Assets/MWlogo2.jpg");
+  const matt = require('../../Assets/MWlogo2.jpg');
   let img = useRef(null);
   let name = useRef(null);
   let statement = useRef(null);
@@ -23,7 +22,7 @@ const Home = () => {
           duration: 2,
           height: 330,
 
-          ease: "Power0"
+          ease: 'Power0'
         },
         {
           y: 0,
@@ -31,13 +30,13 @@ const Home = () => {
           duration: 1.5,
           height: 150,
           borderWidth: 2,
-          ease: "Power1.easeOut",
+          ease: 'Power1.easeOut',
           rotate: 540
         }
       )
 
       .from(
-         [name, headline2],
+        [name, headline2],
 
         {
           stagger: 0.5,
@@ -45,13 +44,13 @@ const Home = () => {
           opacity: 0,
           height: 0,
           fontSize: 3,
-          ease: "Power1.easeIn",
-          color: "rgb(210,181,113)"
+          ease: 'Power1.easeIn',
+          color: 'rgb(210,181,113)'
         }
       );
 
     return () => {
-      console.log("cleaned");
+      console.log('cleaned');
     };
   }, []);
 
@@ -63,28 +62,28 @@ const Home = () => {
 
   return (
     <div>
-      <section className="home-section">
-        <div className="home-container">
-          <div className="home-top">
-            <div className="home-frame" ref={cr => (frame = cr)}>
+      <section className='home-section'>
+        <div className='home-container'>
+          <div className='home-top'>
+            <div className='home-frame' ref={cr => (frame = cr)}>
               <img
                 src={matt}
-                alt={""}
-                className="home-icon"
+                alt={''}
+                className='home-icon'
                 ref={cr => (img = cr)}
               />
             </div>
           </div>
 
-          <div className="home-bottom" ref={cr => (statement = cr)}>
+          <div className='home-bottom' ref={cr => (statement = cr)}>
             <div
-              className="home-name"
+              className='home-name'
               ref={cr => (name = cr)}
               style={{ fontSize: 50 }}>
               Matt Wellman
             </div>
-           JavaScript Enthusiast & 
-            <div className="home-subTitle2">Full Stack React Developer</div>
+            JavaScript Enthusiast &
+            <div className='home-subTitle2'>Full Stack React Developer</div>
           </div>
         </div>
         <FontAwesome />
