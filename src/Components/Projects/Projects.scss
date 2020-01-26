@@ -18,7 +18,7 @@
 
 .project-parent {
   width: 100%;
-  font-family: "Titillium Web";
+  font-family: 'Titillium Web';
   padding-top: 50px;
   flex: 1;
   display: flex;
@@ -38,22 +38,22 @@
 
 .project-main-title {
   font-size: 24px;
-  font-family: "Titillium Web";
+  font-family: 'Titillium Web';
   padding: 10px;
   color: white;
 }
 .project-subtitle {
   font-size: 18px;
-  font-family: "Titillium Web";
+  font-family: 'Titillium Web';
   padding: 10px;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
-
-  border: .03px inset black;
- 
+  height: 450px;
+  border: 2px inset black;
+  padding: 45px;
   box-shadow: 5px 2px 5px grey;
   margin: 25px;
   background-color: rgba(255, 255, 255, 0.993);
@@ -61,21 +61,18 @@
 
 .project-name {
   flex: 1;
-  align-self: center;
-  font-style: "Cormorant Garamond", serif;
+  align-self: flex-start;
+  font-style: 'Cormorant Garamond', serif;
   font-size: 30px;
-  padding: 20px;
 
-
- &::first-letter{
-  
+  &::first-letter {
+    font-size: 45px;
     font-style: 'Indie Flower';
   }
 }
 .movie-thumb {
   align-self: center;
   height: 200px;
-  width: 100%;
   width: auto;
   border-radius: 5px;
   padding: 0;
@@ -83,5 +80,21 @@
   &:active,
   &:hover {
     box-shadow: .4px .5px 7px rgb(71, 64, 64);
+  }
+}
+
+@media all and (max-width: 810px) {
+  .movie-thumb {
+    align-self: center;
+    height: 200px;
+    margin: 20px 0px;
+    width: auto;
+    border-radius: 15px;
+    border: 3px inset rgb(255, 255, 255);
+
+    &:active,
+    &:hover {
+      box-shadow: 5px 5px 7px red;
+    }
   }
 }

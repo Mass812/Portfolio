@@ -239,9 +239,7 @@ const Resume = () => {
                   <Icon size={"sm"} icon={faReact}>
                     Work with 3rd party Back-end Companies to validate / resolve / create endpoints
                   </Icon>
-                  <Icon size={"sm"} icon={faReact}>
-                    Make Amazing Apps
-                  </Icon>
+               
                 </ul>
               </div>
             </div>

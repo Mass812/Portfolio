@@ -2,8 +2,11 @@
   logo tan #BBA15F
 */
 
+* {
+  font-family: 'Cormorant Garamond';
+}
+
 html {
-  scroll-behavior: smooth;
 }
 
 .App {
