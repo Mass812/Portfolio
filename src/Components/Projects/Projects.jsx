@@ -4,9 +4,10 @@ import "./Projects.scss";
 //import "../../Assets/bhm.png";
 
 const Projects = () => {
-  const greenLantern = require("../../Assets/greenLanternMWlogo.PNG");
-  const handleGreenLantern = () => {
+  const greenLantern = require("../../Assets/imbdThumb.PNG");
+  const handleGreenLantern = (e) => {
     window.open("https://matt-wellman-imbd.netlify.com/");
+    e.target.blur();
   };
   return (
     <div className="project-wrapper">
