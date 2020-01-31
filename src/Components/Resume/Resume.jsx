@@ -102,7 +102,7 @@ const Resume = () => {
                 </h4>
 
                 <div className="why">
-                  <p>
+                  <p className = 'p-bodies'>
                     I wanted to join UPS for a few reasons, first the benefits
                     (You will find that I am always honest). Secondly I have
                     LOVED airplanes since boyhood--Top Gun in the 90's forever
@@ -127,7 +127,7 @@ const Resume = () => {
 
                 {safe ? (
                   <div className="why">
-                    <p>
+                    <p className = 'p-bodies'>
                       Training is the cornerstone of safety at UPS, and
                       management training is the logical precursor to an
                       informed and safe workforce. UPS invests $175 million per
@@ -142,7 +142,7 @@ const Resume = () => {
 
                 <h3>Key Responsibilities</h3>
 
-                <ul className="ExperienceListParent">
+                <ul className="innerList">
                   <Icon size={"sm"} icon={faUps} color={"red"}>
                     Facility, Equipment & Employee audits
                   </Icon>
@@ -195,7 +195,7 @@ const Resume = () => {
                 </h4>
 
                 <div className="why">
-                  <p>
+                  <p className = 'p-bodies'>
                     Since this job is here, it does kind of beg the question{" "}
                     <i className="tooltip">
                       {" "}
@@ -217,7 +217,7 @@ const Resume = () => {
                 </span>
                 {intel ? (
                   <div className="why">
-                    <p>
+                    <p className = 'p-bodies'>
                       I love technology and for many years I swore I would take
                       the time to learn it! I have always had more than a
                       natural aptitude towards the Internet of Things,
@@ -229,7 +229,7 @@ const Resume = () => {
                 ) : null}
                 <h4>Key Responsibilities</h4>
 
-                <ul className="ExperienceListParent">
+                <ul className="innerList">
                   <Icon size={"sm"} icon={faReact}>
                     Developed React-Native Applications for iOS and Android to client specs
                   </Icon>
@@ -280,7 +280,7 @@ const Resume = () => {
                 </h4>
                 <>
                   <div className="why">
-                    <p>
+                    <p className = 'p-bodies'>
                       "Company’s rightly focus on product quality and customer
                       service. From my management experience those two driving
                       forces are only two factors in a company’s economy. On the
@@ -301,7 +301,7 @@ const Resume = () => {
                     <>
                       <div className="why">
                         <div>
-                          <p>
+                          <p className = 'p-bodies'>
                             Nearing the end of college I stepped into a position
                             of an area manager for a security firm in
                             Louisville. Opportunity presented itself and I
@@ -310,9 +310,9 @@ const Resume = () => {
                           </p>
                         </div>
                         <div>
-                          <p> A lot of growth occurred while I was there:</p>
+                        
 
-                          <p>
+                          <p className = 'p-bodies'>
                             The acquisition of Shoe Dazzle and Madden
                             Shoes...horizontal growth--beyond footwear--into
                             other areas of fashion... Kate Hudson launched her
@@ -321,7 +321,7 @@ const Resume = () => {
                           </p>
                         </div>
                         <div>
-                          <p>
+                          <p className = 'p-bodies'>
                             I mention that here because with the kind of growth
                             and rapid success that Techstyle enjoyed, came with
                             its own challenges: management constantly trying to
@@ -331,20 +331,22 @@ const Resume = () => {
                           </p>
                         </div>
                         <div>
-                          <p>
+                          <p className = 'p-bodies'>
                             Working alongside three staffing agencies and seven
                             internal operational departments, for a company
                             consisting of 1000+ employees. I effectively
                             coordinated a 40+ member security team.
+                            <br/> <br/>
+                            I was responsible for: 
                           </p>
                         </div>
                         <div>
-                          <p>
-                            <b>I was wholly responsible for:</b>{" "}
-                          </p>
+                        <br/>
+                      
                           <ul className='innerList'>
+                          
                             <Icon icon={faCaretSquareRight} size={"sm"}>
-                              evaluating, mentoring, and developing
+                              Evaluating, mentoring, and developing
                               managers/supervisors.{" "}
                             </Icon>
                             <Icon icon={faCaretSquareRight} size={"sm"}>
@@ -364,10 +366,13 @@ const Resume = () => {
                             <Icon icon={faCaretSquareRight} size={"sm"}>
                               Data Compiling and Analysis;
                             </Icon>
+                           
                           </ul>
                           <br />
                         </div>
-                        <p>
+                        <div>
+
+                        <p className = 'p-bodies'>
                           I injected modernity into the security program by
                           <i>
                             <u>
@@ -377,6 +382,7 @@ const Resume = () => {
                           </i>{" "}
                           & streamlined operations. Which:
                         </p>
+                        </div>
                         <br />
                         <ul className='innerList'>
                           <Icon icon={faCaretSquareRight} size={"sm"}>
@@ -392,8 +398,8 @@ const Resume = () => {
                             (Modernized Security)
                           </Icon>
                           <Icon icon={faCaretSquareRight} size={"sm"}>
-                            <p> yielded clearer insights to areas of focus (Data
-                            Analysis) </p> 
+                           yielded clearer insights to areas of focus (Data
+                            Analysis) 
                           </Icon>
                           <Icon icon={faCaretSquareRight} size={"sm"}>
                             immeasurably increased oversight (Operational
@@ -405,7 +411,7 @@ const Resume = () => {
                           </Icon>
                         </ul>
 
-                        <p>
+                        <p className = 'p-bodies'>
                           After maturing at Techstyle I wanted to delve further
                           into coding, not just to expand on knowledge of
                           frameworks, languages and API's but to better
@@ -420,7 +426,7 @@ const Resume = () => {
                   ) : null}
                 </div>
                 <h3>Key Responsibilities</h3>
-                <ul className="ExperienceListParent">
+                <ul className="innerList">
                   <Icon size={"sm"} icon={faAngleRight}>
                     Maintained a 87% Employee Retention Rate over 6.5 years
                   </Icon>

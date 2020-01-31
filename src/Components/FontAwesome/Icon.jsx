@@ -8,13 +8,15 @@ const Icon = props => {
   return (
     
     <div className='icon-parent'>
-    {}
+    
       <FontAwesomeIcon
         icon={props.icon}
         size={props.size}
         className='res'
-      />
-      {` ${props.children}`}
+      />{' '}
+     
+       {props.children}
+     
       </div>
   
   );
