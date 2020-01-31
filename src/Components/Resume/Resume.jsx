@@ -97,7 +97,8 @@ const Resume = () => {
                 </h3>
 
                 <h4 style={{ marginTop: "-15px", color: "#74756B" }}>
-                  Comprehensive Health & Safety Process Committee (CHSP)
+                  Comprehensive Health & Safety Process Committee (CHSP) & <br/>
+                  Comprehensive Employee Retention Team
                   <br />
                 </h4>
 
