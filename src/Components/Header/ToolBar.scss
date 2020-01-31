@@ -54,11 +54,34 @@
   display: none;
 }
 
+.header-drawer-parent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.header-drawer-ul{
+  display: none;
+}
 
 
 /* ****** ****** */
 @media all and (min-width: 1000px) {
 
+  .header-drawer-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .header-drawer-ul{
+    display: flex;
+    margin-top: 5px;
+  }
 
   .header_bar {
     // top: 0;
@@ -70,38 +93,25 @@
     z-index: 100;
   }
   .drawer_parent {
-   // flex: 1;
-    flex-direction: row-reverse;
-    display: flex;
-   // position: relative;
-    //right: 0;
-    align-items: left;
-    height: 100%;
-    padding: 0 1rem; // padding zero Top&Bottom 1rem Left&Right
+    display: none;
+
   }
   #W {
     color: goldenrod;
   }
   
   .site_name {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    padding-top: 15px;
-    box-sizing: border-box; //ensures lines stay inside of button
-    font-size: 2.6rem; //places items in this list next to each other
+  display: none;
   }
   
   .header_button_list {
-    padding: 0;
-    display: flex;
-    text-decoration: none;
+    display: none;
+
    
   }
   .drawer_ul li {
-    color: white;
-    text-decoration: none;
-    padding: 0 0.5rem;
+    display: none;
+
   }
   
   .drawer_ul a:hover,

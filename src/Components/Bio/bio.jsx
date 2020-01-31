@@ -3,6 +3,7 @@ import './Bio.scss';
 import { useLocation } from 'react-router-dom';
 import Intro from './Intro';
 import Strengths from './Strengths';
+import Education from './Education';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faGit,
@@ -163,7 +164,10 @@ const Bio = () => {
 				<span className='bullet-pint-description'> {el}</span>
 			</div>
 		</ul>
-	));
+  ));
+  
+
+
 	const certifications = cert.map((el, idx) => (
 		<ul className='business-characteristic-ul'>
 			<div key={idx}>
@@ -176,6 +180,8 @@ const Bio = () => {
 			</div>
 		</ul>
 	));
+
+
 
 	return (
 		<div className='bio-wrapper'>
@@ -338,57 +344,7 @@ const Bio = () => {
 					</div>
 
 					<Strengths />
-
-					<div>
-						<div className='bio-subtitle'>
-							Education
-							<div className='business-characteristic-parent'>
-								<ul className='business-characteristic-ul'>
-									<ul className='education-list'>
-										{' '}
-										University of Kentucky
-										<p>
-											<b>Major: </b> Chemistry & Biology
-										</p>
-										<p>
-											<b>GPA:</b> 3.2
-										</p>
-										<p>
-											<b>Attended:</b> 2005-2007
-										</p>
-									</ul>
-									<ul className='education-list'>
-										{' '}
-										Indiana University
-										<p>
-											<b>Major: </b> Biochemistry
-										</p>
-										<p>
-											<b>GPA:</b> 3.0
-										</p>
-										<p>
-											<b>Attended:</b> 2004-2005
-										</p>
-									</ul>
-									<ul className='education-list'>
-										{' '}
-										Ivy Tech Community
-										<p>
-											<b>Major: </b> Prerequisites
-										</p>
-										<p>
-											<b>GPA:</b> 3.9
-										</p>
-										<p>
-											<b>Attended:</b> 2003-2004
-										</p>
-									</ul>
-								</ul>
-								<br />
-								<br />
-							</div>
-						</div>
-					</div>
+          <Education/>
 
 					<div>
 						<div className='bio-subtitle'>
@@ -399,7 +355,7 @@ const Bio = () => {
 						</div>
 					</div>
 				</div>
-				{/*  hello  */}
+				
 			</div>
 		</div>
 	);
