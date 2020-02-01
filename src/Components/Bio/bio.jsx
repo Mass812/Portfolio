@@ -154,7 +154,7 @@ const Bio = () => {
 	];
 
 	const skillset = skillsArray.map((el, idx) => (
-		<ul className='business-characteristic-ul'>
+		<ul className='business-characteristic-ul' key={idx}>
 			<div key={idx}>
 				<FontAwesomeIcon
 					icon={faCaretSquareRight}
@@ -169,7 +169,7 @@ const Bio = () => {
 
 
 	const certifications = cert.map((el, idx) => (
-		<ul className='business-characteristic-ul'>
+		<ul className='business-characteristic-ul' key={idx}>
 			<div key={idx}>
 				<FontAwesomeIcon
 					icon={faCaretSquareRight}
