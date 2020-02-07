@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from 'react';
 import './Bio.scss';
 import { useLocation } from 'react-router-dom';
 import Intro from './Intro';
 import Strengths from './Strengths';
 import Education from './Education';
+import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faGit,
@@ -149,7 +149,8 @@ const Bio = () => {
 	];
 
 	const cert = [
-		[ 'React-Native', ' Redux', ' JavaScript', ' Express', ' Node.js' ],
+		[ 'React-Native', ' Redux', ' JavaScript',],
+		 [' Express', ' Node.js' ],
 		[ 'AED', ' CPR', ' BBP' ]
 	];
 
