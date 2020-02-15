@@ -249,11 +249,12 @@ font-size: 18px;
       p {
         font-size: 22px;
         padding: 0;
-        margin: 6px;
+        margin: 16px;
         padding-left: 40px;
         line-height: 22px;
         color: tan;
         font-size: 22px;
+        font-weight: 400;
     
     
       }
@@ -271,9 +272,9 @@ font-size: 18px;
     font-size: 22px;
     padding: 10px;
     font-weight: 300;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.0px;
     color: $font-color;
-    line-height: 20px;
+    line-height: 10px;
     // text-shadow: rgb(10, 10, 10) 2.83px 0.53px 1.3px;
   }
 

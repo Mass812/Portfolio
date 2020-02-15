@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Resume.scss";
-import "../../Assets/Disney2018.jpeg";
 import Icon from "../FontAwesome/Icon";
 import { faUps, faReact } from "@fortawesome/free-brands-svg-icons";
 import {
