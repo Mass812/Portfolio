@@ -1,100 +1,96 @@
 * {
-  box-sizing: content-box;
+	box-sizing: content-box;
 }
 
 .project-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  box-sizing: border-box;
-  color: rgb(56, 53, 50);
-  background-color: rgba(192, 192, 192, 0.664);
-  box-sizing: border-box;
-  justify-content: center;
-  text-align: center;
-}
-
-.project-parent {
-  width: 100%;
-  font-family: 'Titillium Web';
-  padding-top: 50px;
-  flex: 1;
-  display: flex;
+	color: rgb(56, 53, 50);
+	background-color: rgba(192, 192, 192, 0.664);
+	box-sizing: border-box;
+	justify-content: center;
+	display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 
-.project-title-area {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(90, 90, 90);
+.project-card-parent {
+  display: grid;
+  background: rgb(164, 164, 164);
+	height: auto;
+  margin: 5px 0px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 34px 1fr auto auto auto;
+	grid-template-areas: '. . . .' 'nameOf nameOf nameOf nameOf'
+    'essay essay essay pic' 'highlight highlight highlight highlight'
+    'stack stack stack stack';
+	font-family: 'Titillium Web';
+	color: black;
+	font-size: 18px;
+	justify-content: center;
+	text-align: center;
+  // align-content: center;
+	background: rgb(255, 255, 255);
 }
-
-.project-main-title {
-  font-size: 24px;
-  font-family: 'Titillium Web';
-  padding: 10px;
-  color: white;
+.mini-project-title {
+	grid-area: nameOf;
+	background: rgb(164, 164, 164);
+	background: linear-gradient(
+		90deg,
+		rgba(164, 164, 164, 0.5) 1%,
+		rgba(165, 162, 156, 1) 33%,
+		rgba(164, 162, 158, 1) 50%,
+		rgba(164, 164, 164, 1) 66%,
+		rgba(164, 164, 164, 0.49612403100775193) 99%
+	);
+	align-self: center;
+	text-transform: capitalize;
+	font-family: 'Indie-Flower';
+	font-size: 28px;
+	color: rgb(59, 59, 59);
 }
-.project-subtitle {
-  font-size: 18px;
-  font-family: 'Titillium Web';
-  padding: 10px;
-}
-
-.project-card {
-  display: flex;
-  flex-direction: column;
-  height: 450px;
-  border: 2px inset black;
-  padding: 45px;
-  box-shadow: 5px 2px 5px grey;
-  margin: 25px;
-  background-color: rgba(255, 255, 255, 0.993);
-}
-
-.project-name {
-  flex: 1;
-  align-self: flex-start;
-  font-style: 'Cormorant Garamond', serif;
-  font-size: 30px;
-
-  &::first-letter {
-    font-size: 45px;
-    font-style: 'Indie Flower';
-  }
-}
-.movie-thumb {
+.mini-project-body {
+	grid-area: essay;
   align-self: center;
-  height: 200px;
-  width: auto;
-  border-radius: 5px;
-  padding: 0;
-  cursor: pointer;
-  &:active,
-  &:hover {
-    box-shadow: .4px .5px 7px rgb(71, 64, 64);
-  }
+  justify-self: center;
+  text-align: left;
+  padding: 25px;
+  font-family: 'Cormorant Garamond', cursive;
+  font-size: 18px;
+  font-weight: 600;
+}
+.mini-project-highlights {
+	grid-area: highlight;
+  background-color: transparent;
+  text-align: center;
+  font-family: 'Cormorant Garamond', cursive;
+  font-size: 18px;
+  font-weight: 600;
+
+
+
+}
+.mini-project-stack {
+	grid-area: stack;
+  background-color: transparent;
+  text-align: center;
+  font-family: 'Cormorant Garamond', cursive;
+  font-size: 18px;
+  font-weight: 600;
+
+
+}
+.mini-project-picture {
+	grid-area: pic;
+	background-color: transparent;
+	padding: 5px;
 }
 
-@media all and (max-width: 810px) {
-  .movie-thumb {
-    align-self: center;
-    height: 200px;
-    margin: 20px 0px;
-    width: auto;
-    border-radius: 15px;
-    border: 3px inset rgb(255, 255, 255);
+.project-pic {
+	border-radius: 20px;
+	border: 3px inset rgb(194, 187, 183);
+  height: 250px;
+  width: 170px;
+  object-fit: cover;
 
-    &:active,
-    &:hover {
-      box-shadow: 5px 5px 7px red;
-    }
-  }
+	&:hover {
+		cursor: pointer;
+	}
 }
