@@ -3,34 +3,26 @@
 }
 
 .project-wrapper {
-	color: rgb(56, 53, 50);
-	background-color: rgba(192, 192, 192, 0.664);
 	box-sizing: border-box;
 	justify-content: center;
 	display: flex;
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .project-card-parent {
-  display: grid;
-  background: rgb(164, 164, 164);
+	display: grid;
 	height: auto;
-  margin: 5px 0px;
+	margin: 5px 0px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 34px 1fr auto auto auto;
-	grid-template-areas: '. . . .' 'nameOf nameOf nameOf nameOf'
-    'essay essay essay pic' 'highlight highlight highlight highlight'
-    'stack stack stack stack';
+	grid-template-areas: '. . . .' 'nameOf nameOf nameOf nameOf' 'essay essay essay pic'
+		'. highlight highlight .' '. stack stack .';
 	font-family: 'Titillium Web';
 	color: black;
-	font-size: 18px;
+	font-size: 20px;
 	justify-content: center;
 	text-align: center;
-  // align-content: center;
-	background: rgb(255, 255, 255);
-}
-.mini-project-title {
-	grid-area: nameOf;
+	background-color: white;
 	background: rgb(164, 164, 164);
 	background: linear-gradient(
 		90deg,
@@ -40,57 +32,111 @@
 		rgba(164, 164, 164, 1) 66%,
 		rgba(164, 164, 164, 0.49612403100775193) 99%
 	);
+	// align-content: center;
+}
+.mini-project-title {
+	grid-area: nameOf;
+	background: rgb(255, 255, 255);
+
 	align-self: center;
 	text-transform: capitalize;
-	font-family: 'Indie-Flower';
+	font-family: 'Cinzel', cursive;
 	font-size: 28px;
 	color: rgb(59, 59, 59);
+	font-weight: 700;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
 }
 .mini-project-body {
 	grid-area: essay;
-  align-self: center;
-  justify-self: center;
-  text-align: left;
-  padding: 25px;
-  font-family: 'Cormorant Garamond', cursive;
-  font-size: 18px;
-  font-weight: 600;
+	align-self: center;
+	justify-self: center;
+	text-align: left;
+	padding: 35px;
+	margin: 20px;
+	font-family: 'Cormorant Garamond', cursive;
+	font-size: 18px;
+	font-weight: 600;
+	background: transparent;
 }
 .mini-project-highlights {
 	grid-area: highlight;
-  background-color: transparent;
-  text-align: center;
-  font-family: 'Cormorant Garamond', cursive;
-  font-size: 18px;
-  font-weight: 600;
-
-
-
+	background-color: white;
+	text-align: center;
+	font-family: 'Cormorant Garamond', cursive;
+	font-size: 18px;
+	font-weight: 600;
+	background: transparent;
 }
 .mini-project-stack {
 	grid-area: stack;
-  background-color: transparent;
-  text-align: center;
-  font-family: 'Cormorant Garamond', cursive;
-  font-size: 18px;
-  font-weight: 600;
-
-
+	background-color: white;
+	text-align: center;
+	font-family: 'Cormorant Garamond', cursive;
+	font-size: 18px;
+	font-weight: 600;
+	background: transparent;
 }
 .mini-project-picture {
 	grid-area: pic;
-	background-color: transparent;
-	padding: 5px;
+	background: transparent;
+	padding: 25px 5px;
+	align-self: center;
 }
 
 .project-pic {
 	border-radius: 20px;
 	border: 3px inset rgb(194, 187, 183);
-  height: 250px;
-  width: 170px;
-  object-fit: cover;
+	height: 250px;
+	width: 170px;
+	object-fit: cover;
 
 	&:hover {
 		cursor: pointer;
+	}
+}
+
+@media all and (max-width: 810px) {
+	.project-card-parent {
+		display: grid;
+		background: white;
+		height: auto;
+		margin: 5px 0px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 34px auto 1fr auto auto auto;
+		grid-template-areas: '.' ' nameOf' 'pic' 'essay ' ' highlight' 'stack';
+		font-family: 'Titillium Web';
+		color: black;
+		font-size: 18px;
+		justify-content: center;
+		text-align: center;
+		// align-content: center;
+		background: rgb(164, 164, 164);
+		background: linear-gradient(
+			90deg,
+			rgba(164, 164, 164, 0.5) 1%,
+			rgba(165, 162, 156, 1) 33%,
+			rgba(164, 162, 158, 1) 50%,
+			rgba(164, 164, 164, 1) 66%,
+			rgba(164, 164, 164, 0.49612403100775193) 99%
+		);
+	}
+	.mini-project-highlights {
+		grid-area: highlight;
+		background-color: transparent;
+		text-align: left;
+		font-family: 'Cormorant Garamond', cursive;
+		font-size: 18px;
+		font-weight: 600;
+		padding: 0px 35px;
+	}
+	.mini-project-stack {
+		grid-area: stack;
+		background-color: transparent;
+		text-align: left;
+		font-family: 'Cormorant Garamond', cursive;
+		font-size: 18px;
+		font-weight: 600;
+		padding: 0px 35px;
 	}
 }

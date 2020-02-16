@@ -11,24 +11,24 @@ const Projects = () => {
 	const projectArray = [
 		{
 			id: 1,
-			title: 'Movie Warehouse',
+			title: 'Movie WatchTower',
 			src: `${greenLantern}`,
 			alt: 'project',
 			to: 'https://matt-wellman-imbd.netlify.com/',
-			body:
-				'I started with this project to display fetch methods and returned API data manipulation. Alongside static routing in React Router Dom I wanted to explore dynamic routing',
+			details: 'Get a great overview of the Cinematic World from the Movie WatchTower. From this site you can see upComing, Trending, Movies, Shows alike. You can see what is currently in Theatres and also look up movies that you are interested in.', 
+        body: 'I had to choose a project that would allow for dynamic rendering and settled on this imbd project. As I am very fond of hooks, this site was constructed on both react hooks as well as v.5 react router doms newly implemented useParams, useLocation and useHistory hooks. Enjoy the demo.',
 			highlightOne: 'Utilized card displays for movie details rather than full webpage layout design.',
       stack: 'React, React-Router-Dom, GSap & Font Awesome'
 		},
 		{
 			id: 2,
-			title: 'TouchBase Social Network App (in progress)',
+			title: 'TouchBase Social Network',
 			src: `${TBProject}`,
 			alt: 'project',
 			to: 'https://touch-base-29dce.firebaseapp.com/',
-			body:
-				'This project builds on the first projects use of dynamic routing and fetch methods but it also extends on fetch methods to include authorized routes, posting and site usage. This site adds authentication and manages state in redux. ',
-			highlightOne: 'Added gSap Animations to add to sites visual attractiveness',
+			body:'This project builds on the first projects use of dynamic routing and fetch methods but it also extends on fetch methods to include authorized routes, posting and site usage. This site adds authentication and manages state in redux. ',
+      details: 'Its a Big World and journeys often take us far from home. Home is where the heart is, and this social network platform allows you to TouchBase whenever you need to. ',
+      highlightOne: 'Added gSap Animations to add to sites visual attractiveness',
       stack: 'React, Redux, Redux-Thunk, Firebase-Redux, Node, Express, Firebase (Cloud Functions, Firestore, Auth)'
 		}
 	];
@@ -42,6 +42,7 @@ const Projects = () => {
 			src={el.src}
 			alt={el.alt}
 			body={el.body}
+      details={el.details}
 			highlightOne={el.highlightOne}
 			highlightTwo={el.highlightTwo}
 			highlightThree={el.highlightThree}
