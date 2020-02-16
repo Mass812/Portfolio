@@ -98,7 +98,6 @@
 	.project-card-parent {
 		display: grid;
 		height: auto;
-		margin: 5px 0px;
 		grid-template-columns: 1fr;
 		grid-template-rows: 34px auto 1fr auto auto auto;
 		grid-template-areas: '.' ' nameOf' 'pic' 'essay ' ' highlight' 'stack';
