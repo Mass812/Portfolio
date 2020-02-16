@@ -31,7 +31,7 @@ const Projects = () => {
 			alt: 'project',
 			to: 'https://touch-base-29dce.firebaseapp.com/',
 			body:
-				'This project builds on the first projects use of dynamic routing and fetch methods but it also extends on fetch methods to include authorized routes, posting and site usage. This site utilizes Firebase as a backend. This site adds authentication and manages local state in redux and synchronizes local state with backend state with firebase-redux. ',
+				'This project builds on the first projects use of dynamic routing and fetch methods but it also extends on fetch methods to include authorized routes, posting and site usage. This site utilizes Firebase as a backend. Hence I utilize Cloud Functions, FireStore and Firebase Auth. This site has authentication and manages local state in redux and synchronizes local state with backend state with firebase-redux. ',
 			details:
 				'Its a Big World and journeys often take us far from home. Home is where the heart is, and this social network platform allows you to TouchBase whenever you need to. ',
 			highlightOne:
