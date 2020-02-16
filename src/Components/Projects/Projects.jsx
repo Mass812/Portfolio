@@ -21,8 +21,8 @@ const Projects = () => {
 				'I had to choose a project that would allow for dynamic rendering and settled on this imbd project. As I am very fond of hooks, this site was constructed on both react hooks as well as v.5 react router doms newly implemented useParams, useLocation and useHistory hooks. Enjoy the demo.',
 			highlightOne:
 				'Utilized card displays for movie details rather than full webpage layout design.',
-      stack: 'React, React-Router-Dom, GSap & Font Awesome',
-      status: '(On-Going / As-Needed)'
+			stack: 'React, React-Router-Dom, GSap & Font Awesome',
+			status: '(On-Going / As-Needed)'
 		},
 		{
 			id: 2,
@@ -31,13 +31,14 @@ const Projects = () => {
 			alt: 'project',
 			to: 'https://touch-base-29dce.firebaseapp.com/',
 			body:
-				'This project builds on the first projects use of dynamic routing and fetch methods but it also extends on fetch methods to include authorized routes, posting and site usage. This site adds authentication and manages state in redux. ',
+				'This project builds on the first projects use of dynamic routing and fetch methods but it also extends on fetch methods to include authorized routes, posting and site usage. This site utilizes Firebase as a backend. This site adds authentication and manages local state in redux and synchronizes local state with backend state with firebase-redux. ',
 			details:
 				'Its a Big World and journeys often take us far from home. Home is where the heart is, and this social network platform allows you to TouchBase whenever you need to. ',
-			highlightOne: 'I ordered the most recent post responses in an ascending order and sticky positioned the original post body because it seemed more fluid to see the most recent post first.',
+			highlightOne:
+				'I ordered the most recent post responses in an ascending order and sticky positioned the original post body because it seemed more fluid to see the most recent post first.',
 			stack:
-        'React, Redux, Redux-Thunk, Firebase-Redux, Node, Express, Firebase (Cloud Functions, Firestore, Auth)',
-        status: '( In-Development )'
+				'React, Redux, Redux-Thunk, Firebase-Redux, Node, Express, Firebase (Cloud Functions, Firestore, Auth)',
+			status: '( In-Development )'
 		}
 	];
 
@@ -56,7 +57,7 @@ const Projects = () => {
 			highlightThree={el.highlightThree}
 			stack={el.stack}
 			to={el.to}
-      status={el.status}
+			status={el.status}
 		/>
 	));
 
