@@ -21,7 +21,8 @@ const Projects = () => {
 				'I had to choose a project that would allow for dynamic rendering and settled on this imbd project. As I am very fond of hooks, this site was constructed on both react hooks as well as v.5 react router doms newly implemented useParams, useLocation and useHistory hooks. Enjoy the demo.',
 			highlightOne:
 				'Utilized card displays for movie details rather than full webpage layout design.',
-			stack: 'React, React-Router-Dom, GSap & Font Awesome'
+      stack: 'React, React-Router-Dom, GSap & Font Awesome',
+      status: '(On-Going / As-Needed)'
 		},
 		{
 			id: 2,
@@ -35,7 +36,8 @@ const Projects = () => {
 				'Its a Big World and journeys often take us far from home. Home is where the heart is, and this social network platform allows you to TouchBase whenever you need to. ',
 			highlightOne: 'Added gSap Animations to add to sites visual attractiveness',
 			stack:
-				'React, Redux, Redux-Thunk, Firebase-Redux, Node, Express, Firebase (Cloud Functions, Firestore, Auth)'
+        'React, Redux, Redux-Thunk, Firebase-Redux, Node, Express, Firebase (Cloud Functions, Firestore, Auth)',
+        status: '( In-Development )'
 		}
 	];
 
@@ -54,6 +56,7 @@ const Projects = () => {
 			highlightThree={el.highlightThree}
 			stack={el.stack}
 			to={el.to}
+      status={el.status}
 		/>
 	));
 

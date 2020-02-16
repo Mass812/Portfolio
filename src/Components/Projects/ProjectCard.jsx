@@ -9,9 +9,11 @@ const ProjectCard = (props) => {
 	};
 
 	return (
-		<div className='project-card-parent'>
-			<div className='mini-project-title'>{props.title}</div>
-			<div className='mini-project-body'>
+        <div className='project-card-parent'>
+			<div className='mini-project-title'>{props.title} <br/>
+                </div>
+            <div className='mini-project-body'>
+                <div style={{color: 'oliveDrab', fontSize: '16px'}} > <b>Current Site Status:</b> <i>{props.status? props.status : null} </i></div> <br/>
 				<span style={{ color: 'black' }}>Why this Project: </span>
 				<hr /> <i>{props.body ? props.body : null}</i>
 				<br />
