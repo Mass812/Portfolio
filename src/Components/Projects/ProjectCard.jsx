@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 const ProjectCard = (props) => {
 	const sendTo = () => {
@@ -9,11 +9,17 @@ const ProjectCard = (props) => {
 	};
 
 	return (
-        <div className='project-card-parent'>
-			<div className='mini-project-title'>{props.title} <br/>
-                </div>
-            <div className='mini-project-body'>
-                <div style={{color: 'oliveDrab', fontSize: '16px'}} > <b>Current Site Status:</b> <i>{props.status? props.status : null} </i></div> <br/>
+		<div className='project-card-parent'>
+			<div className='mini-project-title'>
+				{props.title} <br />
+			</div>
+			<div className='mini-project-body'>
+				<div style={{ color: 'oliveDrab', fontSize: '16px' }}>
+					{' '}
+					<b>Current Site Status:</b>{' '}
+					<i>{props.status ? props.status : null} </i>
+				</div>{' '}
+				<br />
 				<span style={{ color: 'black' }}>Why this Project: </span>
 				<hr /> <i>{props.body ? props.body : null}</i>
 				<br />
@@ -35,19 +41,19 @@ const ProjectCard = (props) => {
 				<ul>
 					{props.highlightOne ? (
 						<div>
-							<FontAwesomeIcon icon={faAngleRight} size='sm' />{' '}
+							<FontAwesomeIcon icon={faCaretRight} size='sm' />{' '}
 							<span> {props.highlightOne} </span>{' '}
 						</div>
 					) : null}
 					{props.highlightTwo ? (
 						<div>
-							<FontAwesomeIcon icon={faAngleRight} size='sm' />{' '}
+							<FontAwesomeIcon icon={faCaretRight} size='sm' />{' '}
 							<span> {props.highlightTwo} </span>{' '}
 						</div>
 					) : null}
 					{props.highlightThree ? (
 						<div>
-							<FontAwesomeIcon icon={faAngleRight} size='sm' />{' '}
+							<FontAwesomeIcon icon={faCaretRight} size='sm' />{' '}
 							<span> {props.highlightThree} </span>{' '}
 						</div>
 					) : null}

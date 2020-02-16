@@ -34,7 +34,7 @@ const Projects = () => {
 				'This project builds on the first projects use of dynamic routing and fetch methods but it also extends on fetch methods to include authorized routes, posting and site usage. This site adds authentication and manages state in redux. ',
 			details:
 				'Its a Big World and journeys often take us far from home. Home is where the heart is, and this social network platform allows you to TouchBase whenever you need to. ',
-			highlightOne: 'Added gSap Animations to add to sites visual attractiveness',
+			highlightOne: 'I ordered the most recent post responses in an ascending order and sticky positioned the original post body because it seemed more fluid to see the most recent post first.',
 			stack:
         'React, Redux, Redux-Thunk, Firebase-Redux, Node, Express, Firebase (Cloud Functions, Firestore, Auth)',
         status: '( In-Development )'
