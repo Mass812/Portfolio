@@ -12,10 +12,12 @@ const ProjectCard = (props) => {
 		<div className='project-card-parent'>
 			<div className='mini-project-title'>{props.title}</div>
 			<div className='mini-project-body'>
-				<span style={{color: 'black'}}>Why this Project: </span><hr /> <i>{props.body ? props.body : null}</i>
+				<span style={{ color: 'black' }}>Why this Project: </span>
+				<hr /> <i>{props.body ? props.body : null}</i>
 				<br />
 				<br />
-				<span style={{color: 'black'}}>Site Details: </span><hr />
+				<span style={{ color: 'black' }}>Site Details: </span>
+				<hr />
 				<i> {props.details ? props.details : null} </i>
 			</div>
 			<div className='mini-project-picture'>
@@ -24,7 +26,7 @@ const ProjectCard = (props) => {
 					src={props.src}
 					alt={props.alt}
 					onClick={() => sendTo(props.to)}
-				/> 
+				/>
 			</div>
 			<div className='mini-project-highlights'>
 				<h3 style={{ color: 'whitesmoke' }}>Highlights</h3>
