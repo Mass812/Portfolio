@@ -134,7 +134,7 @@ const Bio = () => {
 		return () => {
 			console.log('fired useEffect gsap effects');
 		};
-		/* eslint-disable-next-line no-alert, quotes, semi */
+		// eslint-disable-next-line
 	}, []); /* eslint-disable-line no-alert, quotes, semi */
 
 	const skillsArray = [
