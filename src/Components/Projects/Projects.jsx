@@ -16,7 +16,7 @@ const Projects = () => {
 			alt: 'project',
 			to: 'https://matt-wellman-imbd.netlify.com/',
 			details:
-				'Get a great overview of the Cinematic World from the Movie WatchTower. From this site you can see upComing, Trending, Movies, Shows alike. You can see what is currently in Theatres and also look up movies that you are interested in.',
+				'Get a great overview of the Cinematic World from the Movie WatchTower. From this site you can see details of Upcoming & Trending Movies and Shows. You can see what is currently in Theatres and also look up movies that you are interested in.',
 			body:
 				'I had to choose a project that would allow for dynamic rendering and settled on this imbd project. As I am very fond of hooks, this site was constructed on both react hooks as well as v.5 react router doms newly implemented useParams, useLocation and useHistory hooks. Enjoy the demo.',
 			highlightOne:

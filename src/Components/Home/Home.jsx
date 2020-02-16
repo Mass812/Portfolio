@@ -77,7 +77,7 @@ const Home = () => {
 							Matt Wellman
 						</div>
 						JavaScript Enthusiast &
-						<div className='home-subTitle2'>Full Stack React Developer</div>
+						<div className='home-subTitle2'>React & React-Native Developer</div>
 					</div>
 				</div>
 				<FontAwesome />
