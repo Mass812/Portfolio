@@ -12,7 +12,7 @@
 .project-card-parent {
 	display: grid;
 	height: auto;
-	margin: 5px 0px;
+	margin: 0px 0px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 34px 1fr auto auto auto;
 	grid-template-areas: '. . . .' 'nameOf nameOf nameOf nameOf' 'essay essay essay pic'
@@ -36,13 +36,13 @@
 }
 .mini-project-title {
 	grid-area: nameOf;
-	background: rgb(255, 255, 255);
+	background: rgb(139, 131, 111);
 
 	align-self: center;
 	text-transform: capitalize;
 	font-family: 'Cinzel', cursive;
 	font-size: 28px;
-	color: rgb(59, 59, 59);
+	color: rgb(226, 221, 206);
 	font-weight: 700;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
@@ -61,7 +61,6 @@
 }
 .mini-project-highlights {
 	grid-area: highlight;
-	background-color: white;
 	text-align: center;
 	font-family: 'Cormorant Garamond', cursive;
 	font-size: 18px;
@@ -70,7 +69,6 @@
 }
 .mini-project-stack {
 	grid-area: stack;
-	background-color: white;
 	text-align: center;
 	font-family: 'Cormorant Garamond', cursive;
 	font-size: 18px;
@@ -99,7 +97,6 @@
 @media all and (max-width: 810px) {
 	.project-card-parent {
 		display: grid;
-		background: white;
 		height: auto;
 		margin: 5px 0px;
 		grid-template-columns: 1fr;
