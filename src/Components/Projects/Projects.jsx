@@ -11,6 +11,20 @@ const Projects = () => {
 	const projectArray = [
 		{
 			id: 1,
+			title: 'My Bio',
+			src: `${greenLantern}`,
+			alt: 'project',
+			to: 'https://mattwellman.dev/',
+			details:
+				'This site is all about me. I have always been a erudite; my life is a constant journey of learning as much as I can. I believe that I love programming because it seems that running out of learning new things will never be in short supply',
+			body:
+				'This site is hard coded, meaning I did not use any bootstrap, materialUI.etc . . . in fact I only utilized four libraries React (by necessity), FontAwesome (for Icons), React-Router-Dom (for routing) and Gsap (for animation). I wrote this entire site line-by-line. I chose to do A side-drawer navigation rather than a single page approach specifically to utilize react-router-dom',
+			highlightOne: 'Hosts projects as well as Work History and Recommendations',
+			stack: 'React, React-Router-Dom, GSap & FontAwesome',
+			status: '(On-Going / As-Needed)'
+		},
+		{
+			id: 2,
 			title: 'Movie WatchTower',
 			src: `${greenLantern}`,
 			alt: 'project',
@@ -18,27 +32,26 @@ const Projects = () => {
 			details:
 				'Get a great overview of the Cinematic World from the Movie WatchTower. From this site you can see details of Upcoming & Trending Movies and Shows. You can see what is currently in Theatres and also look up movies that you are interested in.',
 			body:
-				'I had to choose a project that would allow for dynamic rendering and settled on this imbd project. As I am very fond of hooks, this site was constructed on both react hooks as well as v.5 react router doms newly implemented useParams, useLocation and useHistory hooks. Enjoy the demo.',
+				'I wanted to choose a project that would allow for dynamic rendering and settled on this imbd project. As I am very fond of hooks, this site was constructed on both react hooks as well as v.5 react router doms newly implemented useParams, useLocation and useHistory hooks. Enjoy the demo.',
 			highlightOne:
 				'Utilized card displays for movie details rather than full webpage layout design.',
 			stack: 'React, React-Router-Dom, GSap & Font Awesome',
 			status: '(On-Going / As-Needed)'
 		},
 		{
-			id: 2,
+			id: 3,
 			title: 'TouchBase Social Network',
 			src: `${TBProject}`,
 			alt: 'project',
 			to: 'https://touch-base-29dce.firebaseapp.com/',
 			body:
-				'This project builds on the first projects use of dynamic routing and fetch methods but it also extends on fetch methods to include authorized routes, posting and site usage. This site utilizes Firebase as a backend. Hence I utilize Cloud Functions, FireStore and Firebase Auth. This site has authentication and manages local state in redux and synchronizes local state with backend state with firebase-redux. ',
+				'This project uses dynamic routing via fetch methods and utilizes Firebase as a backend {Cloud Functions, FireStore and Firebase Auth}. User authentication comes in way of email and password. All local state is managed by redux { && redux-persist, redux-thunk} ',
 			details:
-				'Its a Big World and journeys often take us far from home. Home is where the heart is, and this social network platform allows you to TouchBase whenever you need to. ',
-			highlightOne:
-				'I ordered the most recent post responses in an ascending order and sticky positioned the original post body because it seemed more fluid to see the most recent post first.',
+				'Its a Big World and journeys often take us far from home. Home is where the heart is, and this social network platform allows you to TouchBase whenever you want. ',
+			highlightOne: 'No Bootstrap, MaterialUI',
 			stack:
-				'React, Redux, Redux-Thunk, Firebase-Redux, Node, Express, Firebase (Cloud Functions, Firestore, Auth)',
-			status: '( In-Development )'
+				'React, Redux, Redux-Thunk, Redux-persist, Node, Express, Firebase (Cloud Functions, Firestore, Auth), Gsap {for animations}',
+			status: '( Currently-In-Development )'
 		}
 	];
 
