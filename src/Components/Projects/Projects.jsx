@@ -7,6 +7,7 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
 	const greenLantern = require('../../Assets/imbdThumb.PNG');
 	const TBProject = require('../../Assets/TBScreenShot.PNG');
+	const MWBio = require('../../Assets/MWlogo.PNG');
 
 	const projectArray = [
 		{
@@ -16,9 +17,10 @@ const Projects = () => {
 			alt: 'project',
 			to: 'https://mattwellman.dev/',
 			details:
-				'This site is all about me. I have always been a erudite; my life is a constant journey of learning as much as I can. I believe that I love programming because it seems that running out of learning new things will never be in short supply',
+				'This site is hard coded, meaning I did not use any bootstrap, materialUI.etc . . . in fact I only utilized four libraries React (by necessity), FontAwesome (for Icons), React-Router-Dom (for routing) and Gsap (for animation). I wrote this entire site line-by-line. I chose to do a side-drawer navigation rather than a single page approach specifically to utilize react-router-dom',
 			body:
-				'This site is hard coded, meaning I did not use any bootstrap, materialUI.etc . . . in fact I only utilized four libraries React (by necessity), FontAwesome (for Icons), React-Router-Dom (for routing) and Gsap (for animation). I wrote this entire site line-by-line. I chose to do A side-drawer navigation rather than a single page approach specifically to utilize react-router-dom',
+				'This site is all about me. I have always been a erudite; my life is a constant journey of learning everything I possibly can. I believe that I love programming because it seems that running out of learning new things will never be in short supply',
+
 			highlightOne: 'Hosts projects as well as Work History and Recommendations',
 			stack: 'React, React-Router-Dom, GSap & FontAwesome',
 			status: '(On-Going / As-Needed)'
