@@ -20,11 +20,11 @@ const ProjectCard = (props) => {
 					<i>{props.status ? props.status : null} </i>
 				</div>{' '}
 				<br />
-				<span style={{ color: 'black' }}>Why this Project: </span>
+				<span style={{ color: '#CFB46F', textShadow: '.7px .7px black' }}>Why this Project: </span>
 				<hr /> <i>{props.body ? props.body : null}</i>
 				<br />
 				<br />
-				<span style={{ color: 'black' }}>Site Details: </span>
+				<span style={{ color: '#CFB46F', textShadow: '.7px .7px black' }}>Site Details: </span>
 				<hr />
 				<i> {props.details ? props.details : null} </i>
 			</div>
@@ -37,7 +37,7 @@ const ProjectCard = (props) => {
 				/>
 			</div>
 			<div className='mini-project-highlights'>
-				<h3 style={{ color: 'black' }}>Highlights</h3>
+				<h3 style={{ color: '#CFB46F',textShadow: '.5px .5px black' }}>Highlights</h3>
 				<ul>
 					{props.highlightOne ? (
 						<div>
@@ -60,7 +60,7 @@ const ProjectCard = (props) => {
 				</ul>
 			</div>
 			<div className='mini-project-stack'>
-				<h3 style={{ color: 'black' }}>Tech Stack</h3>
+				<h3 style={{ color: '#CFB46F',textShadow: '.5px .5px black' }}>Tech Stack</h3>
 				<ul>
 					{props.stack ? (
 						<div>

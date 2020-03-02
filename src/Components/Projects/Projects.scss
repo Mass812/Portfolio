@@ -41,7 +41,7 @@
 	align-self: center;
 	text-transform: capitalize;
 	font-family: 'Cinzel', cursive;
-	font-size: 28px;
+	font-size: 24px;
 	color: rgb(226, 221, 206);
 	font-weight: 700;
 	border-top: 2px solid black;
@@ -58,6 +58,9 @@
 	font-size: 18px;
 	font-weight: 600;
 	background: transparent;
+	letter-spacing: 1px;
+	line-height: 22px;
+	word-spacing: 2.9px;
 }
 .mini-project-highlights {
 	grid-area: highlight;
@@ -102,7 +105,7 @@
 		grid-template-rows: 34px auto 1fr auto auto auto;
 		grid-template-areas: '.' ' nameOf' 'pic' 'essay ' ' highlight' 'stack';
 		font-family: 'Titillium Web';
-		color: black;
+		color: rgb(20, 20, 20);
 		font-size: 18px;
 		justify-content: center;
 		text-align: center;
@@ -110,11 +113,9 @@
 		background: rgb(164, 164, 164);
 		background: linear-gradient(
 			90deg,
-			rgba(164, 164, 164, 0.5) 1%,
 			rgba(165, 162, 156, 1) 23%,
 			rgba(164, 162, 158, 1) 50%,
-			rgba(164, 164, 164, 1) 86%,
-			rgba(164, 164, 164, 0.49612403100775193) 99%
+			rgba(164, 164, 164, 1) 86%
 		);
 	}
 	.mini-project-highlights {

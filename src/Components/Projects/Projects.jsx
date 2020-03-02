@@ -7,13 +7,13 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
 	const greenLantern = require('../../Assets/imbdThumb.PNG');
 	const TBProject = require('../../Assets/TBScreenShot.PNG');
-	const MWBio = require('../../Assets/MWlogo.PNG');
+	const MWBio = require('../../Assets/MWlogo1.jpg');
 
 	const projectArray = [
 		{
 			id: 1,
 			title: 'My Bio',
-			src: `${greenLantern}`,
+			src: `${MWBio}`,
 			alt: 'project',
 			to: 'https://mattwellman.dev/',
 			details:
