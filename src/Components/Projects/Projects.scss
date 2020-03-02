@@ -37,15 +37,22 @@
 .mini-project-title {
 	grid-area: nameOf;
 	background: rgb(139, 131, 111);
-
+	padding: 10px 0px;
 	align-self: center;
 	text-transform: capitalize;
-	font-family: 'Cinzel', cursive;
-	font-size: 24px;
+	font-family: 'Mr Dafoe';
+	font-size: 38px;
 	color: rgb(226, 221, 206);
 	font-weight: 700;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
+	//letter-spacing: 1px;
+	line-height: 28px;
+	word-spacing: 2.9px;
+	color: rgba(207, 196, 138, 0.562);
+	color: rgb(206, 203, 191);
+
+	font-weight: 100;
 }
 .mini-project-body {
 	grid-area: essay;
@@ -54,13 +61,40 @@
 	text-align: left;
 	padding: 35px;
 	margin: 20px;
-	font-family: 'Cormorant Garamond', cursive;
+	font-family: 'Dosis', cursive;
 	font-size: 18px;
 	font-weight: 600;
 	background: transparent;
 	letter-spacing: 1px;
 	line-height: 22px;
 	word-spacing: 2.9px;
+	color: rgb(82, 82, 81);
+}
+.project-details {
+	color: rgb(207, 195, 138);
+	color: rgb(206, 203, 191);
+
+	font-size: 24px;
+	font-family: 'Dr Sugiyama';
+	letter-spacing: 1.5px;
+	line-height: 22px;
+	word-spacing: 2.9px;
+	font-weight: 400;
+}
+
+.highlight-body {
+	color: rgb(206, 203, 191);
+	font-size: 22px;
+	font-family: '';
+	letter-spacing: 2px;
+	line-height: 22px;
+	word-spacing: 2.9px;
+	font-weight: 400;
+}
+.site-status {
+	color: rgba(73, 100, 20, 0.986);
+	font-family: 'Mr Dafoe';
+	font-size: 14px;
 }
 .mini-project-highlights {
 	grid-area: highlight;

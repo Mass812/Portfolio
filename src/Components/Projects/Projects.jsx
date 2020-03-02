@@ -17,13 +17,13 @@ const Projects = () => {
 			alt: 'project',
 			to: 'https://mattwellman.dev',
 			details:
-				'To state the obvious: this is my bio site. I have always been a erudite; my life is a constant journey of learning everything I possibly can. I believe that I love programming because it seems that running out of learning new things will never be in short supply',
+				'To state the obvious: this is my bio site. I have always been a erudite; my life has been a constant journey of learning everything I possibly can. I believe that I love programming because it seems that running out of learning new things will never be in short supply',
 			body:
 				'This site is hard coded, meaning I did not use any bootstrap, materialUI.etc . . . in fact I only utilized four libraries React (by necessity), FontAwesome (for Icons), React-Router-Dom (for routing) and Gsap (for animation). I wrote this entire site line-by-line. I chose to do a side-drawer navigation rather than a single page approach specifically to utilize react-router-dom',
 
 			highlightOne: 'Hosts projects as well as Work History and Recommendations',
 			stack: 'React, React-Router-Dom, GSap & FontAwesome',
-			status: '(On-Going / As-Needed)'
+			status: ' On-Going, As-Needed'
 		},
 		{
 			id: 2,
@@ -38,7 +38,7 @@ const Projects = () => {
 			highlightOne:
 				'Utilized card displays for movie details rather than full webpage layout design.',
 			stack: 'React, React-Router-Dom, GSap & Font Awesome',
-			status: '(On-Going / As-Needed)'
+			status: ': Completed'
 		},
 		{
 			id: 3,
@@ -53,7 +53,7 @@ const Projects = () => {
 			highlightOne: 'No Bootstrap, MaterialUI',
 			stack:
 				'React, Redux, Redux-Thunk, Redux-persist, Node, Express, Firebase (Cloud Functions, Firestore, Auth), Gsap {for animations}',
-			status: '( Currently-In-Development )'
+			status: ' Currently-In-Development'
 		}
 	];
 
