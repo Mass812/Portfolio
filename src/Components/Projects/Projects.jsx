@@ -57,7 +57,7 @@ const Projects = () => {
 			body:
 				'This project uses dynamic routing via fetch methods and utilizes Firebase as a backend {Cloud Functions, FireStore and Firebase Auth}. User authentication comes in way of email and password. All local state is managed by redux { && redux-persist, redux-thunk} ',
 			details:
-				'Its a Big World and journeys often take us far from home. Home is where the heart is, and this social network platform allows you to TouchBase whenever you want. ',
+				'This social network platform lets you create a profile, make posts, like and comment on other posts. ',
 			highlightOne:
 				'No Bootstrap, MaterialUI',
 			stack:
@@ -67,7 +67,6 @@ const Projects = () => {
 		}
 	]
 
-	console.log(projectArray)
 
 	const displayProjects = projectArray.map(
 		(el, idx) => (
