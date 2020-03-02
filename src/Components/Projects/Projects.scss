@@ -41,7 +41,7 @@
 	align-self: center;
 	text-transform: capitalize;
 	font-family: 'Mr Dafoe';
-	font-size: 38px;
+	font-size: 30px;
 	color: rgb(226, 221, 206);
 	font-weight: 700;
 	border-top: 2px solid black;
@@ -94,7 +94,8 @@
 .site-status {
 	color: rgba(73, 100, 20, 0.986);
 	font-family: 'Mr Dafoe';
-	font-size: 14px;
+	font-size: 12px;
+	
 }
 .mini-project-highlights {
 	grid-area: highlight;
@@ -103,6 +104,8 @@
 	font-size: 18px;
 	font-weight: 600;
 	background: transparent;
+	color: rgb(82, 82, 81);
+
 }
 .mini-project-stack {
 	grid-area: stack;
@@ -111,6 +114,8 @@
 	font-size: 18px;
 	font-weight: 600;
 	background: transparent;
+	color: rgb(82, 82, 81);
+
 }
 .mini-project-picture {
 	grid-area: pic;
