@@ -15,11 +15,11 @@ const Projects = () => {
 			title: 'My Bio',
 			src: `${MWBio}`,
 			alt: 'project',
-			to: 'https://mattwellman.dev/',
+			to: 'https://mattwellman.dev',
 			details:
-				'This site is hard coded, meaning I did not use any bootstrap, materialUI.etc . . . in fact I only utilized four libraries React (by necessity), FontAwesome (for Icons), React-Router-Dom (for routing) and Gsap (for animation). I wrote this entire site line-by-line. I chose to do a side-drawer navigation rather than a single page approach specifically to utilize react-router-dom',
+				'To state the obvious: this is my bio site. I have always been a erudite; my life is a constant journey of learning everything I possibly can. I believe that I love programming because it seems that running out of learning new things will never be in short supply',
 			body:
-				'This site is all about me. I have always been a erudite; my life is a constant journey of learning everything I possibly can. I believe that I love programming because it seems that running out of learning new things will never be in short supply',
+				'This site is hard coded, meaning I did not use any bootstrap, materialUI.etc . . . in fact I only utilized four libraries React (by necessity), FontAwesome (for Icons), React-Router-Dom (for routing) and Gsap (for animation). I wrote this entire site line-by-line. I chose to do a side-drawer navigation rather than a single page approach specifically to utilize react-router-dom',
 
 			highlightOne: 'Hosts projects as well as Work History and Recommendations',
 			stack: 'React, React-Router-Dom, GSap & FontAwesome',
