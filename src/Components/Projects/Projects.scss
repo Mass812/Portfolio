@@ -73,8 +73,8 @@
 .project-details {
 	color: rgb(207, 195, 138);
 	color: rgb(206, 203, 191);
-
-	font-size: 24px;
+	color: rgb(73, 71, 68);
+	font-size: 26px;
 	font-family: 'Dr Sugiyama';
 	letter-spacing: 1.5px;
 	line-height: 22px;
@@ -83,7 +83,7 @@
 }
 
 .highlight-body {
-	color: rgb(206, 203, 191);
+	color: rgb(73, 71, 68);
 	font-size: 22px;
 	font-family: '';
 	letter-spacing: 2px;
@@ -95,7 +95,6 @@
 	color: rgba(73, 100, 20, 0.986);
 	font-family: 'Mr Dafoe';
 	font-size: 12px;
-	
 }
 .mini-project-highlights {
 	grid-area: highlight;
@@ -105,7 +104,6 @@
 	font-weight: 600;
 	background: transparent;
 	color: rgb(82, 82, 81);
-
 }
 .mini-project-stack {
 	grid-area: stack;
@@ -115,7 +113,6 @@
 	font-weight: 600;
 	background: transparent;
 	color: rgb(82, 82, 81);
-
 }
 .mini-project-picture {
 	grid-area: pic;

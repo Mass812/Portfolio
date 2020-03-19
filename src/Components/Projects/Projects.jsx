@@ -57,13 +57,13 @@ const Projects = () => {
 			body:
 				'This project uses dynamic routing via fetch methods and utilizes Firebase as a backend {Cloud Functions, FireStore and Firebase Auth}. User authentication comes in way of email and password. All local state is managed by redux { && redux-persist, redux-thunk} ',
 			details:
-				'This social network platform lets you create a profile, make posts, like and comment on other posts. ',
+				'This social network platform lets you allows you to create a profile with photo, hobbies, location and work information. You can create, edit a/o delete your own posts. You can like and comment on other users posts. User likes and Comments are counted and displayed on the main post card.',
 			highlightOne:
 				'No Bootstrap, MaterialUI',
 			stack:
 				'React, Redux, Redux-Thunk, Redux-persist, Node, Express, Firebase (Cloud Functions, Firestore, Auth), Gsap {for animations}',
 			status:
-				' Currently-In-Development'
+				' Near Completion'
 		}
 	]
 
