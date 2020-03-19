@@ -1,7 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './KindWords.scss';
 
 function ReviewerPhoto() {
+
+useEffect(() => {
+	setTimeout(()=>{
+		return (<h1>Loading</h1>)
+	}, .200)
+
+}, [])
+
 	const MS = require('../../Assets/MS.jfif');
 	const JM = require('../../Assets/JM.jfif');
 	const AW = require('../../Assets/AW.jfif');
@@ -52,14 +60,11 @@ function ReviewerPhoto() {
 		}
 	];
 
-	const navigate = (e) => {
-		console.log(e.target.value);
-	};
 
 	//name= name, link, content
 	const copy = urlArray.map((n) => (
 		<div key={n.id}>
-			<span className='bioCard' onClick={navigate}>
+			<span className='bioCard'>
 				<img
 					src={n.link}
 					className='picture'
@@ -87,19 +92,4 @@ function ReviewerPhoto() {
 
 export default ReviewerPhoto;
 
-// function RNote() {
-//   return (
-//     <span className="note">
-//       <div>
-//         <h1>Business is an Art</h1>
-//         <h3>
-//           I am very passionate about building lasting relationships. I believe
-//           perseverance, dedication & hard work are a measure of reliability but
-//           moreover are the Framework of Trust.
-//         </h3>
-//       </div>
-//     </span>
-//   );
-// }
 
-// export { RNote };
