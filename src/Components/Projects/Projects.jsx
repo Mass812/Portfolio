@@ -13,12 +13,12 @@ const Projects = () => {
 	const projectArray = [
 		{
 			id: 1,
-			title: 'UPS Worldport Safety Efficiency Platform',
+			title: 'UPS',
 			src: `${upsProject}`,
 			alt: 'project',
 			to: 'https://upssafety-f8d4d.web.app/',
 			details:
-				'This is an auditing platform is used by Ramp D, UPS Worldport Safety! The audits are conducted through Team monitoring. Counting incidents per event. As such multiple counters are implemented to directly mirror operational paperwork. When I joined the safety committee I saw a great opportunity for react to modernize the old process: paperwork, illegibility and filling out the same paperwork three times per audit seemed really outdated. So I created this web application to handle a brunt of that workload, and allowed for the data  to be more readily available, readable, and useful through the monthly reports components. I feel accomplished in that I saw a problem and used my development skills to make the process better; easier; modern',
+				'UPS Worldport Safety Efficiency Platform is an auditing platform used by Ramp D, UPS Worldport Safety! The audits are conducted through Team monitoring. Counting incidents per event. As such multiple counters are implemented to directly mirror operational paperwork. When I joined the safety committee I saw a great opportunity for react to modernize the old process: paperwork, illegibility and filling out the same paperwork three times per audit seemed really outdated. So I created this web application to handle a brunt of that workload, and allowed for the data  to be more readily available, readable, and useful through the monthly reports components. I feel accomplished in that I saw a problem and used my development skills to make the process better; easier; modern',
 			body:
 				'Every data value is stored in redux and handled through action generators. The application utilizes React, Redux, Redux-Persist, Firebase Auth and Firestore. All forms are route protected and further protected by firebase rules. When completed it will generate emails with document information. Create new rows to spreadsheets. And the data points will show trends and recommend safety outreach and focuses for UPS CHSP and CERT teams. Moreover the data will track team progress over time. ',
 
