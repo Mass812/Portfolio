@@ -3,58 +3,58 @@ import './Projects.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
-const ProjectCard = (props) => {
+const ProjectCard = (, {status, title, to, src, alt, highlightOne, highlightTwo, highlightThree, details, }) => {
 	const sendTo = () => {
-		window.open(props.to);
+		window.open(to);
 	};
 
 	return (
 		<div className='project-card-parent'>
 			<div className='mini-project-title'>
-				{props.title} <br />
+				{title} <br />
 			</div>
 			<div className='mini-project-body'>
 				<div className='site-status'>
 					{' '}
 					<b>Current Site Status:</b>{' '}
-					<i>{props.status ? props.status : null} </i>
+					<i>{status ? status : null} </i>
 				</div>{' '}
 				<br />
 				<span className='project-details'>Why this Project: </span>
-				<hr /> <i>{props.body ? props.body : null}</i>
+				<hr /> <i>{body ? body : null}</i>
 				<br />
 				<br />
 				<span className='project-details'>Site Details: </span>
 				<hr />
-				<i> {props.details ? props.details : null} </i>
+				<i> {details ? details : null} </i>
 			</div>
 			<div className='mini-project-picture'>
 				<img
 					className='project-pic'
-					src={props.src}
-					alt={props.alt}
-					onClick={() => sendTo(props.to)}
+					src={src}
+					alt={alt}
+					onClick={() => sendTo(to)}
 				/>
 			</div>
 			<div className='mini-project-highlights'>
 				<div className='highlight-body'>Highlights</div>
 				<ul>
-					{props.highlightOne ? (
+					{highlightOne ? (
 						<div>
 							<FontAwesomeIcon icon={faCaretRight} size='sm' />{' '}
-							<span> {props.highlightOne} </span>{' '}
+							<span> {highlightOne} </span>{' '}
 						</div>
 					) : null}
-					{props.highlightTwo ? (
+					{highlightTwo ? (
 						<div>
 							<FontAwesomeIcon icon={faCaretRight} size='sm' />{' '}
-							<span> {props.highlightTwo} </span>{' '}
+							<span> {highlightTwo} </span>{' '}
 						</div>
 					) : null}
-					{props.highlightThree ? (
+					{highlightThree ? (
 						<div>
 							<FontAwesomeIcon icon={faCaretRight} size='sm' />{' '}
-							<span> {props.highlightThree} </span>{' '}
+							<span> {highlightThree} </span>{' '}
 						</div>
 					) : null}
 				</ul>
@@ -62,10 +62,10 @@ const ProjectCard = (props) => {
 			<div className='mini-project-stack'>
 				<div className='highlight-body'>Tech Stack</div>
 				<ul>
-					{props.stack ? (
+					{stack ? (
 						<div>
 							<FontAwesomeIcon icon={faCaretRight} size='sm' />{' '}
-							<span> {props.stack} </span>{' '}
+							<span> {stack} </span>{' '}
 						</div>
 					) : null}
 				</ul>
