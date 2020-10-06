@@ -3,7 +3,7 @@ import './Projects.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
-const ProjectCard = ({ status, title, to, src, alt, highlightOne, highlightTwo, highlightThree, details }) => {
+const ProjectCard = ({ status, stack, body, title, to, src, alt, highlightOne, highlightTwo, highlightThree, details }) => {
 	const sendTo = () => {
 		window.open(to);
 	};
