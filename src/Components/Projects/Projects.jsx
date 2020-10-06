@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard';
 
 const Projects = () => {
 	const greenLantern = require('../../Assets/imbdThumb.PNG');
-	const TBProject = require('../../Assets/tf_2.png');
+
 	const MWBio = require('../../Assets/MWlogo1.jpg');
 	const upsProject = require('../../Assets/upsProject.PNG');
 
@@ -43,7 +43,7 @@ const Projects = () => {
 		{
 			id     : 3,
 			title  : 'Topflight Security Plus',
-			src    : `${TBProject}`,
+			src    : `https://topflightsecurityplus.com/static/media/tf_main_plus.2f8fcf8f.png`,
 			alt    : 'project',
 			to     : 'https://topflightsecurityplus.com',
 			body   :
