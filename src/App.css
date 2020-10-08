@@ -2,32 +2,40 @@
   logo tan #BBA15F
 */
 
+
 * {
-  font-family: 'Cormorant Garamond';
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 100;
 }
 
-html {
+
+
+html, body {
+  background-color: #262626;
+ 
+ background-image:  url("./Assets/black2.jpeg");
+ background-position: center ;
+background-repeat: repeat-y;
+backdrop-filter: opacity(.2);
+  width: 100vw;
+  height: 100%;
 }
 
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media screen and (max-width: 400px) {
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.parent{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+height: 100%;
+  max-width: 900px;
+  margin: auto;
+  background-color: #262626;
+background-image:  url("./Assets/black2.jpeg");
+background-position: center;
+background-repeat: repeat-y;
+backdrop-filter: opacity(.2);
+background-size: unset;
+
 }
+
+

@@ -1,56 +1,52 @@
+$font: 'Tenor Sans', sans-serif;
+
+$accent: goldenrod;
+$punch: rgb(237, 237, 13);
+$background-color: rgb(109, 109, 109);
+$color: rgb(214, 212, 212);
+
 * {
 	box-sizing: content-box;
-}
-
-.project-wrapper {
-	box-sizing: border-box;
-	justify-content: center;
-	display: flex;
-	flex-direction: column;
 }
 
 .project-card-parent {
 	display: grid;
 	height: auto;
-	margin: 0px 0px;
+
+	min-width: 100%;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 34px 1fr auto auto auto;
-	grid-template-areas: '. . . .' 'nameOf nameOf nameOf nameOf' 'essay essay essay pic'
-		'. highlight highlight .' '. stack stack .';
-	font-family: 'Titillium Web';
-	color: black;
+	grid-template-rows: 0px 1fr auto auto auto;
+	grid-template-areas: '. . . .' 'nameOf nameOf nameOf nameOf' 'essay essay essay pic' '. highlight highlight .' '. stack stack .';
+	font-family: $font;
+
 	font-size: 20px;
+
 	justify-content: center;
 	text-align: center;
-	background-color: white;
-	background: rgb(164, 164, 164);
-	background: linear-gradient(
-		90deg,
-		rgba(164, 164, 164, 0.5) 1%,
-		rgba(165, 162, 156, 1) 33%,
-		rgba(164, 162, 158, 1) 50%,
-		rgba(164, 164, 164, 1) 66%,
-		rgba(164, 164, 164, 0.49612403100775193) 99%
-	);
+
 	// align-content: center;
 }
 .mini-project-title {
+	width: 100%;
 	grid-area: nameOf;
-	background: rgb(139, 131, 111);
+	background-color: rgba(63, 63, 63, 0.39);
+	backdrop-filter: opacity(.4) blur(10px);
 	padding: 10px 0px;
 	align-self: center;
-	font-family: 'Mr Dafoe', cursive;
-	font-size: 36px;
+	font-family: $font;
+	font-size: 28px;
 	font-weight: 100;
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
+	
 	//letter-spacing: 1px;
 	line-height: 28px;
 	word-spacing: 2.9px;
-	color: rgba(207, 196, 138, 0.562);
-	color: rgb(255, 254, 250);
+	font-family: 'Piazzolla', serif;
+	font-style: italic;
+	color: $color;
+	color: rgba(191, 192, 192, 0.959);
 
-	font-weight: 100;
+
+	
 }
 .mini-project-body {
 	grid-area: essay;
@@ -59,24 +55,19 @@
 	text-align: left;
 	padding: 35px;
 	margin: 20px;
-	font-family: 'Dosis', cursive;
-	font-size: 18px;
-	font-weight: 600;
-	background: transparent;
-	letter-spacing: 1px;
+	font-family: $font;
+	font-size: calc(12px + .4vw);
+	font-weight: 100;
+
 	line-height: 22px;
-	word-spacing: 2.9px;
-	color: rgb(0, 0, 0);
-	color: rgb(53, 53, 34);
-	
+
+	color: $color;
 }
 .project-details {
-	
-	color: rgb(0, 0, 0);
-	color: rgb(48, 48, 47);
-
-	font-size: 28px;
-	font-family: 'Dr Sugiyama';
+	color: $accent;
+	font-family: 'Piazzolla', serif;
+	font-size: 22px;
+	font-family: $font;
 	letter-spacing: 1.5px;
 	line-height: 22px;
 	word-spacing: 2.9px;
@@ -84,41 +75,40 @@
 }
 
 .highlight-body {
-	color: rgb(0, 0, 0);
+	color: $accent;
 	font-size: 22px;
-	font-family: '';
+	font-family: $font;
 	letter-spacing: 2px;
 	line-height: 22px;
 	word-spacing: 2.9px;
-	font-weight: 400;
+	font-weight: 100;
 }
 .site-status {
-	color: rgba(33, 110, 3, 0.986);
-	font-family: 'Mr Dafoe';
+	color: rgba(39, 192, 197, 0.959);
+	font-family: $font;
 	font-size: 14px;
 }
 .mini-project-highlights {
 	grid-area: highlight;
 	text-align: center;
-	font-family: 'Cormorant Garamond', cursive;
+	font-family: $font;
 	font-size: 18px;
-	font-weight: 600;
-	background: transparent;
-	color: rgb(53, 53, 34);
+	font-weight: 100;
+
+	color: $color;
 }
 .mini-project-stack {
 	grid-area: stack;
 	text-align: center;
-	font-family: 'Cormorant Garamond', cursive;
+	font-family: $font;
 	font-size: 18px;
-	font-weight: 600;
-	background: transparent;
-	color: rgb(53, 53, 34);
+	font-weight: 100;
 
+	color: $color;
 }
 .mini-project-picture {
 	grid-area: pic;
-	background: transparent;
+
 	padding: 25px 5px;
 	align-self: center;
 }
@@ -138,40 +128,38 @@
 @media all and (max-width: 810px) {
 	.project-card-parent {
 		display: grid;
+		max-width: 900px;
+
+		max-width: 100%;
 		height: auto;
 		grid-template-columns: 1fr;
-		grid-template-rows: 34px auto 1fr auto auto auto;
+		grid-template-rows: 0px auto 1fr auto auto auto;
 		grid-template-areas: '.' ' nameOf' 'pic' 'essay ' ' highlight' 'stack';
-		font-family: 'Titillium Web';
-		color: rgb(20, 20, 20);
-		font-size: 18px;
+		font-family: $font;
+
+		font-size: 14px;
 		justify-content: center;
 		text-align: center;
 		// align-content: center;
-		background: rgb(164, 164, 164);
-		background: linear-gradient(
-			90deg,
-			rgba(165, 162, 156, 1) 23%,
-			rgba(164, 162, 158, 1) 50%,
-			rgba(164, 164, 164, 1) 86%
-		);
 	}
 	.mini-project-highlights {
 		grid-area: highlight;
-		background-color: transparent;
+
 		text-align: left;
-		font-family: 'Cormorant Garamond', cursive;
-		font-size: 18px;
-		font-weight: 600;
+		font-family: $font;
+		font-size: 14px;
+		font-weight: 100;
 		padding: 0px 35px;
 	}
 	.mini-project-stack {
 		grid-area: stack;
-		background-color: transparent;
+
 		text-align: left;
-		font-family: 'Cormorant Garamond', cursive;
-		font-size: 18px;
-		font-weight: 600;
+		font-family: $font;
+		font-size: 14px;
+		font-weight: 100;
 		padding: 0px 35px;
+		padding-bottom: 75px;
+		
 	}
 }

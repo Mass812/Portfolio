@@ -13,6 +13,20 @@ const Projects = () => {
 	const projectArray = [
 		{
 			id           : 1,
+			title        : 'Topflight Security Plus',
+			src          : `https://topflightsecurityplus.com/static/media/tf_main_plus.2f8fcf8f.png`,
+			alt          : 'project',
+			to           : 'https://topflightsecurityplus.com',
+			body         :
+				'This site was built for a Louisville Security Company. The site itself is simple with contact channels, basic company selling points and testimonials. The site does give visitors the ability to apply for a position within the company. But the brunt of the functionality is actually the business site that exists behind this client website. ',
+			highlightOne :
+				'The business site gives the ability of the owner to track assets via google maps, post professional posts to Facebook and Twitter, Give or rescind privileges to app users and allows them to view applicant submissions within the app, although they submitted applications are sent in a professional format via sendGrid upon submission.',
+			stack        : 'React, Redux, Redux-Thunk, Redux-persist, Node, Express, Firebase (Cloud Functions, Firestore, Auth & Storage)',
+			status       : ' Completed'
+		},
+
+		{
+			id           : 2,
 			title        : 'Ups',
 			src          : `${upsProject}`,
 			alt          : 'project',
@@ -28,7 +42,7 @@ const Projects = () => {
 			status       : 'First Build, version 1.0.0 Beta'
 		},
 		{
-			id           : 2,
+			id           : 3,
 			title        : 'Movie WatchTower',
 			src          : `${greenLantern}`,
 			alt          : 'project',
@@ -39,18 +53,8 @@ const Projects = () => {
 			highlightOne : 'Utilized card displays for movie details rather than full webpage layout design.',
 			stack        : 'React, React-Router-Dom, GSap & Font Awesome',
 			status       : ': Completed'
-		},
-		{
-			id     : 3,
-			title  : 'Topflight Security Plus',
-			src    : `https://topflightsecurityplus.com/static/media/tf_main_plus.2f8fcf8f.png`,
-			alt    : 'project',
-			to     : 'https://topflightsecurityplus.com',
-			body   :
-				'This site was built for a Louisville Security Company. The site itself is simple with contact channels, basic company selling points and testimonials. The site does give visitors the ability to apply for a position within the company. But the brunt of the functionality is actually the business site that exists behind this client website. The business site gives the ability of the owner to track assets via google maps, post professional posts to Facebook and Twitter, Give or rescind privileges to app users and allows them to view applicant submissions within the app, although they submitted applications are sent in a professional format via sendGrid upon submission.',
-			stack  : 'React, Redux, Redux-Thunk, Redux-persist, Node, Express, Firebase (Cloud Functions, Firestore, Auth & Storage)',
-			status : ' Completed'
 		}
+
 		// {
 		// 	id           : 4,
 		// 	title        : 'My Bio',

@@ -1,316 +1,150 @@
 $main-title-color: rgba(218, 165, 32, 0.741);
 $sub-title-color: rgb(255, 187, 0);
-$font-color: rgba(255, 255, 255, 0.939);
+$font-color: rgba(216, 216, 216, 0.939);
 $icon-color: #7b7d7c;
 $background-icon-color: rgb(91, 89, 89);
 $background-body-color: rgba(255, 255, 255, 0.224);
 $background-main-body-color: transparent;
-
-:root {
-  --bio-background: url("../../Assets/grey1.jpg");
-}
-
 $icon-color: "goldenrod";
 
+:root {
+	--bio-background: url("../../Assets/grey1.jpg");
+}
+
+* {
+	font-wieght: 100;
+}
+
 .bio-wrapper {
-  box-sizing: content-box;
-  background-color: black;
+	box-sizing: content-box;
 }
 
 .bio-parent {
-  box-sizing: content-box;
-  text-align: center;
-  background-color: $background-body-color;
-  justify-content: center;
-  text-align: center;
-  padding: 2px;
-  padding-top: 30px;
+	box-sizing: content-box;
+	text-align: center;
+
+	justify-content: center;
+	text-align: center;
+	padding: 2px;
+	padding-top: 30px;
 }
 
 .bio-title-area {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: $background-main-body-color;
-  height: auto;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)),
-    var(--bio-background) cover center;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 
-  overflow: hidden;
-  position: relative;
+	height: auto;
+
+	overflow: hidden;
+	position: relative;
 }
 
+.education-list {
+	margin-left: -25px;
+	margin-top: 25px;
+	font-size: 18px;
+	font-family: 'Tenor Sans', sans-serif;
 
+	p {
+		//padding: 2px;
+		font-family: 'Overlock', sans-serif;
+		//	padding-left: -4px;
 
-.education-list{
-
-margin-left: -25px;
-margin-top: 25px;
-font-size: 18px;
-
-
-  p {
-    padding: 0;
-    margin: 6px;
-    padding-left: -4px;
-    line-height: 23px;
-    color: tan;
-    font-size: 18px;
-
-
-  }
+		color: #566b86;
+		line-height: 20px;
+		font-size: 18px;
+		font-weight: 900;
+		margin: 0px;
+	}
 }
 
 .bio-subtitle-main {
-  margin: 2px;
-  font-size: 12px;
-  font-weight: 00;
-  color: $main-title-color;
-  border-radius: 20px;
-  //  box-shadow: 3px 3px 3px 0 rgb(123, 125, 124, 1),
-  //    -4px 4px 3px 0 rgba(0, 0, 0, 0.3);
+	margin: 2px;
+	font-size: 12px;
+	font-weight: 00;
+	color: $main-title-color;
+	border-radius: 20px;
+	//  box-shadow: 3px 3px 3px 0 rgb(123, 125, 124, 1),
+	//    -4px 4px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
 .bio-subtitle {
-  font-size: 20px;
-  font-family: "Cinzel";
-  font-weight: 0;
-  letter-spacing: 2px;
-  padding: 10px;
-  margin: 20px;
-  background-color: $background-body-color;
-  color: $sub-title-color;
-  text-shadow: rgba(41, 40, 40, 0.836) 1.3px 0.5px 0.5px;
-  border-radius: 20px;
-  box-shadow: 1px 3px 1px 0 rgb(123, 125, 124, 1),
-    -4px -4px 1px -1px rgba(0, 0, 0, 0.3);
+	font-size: 20px;
 
-  // padding-top: 20px;
+	font-weight: 0;
+	letter-spacing: 2px;
+	padding: 10px;
+	margin: 20px;
+	color: $sub-title-color;
+	border-radius: 20px;
+	box-shadow: 1px 3px 1px 0 rgb(123, 125, 124, 1), -4px -4px 1px -1px rgba(0, 0, 0, 0.3);
+
+	// padding-top: 20px;
 }
 
 .icon-splay {
-  height: auto;
-  max-width: 100%;
-  padding: 5px;
-  flex-wrap: wrap;
-  justify-content: center;
+	height: auto;
+	max-width: 100%;
+	padding: 5px;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .icon-bar-li-bio {
-  pointer-events: none;
-  padding: 20px;
-  height: auto;
-  justify-content: space-evenly;
-  color: $icon-color;
+	pointer-events: none;
+	padding: 20px;
+	height: auto;
+	justify-content: space-evenly;
+	color: $icon-color;
 
-  &::after {
-    content: "";
-  }
+	&::after {
+		content: "";
+	}
 }
 
 .business-characteristic-parent {
-  width: 100%;
-  text-align: left;
-  justify-content: left;
+	width: 100%;
+	text-align: left;
+	justify-content: left;
 
-  // text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
+	// text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
 }
 
 .business-characteristic-ul {
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  padding: 1px;
-  padding-left: 1px;
-  line-height: 10px;
-  letter-spacing: .75px;
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+	padding: 1px;
+	padding-left: 1px;
 
-  // text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
+	// text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
 }
 
 .bullet {
-  flex: 1;
-  flex-direction: column;
-  size: inherit;
-  display: inline-block;
+	flex: 1;
+	flex-direction: column;
+	size: inherit;
+	display: inline-block;
 }
 
 .bullet-pint-description {
-  text-shadow: none;
-  color: $icon-color;
-  padding: 3px;
-  font-family: "Cormorant Garamond";
-  text-align: left;
- 
-  font-size: 16px;
-  word-spacing: 1.2px;
-  letter-spacing: 1px;
-  padding-right: -5px;
+	color: $font_color;
+	padding: 3px;
+	text-align: left;
+
+	font-size: 14px;
+	padding-right: -5px;
 }
 
 .weakness {
-  font-family: "Cormorant Garamond";
-  text-align: left;
-  font-weight: 200;
-  font-size: 16px;
-  word-spacing: 2px;
-  letter-spacing: .75px;
-  line-height: 26px;
-  padding: 5px;
-  color: $font-color;
-  text-shadow: none;
-  // border-radius: 0.5em;
-  // box-shadow: -2px -2px 2px 0 rgb(123, 125, 124, 1),
-  //   4px 4px 3px 0 rgba(0, 0, 0, 0.3);
+	text-align: left;
+	font-weight: 100;
+	font-size: 14px;
+
+	padding: 5px;
+	padding-top: 20px;
+	color: $font-color;
 }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-@media (min-width: 1000px) {
-  .bio-parent {
-    box-sizing: content-box;
-    text-align: center;
-    margin-top: 40px;
-    padding: 40px;
-
-    background-color: $background-body-color;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .bio-main-title {
-    font-family: "Dr Sugiyama, cursive";
-  }
-
-  .bio-subtitle-main {
-    margin: 2px;
-    font-size: 22px;
-    font-family: "Dosis";
-    font-weight: 00;
-    color: $main-title-color;
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px 0 rgb(123, 125, 124, 1),
-      -4px 4px 3px 0 rgba(0, 0, 0, 0.3);
-  }
-
-  .bio-subtitle {
-    font-size: 30px;
-    font-family: "Cormorant Garamond";
-    font-weight: 0;
-    letter-spacing: 2px;
-    padding: 15px;
-    margin: 20px;
-    background-color: $background-body-color;
-    color: $sub-title-color;
-    text-shadow: rgba(41, 40, 40, 0.836) 1.3px 0.5px 0.5px;
-    border-radius: 20px;
-    box-shadow: 1px 3px 1px 0 rgb(123, 125, 124, 1),
-      -4px -4px 16px -1px rgba(0, 0, 0, 0.3);
-
-    // padding-top: 20px;
-  }
-
-  .business-characteristic-ul {
- 
-    font-size: 20px;
-    padding-left: 1px;
-    padding-left: 1%;
-    
-    // text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
-  }
-  
-
-  .education-list{
-    font-size: 22px;
-    margin-left: -35px;
-    margin-top: 25px;
-    
-    
-      p {
-        font-size: 22px;
-        padding: 0;
-        margin: 16px;
-        padding-left: 40px;
-        line-height: 22px;
-        color: tan;
-        font-size: 22px;
-        font-weight: 400;
-    
-    
-      }
-    }
-  .bullet {
-    flex: 1;
-    flex-direction: column;
-    height: 10px;
-    size: inherit;
-    display: inline-block;
-  }
-  
-  .bullet-pint-description {
-    font-family: "Cormorant Garamond";
-    font-size: 22px;
-    padding: 10px;
-    font-weight: 300;
-    letter-spacing: 1.0px;
-    color: $font-color;
-    line-height: 10px;
-    // text-shadow: rgb(10, 10, 10) 2.83px 0.53px 1.3px;
-  }
-
-  .icon-splay {
-    align-items: center;
-    width: 100%;
-    display: flex;
-    // flex-wrap: wrap;
-  }
-  .icon-bar-li-bio {
-    justify-content: space-evenly;
-    pointer-events: none;
-    margin-right: 0;
-    //padding-right: 45px;
-    color: $icon-color;
-    height: 35px;
-
-    &::after {
-      content: "";
-    }
-  }
-
-  .weakness {
-    font-family: "Cormorant Garamond";
-    text-align: left;
-    font-weight: 200;
-    font-size: 24px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 34px;
-    padding: 5px;
-    color: $font-color;
-    text-shadow: none;
-    // border-radius: 0.5em;
-    // box-shadow: -2px -2px 2px 0 rgb(123, 125, 124, 1),
-    //   4px 4px 3px 0 rgba(0, 0, 0, 0.3);
-  }
-  }
-
+#text {
+	font-weight: 100;
+}

@@ -1,326 +1,319 @@
-$primary-color: goldenrod;
-$primary-color-hover: scale-color($primary-color, $lightness: 32%);
+$font: 'Tenor Sans', sans-serif;
+$color: white;
+$accent: rgb(228, 190, 37);
+$punch: rgb(237, 237, 13);
+$background-color: 'white';
 
-.question {
-  position: inherit;
-  width: 50px;
-  height: 20px;
-  font-size: 8px;
-  z-index: 10;
-  background-color: goldenrod;
-
-  &::hover {
-    font-size: 1.2rem;
-  }
-}
-
-.tooltip {
-  position: relative;
-  display: inline;
-  white-space: text-wrap;
-  border-bottom: 1px dotted blue;
-  font-family: "Cormorant Garamond";
-  font-size: 17px;
-  padding: 0;
-  color: goldenrod;
-}
-
-.tooltip .tooltip-text {
-  visibility: hidden;
-  width: 220px;
-  bottom: 100%;
-  font-size: 12px;
-  font-family: "Rajdhani";
-  font-weight: 0;
-  left: 50%;
-  font-weight: 0;
-  margin-left: -120px;
-  background-color: black;
-  color: goldenrod;
-  text-align: center;
-  padding: 5px;
-  border-radius: 7px;
-  position: absolute;
-  z-index: 3;
-}
-
-.tooltip:hover .tooltip-text {
-  visibility: visible;
-}
 
 #tag,
 #intel,
 #safe {
-  color: rgb(208, 160, 39);
-  font-family: "Cormorant Garamond";
-  text-decoration: underline;
-  font-size: 0.9rem;
-  padding: 10px;
-  padding-right: 10%;
-  line-height: 3px;
-  font-weight: 700;
-  flex: 1;
-  display: flex;
-  flex-direction: row-reverse;
+	color: $accent;
+	font-family: 'Tenor Sans', sans-serif;
+	text-decoration: underline;
+	font-size: calc(10px + .2vw);
+	padding: 10px;
+	padding-right: 10%;
+	line-height: 3px;
+	font-weight: 300;
+	flex: 1;
+	display: flex;
+	flex-direction: row-reverse;
 }
 #tagged,
 #no-intel,
 #no-safe {
-  display: none;
+	display: none;
 }
 
 .why {
-  padding-left: 3px;
-  font-family: "Cormorant Garamond";
-  margin-bottom: 0;
-  font-size: 12px;
+	padding-left: 3px;
+	//	font-family: 'Tenor Sans', sans-serif;
+	margin-bottom: 0;
+	font-size: 12px;
 }
 
 .sep {
-  border-width: 7px;
+	margin-bottom: 55px;
 }
 
 #text {
-  padding: 0px;
-  margin-left: -10px;
-  flex: 1;
+	padding: 0px;
+	margin-left: -10px;
+	flex: 1;
 }
 //
-p {
-  text-indent: 20px;
-  font-family: "Cormorant Garamond";
-  color: rgb(2, 2, 2);
-  font-weight: 200;
-  letter-spacing: 1px;
-}
+// p {
+//   text-indent: 20px;
+//   font-family: 'Tenor Sans', sans-serif;
+//   color: rgb(228, 227, 227);
+//   font-weight: 200;
+//   letter-spacing: 1px;
+// }
 a {
-  color: $primary-color;
-  &:hover {
-    color: $primary-color-hover;
-    text-decoration: none;
-  }
+	color: goldenrod;
+	&:hover {
+		color: goldenrod;
+		text-decoration: none;
+	}
 }
 .dateOf {
-  padding: 30px 0px;
-  margin-left: 1px;
-  font-size: 14px;
-  &::first-letter {
-    font-size: 52px;
-    font-style: bold;
-  }
+	padding: 30px 0px;
+	margin-left: 1px;
+	font-size: 14px;
+	color: goldenrod;
+	&::first-letter {
+		font-size: 52px;
+		font-style: bold;
+	}
 }
 
 .innerList {
-  padding-left: 5px;
-  font-family: "Cormorant Garamond";
-  font-weight: 600;
-  color: black;
-  font-size: 16px;
+	padding-left: 5px;
+	font-family: 'Tenor Sans', sans-serif;
+	font-weight: 600;
+	color: $color;
+	font-size: 16px;
 }
 
-.example-header {
-  background: #3d4351;
-  color: #fff;
-  font-weight: 300;
-  padding: 3em 1em;
-  text-align: center;
-  h1 {
-    color: #fff;
-    font-weight: 300;
-    margin-bottom: 20px;
-  }
-  p {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 700;
-  }
-}
-.container-fluid {
-  .row {
-    padding: 0 0 4em 0;
-    &:nth-child(even) {
-      background: #f1f4f5;
-    }
-  }
-}
 #push {
-  padding-left: 0px;
-  font-family: "Rajdhani";
-  letter-spacing: 2px;
+	padding-left: 0px;
+	font-family: 'Tenor Sans', sans-serif;
+	letter-spacing: 2px;
 }
 
 .example-title {
-  font-family: "Rajdhani";
-  font-size: 18px;
-  text-align: center;
-  align-self: center;
-  justify-content: center;
-  margin-bottom: 0px;
-  padding-top: 35px;
-  color: goldenrod;
-  text-shadow: black 1.2px 1.3px;
+	font-family: 'Tenor Sans', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	align-self: center;
+	justify-content: center;
+	margin-bottom: 0px;
+	padding-top: 35px;
+	color: $punch;
+	text-shadow: black 1.2px 1.3px;
 }
 
-/*==================================
-    TIMELINE
-==================================*/
-
-/*-- GENERAL STYLES
-    ------------------------------*/
 .timeline {
-  line-height: 1.2em;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    line-height: inherit;
-  }
+	line-height: 1.2em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		line-height: inherit;
+	}
 }
 
 /*----- TIMELINE ITEM -----*/
 
 .timeline-item {
-  padding-left: 30px;
-  padding-right: 15px;
-  margin: -20px 0px;
-  position: relative;
-  &:last-child {
-    padding-bottom: 0;
-  }
+
+//	background-color: rgb(49, 49, 49);
+	border-radius: 25px;
+	padding: 5px;
+	padding-left: 30px;
+	padding-right: 15px;
+	margin: -20px 0px;
+	position: relative;
+	
+	// background-color: rgba(46, 44, 44, 0.767);
+	// box-shadow: 1px 1px 2px rgb(87, 87, 87), -1px -1px 2px rgb(87, 87, 87);
+	&:last-child {
+		padding-bottom: 0;
+	
+	}
 }
 
 #expPic {
-  size: contain;
-  border: groove;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px rgb(85, 83, 83);
+	size: contain;
+	border: groove;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgb(85, 83, 83);
 }
 
 /*----- TIMELINE INFO -----*/
 
 .timeline-info {
-  display: contents;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  margin: 0 0 0.2em 0;
-  white-space: nowrap;
-  padding-left: 22px;
-  color: goldenrod;
-  text-shadow: black 1px 1px;
+	display: contents;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin: 0 0 0.2em 0;
+	white-space: nowrap;
+	padding-left: 22px;
+	color: $punch;
+	text-shadow: black 1px 1px;
 }
 /*----- TIMELINE MARKER -----*/
 
 .timeline-marker {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 5px;
-  margin-left: 5px;
-  &:before {
-    background: rgb(226, 180, 62);
-    border: 2.2px solid rgb(0, 0, 0);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 5px;
+	margin-left: 5px;
+	&:before {
+		background: rgb(226, 180, 62);
+		border: 2.2px solid rgb(0, 0, 0);
 
-    border-radius: 100%;
-    content: "";
-    display: block;
-    height: 15px;
-    position: absolute;
-    top: 4px;
-    left: 0;
-    width: 15px;
-    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
-  }
-  &:after {
-    content: "";
-    width: 3px;
-    background: #e1a714db;
-    display: block;
-    position: absolute;
-    top: 24px;
-    bottom: 0;
-    left: 7px;
-  }
-  .timeline-item:last-child &:after {
-    content: none;
-  }
+		border-radius: 100%;
+		content: "";
+		display: block;
+		height: 15px;
+		position: absolute;
+		top: 4px;
+		left: 0;
+		width: 15px;
+		transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+	}
+	&:after {
+		content: "";
+		width: 3px;
+		background: #e1a714db;
+		display: block;
+		position: absolute;
+		top: 24px;
+		bottom: 0;
+		left: 7px;
+	}
+	.timeline-item:last-child &:after {
+		content: none;
+		
+	}
 }
 .timeline-item:not(.period):hover .timeline-marker:before {
-  background: transparent;
-  border: 3px solid $primary-color;
+	background: transparent;
 }
 
 /*----- TIMELINE CONTENT -----*/
 
 .timeline-content {
-  padding-bottom: 30px;
-  color: black;
-  p:last-child {
-    font-family: "Cormorant Garamond";
-    color: rgb(62, 62, 62);
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 0;
-    padding-right: 12px;
-  }
+	padding-bottom: 30px;
+	color: black;
+	p:last-child {
+		font-family: 'Tenor Sans', sans-serif;
+		color: rgb(62, 62, 62);
+		font-weight: 700;
+		font-size: 16px;
+		margin-bottom: 0;
+		padding-right: 12px;
+	}
 }
 
 /*----- TIMELINE PERIOD -----*/
 
 .period {
-  padding-left: 10%;
-  .timeline-info {
-    display: none;
-  }
-  .timeline-marker {
-    &:before {
-      background: transparent;
-      content: "";
-      width: 15px;
-      height: auto;
-      border: none;
-      border-radius: 0;
-      top: 0;
-      bottom: 30px;
-      position: absolute;
-      border-top: 3px solid #ccd5db;
-      border-bottom: 3px solid #ccd5db;
-    }
-    &:after {
-      content: "";
-      height: 32px;
-      top: auto;
-    }
-  }
-  .timeline-content {
-    padding: 15px 70px;
-    font-weight: 650;
-    font-family: "Cormorant Garamond";
-    color: black;
-  }
-  .timeline-title {
-    padding-left: 25px;
-   
-  }
+	padding-left: 10%;
+	.timeline-info {
+		display: none;
+	}
+	.timeline-marker {
+		&:before {
+			background: transparent;
+			content: "";
+			width: 15px;
+			height: auto;
+			border: none;
+			border-radius: 0;
+			top: 0;
+			bottom: 30px;
+			position: absolute;
+		}
+		&:after {
+			content: "";
+			height: 32px;
+			top: auto;
+		}
+	}
+	.timeline-content {
+		padding: 15px 70px;
+		font-weight: 650;
+		font-family: 'Tenor Sans', sans-serif;
+		color: red;
+	}
+	.timeline-title {
+		display: flex;
+		padding-left: 25px;
+		margin-bottom: 1000px;
+	}
 }
 
 .ExperienceListParent {
-  font-weight: 450;
-  font-family: "Cormorant Garamond";
-  font-style: normal;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 300px;
-  padding-bottom: 25px;
+	font-weight: 450;
+	font-family: 'Tenor Sans', sans-serif;
+	font-style: normal;
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 300px;
+	padding-bottom: 25px;
 }
 
+.p-bodies {
+	color: $color;
+	font-size: calc(10px + .2vw);
+	letter-spacing: 1.32px;
+	word-spacing: 1.3px;
+	font-family: 'Tenor Sans', sans-serif;
+	padding-bottom: 20px;
+}
 
+.icon-parent {
+	color: $color;
+	font-size: calc(10px + .2vw);
+	font-family: 'Tenor Sans', sans-serif;
+	font-weight: 100px;
+}
 
+.timeline-title {
+	display: flex;
+	padding: 25px 0px 0px 0px;
+	padding-left: 0px;
+	color: $color;
+	font-size: calc(20px + .2vw);
+	font-family: 'Tenor Sans', sans-serif;
+}
+
+.position {
+	color: $accent;
+	padding-bottom: 20px;
+	font-size: calc(14px + .2vw);
+}
+
+.duration {
+	font-size: 12px;
+	color: $accent;
+	padding-left: 10px;
+}
+
+.edge-down {
+	margin-top: 60px;
+
+}
+
+.key-responsibility-title {
+	padding: 5px;
+	color: $accent;
+}
+
+.addendum-two {
+	color: lightgoldenrodyellow;
+	font-size: 10px;
+	font-family: 'Tenor Sans', sans-serif;
+	font-weight: 100;
+}
+
+.resume-title {
+	padding-top: 60px;
+	display: flex;
+	margin: auto;
+	font-size: 30px;
+	color: $color;
+	font-family: 'Piazzolla', serif;
+}

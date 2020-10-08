@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
-import Toolbar from "./Components/Header/Toolbar";
+import Toolbar from "./Components/NavBar/NavBar";
 import FoggedGlass from "./Components/FoggedGlass/FoggedGlass";
 import KindWords from "./Components/KindWords/KindWords";
 import Home from "./Components/Home/Home";
@@ -42,7 +42,8 @@ const App = () => {
       <div style={{ height: "100" }}>
         <Toolbar pushShowHide={runHideShow} />
         <hr className="header-break" />
-        {expandSide} {expandFog}
+        { expandSide } { expandFog }
+        
         <main>
           <Switch>
             <Route path="/" exact={true} component={Home} />
