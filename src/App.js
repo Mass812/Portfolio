@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './App.css';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import SideDrawer from './Components/SideDrawer/SideDrawer';
-import NavBar from './Components/NavBar/NavBar';
+
 import FoggedGlass from './Components/FoggedGlass/FoggedGlass';
+import NavBar from './Components/NavBar/NavBar.jsx'
 import KindWords from './Components/KindWords/KindWords';
 import Home from './Components/Home/Home';
 import Resume from './Components/Resume/Resume';
