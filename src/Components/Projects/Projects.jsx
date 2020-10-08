@@ -7,7 +7,6 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
 	const greenLantern = require('../../Assets/imbdThumb.PNG');
 
-
 	const upsProject = require('../../Assets/upsProject.PNG');
 
 	const projectArray = [
@@ -17,11 +16,12 @@ const Projects = () => {
 			src          : `https://topflightsecurityplus.com/static/media/tf_main_plus.2f8fcf8f.png`,
 			alt          : 'project',
 			to           : 'https://topflightsecurityplus.com',
-			body         :
-				'This site was built for a Louisville Security Company. The site itself is simple with contact channels, basic company selling points and testimonials. The site does give visitors the ability to apply for a position within the company. But the brunt of the functionality is actually the business site that exists behind this client website. ',
+			body         : "This site was built for a New and developing Security Company in Louisville Kentucky. Color schema, look and general layout were generated to TFSP's wants. ",
+			details      :
+				'The site itself is simple with contact channels, basic company selling points and testimonials. The site does give visitors the ability to apply for a position within the company. But the brunt of the functionality is actually the business site that exists behind this client website. ',
 			highlightOne :
 				'The business site gives the ability of the owner to track assets via google maps, post professional posts to Facebook and Twitter, Give or rescind privileges to app users and allows them to view applicant submissions within the app, although they submitted applications are sent in a professional format via sendGrid upon submission.',
-			stack        : 'React, Redux, Redux-Thunk, Redux-persist, Node, Express, Firebase (Cloud Functions, Firestore, Auth & Storage)',
+			stack        : 'React, Redux, Redux-Thunk, Redux-persist, React-Helmet, Node, Express, Firebase (Cloud Functions, Firestore, Auth & Storage)',
 			status       : ' Completed'
 		},
 

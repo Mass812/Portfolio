@@ -65,7 +65,7 @@ const Resume = () => {
 				duration={'1.5 years'}
 				position={'Safety Committee'}
 				icon={faUps}
-				p1={
+				textWhenMore={
 					'Training is the cornerstone of safety at UPS, and management training is the logical precursor to an informed and safe workforce. UPS invests $175 million pe year on safety training. UPS employees receive nearly 3.8 million hours of safety training annually, including Safe Work Methods. UPS Safe Work Methods have been developed to help address the major sources of known risk to our employees. I was glad to be part of that process.'
 				}
 				safe={moreAboutUPS}
@@ -73,7 +73,9 @@ const Resume = () => {
 				resp2={'Facility, Equipment & Employee audits'}
 				resp3={'Root Cause Analysis Reporting'}
 				resp4={'Developed a Web Application for their Operations'}
-				textWhenMore={'I developed  safety auditing platform'}
+				p1={
+					'I developed  safety auditing platform for the Comprehensive Health and Safety Committee (CHSP). Although the application was utilized after development for a short period, after being approved by Building Manager and the Safety Committee Chair the project was unfortunately brought to a halt by upper management--only for the reason that I was not hired in as a developer and I was essentially a third-party. I however did repo over the codebase they could use it (there is no reason to reinvent a wheel) and in meetings were working to develop this platform. I wanted nothing in return for this project just to help their operation. I did get a lot of accolades on the great idea and application itself. '
+				}
 				onClickMore={moreUPS}
 			/>
 			<ResumeCard
@@ -101,16 +103,18 @@ const Resume = () => {
 				duration={'6.5 years'}
 				position={'Director of Security Operations'}
 				icon={faAngleRight}
-				p1={'  Working alongside three staffing agencies and seven internal operational departments, for a company consisting of 1000+ employees. I effectively coordinated a 40+ member security team.'}
+				p1={
+					'  Working alongside three staffing agencies and seven internal operational departments, for a company consisting of 1000+ employees. I effectively coordinated a 40+ member security team. Directly regarding development: in my duration there I developed a web-based security platform that did a great deal to decrease operational manpower and hours / save the company thousands a year in resource expenditures. '
+				}
 				safe={moreAboutTechstyle}
 				addendum={'(Pertinent to Development)'}
-				addendum2={' Fully developing Web Technologies that leveraged complete workflows which:'}
-				resp1={' watered-down operational complexities (Lessened Skill Set requirements)'}
-				resp2={' markedly decreased training & development time (Better On-Boarding)'}
-				resp3={' automated security reporting and auditing (Modernized Security)'}
-				resp4={' immeasurably increased oversight (Operational Control)'}
+				addendum2={' Fully developing Web Technologies that leveraged entire workflows which:'}
+				resp1={' Watered-down operational complexities (Lessened Skill Set requirements)'}
+				resp2={' Markedly decreased training & development time (Better On-Boarding)'}
+				resp3={' Automated security reporting and auditing (Modernized Security)'}
+				resp4={' Immeasurably increased oversight (Operational Control)'}
 				textWhenMore={
-					"After maturing at Techstyle I wanted to delve further into coding, not just to expand on knowledge of frameworks, languages and API's but to better understand the technology side of the operational workflow (i.e., its struggles and possibilities). This choice certainly broadened my overall knowledge-base being all companies heavily leverage technology into their work models."
+					"After maturing at Techstyle I wanted to delve further into coding, not just to expand on knowledge of frameworks, languages and API's but to better understand the technology perspectives of operational workflows (i.e., its struggles and possibilities). This choice to journey into Javascript Libraries certainly broadened my overall knowledge-base of technologies capabilities, I am glad I began this endeavour."
 				}
 				onClickMore={moreTechstyle}
 			/>
