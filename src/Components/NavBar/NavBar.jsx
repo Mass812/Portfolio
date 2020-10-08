@@ -7,10 +7,10 @@ const NavBar = ({ pushShowHide }) => {
 	return (
 		<div className='navbar-parent'>
 			<nav className='navbar'>
+				<div className='site_name'>Mw</div>
 				<div className='toggle-block'>
 					<MenuButton showHide={pushShowHide} />
 				</div>
-				<div className='site_name'>Mw</div>
 			</nav>
 		</div>
 	);
