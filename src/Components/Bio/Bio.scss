@@ -48,12 +48,12 @@ $icon-color: "goldenrod";
 
 	p {
 		//padding: 2px;
-		font-family: 'Overlock', sans-serif;
+		font-family: 'Tenor Sans', sans-serif;
 		//	padding-left: -4px;
 
-		color: #566b86;
+		color: #219CB4;
 		line-height: 20px;
-		font-size: 18px;
+		font-size: 14px;
 		font-weight: 900;
 		margin: 0px;
 	}
@@ -112,9 +112,10 @@ $icon-color: "goldenrod";
 
 .business-characteristic-ul {
 	color: rgb(255, 255, 255);
-	font-size: 15px;
+	font-size: 14px;
 	padding: 1px;
 	padding-left: 1px;
+	font-family: 'Tenor Sans', serif;
 
 	// text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
 }
@@ -139,10 +140,11 @@ $icon-color: "goldenrod";
 	text-align: left;
 	font-weight: 100;
 	font-size: 14px;
-
+	line-height: 22px;
 	padding: 5px;
 	padding-top: 20px;
 	color: $font-color;
+	letter-spacing: 1.2px;
 }
 
 #text {

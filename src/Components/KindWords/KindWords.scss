@@ -28,25 +28,30 @@
 
 .bio-card-top {
 	display: flex;
+	justify-content: space-between;
+	
 }
 
 .bio-card-bottom {
 	padding: 20px 20px 30px 20px;
 	color: white;
 	font-weight: 100;
-	font-family: 'Piazzolla', serif;
+	font-family: 'Tenor Sans', serif;
+	font-size: 14px;
 	word-spacing: 1.3px;
 }
 
 .picture {
 	border: solid;
 	border-color: rgb(77, 75, 75);
-	height: 100px;
-	width: 100px;
 	background-repeat: no-repeat;
-
+	
 	margin-left: 10px;
 	background-size: contain;
+	height: 100px;
+	width: 100px;
+	min-height:100px;
+	min-width: 100px;
 
 	border-radius: 10px;
 }
@@ -54,24 +59,30 @@
 .ref-details {
 	display: flex;
 	flex-direction: column;
-	max-width: 300px;
-	margin: auto;
-	width: 100%;
 	justify-content: right;
+
+	margin-left: auto;
+	width: 100%;
+
 	padding: 10px;
 }
 
 .name {
+	display: flex;
+	align-self: flex-end;
+	justify-self: right;
 	font-size: 22px;
 	color: goldenrod;
 	text-align: left;
 	font-family: 'Piazzolla', serif;
+	
+
 }
 
 .title {
 	font-size: 12px;
 	text-align: right;
-	margin-right: -10px;
+	
  color: rgba(39, 192, 197, 0.959);
 	font-family: 'Piazzolla', serif;
 }

@@ -108,7 +108,7 @@ const Bio = () => {
 					duration : 1.8,
 					scale    : 1.4,
 					stagger  : 0.03,
-					color    : '#566b86',
+					color    : '#219CB4',
 					display  : 'inline-block',
 					ease     : 'Power0.easeInOut'
 				}

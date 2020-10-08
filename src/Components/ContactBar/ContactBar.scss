@@ -13,11 +13,31 @@
   box-sizing: content-box;
   bottom: 0px;
   z-index: 10;
+ 
   left: 15px;
   
 }
 
+
+ @media all and (min-width: 1110px){
+   .contactBlockContainer {
+  position: absolute;
+  width:170px;
+  box-sizing: content-box;
+  bottom: 0px;
+  z-index: 10;
+  left: 50%;
+ // left: 15px;
+  
+}
+.contactBlockIconBlock {
+  position: relative;
+  left: -50%;
+}
+  }    
+
 .contactBlockIconBlock li {
+
   flex: 1;
   display: flex;
   align-items: center;

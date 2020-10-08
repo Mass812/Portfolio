@@ -1,11 +1,13 @@
 import React from "react";
 import "./Button.scss";
 
-const Button = (props = "Default") => {
+const Button = ({children = 'mmm?'}) => {
   return (
+
+    
     <ul className = 'button-ul'>
       <li className = 'button-li'>
-        {props.children}
+        {children}
         <span></span>
         <span></span>
         <span></span>
