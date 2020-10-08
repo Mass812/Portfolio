@@ -29,7 +29,6 @@
 .bio-card-top {
 	display: flex;
 	justify-content: space-between;
-	
 }
 
 .bio-card-bottom {
@@ -37,7 +36,7 @@
 	color: white;
 	font-weight: 100;
 	font-family: 'Tenor Sans', serif;
-	font-size: 14px;
+	font-size: calc(14px + 0.2vw);
 	word-spacing: 1.3px;
 }
 
@@ -45,12 +44,12 @@
 	border: solid;
 	border-color: rgb(77, 75, 75);
 	background-repeat: no-repeat;
-	
+
 	margin-left: 10px;
 	background-size: contain;
 	height: 100px;
 	width: 100px;
-	min-height:100px;
+	min-height: 100px;
 	min-width: 100px;
 
 	border-radius: 10px;
@@ -75,14 +74,12 @@
 	color: goldenrod;
 	text-align: left;
 	font-family: 'Piazzolla', serif;
-	
-
 }
 
 .title {
 	font-size: 12px;
 	text-align: right;
-	
- color: rgba(39, 192, 197, 0.959);
+
+	color: rgba(39, 192, 197, 0.959);
 	font-family: 'Piazzolla', serif;
 }

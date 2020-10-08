@@ -4,7 +4,6 @@ $accent: rgb(228, 190, 37);
 $punch: rgb(237, 237, 13);
 $background-color: 'white';
 
-
 #tag,
 #intel,
 #safe {
@@ -60,7 +59,7 @@ a {
 .dateOf {
 	padding: 30px 0px;
 	margin-left: 1px;
-	font-size: 14px;
+	font-size: calc(14px + 0.2vw);
 	color: goldenrod;
 	&::first-letter {
 		font-size: 52px;
@@ -113,20 +112,18 @@ a {
 /*----- TIMELINE ITEM -----*/
 
 .timeline-item {
-
-//	background-color: rgb(49, 49, 49);
+	//	background-color: rgb(49, 49, 49);
 	border-radius: 25px;
 	padding: 5px;
 	padding-left: 30px;
 	padding-right: 15px;
 	margin: -20px 0px;
 	position: relative;
-	
+
 	// background-color: rgba(46, 44, 44, 0.767);
 	// box-shadow: 1px 1px 2px rgb(87, 87, 87), -1px -1px 2px rgb(87, 87, 87);
 	&:last-child {
 		padding-bottom: 0;
-	
 	}
 }
 
@@ -185,7 +182,6 @@ a {
 	}
 	.timeline-item:last-child &:after {
 		content: none;
-		
 	}
 }
 .timeline-item:not(.period):hover .timeline-marker:before {
@@ -294,7 +290,6 @@ a {
 
 .edge-down {
 	margin-top: 60px;
-
 }
 
 .key-responsibility-title {

@@ -37,7 +37,7 @@ $color: rgb(214, 212, 212);
 	font-family: $font;
 	font-size: 28px;
 	font-weight: 100;
-	
+
 	//letter-spacing: 1px;
 	line-height: 28px;
 	word-spacing: 2.9px;
@@ -45,9 +45,6 @@ $color: rgb(214, 212, 212);
 	font-style: italic;
 	color: $color;
 	color: rgba(191, 192, 192, 0.959);
-
-
-	
 }
 .mini-project-body {
 	grid-area: essay;
@@ -87,14 +84,14 @@ $color: rgb(214, 212, 212);
 .site-status {
 	color: rgba(39, 192, 197, 0.959);
 	font-family: $font;
-	font-size: 14px;
+	font-size: calc(14px + 0.2vw);
 }
 .mini-project-highlights {
 	grid-area: highlight;
 	text-align: center;
 	font-family: $font;
-	font-size: 14px;
-	line-height:20px;
+	font-size: calc(14px + 0.2vw);
+	line-height: 20px;
 	font-weight: 100;
 
 	color: $color;
@@ -139,7 +136,7 @@ $color: rgb(214, 212, 212);
 		grid-template-areas: '.' ' nameOf' 'pic' 'essay ' ' highlight' 'stack';
 		font-family: $font;
 
-		font-size: 14px;
+		font-size: calc(14px + 0.2vw);
 		justify-content: center;
 		text-align: center;
 		// align-content: center;
@@ -149,7 +146,7 @@ $color: rgb(214, 212, 212);
 
 		text-align: left;
 		font-family: $font;
-		font-size: 14px;
+		font-size: calc(14px + 0.2vw);
 		font-weight: 100;
 		padding: 0px 35px;
 	}
@@ -158,10 +155,9 @@ $color: rgb(214, 212, 212);
 
 		text-align: left;
 		font-family: $font;
-		font-size: 14px;
+		font-size: calc(14px + 0.2vw);
 		font-weight: 100;
 		padding: 0px 35px;
 		padding-bottom: 75px;
-		
 	}
 }
