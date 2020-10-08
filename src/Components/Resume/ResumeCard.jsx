@@ -31,7 +31,7 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 				<div className='timeline-info'>
 					<span className='dateOf' ref={(cr) => (arrow = cr)}>
 						{'=>'}
-						 {endDate}
+						{endDate}
 						<span className='duration'>{duration}</span>
 					</span>
 				</div>
@@ -48,9 +48,11 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 						<div className='p-bodies'>{p1}</div>
 					</div>
 
-					<span id={!safe ? 'safe' : 'no-safe'} onClick={onClickMore}>
-						...continue reading
-					</span>
+					{textWhenMore ? (
+						<span id={!safe ? 'safe' : 'no-safe'} onClick={onClickMore}>
+							...continue reading
+						</span>
+					) : null}
 					<br />
 
 					{safe ? (
@@ -63,25 +65,36 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 
 					<ul className='innerList'>
 						<div className='addendum-two'> {addendum2}</div>
-						<Icon size={'sm'} icon={icon} color={'red'}>
-							{resp1}
-						</Icon>
-						<Icon size={'sm'} icon={icon}>
-							{resp2}
-						</Icon>
-						<Icon size={'sm'} icon={icon}>
-							{resp3}
-						</Icon>
-						<Icon size={'sm'} icon={icon}>
-							{resp4}
-						</Icon>
+						{resp1 ? (
+							<Icon size={'sm'} icon={icon} color={'red'}>
+								{resp1}
+							</Icon>
+						) : null}
+						{resp2 ? (
+							<Icon size={'sm'} icon={icon}>
+								{resp2}
+							</Icon>
+						) : null}
+						{resp3 ? (
+							<Icon size={'sm'} icon={icon}>
+								{resp3}
+							</Icon>
+						) : null}
+						{resp4 ? (
+							<Icon size={'sm'} icon={icon}>
+								{resp4}
+							</Icon>
+						) : null}
 					</ul>
 					<div className='sep' />
 				</div>
 			</li>
 			<li className='timeline-item' style={{ boxShadow: 'none', border: 'none' }} ref={(cr) => (arrow2 = cr)}>
 				<div className='timeline-item' style={{ boxShadow: 'none', border: 'none' }}>
-					<span className='dateOf'>{'<='}{startDate}</span>
+					<span className='dateOf'>
+						{'<='}
+						{startDate}
+					</span>
 				</div>
 				<div className='timeline-marker' />
 			</li>

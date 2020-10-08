@@ -48,12 +48,13 @@ const Resume = () => {
 				duration={''}
 				position={'React Developer'}
 				icon={faAngleRight}
-				p1={"I currently develop in Vue and React, but am particular to React as I love the library and it is still one of the most desired libraries utilized today. I have done work in MERN as well but am fond of Google's Firestore and other cloud services."}
-				textWhenMore={'I enjoy developing a lot. It is the sole reason I have focused relentlessly on it for the past few years.'}
+				p1={
+					"I have developed in many javascript libraries but I am highly efficient in React. I love the library and it just fits me. I have worked in react solidly for over two years and I am glad for iit as React is still one of the most desired libraries utilized today. I have done work in MERN as well but am fond of Google's Firestore and other cloud services."
+				}
 				safe={moreAboutFreeLance}
 				resp1={'Build Client Web Applications to Requested Standards'}
 				resp2={'Work with clients to mediate their wants with best / practical approaches.'}
-				resp3={'Operate at a very cost effective rate.'}
+				resp3={'Create the most cost effective methods in building out sites.'}
 				resp4={'Guarantee site issue resolutions for 2 years of sites finished development'}
 				onClickMore={moreFreeLance}
 			/>
@@ -65,7 +66,7 @@ const Resume = () => {
 				position={'Safety Committee'}
 				icon={faUps}
 				p1={
-					'Training is the cornerstone of safety at UPS, and management training is the logical precursor to an informed and safe workforce. UPS invests $175 million pe year on safety training. UPS employees receive nearly 3.8 million hours of safety training annually, including Safe Work Methods. UPS Safe Work Methods have been developed to help address the major sources of known risk to our employees. I am glad to be part of this process. '
+					'Training is the cornerstone of safety at UPS, and management training is the logical precursor to an informed and safe workforce. UPS invests $175 million pe year on safety training. UPS employees receive nearly 3.8 million hours of safety training annually, including Safe Work Methods. UPS Safe Work Methods have been developed to help address the major sources of known risk to our employees. I was glad to be part of that process.'
 				}
 				safe={moreAboutUPS}
 				resp1={'Safety Compliance Training / New Hire Training'}
