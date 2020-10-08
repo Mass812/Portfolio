@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuButton from './MenuButton';
 import './NavBar.scss';
-import SpreadNav from './SpreadNav';
+
 
 const NavBar = ({ pushShowHide }) => {
 	return (

@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState} from 'react';
 import './Resume.scss';
-import Icon from '../ContactBar/Icon';
+
 import { faUps, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faAngleRight, faCaretSquareRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import ResumeCard from './ResumeCard';
 
 const Resume = () => {
@@ -64,7 +64,7 @@ const Resume = () => {
 				startDate={'June 28, 2019'}
 				endDate={'August 28, 2020'}
 				duration={'1.5 years'}
-				position={'Safety Commitee'}
+				position={'Safety Committee'}
 				icon={faUps}
 				p1={
 					'Training is the cornerstone of safety at UPS, and management training is the logical precursor to an informed and safe workforce. UPS invests $175 million pe year on safety training. UPS employees receive nearly 3.8 million hours of safety training annually, including Safe Work Methods. UPS Safe Work Methods have been developed to help address the major sources of known risk to our employees. I am glad to be part of this process. '
@@ -91,7 +91,7 @@ const Resume = () => {
 				resp3={' Work with 3rd party Back-end Companies to validate / resolve / create endpoints'}
 				resp4={'Worked exclusively in React Native.'}
 				textWhenMore={
-					' I love technology and for many years I swore I would take the time to learn it! I have always had more than a natural aptitude towards the Internet of Things, apparently that term is a real thing (smh). I learned SQL inadvertently through google sheets while at Techstyle Fashion Group. One of my best friends is the Chief Mobile Software Engineer and Developer at Techstyle Fashion Group. I expressed a desire to learn how to develop web and mobile applications. At that time he knew of a company needing some contract work done so he secured me a position on a development team for a while so that I could experince the life-of-coding first hand.'
+					' I love technology and for many years I swore I would take the time to learn it! I have always had more than a natural aptitude towards the Internet of Things, apparently that term is a real thing (smh). I learned SQL inadvertently through google sheets while at Techstyle Fashion Group. One of my best friends is the Chief Mobile Software Engineer and Developer at Techstyle Fashion Group. I expressed a desire to learn how to develop web and mobile applications. At that time he knew of a company needing some contract work done so he secured me a position on a development team for a while so that I could experience the life-of-coding first hand.'
 				}
 				onClickMore={moreParsedIO}
 			/>

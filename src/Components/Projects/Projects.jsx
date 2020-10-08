@@ -7,7 +7,7 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
 	const greenLantern = require('../../Assets/imbdThumb.PNG');
 
-	//const MWBio = require('../../Assets/MWlogo1.jpg');
+
 	const upsProject = require('../../Assets/upsProject.PNG');
 
 	const projectArray = [
