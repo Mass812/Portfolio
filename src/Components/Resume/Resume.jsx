@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import './Resume.scss';
 
 import { faUps, faReact } from '@fortawesome/free-brands-svg-icons';
@@ -39,7 +39,7 @@ const Resume = () => {
 	};
 
 	return (
-    <div className='parent'>
+		<div className='parent'>
 			<div className='resume-title'>RESUME</div>
 			<ResumeCard
 				company={'Full Stack React and React-Native Developer'}
@@ -47,10 +47,8 @@ const Resume = () => {
 				endDate={'Present'}
 				duration={''}
 				position={'React Developer'}
-				icon={faUps}
-				p1={
-					'I currently develop in Vue and React, but am particular to React as I love the library and it is still one of the most desired libraries utilized today. I have done work in MERN as well but am fond of Google\'s Firestore and other cloud services.'
-				}
+				icon={faAngleRight}
+				p1={"I currently develop in Vue and React, but am particular to React as I love the library and it is still one of the most desired libraries utilized today. I have done work in MERN as well but am fond of Google's Firestore and other cloud services."}
 				textWhenMore={'I enjoy developing a lot. It is the sole reason I have focused relentlessly on it for the past few years.'}
 				safe={moreAboutFreeLance}
 				resp1={'Build Client Web Applications to Requested Standards'}

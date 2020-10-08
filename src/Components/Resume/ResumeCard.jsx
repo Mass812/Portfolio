@@ -30,8 +30,8 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 			<li className='timeline-item'>
 				<div className='timeline-info'>
 					<span className='dateOf' ref={(cr) => (arrow = cr)}>
-						{' '}
-						=> {endDate}
+						{'=>'}
+						 {endDate}
 						<span className='duration'>{duration}</span>
 					</span>
 				</div>
@@ -81,7 +81,7 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 			</li>
 			<li className='timeline-item' style={{ boxShadow: 'none', border: 'none' }} ref={(cr) => (arrow2 = cr)}>
 				<div className='timeline-item' style={{ boxShadow: 'none', border: 'none' }}>
-					<span className='dateOf'>&lt;= {startDate}</span>
+					<span className='dateOf'>{'<='}{startDate}</span>
 				</div>
 				<div className='timeline-marker' />
 			</li>
