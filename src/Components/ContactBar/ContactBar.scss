@@ -1,0 +1,62 @@
+.a {
+  margin: 0px;
+  padding: 0px 20px;
+  box-sizing: content-box;
+  text-decoration: none;
+  border: none;
+  justify-content: space-evenly;
+}
+
+.contactBlockContainer {
+  position: absolute;
+  width:170px;
+  box-sizing: content-box;
+  bottom: 0px;
+  z-index: 10;
+  left: 15px;
+  
+}
+
+.contactBlockIconBlock li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.section {
+  box-sizing: content-box;
+  justify-content: start;
+  padding: 45px;
+}
+
+section ul {
+  box-sizing: content-box;
+  text-decoration: none;
+  display: flex;
+  border: none;
+}
+
+section li {
+  text-decoration: none;
+  border: none;
+  justify-content: space-evenly;
+}
+
+.IconBar {
+  box-sizing: content-box;
+  background-color: goldenrod;
+  border-style: outset;
+  padding: 10px 0;
+  justify-content: space-evenly;
+}
+
+.IconBarLi {
+  box-sizing: content-box;
+  border: none;
+  color: black;
+}
+
+.IconBarLi:hover {
+  color: white;
+}

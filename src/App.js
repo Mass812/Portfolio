@@ -4,13 +4,14 @@ import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import SideDrawer from './Components/SideDrawer/SideDrawer';
 
 import FoggedGlass from './Components/FoggedGlass/FoggedGlass';
-import NavBar from './Components/NavBar/NavBar.jsx'
+
 import KindWords from './Components/KindWords/KindWords';
 import Home from './Components/Home/Home';
 import Resume from './Components/Resume/Resume';
 import Bio from '../src/Components/Bio/bio';
 import Projects from '../src/Components/Projects/Projects';
 import ScrollReset from './Components/ScrollReset/ScrollReset';
+import NavBar from './Components/NavBar/NavBar';
 
 const App = () => {
 	const [

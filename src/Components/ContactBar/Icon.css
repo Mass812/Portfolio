@@ -1,0 +1,21 @@
+.res {
+	color: rgba(39, 192, 197, 0.959);
+	margin-left: 5px;
+	font-family: 'Tenor Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+
+	padding: 0px;
+}
+
+.icon-parent {
+	margin: 5px;
+	display: flex;
+}
+
+.bullet-point-text {
+	padding-left: 10px;
+	font-weight: 100;
+	font-size: calc(10px + .2vw);
+	font-family: 'Tenor Sans', sans-serif;
+}
