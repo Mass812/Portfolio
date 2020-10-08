@@ -1,11 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './Resume.scss';
 import Icon from '../ContactBar/Icon';
-import { faUps, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faAngleRight, faCaretSquareRight } from '@fortawesome/free-solid-svg-icons';
 
 const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, position, icon, p1, textWhenMore, safe, addendum, addendum2, resp1, resp2, resp3, resp4 }) => {
-	//	let title = useRef(null);
 	let marker = useRef(null);
 	let body = useRef(null);
 	let arrow = useRef(null);
@@ -82,13 +79,12 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 					<div className='sep' />
 				</div>
 			</li>
-			<li className='timeline-item' style={{boxShadow: 'none', border: 'none'}} ref={(cr) => (arrow2 = cr)}>
-				<div className='timeline-item' style={{boxShadow: 'none', border: 'none'}}>
-					<span className='dateOf' >&lt;= {startDate}</span>
+			<li className='timeline-item' style={{ boxShadow: 'none', border: 'none' }} ref={(cr) => (arrow2 = cr)}>
+				<div className='timeline-item' style={{ boxShadow: 'none', border: 'none' }}>
+					<span className='dateOf'>&lt;= {startDate}</span>
 				</div>
 				<div className='timeline-marker' />
 			</li>
-
 
 			<div className='sep' />
 		</div>

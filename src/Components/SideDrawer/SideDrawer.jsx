@@ -22,7 +22,7 @@ window.TweenMax.staggerFrom(parent, .35, { ease: "slow(0.7, 0.7, false)", y: -45
 
 
 
-//prev props.close menu
+
 
   return (
     
