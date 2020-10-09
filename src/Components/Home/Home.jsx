@@ -5,6 +5,7 @@ import HelmetMeta from '../HelemetMeta/HelmetMeta';
 
 const Home = () => {
 	const matt = require('../../Assets/mw_black.jpg');
+	const mattWebP = require('../../Assets/mw_black.webp');
 	let img = useRef(null);
 	let name = useRef(null);
 	let statement = useRef(null);
@@ -72,7 +73,9 @@ const Home = () => {
 			<div className='home-container'>
 				<div className='home-top'>
 					<div className='home-frame' ref={(cr) => (frame = cr)}>
-						<img src={matt} alt={''} className='home-icon' ref={(cr) => (img = cr)} />
+		
+					{<img src={mattWebP} type='image/webp' alt='mw_logo' className='home-icon' ref={(cr) => (img = cr)}/> || 	<img src={matt} alt={''} className='home-icon' ref={(cr) => (img = cr)} />}
+					
 					</div>
 					<div className='home-bottom'>
 						<div className='home-name' ref={(cr) => (name = cr)} style={{ fontSize: 50 }}>
