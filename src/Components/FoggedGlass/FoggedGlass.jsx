@@ -1,8 +1,8 @@
-import React from "react";
-import "./FoggedGlass.scss";
+import React from 'react';
+import './FoggedGlass.scss';
 
-const FoggedGlass = props => {
-  return <div className="fogged-glass" onClick={props.unFogGlass} />;
+const FoggedGlass = ({ unFogGlass }) => {
+	return <div className='fogged-glass' onClick={unFogGlass} />;
 };
 
 export default FoggedGlass;
