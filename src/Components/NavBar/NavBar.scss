@@ -20,12 +20,12 @@
 	padding: 10px;
 	padding-top: 15px;
 	box-sizing: border-box; //ensures lines stay inside of button
-  font-size: calc(24px + .5vw); 
-	  text-shadow: #000000 1px 1px;
-	 font-family: 'Cinzel Decorative', cursive;
-	 &::first-letter{
+	font-size: calc(24px + .5vw);
+	text-shadow: #000000 1px 1px;
+	font-family: 'Cinzel Decorative', cursive;
+	&::first-letter {
 		color: white;
-	 }
+	}
 }
 
 .toggle-block {

@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuButton from './MenuButton';
-import './NavBar.scss';
 
+import './NavBar.scss';
 
 const NavBar = ({ pushShowHide }) => {
 	return (

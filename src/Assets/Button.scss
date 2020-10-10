@@ -10,7 +10,7 @@
   font-size: 12px;
   border: 1px solid var(--c);
   border-radius: 0.5em;
-  width: 100px;
+  min-width: 100px;
   height: 1.2em;
   text-transform: uppercase;
   font-weight: normal;
@@ -20,6 +20,7 @@
   line-height: 1.3em;
   position: relative;
   overflow: hidden;
+  align-self: center;
   z-index: 1;
   transition: 0.1s;
   margin: 1.6em;
@@ -93,12 +94,13 @@
   }
   
   .button-li {
-    --c: white;
+      --c:#219CB4;
     color: var(--c);
     font-size: 12px;
     border: 1px solid var(--c);
     border-radius: 0.5em;
-    width: 100px;
+    min-width: 100px;
+    max-width: 300px;
     height: 1.2em;
     text-transform: uppercase;
     font-weight: normal;

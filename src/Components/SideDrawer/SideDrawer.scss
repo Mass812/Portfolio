@@ -1,21 +1,22 @@
 .drawer-parent {
-  display: flex;
-  height: 100vh;
-  width: 220px;
-  background: #1C1C1C;
-  top: 0;
-  right: 0;
-  font-family: 'Cinzel Decorative', cursive;
-  box-shadow: 2px 0px 0.1rem rgb(7, 0, 0);
-  z-index: 5;
-  position: fixed;
-  align-content: center;
-  justify-content: center;
-  padding-top: 110px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 60vw;
+	background: #1c1c1c;
+	top: 0;
+	right: 0;
+	font-family: 'Cinzel Decorative', cursive;
+	box-shadow: 2px 0px 0.1rem rgb(7, 0, 0);
+	z-index: 5;
+	position: fixed;
+
+	padding-top: 110px;
 }
 
-
 .drawer-ul {
-  padding: 10px;
-   font-family: 'Cinzel Decorative', cursive;
+	padding: 10px;
+	font-family: 'Cinzel Decorative', cursive;
+	justify-content: space-around;
+	max-width: 300px;
 }

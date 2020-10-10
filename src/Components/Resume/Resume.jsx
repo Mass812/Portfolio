@@ -40,7 +40,7 @@ const Resume = () => {
 
 	return (
 		<div className='parent'>
-			<div className='resume-title'>RESUME</div>
+			<div className='resume-title'>WORK HISTORY</div>
 			<ResumeCard
 				company={'Full Stack React and React-Native Developer'}
 				startDate={'October 8, 2020'}
