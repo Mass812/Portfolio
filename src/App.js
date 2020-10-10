@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
-import Bio from './Components/Bio/bio.jsx';
+import Bio from './Components/Bio/bio';
 import SideDrawer from './Components/SideDrawer/SideDrawer';
 
 import FoggedGlass from './Components/FoggedGlass/FoggedGlass';
