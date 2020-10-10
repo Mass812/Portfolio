@@ -13,7 +13,9 @@ const Certifications = () => {
 		[
 			' Express',
 			' Node.js',
-			'MongoDb'
+			'MongoDb',
+			'Sql',
+			'NoSql'
 		],
 		[
 			'AED',

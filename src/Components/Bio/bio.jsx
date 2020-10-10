@@ -4,6 +4,7 @@ import DisplayedIcons from './DisplayedIcons';
 import Education from './Education';
 import Intro from './Intro';
 import Strengths from './Strengths';
+import Certifications from './Certifications'
 import './Bio.scss';
 
 const Bio = () => {
@@ -23,6 +24,7 @@ const Bio = () => {
 						<BusinessCharacteristics />
 						<Strengths />
 						<Education />
+						<Certifications/>
 					</Fragment>
 				</div>
 			</div>
