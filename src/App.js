@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import Bio from './Components/Bio/Bio.jsx';
 import SideDrawer from './Components/SideDrawer/SideDrawer';
 
 import FoggedGlass from './Components/FoggedGlass/FoggedGlass';
@@ -12,7 +13,6 @@ import Resume from './Components/Resume/Resume';
 import Projects from '../src/Components/Projects/Projects';
 import ScrollReset from './Components/ScrollReset/ScrollReset';
 import NavBar from './Components/NavBar/NavBar';
-import Bio from './Components/Bio/Bio.jsx';
 
 const App = () => {
 	const [
