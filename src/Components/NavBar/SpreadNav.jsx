@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../Assets/Button';
 import { Link } from 'react-router-dom';
+import './NavBar.scss'
 
 const SpreadNav = ({ onClick }) => {
 	return (

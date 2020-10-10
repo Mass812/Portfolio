@@ -12,15 +12,15 @@ const Certifications = () => {
 		],
 		[
 			' Express',
-			' Node.js',
-			'MongoDb',
-			'Sql',
-			'NoSql'
+			' Node.js,',
+			' MongoDb,',
+			' Sql',
+			' NoSql'
 		],
 		[
 			'AED',
-			' CPR',
-			' BBP'
+			' CPR,',
+			' BBP,'
 		]
 	];
 

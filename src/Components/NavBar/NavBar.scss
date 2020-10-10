@@ -32,3 +32,36 @@
 	padding: 10px;
 	padding-top: 20px;
 }
+
+.header-drawer-parent{ 
+		
+	display: none;
+
+}
+
+ .header-drawer-ul{
+
+	display: none;
+	 }
+
+ @media all and (min-width: 1120px){
+	 .header-drawer-parent{
+		 overflow: hidden;
+		 margin-top:-15px;
+		 display: flex;
+			 justify-content: center;
+			 align-content: center;
+			 align-self: center;
+		 align-self: center;
+		 justify-self: center;
+		 visibility: visible;
+		
+	 
+	 }
+	 .header-drawer-ul{
+	 display: flex;
+	 	height: 60px;
+	 visibility: visible;
+	 }
+	 
+	}    

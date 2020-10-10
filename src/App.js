@@ -8,7 +8,7 @@ import FoggedGlass from './Components/FoggedGlass/FoggedGlass';
 import KindWords from './Components/KindWords/KindWords';
 import Home from './Components/Home/Home';
 import Resume from './Components/Resume/Resume';
-import Bio from '../src/Components/Bio/bio';
+import Bio from './Components/Bio/Bio'
 import Projects from '../src/Components/Projects/Projects';
 import ScrollReset from './Components/ScrollReset/ScrollReset';
 import NavBar from './Components/NavBar/NavBar';
