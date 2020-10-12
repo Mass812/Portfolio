@@ -11,8 +11,8 @@ const Intro = () => {
 					as a freelance developer for some duration as well as dabbling in other modern JS frameworks.
 				</div>
 				<div className='weakness'>
-					I am Ecma Script 6 & 7 efficient on the Javascript side of things. I use current practices in React (and React-Native) such as Hooks, useContext, useReducer, etc. I have solid understanding of Redux and its middleware Thunk and Persist. I have done MERN projects and I am adept in
-					both Node & Express... but by far prefer serverless options such as AWS and / or Firebase as SaaS solutions for backend development.
+					I am Ecma Script 6 & 7 efficient on the Javascript side of things. I use current practices in React (and React-Native) such as modern useHooks: useContext, useEffect, useReducer, etc. I have solid understanding of Redux and its middleware Thunk and Persist. I have done MERN
+					projects and I am adept in both Node & Express... but by far prefer serverless options such as AWS and / or Firebase as SaaS solutions for backend development.
 					<br />
 				</div>
 				<div className='weakness'>

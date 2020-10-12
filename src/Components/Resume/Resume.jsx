@@ -49,7 +49,7 @@ const Resume = () => {
 				position={'React Developer'}
 				icon={faAngleRight}
 				p1={
-					"I have developed in many javascript libraries but I am highly efficient in React. I love the library and it just fits me. I have worked in react solidly for over two years and I am glad for iit as React is still one of the most desired libraries utilized today. I have done work in MERN as well but am fond of Google's Firestore and other cloud services."
+					"I have developed in many javascript libraries but I am highly efficient in React. I love the library and it just fits me. I have worked in react solidly for over two years and I am glad for it, as React is still one of the most desired libraries utilized today. I have done work in MERN as well but am fond of Google's Firestore and other cloud services."
 				}
 				safe={moreAboutFreeLance}
 				resp1={'Build Client Web Applications to Requested Standards'}
