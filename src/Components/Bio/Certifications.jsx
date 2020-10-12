@@ -14,8 +14,9 @@ const Certifications = () => {
 			' Express',
 			' Node.js,',
 			' MongoDb,',
-			' Sql',
-			' NoSql'
+			' Firestore,',
+			' SQL',
+			' NoSQL'
 		],
 		[
 			'AED',
