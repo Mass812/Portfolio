@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef, Fragment } from 'react';
-import { TweenMax } from 'gsap';
+import { gsap } from 'gsap';
+import { CSSPlugin } from 'gsap/CSSPlugin'
 
 // get our fontawesome imports
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,7 +9,11 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './ContactBar.scss';
 
+
+
+
 const FontAwesome = () => {
+  gsap.registerPlugin(CSSPlugin)
 	let phone = useRef(null);
 	let info = useRef(null);
 	const [
@@ -22,10 +27,10 @@ const FontAwesome = () => {
 				if (showNumber === null) {
 					return;
 				} else if (!showNumber) {
-					TweenMax.fromTo(info, 1, { opacity: 1, x: 167 }, { x: 0, zIndex: 0 });
+					gsap.fromTo(info, 1, { opacity: 1, x: 167 }, { x: 0, zIndex: 0 });
 				} else if (showNumber) {
-					TweenMax.fromTo(info, 1, { opacity: 0 }, { x: 167, opacity: 1, zIndex: 20 });
-					TweenMax.fromTo(phone, 1, { zIndex: 10 }, { zIndex: 25 });
+					gsap.fromTo(info, 1, { opacity: 0 }, { x: 167, opacity: 1, zIndex: 20 });
+					gsap.fromTo(phone, 1, { zIndex: 10 }, { zIndex: 25 });
 				}
 			};
 			animateContactBar();
