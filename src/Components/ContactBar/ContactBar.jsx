@@ -58,8 +58,8 @@ const FontAwesome = () => {
 					</ul>
 				</div>
 			</section>
-			<section className='contactBlockContainerMirror' ref={(cr) => (info = cr)}>
-				<div className='contactBlockIconBlock'>
+      <section className='contactBlockContainer' style={{zIndex: 0} } ref={(cr) => (info = cr)}>
+				<div className='contactBlockIconBlockMirror'>
 					<ul className='IconBar-info'>
 						{' '}
 						<FontAwesomeIcon icon={faPhone} color={'green'} style={{ paddingLeft: '7px' }} /> <a href='tel:+15022320232'>(502) 232-0232</a>
