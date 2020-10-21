@@ -1,3 +1,9 @@
+
+a{
+  text-decoration: none;
+}
+
+
 .a {
   margin: 0px;
   padding: 0px 20px;
@@ -69,6 +75,7 @@ section li {
   border-style: outset;
   padding: 10px 0;
   justify-content: space-evenly;
+  z-index: 10;
 }
 
 .IconBarLi {
@@ -79,4 +86,27 @@ section li {
 
 .IconBarLi:hover {
   color: white;
+}
+
+
+.IconBar-info{
+    box-sizing: content-box;
+  background-color: black;
+  border-style: outset;
+  padding: 10px 0;
+  justify-content: space-evenly;
+  outline: none;
+  text-decoration: none;;
+
+}
+
+.contactBlockContainerMirror{
+    position: absolute;
+  width:170px;
+  box-sizing: content-box;
+  bottom: 0px;
+
+  left: 50%;
+ // left: 15px;
+   z-index: 0;
 }
