@@ -86,15 +86,16 @@ const Resume = () => {
 				position={'Internship of Sorts'}
 				icon={faReact}
 				p1={
-					" I was fortunate in being granted a position a great remote team at ParsedIO. I worked on both large and small scale projects, ranging from 'internationalizing' using i18n libraries in currently existing applications . . . to creating video streaming applications from scratch. I worked as a remote developer on a team managed by a Scrum / Project Manager; interacted with the team via daily stand-ups and zoom; was assigned and completed sprints through storybook. I loved the freedom of this work environment but desired to take a step back to constitute a solid learning period for myself."
+					" I was fortunate in being granted a position a great remote team at ParsedIO. I worked on both large and small scale React-Native projects, ranging from 'internationalizing' using i18n libraries in currently existing applications . . . to creating video streaming applications from scratch. I worked as a remote developer on a team managed by a Scrum / Project Manager; interacted with the team via daily stand-ups and zoom; was assigned and completed sprints through storybook. "
 				}
+				p2={'I loved the freedom of this work environment but felt that in order to develop in a less manic, learn-as-I-go approach, I needed to take a step back to constitute a solid learning period for myself.'}
 				safe={moreAboutParsedIO}
 				resp1={'Developed React-Native Applications for iOS and Android to client specs'}
 				resp2={' Resolve Merge Conflicts and Testing Failures'}
 				resp3={' Work with 3rd party Back-end Companies to validate / resolve / create endpoints'}
 				resp4={'Worked exclusively in React Native.'}
 				textWhenMore={
-					'I love technology and for many years I swore I would take the time to learn it! I learned SQL inadvertently through Google Sheets while at Techstyle Fashion Group. One of my best friends is the Chief Mobile Software Engineer and Developer at Techstyle Fashion Group. I expressed a desire to learn how to develop web and mobile applications. At that time he knew of a company needing some contract work done so he secured me a position on a development team for a while so that I could experience the life-of-coding first hand. '
+					'In the duration of this employment and afterwards I studied React to such a point that building anything in this library became intuitive and there is no pressure in development or trouble shooting.'
 				}
 				onClickMore={moreParsedIO}
 			/>

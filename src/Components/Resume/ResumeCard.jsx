@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import './Resume.scss';
 import Icon from '../ContactBar/Icon';
 
-const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, position, icon, p1, textWhenMore, safe, addendum, addendum2, resp1, resp2, resp3, resp4 }) => {
+const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, position, icon, p1, p2, textWhenMore, safe, addendum, addendum2, resp1, resp2, resp3, resp4 }) => {
 	let marker = useRef(null);
 	let body = useRef(null);
 	let arrow = useRef(null);
@@ -47,6 +47,11 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 					<div className='why'>
 						<div className='p-bodies'>{p1}</div>
 					</div>
+
+					{p2 ? <div className='why'>
+						<div className='p-bodies'>{p2}</div>
+					</div>: null}
+					
 
 					{textWhenMore ? (
 						<span id={!safe ? 'safe' : 'no-safe'} onClick={onClickMore}>
