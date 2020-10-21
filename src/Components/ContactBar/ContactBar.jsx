@@ -18,23 +18,22 @@ const FontAwesome = () => {
 
 	useEffect(
 		() => {
+			const animateContactBar = () => {
+				if (showNumber === null) {
+					return;
+				} else if (!showNumber) {
+					TweenMax.fromTo(info, 1, { opacity: 1, x: 167 }, { x: 0, zIndex: 0 });
+				} else if (showNumber) {
+					TweenMax.fromTo(info, 1, { opacity: 0 }, { x: 167, opacity: 1, zIndex: 20 });
+					TweenMax.fromTo(phone, 1, { zIndex: 10 }, { zIndex: 25 });
+				}
+			};
 			animateContactBar();
 		}, // eslint-disable-next-line
 		[
 			showNumber
 		]
 	);
-
-	const animateContactBar = () => {
-		if (showNumber === null) {
-			return;
-		} else if (!showNumber) {
-			TweenMax.fromTo(info, 1, { opacity: 1, x: 167 }, { x: 0, zIndex: 0 });
-		} else if (showNumber) {
-			TweenMax.fromTo(info, 1, { opacity: 0 }, { x: 167, opacity: 1, zIndex: 20 });
-			TweenMax.fromTo(phone, 1, { zIndex: 10 }, { zIndex: 25 });
-		}
-	};
 
 	return (
 		<Fragment>
