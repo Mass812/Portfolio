@@ -1,112 +1,134 @@
-
-a{
-  text-decoration: none;
+a {
+	text-decoration: none;
 }
 
-
 .a {
-  margin: 0px;
-  padding: 0px 20px;
-  box-sizing: content-box;
-  text-decoration: none;
-  border: none;
-  justify-content: space-evenly;
+	margin: 0px;
+	padding: 0px 20px;
+	box-sizing: content-box;
+	text-decoration: none;
+	border: none;
+	justify-content: space-evenly;
 }
 
 .contactBlockContainer {
-  position: absolute;
-  width:170px;
-  box-sizing: content-box;
-  bottom: 0px;
-  z-index: 10;
- 
-  left: 15px;
-  
+	position: absolute;
+	width: 170px;
+	box-sizing: content-box;
+	bottom: 0px;
+	z-index: 10;
+
+	left: 15px;
 }
 
+.contactBlockContainerMirror {
+	position: absolute;
+	width: 170px;
+	box-sizing: content-box;
+	bottom: 0px;
+	z-index: 0;
+	left: 135px;
+}
 
- @media all and (min-width: 1110px){
-   .contactBlockContainer {
-  position: absolute;
-  width:170px;
-  box-sizing: content-box;
-  bottom: 0px;
-  z-index: 10;
-  left: 50%;
- // left: 15px;
-  
+@media all and (min-width: 1110px) {
+	.contactBlockContainer {
+		position: absolute;
+		width: 170px;
+		box-sizing: content-box;
+		bottom: 0px;
+		z-index: 10;
+		left: 50%;
+		// left: 15px;
+	}
+	.contactBlockIconBlock {
+		position: relative;
+		left: -50%;
+	}
+
+	.IconBar-info {
+		box-sizing: content-box;
+		background-color: black;
+		border-style: outset;
+		padding: 10px 0;
+		justify-content: space-evenly;
+		outline: none;
+		text-decoration: none;
+	}
+
+	.contactBlockContainerMirror {
+		position: absolute;
+		width: 170px;
+		box-sizing: content-box;
+		bottom: 0px;
+
+		left: 50%;
+		// left: 15px;
+		z-index: 0;
+	}
 }
-.contactBlockIconBlock {
-  position: relative;
-  left: -50%;
-}
-  }    
 
 .contactBlockIconBlock li {
-
-  flex: 1;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	padding: 0 1rem;
 }
 
 .section {
-  box-sizing: content-box;
-  justify-content: start;
-  padding: 45px;
+	box-sizing: content-box;
+	justify-content: start;
+	padding: 45px;
 }
 
 section ul {
-  box-sizing: content-box;
-  text-decoration: none;
-  display: flex;
-  border: none;
+	box-sizing: content-box;
+	text-decoration: none;
+	display: flex;
+	border: none;
 }
 
 section li {
-  text-decoration: none;
-  border: none;
-  justify-content: space-evenly;
+	text-decoration: none;
+	border: none;
+	justify-content: space-evenly;
 }
 
 .IconBar {
-  box-sizing: content-box;
-  background-color: goldenrod;
-  border-style: outset;
-  padding: 10px 0;
-  justify-content: space-evenly;
-  z-index: 10;
+	box-sizing: content-box;
+	background-color: goldenrod;
+	border-style: outset;
+	padding: 10px 0;
+	justify-content: space-evenly;
+	z-index: 10;
 }
 
 .IconBarLi {
-  box-sizing: content-box;
-  border: none;
-  color: black;
+	box-sizing: content-box;
+	border: none;
+	color: black;
 }
 
 .IconBarLi:hover {
-  color: white;
+	color: white;
 }
 
-
-.IconBar-info{
-    box-sizing: content-box;
-  background-color: black;
-  border-style: outset;
-  padding: 10px 0;
-  justify-content: space-evenly;
-  outline: none;
-  text-decoration: none;;
-
+.IconBar-info {
+	box-sizing: content-box;
+	background-color: black;
+	border-style: outset;
+	padding: 10px 0;
+	justify-content: space-evenly;
+	outline: none;
+	text-decoration: none;
 }
 
-.contactBlockContainerMirror{
-    position: absolute;
-  width:170px;
-  box-sizing: content-box;
-  bottom: 0px;
+.contactBlockContainerMirror {
+	position: absolute;
+	width: 170px;
+	box-sizing: content-box;
+	bottom: 0px;
 
-  left: 50%;
- // left: 15px;
-   z-index: 0;
+	left: 15px;
+	// left: 15px;
+	z-index: 0;
 }
