@@ -49,7 +49,7 @@ const Resume = () => {
 				position={'React Developer'}
 				icon={faAngleRight}
 				p1={
-					"I have developed in many javascript libraries but I am highly efficient in React. I love the library and it just fits me. I have worked in react solidly for over two years and I am glad for it, as React is still one of the most desired libraries utilized today. I have done work in MERN as well but am fond of Google's Firestore and other cloud services."
+					"I have developed in many javascript libraries but I am highly efficient in React. I love the library and it just fits me. I have worked solidly in React for over two years --and react-native sporadically in the same duration as well. I am glad for it, as React is still one of the most desired libraries utilized today. I have done work in MERN as well but am fond of Google's Firestore and other cloud services."
 				}
 				safe={moreAboutFreeLance}
 				resp1={'Build Client Web Applications to Requested Standards'}
@@ -74,7 +74,7 @@ const Resume = () => {
 				resp3={'Root Cause Analysis Reporting'}
 				resp4={'Developed a Web Application for their Operations'}
 				p1={
-					'I developed  safety auditing platform for the Comprehensive Health and Safety Committee (CHSP). Although the application was utilized after development for a short period, after being approved by Building Manager and the Safety Committee Chair the project was unfortunately brought to a halt by upper management--only for the reason that I was not hired in as a developer and I was essentially a third-party. I however did repo over the codebase they could use it (there is no reason to reinvent a wheel) and in meetings were working to develop this platform. I wanted nothing in return for this project just to help their operation. I did get a lot of accolades on the great idea and application itself. '
+					"I developed  safety auditing platform for the Comprehensive Health and Safety Committee (CHSP). Although the application was utilized after development for a short period, after being approved by Wing D's Building Managers and the Safety Committee Chairman, the project was unfortunately brought to a halt by upper echelons--only for the reason that I was not hired in as a developer and I was essentially a third-party. I however did repo over the codebase so that they could use it (there is no reason to reinvent a wheel). Prior to my notice the parties involved were in meetings working to develop this platform. I wanted nothing in return for this project just to help their operation. I did get a lot of accolades on the great idea and application itself."
 				}
 				onClickMore={moreUPS}
 			/>
@@ -85,14 +85,16 @@ const Resume = () => {
 				duration={'6 months'}
 				position={'Internship of Sorts'}
 				icon={faReact}
-				p1={" I was fortunate in being granted a position on such a great team. I worked on both large and small scale projects, ranging from 'internationalizing' currently existing applications . . . to creating video streaming applications from scratch. "}
+				p1={
+					" I was fortunate in being granted a position a great remote team at ParsedIO. I worked on both large and small scale projects, ranging from 'internationalizing' using i18n libraries in currently existing applications . . . to creating video streaming applications from scratch. I worked as a remote developer on a team managed by a Scrum / Project Manager; interacted with the team via daily stand-ups and zoom; was assigned and completed sprints through storybook. I loved the freedom of this work environment but desired to take a step back to constitute a solid learning period for myself."
+				}
 				safe={moreAboutParsedIO}
 				resp1={'Developed React-Native Applications for iOS and Android to client specs'}
 				resp2={' Resolve Merge Conflicts and Testing Failures'}
 				resp3={' Work with 3rd party Back-end Companies to validate / resolve / create endpoints'}
 				resp4={'Worked exclusively in React Native.'}
 				textWhenMore={
-					' I love technology and for many years I swore I would take the time to learn it! I have always had more than a natural aptitude towards the Internet of Things, apparently that term is a real thing (smh). I learned SQL inadvertently through google sheets while at Techstyle Fashion Group. One of my best friends is the Chief Mobile Software Engineer and Developer at Techstyle Fashion Group. I expressed a desire to learn how to develop web and mobile applications. At that time he knew of a company needing some contract work done so he secured me a position on a development team for a while so that I could experience the life-of-coding first hand.'
+					'I love technology and for many years I swore I would take the time to learn it! I learned SQL inadvertently through Google Sheets while at Techstyle Fashion Group. One of my best friends is the Chief Mobile Software Engineer and Developer at Techstyle Fashion Group. I expressed a desire to learn how to develop web and mobile applications. At that time he knew of a company needing some contract work done so he secured me a position on a development team for a while so that I could experience the life-of-coding first hand. '
 				}
 				onClickMore={moreParsedIO}
 			/>
