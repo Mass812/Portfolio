@@ -72,7 +72,7 @@ const Resume = () => {
 				startDate={'June 28, 2019'}
 				endDate={'August 28, 2020'}
 				duration={'1.5 years'}
-				position={'Safety Committee'}
+				position={'Safety Committee Member'}
 				icon={faUps}
 				textWhenMore={
 					'Training is the cornerstone of safety at UPS, and management training is the logical precursor to an informed and safe workforce. UPS invests $175 million pe year on safety training. UPS employees receive nearly 3.8 million hours of safety training annually, including Safe Work Methods. UPS Safe Work Methods have been developed to help address the major sources of known risk to our employees. I was glad to be part of that process.'

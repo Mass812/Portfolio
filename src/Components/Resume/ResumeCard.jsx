@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Resume.scss';
 import Icon from '../ContactBar/Icon';
+import { faLongArrowAltLeft, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 
 const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, position, icon, p1, p2, textWhenMore, safe, addendum, addendum2, resp1, resp2, resp3, resp4 }) => {
 	let marker = useRef(null);
@@ -30,8 +32,14 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 			<li className='timeline-item'>
 				<div className='timeline-info'>
 					<span className='dateOf' ref={(cr) => (arrow = cr)}>
-						{'=>'}
+					
+
+						<FontAwesomeIcon className='arrow' icon={ faLongArrowAltRight } color={ 'white' } size={ 'lg' } />{ ' ' }
+						<span className='arrow-text'>
+
 						{endDate}
+						</span>
+				
 						<span className='duration'>{duration}</span>
 					</span>
 				</div>
@@ -95,10 +103,13 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 				</div>
 			</li>
 			<li className='timeline-item' style={{ boxShadow: 'none', border: 'none' }} ref={(cr) => (arrow2 = cr)}>
-				<div className='timeline-item' style={{ boxShadow: 'none', border: 'none' }}>
+				<div className='timeline-item-bottom' style={{ boxShadow: 'none', border: 'none' }}>
 					<span className='dateOf'>
-						{'<='}
+						<FontAwesomeIcon className='arrow' icon={ faLongArrowAltLeft } color={ 'white' } size={ 'lg' } />{ ' ' }
+						<span className='arrow-text'>
+							
 						{startDate}
+							</span>
 					</span>
 				</div>
 				<div className='timeline-marker' />

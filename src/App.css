@@ -35,6 +35,8 @@ background-position: center;
 background-repeat: repeat-y;
 backdrop-filter: opacity(.2);
 background-size: unset;
+overflow-x: hidden;
+scrollbar-width: none;
 
 }
 

@@ -1,8 +1,11 @@
 $font: 'Tenor Sans', sans-serif;
-$color: white;
+$color: whitesmoke;
 $accent: rgb(228, 190, 37);
 $punch: rgb(237, 237, 13);
 $background-color: 'white';
+
+
+
 
 #tag,
 #intel,
@@ -57,15 +60,30 @@ a {
 	}
 }
 .dateOf {
-	padding: 30px 0px;
-	margin-left: -30px;
+	padding-bottom: 14px;;
+	margin-left: -20px;
 	margin-top: -10px;
-	font-size: calc(14px + 0.2vw);
-	color: goldenrod;
+	font-size: calc(10px + 0.2vw);
+	line-height: 16px;
+	color: rgb(226, 180, 62);
 	&::first-letter {
 		font-size: 52px;
 		font-style: bold;
 	}
+}
+
+.arrow{
+	
+	font-size: 20px;
+	color:goldenrod;
+	border-radius: 5px;;
+	font-weight: 900;
+}
+
+.arrow-text{
+	font-size: 16px;
+	text-align: center;
+	color:rgb(226, 180, 62);
 }
 
 .innerList {
@@ -120,7 +138,24 @@ a {
 	padding-right: 15px;
 	margin: -20px 0px;
 	position: relative;
+	
 
+	// background-color: rgba(46, 44, 44, 0.767);
+	// box-shadow: 1px 1px 2px rgb(87, 87, 87), -1px -1px 2px rgb(87, 87, 87);
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
+.timeline-item-bottom {
+	//	background-color: rgb(49, 49, 49);
+	border-radius: 25px;
+	padding: 5px;
+	padding-left: 30px;
+	padding-right: 15px;
+	margin: -25px 0px;
+	position: relative;
+
+	
 	// background-color: rgba(46, 44, 44, 0.767);
 	// box-shadow: 1px 1px 2px rgb(87, 87, 87), -1px -1px 2px rgb(87, 87, 87);
 	&:last-child {
@@ -186,7 +221,7 @@ a {
 	}
 }
 .timeline-item:not(.period):hover .timeline-marker:before {
-	background: transparent;
+//	background: transparent;
 }
 
 /*----- TIMELINE CONTENT -----*/
@@ -239,6 +274,7 @@ a {
 		display: flex;
 		padding-left: 25px;
 		margin-bottom: 1000px;
+		
 	}
 }
 
@@ -253,12 +289,14 @@ a {
 }
 
 .p-bodies {
+	
 	color: $color;
-	font-size: calc(14.3px + 0.15vw);
+	font-size: calc(13px + 0.15vw);
 	letter-spacing: 1.42px;
 	word-spacing: 1.3px;
 	font-family: 'Tenor Sans', sans-serif;
 	padding-bottom: 20px;
+	font-weight: 100;
 }
 
 .icon-parent {
@@ -275,12 +313,14 @@ a {
 	color: $color;
 	font-size: calc(20px + .2vw);
 	font-family: 'Tenor Sans', sans-serif;
+	color: rgb(226, 180, 62);
 }
 
 .position {
 	color: $accent;
 	padding-bottom: 40px;
 	font-size: calc(14px + .2vw);
+	color: rgb(9, 194, 207);
 }
 
 .duration {
