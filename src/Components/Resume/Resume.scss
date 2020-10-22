@@ -312,3 +312,32 @@ a {
 	color: $color;
 	font-family: 'Piazzolla', serif;
 }
+
+.hard-resume-block {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	padding-top: 10px;
+	margin: auto;
+}
+.hard-resume-text {
+	display: flex;
+
+	width: 190px;
+	align-items: center;
+	font-size: 14px;
+	padding: 2px;
+	color: #498294;
+	border: 2px solid #498294;
+	color: #727271;
+	border: 2px solid #727271;
+
+	border-radius: 5px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	&:hover {
+		cursor: pointer;
+	}
+}

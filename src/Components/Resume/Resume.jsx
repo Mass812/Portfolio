@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './Resume.scss';
 
 import { faUps, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import ResumeCard from './ResumeCard';
+import Icon from '../ContactBar/Icon';
 
 const Resume = () => {
 	const [
@@ -37,10 +38,18 @@ const Resume = () => {
 	const moreTechstyle = () => {
 		setMoreAboutTechstyle(!moreAboutTechstyle);
 	};
+	const openHardResume = () => {
+		window.open('https://drive.google.com/file/d/1eK2vuzQTNN4ZCmWqjts4ieJAy8FY4HCa/view?usp=sharing');
+	};
 
 	return (
 		<div className='parent'>
-			<div className='resume-title'>WORK HISTORY</div>
+			<div className='hard-resume-block' onClick={openHardResume}>
+				<div className='hard-resume-text'>
+					<Icon icon={faFileAlt} />
+					Hard Copy Resume
+				</div>
+			</div>
 			<ResumeCard
 				company={'Full Stack React and React-Native Developer'}
 				startDate={'October 8, 2020'}
@@ -94,9 +103,7 @@ const Resume = () => {
 				resp2={' Resolve Merge Conflicts and Testing Failures'}
 				resp3={' Work with 3rd party Back-end Companies to validate / resolve / create endpoints'}
 				resp4={'Worked exclusively in React Native.'}
-				textWhenMore={
-					'In the duration of this employment and afterwards I studied React to such a point that building anything in this library became intuitive and there is no pressure in development or trouble shooting.'
-				}
+				textWhenMore={'In the duration of this employment and afterwards I studied React to such a point that building anything in this library became intuitive and there is no pressure in development or trouble shooting.'}
 				onClickMore={moreParsedIO}
 			/>
 			<ResumeCard

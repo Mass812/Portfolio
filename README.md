@@ -1,9 +1,9 @@
-# Matt Wellman React & React-Native Developer
+## Matt Wellman React & React-Native Developer
 
 - site can be found at:
 https://mattwellman.dev
 
-# Site Purpose!
+## Site Purpose!
 
   - Although I have held many significant leadership roles in past this site is a presentation of my overall development biography. The many steps along my career path which led me into development. 
 
@@ -34,10 +34,4 @@ $ npm run start
 
 License
 ----
-
-
-
-
 **I am sharing the codebase to share verification purposes only, it is not to fork or copy.**
-
-
