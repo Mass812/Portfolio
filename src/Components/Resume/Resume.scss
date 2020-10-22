@@ -392,16 +392,17 @@ a {
 	color: #727271;
 	border: 2px groove #727271;
 	padding: 2px;
+		&:hover {
+		cursor: pointer;
+	}
 }
 .hard-resume-text {
 	display: flex;
-
+	font-weight: 700;
 	align-items: center;
-	font-size: 8px;
+	font-size: calc(11px + .2vh);
 	padding-left: 5px;
 	color: #498294;
 
-	&:hover {
-		cursor: pointer;
-	}
+
 }

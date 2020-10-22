@@ -46,7 +46,7 @@ const Resume = () => {
 	return (
 		<div className='parent'>
 			<div className='hard-resume-block' onClick={openHardResume}>
-				<FontAwesomeIcon icon={faFileAlt} size={'xs '} /> <div className='hard-resume-text'>Hard Copy Resume</div>
+				<FontAwesomeIcon icon={faFileAlt} size={'xs'} className='hard-resume-text' /> <div className='hard-resume-text'>Hard Copy Resume</div>
 			</div>
 			<ResumeCard
 				company={'Full Stack React and React-Native Developer'}
