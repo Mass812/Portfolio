@@ -16,7 +16,7 @@ const Projects = () => {
 			src          : `https://topflightsecurityplus.com/static/media/tf_main_plus.2f8fcf8f.png`,
 			alt          : 'project',
 			to           : 'https://topflightsecurityplus.com',
-			body         : "This site was built for a New and developing Security Company in Louisville Kentucky. Color schema, look and general layout were generated to TFSP's wants. ",
+			body         : "This site was built for a new and growing Security Company in Louisville Kentucky. Color schema, look and general layout were generated to TFSP's wants. ",
 			details      :
 				'The site itself is simple with contact channels, basic company selling points and testimonials. The site does give visitors the ability to apply for a position within the company. But the brunt of the functionality is actually the business site that exists behind this client website. ',
 			highlightOne :

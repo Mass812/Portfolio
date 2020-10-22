@@ -6,6 +6,7 @@
 
 .button-li {
   --c:#219CB4;
+  --c:goldenrod;
   color: var(--c);
   font-size: 12px;
   border: 1px solid var(--c);
@@ -95,12 +96,13 @@
   
   .button-li {
       --c:#219CB4;
+      --c:goldenrod;
     color: var(--c);
-    font-size: 12px;
+    font-size: 10px;
     border: 1px solid var(--c);
     border-radius: 0.5em;
-    min-width: 100px;
-    max-width: 300px;
+  //  min-width: 100px;
+   // max-width: 300px;
     height: 1.2em;
     text-transform: uppercase;
     font-weight: normal;
