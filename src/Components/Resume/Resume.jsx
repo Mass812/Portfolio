@@ -114,7 +114,7 @@ const Resume = () => {
 				position={'Director of Security Operations'}
 				icon={faAngleRight}
 				p1={
-					'  Working alongside three staffing agencies and seven internal operational departments, for a company consisting of 1000+ employees. I effectively coordinated a 40+ member security team. Directly regarding development: in my duration there I developed a web-based security platform that did a great deal to decrease operational manpower and hours / save the company thousands a year in resource expenditures. '
+					"Directly regarding development: in my duration there I developed Google Sheet dashboards, Google forms that automated work order requests, tracked 100's of devices, logged all inbound & outbound trailers, and transformed security's workflow that did a great deal to increase operational oversight and decrease operational manpower / hours to save the company thousands a year in resource expenditures. "
 				}
 				safe={moreAboutTechstyle}
 				addendum={'(Pertinent to Development)'}
@@ -124,7 +124,7 @@ const Resume = () => {
 				resp3={' Automated security reporting and auditing (Modernized Security)'}
 				resp4={' Immeasurably increased oversight (Operational Control)'}
 				textWhenMore={
-					"After maturing at Techstyle I wanted to delve further into coding, not just to expand on knowledge of frameworks, languages and API's but to better understand the technology perspectives of operational workflows (i.e., its struggles and possibilities). This choice to journey into Javascript Libraries certainly broadened my overall knowledge-base of technologies capabilities, I am glad I began this endeavour."
+					'After maturing at Techstyle I wanted to delve further into coding, not just to expand on my knowledge of the javascript language and to better understand the technology perspectives of operational workflows (i.e., its struggles and possibilities) but to learn of the javascript libraries and frameworks used to develop entire projects from the ground up. This choice to journey into Javascript Libraries certainly broadened my overall knowledge-base, I am glad I began this endeavour.'
 				}
 				onClickMore={moreTechstyle}
 			/>
