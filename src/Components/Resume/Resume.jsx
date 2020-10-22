@@ -4,7 +4,7 @@ import './Resume.scss';
 import { faUps, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faAngleRight, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import ResumeCard from './ResumeCard';
-import Icon from '../ContactBar/Icon';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Resume = () => {
@@ -46,10 +46,7 @@ const Resume = () => {
 	return (
 		<div className='parent'>
 			<div className='hard-resume-block' onClick={openHardResume}>
-					<FontAwesomeIcon icon={ faFileAlt } size={ 'xs '}/>{' '}
-				<div className='hard-resume-text'>
-					Hard Copy Resume
-				</div>
+				<FontAwesomeIcon icon={faFileAlt} size={'xs '} /> <div className='hard-resume-text'>Hard Copy Resume</div>
 			</div>
 			<ResumeCard
 				company={'Full Stack React and React-Native Developer'}
