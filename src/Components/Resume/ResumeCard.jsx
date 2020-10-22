@@ -102,8 +102,7 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 					<div className='sep' />
 				</div>
 			</li>
-			<li className='timeline-item' style={{ boxShadow: 'none', border: 'none' }} ref={(cr) => (arrow2 = cr)}>
-				<div className='timeline-item-bottom' style={{ boxShadow: 'none', border: 'none' }}>
+			<li className='timeline-item-bottom' style={{ boxShadow: 'none', border: 'none' }} ref={(cr) => (arrow2 = cr)}>
 					<span className='dateOf'>
 						<FontAwesomeIcon className='arrow' icon={ faLongArrowAltLeft } color={ 'white' } size={ 'lg' } />{ ' ' }
 						<span className='arrow-text'>
@@ -111,8 +110,8 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 						{startDate}
 							</span>
 					</span>
-				</div>
-				<div className='timeline-marker' />
+			
+				<div className='timeline-marker-bottom' />
 			</li>
 
 			<div className='sep' />
