@@ -5,8 +5,8 @@ import './Bio.scss';
 
 const BusinessCharacteristics = () => {
 	const businessCharacteristicsArray = [
-		'6 Years Operations Management',
-		'2 Years Area Management',
+		'2.5 Years working in React',
+		'1 Year working in React-Native',
 		'Keen Inductive & Deductive Logic',
 		'High Business Acumen',
 		'Amazing Ability to Learn Fast',

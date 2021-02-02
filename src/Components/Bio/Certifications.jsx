@@ -6,22 +6,37 @@ import './Bio.scss';
 const Certifications = () => {
 	const cert = [
 		[
+			'Libraries / Frameworks: ',
 			'React-Native,',
-			' Redux,',
-			' JavaScript'
+			'Vanilla Javascript, Html & css,',
+			' React'
 		],
 		[
-			' Express',
-			' Node.js,',
+			' Backend Utils: ',
+			' Express,',
+			' Node,',
 			' MongoDb,',
-			' Firestore,',
-			' SQL',
-			' NoSQL'
+			' Google Firestore, Cloud Fx & S3,',
+			' DynamoDb,',
+			' GraphQl,',
+			' Apollo Server',
+			' NoSQL,'
 		],
 		[
-			'AED',
-			' CPR,',
-			' BBP,'
+			' Languages: ',
+			'ES6 & ES5 Javascript',
+			' JSX,',
+			' Typescript,'
+		],
+		[
+			' Frontend Proficiencies: ',
+			' Css, Sass, Styled Components, Stylesheet,',
+			' React Navigation (React Native),',
+			' Rect-Router-Dom (React Web),',
+			' Urql,',
+			' State Management: Redux, thunk & persist,',
+			' All React hooks: useContext, useReducer, useState, useMemo, useEffect,',
+			' Any Api with docs.'
 		]
 	];
 
