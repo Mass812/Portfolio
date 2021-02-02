@@ -6,11 +6,11 @@ import './Bio.scss';
 const Certifications = () => {
 	const cert = [
 		[
-			'Libraries / Frameworks: ',
-			' React',
-			'React-Native,',
-			'MERN Stack, ',
-			'Vanilla Javascript, Html & Css,'
+			'LIBRARIES / FRAMEWORKS: ',
+			' React,',
+			' React-Native,',
+			' MERN Stack, ',
+			' Vanilla Javascript, Html & Css.'
 		],
 		[
 			' BACKEND Utils: ',
@@ -21,20 +21,20 @@ const Certifications = () => {
 			' DynamoDb,',
 			' GraphQl,',
 			' Apollo Server',
-			' NoSQL,'
+			' NoSQL.'
 		],
 		[
-			' Languages: ',
-			'ES6 & ES5 Javascript,',
+			' LANGUAGES: ',
+			' ES6 & ES5 Javascript,',
 			' JSX,',
-			' Typescript,'
+			' Typescript.'
 		],
 		[
 			' FRONTEND Proficiencies: ',
 			' Css, Sass, Styled Components, Inline Styles & Stylesheet.',
 			' React Navigation (React Native),',
 			' Rect-Router-Dom (React Web),',
-			' Urql,',
+			' & Urql.',
 			' State Management: Redux, thunk & persist,',
 			' All React hooks: useContext, useReducer, useState, useMemo, useEffect.',
 			' Any Api with docs.'
