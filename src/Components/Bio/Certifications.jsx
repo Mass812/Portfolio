@@ -7,12 +7,13 @@ const Certifications = () => {
 	const cert = [
 		[
 			'Libraries / Frameworks: ',
+			' React',
 			'React-Native,',
-			'Vanilla Javascript, Html & css,',
-			' React'
+			'MERN Stack, ',
+			'Vanilla Javascript, Html & Css,'
 		],
 		[
-			' Backend Utils: ',
+			' BACKEND Utils: ',
 			' Express,',
 			' Node,',
 			' MongoDb,',
@@ -24,18 +25,18 @@ const Certifications = () => {
 		],
 		[
 			' Languages: ',
-			'ES6 & ES5 Javascript',
+			'ES6 & ES5 Javascript,',
 			' JSX,',
 			' Typescript,'
 		],
 		[
-			' Frontend Proficiencies: ',
-			' Css, Sass, Styled Components, Stylesheet,',
+			' FRONTEND Proficiencies: ',
+			' Css, Sass, Styled Components, Inline Styles & Stylesheet.',
 			' React Navigation (React Native),',
 			' Rect-Router-Dom (React Web),',
 			' Urql,',
 			' State Management: Redux, thunk & persist,',
-			' All React hooks: useContext, useReducer, useState, useMemo, useEffect,',
+			' All React hooks: useContext, useReducer, useState, useMemo, useEffect.',
 			' Any Api with docs.'
 		]
 	];
