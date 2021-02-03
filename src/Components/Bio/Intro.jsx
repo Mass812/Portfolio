@@ -11,7 +11,7 @@ const Intro = () => {
 					as a freelance developer for some duration as well as dabbling in other modern JS frameworks.
 				</div>
 				<div className='weakness'>
-					I have listed out the more prominent technologies I am efficient in the last section of this webpage.
+					I have listed out the more prominent technologies I am efficient in within the last section of this webpage.
 					<br />
 				</div>
 				<div className='weakness'>

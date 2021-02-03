@@ -33,7 +33,7 @@ const Certifications = () => {
 			' FRONTEND Proficiencies: ',
 			' Css, Sass, Styled Components, Inline Styles & Stylesheet.',
 			' React Navigation (React Native),',
-			' Rect-Router-Dom (React Web),',
+			' React-Router-Dom (React Web),',
 			' & Urql.',
 			' State Management: Redux, thunk & persist,',
 			' All React hooks: useContext, useReducer, useState, useMemo, useEffect.',
