@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGit, faJsSquare, faReact, faHtml5, faLess, faNode, faPython, faSass, faMicrosoft, faMdb, faNpm, faGithubSquare, faGoogleDrive, faDochub, faGoogle } from '@fortawesome/free-brands-svg-icons';
-import { faFilePowerpoint, faFileWord, faFileExcel, faChartPie } from '@fortawesome/free-solid-svg-icons';
+import { faGit, faJsSquare, faReact, faHtml5, faLess, faNode, faPython, faSass, faMicrosoft, faMdb, faNpm, faGithubSquare, faDochub, faGoogle, faApple, faAndroid, faAws, faBitbucket, faCcStripe } from '@fortawesome/free-brands-svg-icons';
 
 const DisplayedIcons = () => {
 	let titleArea,
@@ -113,13 +112,13 @@ const DisplayedIcons = () => {
 				<div>
 					<ul className='icon-splay' ref={(cr) => (icon = cr)}>
 						<div ref={(cr) => (excel = cr)}>
-							<FontAwesomeIcon icon={faFileExcel} className='icon-bar-li-bio' size='lg' />
+							<FontAwesomeIcon icon={faAndroid} className='icon-bar-li-bio' size='lg' />
 						</div>
 						<div ref={(cr) => (word = cr)}>
-							<FontAwesomeIcon icon={faFileWord} className='icon-bar-li-bio' size='lg' />
+							<FontAwesomeIcon icon={faBitbucket} className='icon-bar-li-bio' size='lg' />
 						</div>
 						<div ref={(cr) => (powerpoint = cr)}>
-							<FontAwesomeIcon icon={faFilePowerpoint} className='icon-bar-li-bio' size='lg' />
+							<FontAwesomeIcon icon={faApple} className='icon-bar-li-bio' size='lg' />
 						</div>
 
 						<div ref={(cr) => (dochub = cr)}>
@@ -162,7 +161,7 @@ const DisplayedIcons = () => {
 							<FontAwesomeIcon icon={faNpm} className='icon-bar-li-bio' size='lg' />
 						</div>
 						<div ref={(cr) => (pie = cr)}>
-							<FontAwesomeIcon icon={faChartPie} className='icon-bar-li-bio' size='lg' />
+							<FontAwesomeIcon icon={faAws} className='icon-bar-li-bio' size='lg' />
 						</div>
 						<div ref={(cr) => (google = cr)}>
 							<FontAwesomeIcon icon={faGoogle} className='icon-bar-li-bio' size='lg' />
@@ -171,7 +170,7 @@ const DisplayedIcons = () => {
 							<FontAwesomeIcon icon={faMicrosoft} className='icon-bar-li-bio' size='lg' />
 						</div>
 						<div ref={(cr) => (gdrive = cr)}>
-							<FontAwesomeIcon icon={faGoogleDrive} className='icon-bar-li-bio' size='lg' />
+							<FontAwesomeIcon icon={faCcStripe} className='icon-bar-li-bio' size='lg' />
 						</div>
 					</ul>
 				</div>

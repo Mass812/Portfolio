@@ -30,6 +30,7 @@ const SideDrawer = (props) => {
 				<Link to='/projects' style={{ textDecoration: 'none' }}>
 					<Button>Projects</Button>
 				</Link>
+				
 			</ul>
 		</nav>
 	);
