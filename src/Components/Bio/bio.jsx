@@ -21,6 +21,7 @@ const Bio = () => {
 
 					<Fragment>
 						<Intro />
+
 						<BusinessCharacteristics />
 						<Strengths />
 						<Education />

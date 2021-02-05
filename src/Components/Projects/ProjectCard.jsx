@@ -17,7 +17,7 @@ const ProjectCard = ({ status, stack, body, title, to, src, alt, highlightOne, h
 				<div className='mini-project-body'>
 					<div className='site-status'>
 						{' '}
-						<b>Current Site Status:</b> <i>{status ? status : null} </i>
+						<b>Type:</b> <i>{status ? status : null} </i>
 					</div>{' '}
 					<br />
 					<span className='project-details'>Why this Project: </span>

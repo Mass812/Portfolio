@@ -13,7 +13,7 @@ const Projects = () => {
 		{
 			id           : 1,
 			title        : 'Topflight Security Plus',
-			src          : `https://topflightsecurityplus.com/static/media/tf_main_plus.2f8fcf8f.png`,
+			src          : `https://topflightsecurityplus.com/static/media/tf_main_plusp.6af455ec.webp`,
 			alt          : 'project',
 			to           : 'https://topflightsecurityplus.com',
 			body         : "This site was built for a new and growing Security Company in Louisville Kentucky. Color schema, look and general layout were generated to TFSP's wants. ",
@@ -22,7 +22,7 @@ const Projects = () => {
 			highlightOne :
 				'The business site gives the ability of the owner to track assets via google maps, post professional posts to Facebook and Twitter, Give or rescind privileges to app users and allows them to view applicant submissions within the app, although they submitted applications are sent in a professional format via sendGrid upon submission.',
 			stack        : 'React, Redux, Redux-Thunk, Redux-persist, React-Helmet, Node, Express, Firebase (Cloud Functions, Firestore, Auth & Storage)',
-			status       : ' Completed'
+			status       : ' Web'
 		},
 
 		{
@@ -39,7 +39,7 @@ const Projects = () => {
 			highlightOne :
 				'Added admin console that allows for easier schedule access to ramp supervisors. Ramp Crews can be dynamic, excel sheets were printed prior to start of shift. This application now handles that dynamic schedule. The TEAMS layout was designed with their usage and utility in mind',
 			stack        : 'React, React-Router-Dom, Redux, Persist, GSap, SendGrid & FontAwesome',
-			status       : 'First Build, version 1.0.0 Beta'
+			status       : 'Web'
 		},
 		{
 			id           : 3,
@@ -52,7 +52,7 @@ const Projects = () => {
 				'I wanted to choose a project that would allow for dynamic rendering and settled on this IMBD project. As I am very fond of hooks, this site was constructed on both react hooks as well as v.5 react router doms newly implemented useParams, useLocation and useHistory hooks. Enjoy the demo.',
 			highlightOne : 'Utilized card displays for movie details rather than full webpage layout design.',
 			stack        : 'React, React-Router-Dom, GSap & Font Awesome',
-			status       : ': Completed'
+			status       : ': Web'
 		}
 
 		// {
@@ -75,7 +75,20 @@ const Projects = () => {
 		<ProjectCard key={el.id} title={el.title} src={el.src} alt={el.alt} body={el.body} details={el.details} highlightOne={el.highlightOne} highlightTwo={el.highlightTwo} highlightThree={el.highlightThree} stack={el.stack} to={el.to} status={el.status} />
 	));
 
-	return <div className='project.wrapper'>{displayProjects}</div>;
+	return (
+		<div className='project.wrapper'>
+			{displayProjects}
+			{/* <ProjectCard
+				status={ 'Mobile App' }
+				title={ 'Workout App' }
+				body={ 'This is just an app to display this technology stack.' }
+				details={ 'The other sample projects on my site are web based and can show visual results in accompaniment to the repositories on github, which is why these demos are here: to display work. This project links to the GitHub repo to show a react-native application.' }
+				highlightOne={ 'This app was built to mimic an already existent app.' }
+				stack={ 'DynamoDB, AWS S3, Apollo Server, GraphQl, Typescript, React Navigation, Urql,' }
+				src={ }
+			/> */}
+		</div>
+	);
 };
 
 export default Projects;

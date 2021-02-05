@@ -5,55 +5,83 @@ import './Bio.scss';
 
 const Certifications = () => {
 	const cert = [
-		[
-			'LIBRARIES / FRAMEWORKS: ',
-			' React,',
-			' React-Native,',
-			' MERN Stack, ',
-			' Vanilla Javascript, Html & Css.'
-		],
-		[
-			' BACKEND Utils: ',
-			' Express,',
-			' Node,',
-			' MongoDb,',
-			' Google Firestore, Cloud Fx & S3,',
-			' DynamoDb,',
-			' GraphQl,',
-			' Apollo Server',
-			' NoSQL.'
-		],
-		[
-			' LANGUAGES: ',
-			' ES6 & ES5 Javascript,',
-			' JSX,',
-			' Typescript.'
-		],
-		[
-			' FRONTEND Proficiencies: ',
-			' Css, Sass, Styled Components, Inline Styles & Stylesheet.',
-			' React Navigation (React Native),',
-			' React-Router-Dom (React Web),',
-			' & Urql.',
-			' State Management: Redux, thunk & persist,',
-			' All React hooks: useContext, useReducer, useState, useMemo, useEffect.',
-			' Any Api with docs.'
-		]
+		{
+			id    : 1,
+			title : 'Libraries',
+			items : [
+				' React',
+				' React-Native'
+			]
+		},
+		{
+			id    : 2,
+			title : 'BackEnd',
+			items : [
+				' Express',
+				' Node',
+				' MongoDb',
+				' Google Firebase Firestore and Cloud Functions',
+				' AWS Beanstalk, S3 & DynamoDb',
+				' GraphQl',
+				' Apollo Server',
+				' NoSQL'
+			]
+		},
+		{
+			id    : 3,
+			title : 'Languages',
+			items : [
+				' ES6 destructuring, async await, try/catch, arrow Fx, ...all the rest',
+				' the above was a spread operator pun',
+				' JSX',
+				' Typescript',
+				' familiar with python and C++'
+			]
+		},
+
+		{
+			id    : 4,
+			title : 'FrontEnd',
+			items : [
+				' CSS, SASS, Styled Components, Inline Styles & Stylesheet',
+				' React Navigation (React Native)',
+				' React-Router-Dom (React Web)',
+				' Urql',
+				' React Helmet',
+				' Moment, DayJs',
+				' GSAP (GreenSock Animations)',
+				' Really?! just any Api with docs.'
+			]
+		},
+		{
+			id    : 5,
+			title : 'State Management',
+			items : [
+				' Redux, Thunk & Redux-Persist,',
+				' React useContext, useReducer, useState, useMemo, useEffect.'
+			]
+		}
 	];
 
 	const certifications = cert.map((el, idx) => (
-		<ul className='business-characteristic-ul' key={idx}>
-			<div key={idx}>
-				<FontAwesomeIcon icon={faCaretSquareRight} size='sm' style={{ color: 'goldenrod' }} />
-				<span className='bullet-pint-description'> {el}</span>
-			</div>
-		</ul>
+		<div key={el.id} style={{ paddingTop: 25 }}>
+			<span style={{ fontStyle: 'italic', color: `#219cb${9 - idx}` }}> {el.title}</span>
+			<ul className='business-characteristic-ul'>
+				{el.items.map((n, idx) => (
+					<div key={el.id}>
+						<FontAwesomeIcon icon={faCaretSquareRight} size='sm' style={{ color: 'gold' }} />
+
+						<span style={{ color: 'lightgrey' }}>{n}</span>
+					</div>
+				))}
+			</ul>
+		</div>
 	));
 
 	return (
 		<div>
 			<div className='bio-subtitle'>
-				Certifications
+				Knowledge
 				<div className='business-characteristic-parent'>{certifications}</div>
 			</div>
 		</div>
