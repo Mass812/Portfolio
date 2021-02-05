@@ -2,6 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretSquareRight } from '@fortawesome/free-regular-svg-icons';
 import './Bio.scss';
+import { faAmazon } from '@fortawesome/free-brands-svg-icons';
+import { faAsterisk } from '@fortawesome/free-solid-svg-icons';
 
 const Certifications = () => {
 	const cert = [
@@ -31,8 +33,7 @@ const Certifications = () => {
 			id    : 3,
 			title : 'Languages',
 			items : [
-				' ES6 destructuring, async await, try/catch, arrow Fx, ...all the rest',
-				' the above was a spread operator pun',
+				' Javascript (ES6 destructuring, async await, try/catch, arrow Fx, ...all the rest)',
 				' JSX',
 				' Typescript',
 				' familiar with python and C++'
@@ -68,10 +69,10 @@ const Certifications = () => {
 			<span style={{ fontStyle: 'italic', color: `#219cb${9 - idx}` }}> {el.title}</span>
 			<ul className='business-characteristic-ul'>
 				{el.items.map((n, idx) => (
-					<div key={el.id}>
-						<FontAwesomeIcon icon={faCaretSquareRight} size='sm' style={{ color: 'gold' }} />
+					<div key={idx}>
+						{/* <FontAwesomeIcon icon={faAsterisk} size='sm' style={{ color: 'gold' }} /> */}
 
-						<span style={{ color: 'lightgrey' }}>{n}</span>
+						<span style={{ color: 'lightgrey', width: '95%', textAlign: 'right' }}>{n}</span>
 					</div>
 				))}
 			</ul>
