@@ -1,9 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretSquareRight } from '@fortawesome/free-regular-svg-icons';
 import './Bio.scss';
-import { faAmazon } from '@fortawesome/free-brands-svg-icons';
-import { faAsterisk } from '@fortawesome/free-solid-svg-icons';
 
 const Certifications = () => {
 	const cert = [
