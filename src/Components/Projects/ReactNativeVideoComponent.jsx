@@ -1,13 +1,9 @@
 import React from 'react';
-import './Projects.scss';
+import ReactPlayer from 'react-player';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
-const ProjectCard = ({ status, stack, body, title, to, src, alt, highlightOne, highlightTwo, highlightThree, details }) => {
-	const sendTo = () => {
-		window.open(to);
-	};
-
+const ReactNativeVideoComponent = ({ status, stack, body, title, to, src, alt, highlightOne, highlightTwo, highlightThree, details, controls = true }) => {
 	return (
 		<div className='parent'>
 			<div className='project-card-parent'>
@@ -28,11 +24,8 @@ const ProjectCard = ({ status, stack, body, title, to, src, alt, highlightOne, h
 					<hr />
 					<i> {details ? details : null} </i>
 				</div>
-				<div className='mini-project-picture'> 
-					{src ? <>	<img className='project-pic' src={src} alt={alt} onClick={() => sendTo(to)} />
-					<p style={{ color: 'whiteSmoke', fontSize: '10px' }}>Click to Explore Project</p> </> : null}
-					
-				</div>
+
+				<div className='mini-project-picture'>{src ? <ReactPlayer url={src} width={350} height={500} controls={true} muted={true} volume={0} /> : null}</div>
 				<div className='mini-project-highlights'>
 					<div className='highlight-body'>Highlights</div>
 					<ul>
@@ -67,4 +60,4 @@ const ProjectCard = ({ status, stack, body, title, to, src, alt, highlightOne, h
 		</div>
 	);
 };
-export default ProjectCard;
+export default ReactNativeVideoComponent;
