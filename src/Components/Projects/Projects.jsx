@@ -98,16 +98,16 @@ const Projects = () => {
 				src={FitApp}
 				alt={'FitApp Video'}
 				body={
-					'This app was intended to display the same UI and give some of the basic functionalities of the FIT app. For this sprint project I felt the Congrats Screen (rendered after video completion) was a good stopping point in that this screen seemed to be the demarcation point between app services [lessons; videos; content] and where the user stats, activity and tracking became more of the focus. I felt that continuing beyond the point of the Congrats Screen would procure no further benefit to the purposes of why this app demo was created.'
+					'This app was intended to display the same UI and give some of the basic functionalities of the FIT app. For this sprint project (30 day deep dive into this stack) I felt the Congrats Screen of this application (rendered after video lesson completion) was a good stopping point in that this screen seemed to be the demarcation point between app services [lessons; videos; content] and where the user stats, activity and tracking became more of the focus. I felt that continuing beyond the point of the Congrats Screen would procure no further benefit to the purposes of why this app demo was created.'
 				}
 				details={
 					'This application was designed with a single table design in DynamoDB. Apollo-Server and graphQl to optimize db requests while Urql handled the frontend requests. React Navigation params were utilized to send key value pairs to screens within different stacks. The React useState hooks were used as the primary method of state management but where I felt the state was more complicated I utilized useReducer in adjunct with useContext.'
 				}
-				highlightOne={ 'All home page Meditations, Lessons and Courses are displayed by popularity.' }
-				highlightTwo={ 'There are two different video players and one audio player in this application.' }
+				highlightOne={'All home page Meditations, Lessons and Courses are displayed by popularity.'}
+				highlightTwo={'There are two different video players and one audio player in this application.'}
 				highlightThree={'User watch time and lesson completions (mentored and self-guided) are tracked.'}
 				stack={'DynamoDB, AWS S3, Apollo Server, GraphQl, Typescript, React Navigation, Urql'}
-				to={'to'}
+				to={'https://github.com/Mass812/tech'}
 				status={'Mobile Application'}
 			/>
 			{/* <ProjectCard
