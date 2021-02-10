@@ -25,7 +25,8 @@ const ReactNativeVideoComponent = ({ status, stack, body, title, to, src, alt, h
 					<i> {details ? details : null} </i>
 				</div>
 
-				<div className='mini-project-picture'>{src ? <ReactPlayer url={src} width={350} height={500} controls={true} muted={true} volume={0} /> : null}</div>
+				<div className='mini-project-video'>{src && <ReactPlayer width={400} height={550} url={src} controls={true} muted={true} volume={0} />}</div>
+
 				<div className='mini-project-highlights'>
 					<div className='highlight-body'>Highlights</div>
 					<ul>

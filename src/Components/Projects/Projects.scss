@@ -109,8 +109,29 @@ $color: rgb(214, 212, 212);
 	grid-area: pic;
 
 	padding: 25px 5px;
+	margin-top: 20;
 	align-self: center;
 }
+
+
+.mini-project-video {
+	grid-area: pic;
+//	justify-content: 'center';
+//	align-items: 'center';
+
+	padding: 25px 5px;
+	align-self: center;
+		width: '100%';
+	height: 'auto';
+//	justify-self: 'center';
+}
+.mini-project-picture {
+	grid-area: pic;
+
+	padding: 25px 5px;
+	align-self: center;
+}
+
 
 .project-pic {
 	border-radius: 20px;
@@ -141,6 +162,17 @@ $color: rgb(214, 212, 212);
 		text-align: center;
 		// align-content: center;
 	}
+
+	.mini-project-video {
+	grid-area: pic;
+
+	display: flex;
+	width: 250;
+//	height: 'auto';
+	//	overflow: hidden;
+	padding: 25px 5px;
+
+}
 	.mini-project-highlights {
 		grid-area: highlight;
 
