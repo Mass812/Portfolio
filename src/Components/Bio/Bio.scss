@@ -95,14 +95,25 @@ max-width: 100;
 
 }
 .bio-image{
-width: 100;
+//width: 200px;
 object-fit: contain;
 	padding: 30;
 	flex-shrink: 1;
 
 }
+
+ @media all and (max-width: 810px){
+	 .bio-image{
+width: 225px;
+object-fit: contain;
+	padding: 30;
+	flex-shrink: 1;
+
+}
+	}    
 .bio-text-block{
 flex: 1;
+min-width: 225px;
 }
 .bio-text-block > div{
 	
