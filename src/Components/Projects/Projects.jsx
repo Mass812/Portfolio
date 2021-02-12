@@ -43,19 +43,7 @@ const Projects = () => {
 			stack        : 'React, React-Router-Dom, Redux, Persist, GSap, SendGrid & FontAwesome',
 			status       : 'Web'
 		},
-		// {
-		// 	id           : 3,
-		// 	title        : 'Mock Fitness App',
-		// 	src          : `${upsProject}`,
-		// 	alt          : 'project',
-		// 	to           : 'https://upssafety-f8d4d.web.app/',
-		// 	body         : 'This app was a mimic of the Fabletics Fitness App',
-		// 	details      : 'I committed to this project for a 30 day sprint to learn a completely new stack. ',
 
-		// 	highlightOne : '',
-		// 	stack        : 'React-Native, DynamoDB, Apollo Server, GraphQl, Express, Node, URQL, Typescript, React Navigation',
-		// 	status       : 'Mobile'
-		// },
 		{
 			id           : 4,
 			title        : 'Movie WatchTower',
@@ -69,21 +57,6 @@ const Projects = () => {
 			stack        : 'React, React-Router-Dom, GSap & Font Awesome',
 			status       : ': Web'
 		}
-
-		// {
-		// 	id           : 5,
-		// 	title        : 'My Bio',
-		// 	//src          : `${MWBio}`,
-		// 	alt          : 'project',
-		// 	to           : 'https://mattwellman.dev',
-		// 	body      : 'To state the obvious: this is my bio site. It is a repository of my personal projects and information.',
-		// 	details         :
-		// 		"This site is hard coded, meaning I did not use any bootstrap, materialUI.etc . . . and deliberately limited my use third-party libraries in this project, in fact I only utilized four libraries: React (by necessity), FontAwesome (for Icons), React-Router-Dom (for routing) and Gsap (for animation). Libraries are awesome but I believe in learning things at their core, first, so later on when utilizing libraries for all their amazing properties, their possible breaking changes don't leave me at an extreme disadvantage. I chose to do a side-drawer navigation rather than a single page approach specifically to utilize react-router-dom",
-
-		// 	highlightOne : 'Hosts projects as well as Work History and Recommendations',
-		// 	stack        : 'React, React-Router-Dom, GSap & FontAwesome',
-		// 	status       : ' On-Going, As-Needed'
-		// }
 	];
 
 	const displayProjects = projectArray.map((el, idx) => (
@@ -110,14 +83,6 @@ const Projects = () => {
 				to={'https://github.com/Mass812/tech'}
 				status={'Mobile Application'}
 			/>
-			{/* <ProjectCard
-				status={'Mobile App'}
-				title={'Workout App'}
-				body={'This is just an app to display this technology stack.'}
-				details={'The other sample projects on my site are web based and can show visual results in accompaniment to the repositories on github, which is why these demos are here: to display work. This project links to the GitHub repo to show a react-native application.'}
-				highlightOne={'This app was built to mimic an already existent app.'}
-				stack={'DynamoDB, AWS S3, Apollo Server, GraphQl, Typescript, React Navigation, Urql,'}
-			/> */}
 		</div>
 	);
 };

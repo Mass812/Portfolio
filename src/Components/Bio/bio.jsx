@@ -18,7 +18,7 @@ const Bio = () => {
 					<Fragment>
 						<DisplayedIcons />
 					</Fragment>
-
+				
 					<Fragment>
 						<Intro />
 

@@ -33,9 +33,9 @@ $icon-color: "goldenrod";
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-
+	
 	height: auto;
-
+	
 	overflow: hidden;
 	position: relative;
 }
@@ -50,7 +50,7 @@ $icon-color: "goldenrod";
 		//padding: 2px;
 		font-family: 'Tenor Sans', sans-serif;
 		//	padding-left: -4px;
-
+		
 		color: #219cb4;
 		line-height: 20px;
 		font-size: calc(14px + 0.2vw);
@@ -71,7 +71,6 @@ $icon-color: "goldenrod";
 
 .bio-subtitle {
 	font-size: 20px;
-
 	font-weight: 0;
 	letter-spacing: 2px;
 	padding: 10px;
@@ -79,10 +78,39 @@ $icon-color: "goldenrod";
 	color: $sub-title-color;
 	border-radius: 20px;
 	box-shadow: 1px 3px 1px 0 rgb(123, 125, 124, 1), -4px -4px 1px -1px rgba(0, 0, 0, 0.3);
-
+	display: 'flex';
+	
 	// padding-top: 20px;
 }
+.inner-bio {
+	display: flex;
+	flex-wrap: wrap;
 
+}
+
+.bio-image-block{
+flex: 1;
+margin: auto;
+max-width: 100;
+
+}
+.bio-image{
+width: 100;
+object-fit: contain;
+	padding: 30;
+	flex-shrink: 1;
+
+}
+.bio-text-block{
+flex: 1;
+}
+.bio-text-block > div{
+	
+padding: 10;
+
+
+
+}
 .icon-splay {
 	height: auto;
 	max-width: 100%;
@@ -96,7 +124,7 @@ $icon-color: "goldenrod";
 	height: auto;
 	justify-content: space-evenly;
 	color: $icon-color;
-
+	
 	&::after {
 		content: "";
 	}
