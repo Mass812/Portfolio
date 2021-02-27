@@ -22,7 +22,7 @@ const SideDrawer = (props) => {
 					<Button>Skill Set</Button>
 				</Link>
 				<Link to='/resume' style={{ textDecoration: 'none' }}>
-					<Button>Work History</Button>
+					<Button>Resume</Button>
 				</Link>
 				<Link to='/references' style={{ textDecoration: 'none' }}>
 					<Button>Refs</Button>
@@ -30,7 +30,6 @@ const SideDrawer = (props) => {
 				<Link to='/projects' style={{ textDecoration: 'none' }}>
 					<Button>Projects</Button>
 				</Link>
-				
 			</ul>
 		</nav>
 	);
