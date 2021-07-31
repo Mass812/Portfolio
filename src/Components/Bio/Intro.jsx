@@ -5,20 +5,15 @@ const Intro = () => {
 	return (
 		<div className='bio-subtitle'>
 			<div className='inner-bio'>
-				<div className='bio-image-block'>
+				{/* <div className='bio-image-block'>
 					<img className='bio-image' src={require('../../Assets/massymass1.png')} alt={'face'} />
-				</div>
+				</div> */}
 				<div className='bio-text-block'>
+					<div className='weakness'>Although Fabletics FIT is by far the smallest in scale and scope in Techstyle Mobile catalogs, it still curries a solid 220,000 active user base and plays a heavy roll in membership engagement, retention and company analytics.</div>
+					<br />
 					<div className='weakness'>
-						I am currently a full stack mobile software engineer at Fabletics (Kate Hudson Fitness Apparel Company) which is a part of Techstyle Fashion Group. Techstyle Fashion Group also has Savage X Fenty (Rihanna's Lingerie Company), Shoedazzle, JustFab and FabKids.
-					</div>
-					<div className='weakness'>
-						Currently I work specifically in a react-native environment with DynamoDb, Strapi, Postgress, Terraform, GraphQl and Urql. Alongside many services such as Segment, SailThru, Emarsys and Firebase Analytics. I am responsible for for every aspect of the Fabletics Fit app for iOS
-						and Android.
-						<br />
-					</div>
-					<div className='weakness'>
-						Cool Badge of Honor: I am currently the only full stack developer at Techstyle Fashion Group.
+						On the other side of Fabletics FIT being the smallest mobile implementation, the FIT App has conferred the omnipotent boon of implementing application design patterns and processes. ahead of the other mobile frameworks it spearheads its implementations through in TechStyle
+						Fashion Group mobile family. FIT was the first mobile app to provide Android Play Store availability.
 						<br />
 					</div>
 				</div>

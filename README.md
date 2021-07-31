@@ -29,7 +29,8 @@ $ cd MWBio
 $ npm install 
 $ npm run start
 ```
-
+** MWprivate ssh via Pageant putty authentication in icon bar**
+** git pushes automate to netlify builds**
 
 
 License

@@ -13,6 +13,10 @@ const Resume = () => {
 		setMoreAboutUPS
 	] = useState(false);
 	const [
+		moreAboutFIT,
+		setMoreAboutFIT
+	] = useState(false);
+	const [
 		moreAboutTechstyle,
 		setMoreAboutTechstyle
 	] = useState(false);
@@ -25,6 +29,9 @@ const Resume = () => {
 		setMoreAboutFreeLance
 	] = useState(false);
 
+	const moreAboutFit = () => {
+		setMoreAboutFIT(!moreAboutFIT);
+	};
 	const moreFreeLance = () => {
 		setMoreAboutFreeLance(!moreAboutFreeLance);
 	};
@@ -56,16 +63,18 @@ const Resume = () => {
 				position={'FullStack Software Engineer'}
 				icon={faAngleRight}
 				p1={
-					"I am currently a full stack mobile software engineer at Fabletics (Kate Hudson Fitness Apparel Company) which is a part of Techstyle Fashion Group. Techstyle Fashion Group also has Savage X Fenty (Rihanna's Lingerie Company), Shoedazzle, JustFab and FabKids. Currently I work specifically in a react-native environment with DynamoDb, Strapi, Postgress, Terraform, GraphQl and Urql. Alongside many services such as Segment, SailThru, Emarsys and Firebase Analytics. I am responsible for for every aspect of the Fabletics Fit app for iOS and Android.A cool Badge of Honor I get to wear is that I am currently the only full stack developer at Techstyle Fashion Group."
+					"I am currently a full stack mobile software engineer at Fabletics (Kate Hudson's Fitness Apparel Company). I work specifically in a react-native environment with DynamoDb, Strapi, Postgress, Terraform, GraphQl and Urql. Alongside many services such as Segment, SailThru, Emarsys and Firebase Analytics. I am responsible for for every aspect of the Fabletics Fit app for iOS and Android."
 				}
-				safe={moreAboutFreeLance}
+				highlight1={'A cool Badge of Honor I get to wear is that I am currently the only full stack developer at Techstyle Fashion Group.'}
+				safe={moreAboutFIT}
+				textWhenMore={
+					"Fabletics is a part of Techstyle Fashion Group which also possesses Savage X Fenty (Rihanna's Lingerie Company), Shoedazzle, JustFab and FabKids. Although Fabletics FIT is by far the smallest in scale and scope in Techstyle Mobile catalogs it still curries a solid 220,000 active user base and plays a heavy roll in membership engagement, retention and company analytics. On the other side of Fabletics FIT being the smallest mobile implementation, the FIT App has conferred the omnipotent boon of implementing application design patterns and processes. ahead of the other mobile frameworks it spearheads its implementations through in TechStyle Fashion Group mobile family. FIT was the first mobile app to provide Android Play Store availability."
+				}
 				resp1={'Handle all aspects of new in app features: examples I recently added in Canada VIP memberships, implemented infinite scroll pagination, & a much celebrated 30 day challenge event.'}
 				resp2={'Work with the production, graphic design, & marketing teams to successfully reach desired company outcomes.'}
-				resp3={
-					'I am the sole developer on the Fit App but have tons of support throughout Techstyle. I handle the backend, Strapi => Postgress => DynamoDb, graphql, built on EC2, Lambda, via Terraform. And the front end with Segment, SailThru and Firebase Analytics baked into react-native written in typescript'
-				}
-				resp4={''}
-				onClickMore={moreFreeLance}
+				resp3={'I solely responsible for writing all backend and front end changes.'}
+				resp4={'Working with Kevin McVey, the Director of Software Engineering, at points throughout the development of new features in this app has taught me a world of knowledge.'}
+				onClickMore={moreAboutFit}
 			/>
 			<ResumeCard
 				company={'Full Stack React and React-Native Developer'}

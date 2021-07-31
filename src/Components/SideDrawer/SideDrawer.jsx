@@ -19,16 +19,16 @@ const SideDrawer = (props) => {
 					<Button>Home</Button>
 				</Link>
 				<Link to='/about' style={{ textDecoration: 'none' }}>
-					<Button>Skill Set</Button>
+					<Button>Education</Button>
 				</Link>
 				<Link to='/resume' style={{ textDecoration: 'none' }}>
-					<Button>Resume</Button>
+					<Button>Career</Button>
 				</Link>
 				<Link to='/references' style={{ textDecoration: 'none' }}>
-					<Button>Refs</Button>
+					<Button>Endorsements</Button>
 				</Link>
 				<Link to='/projects' style={{ textDecoration: 'none' }}>
-					<Button>Projects</Button>
+					<Button>Examples</Button>
 				</Link>
 			</ul>
 		</nav>

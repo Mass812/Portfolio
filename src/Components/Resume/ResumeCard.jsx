@@ -4,7 +4,7 @@ import './Resume.scss';
 import Icon from '../ContactBar/Icon';
 import { faLongArrowAltLeft, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 
-const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, position, icon, p1, p2, textWhenMore, safe, addendum, addendum2, resp1, resp2, resp3, resp4 }) => {
+const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, position, icon, p1, p2, textWhenMore, safe, addendum, addendum2, resp1, resp2, resp3, resp4, highlight1 }) => {
 	let marker = useRef(null);
 	let body = useRef(null);
 	let arrow = useRef(null);
@@ -32,14 +32,7 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 			<li className='timeline-item'>
 				<div className='timeline-info'>
 					<span className='dateOf' ref={(cr) => (arrow = cr)}>
-					
-
-						<FontAwesomeIcon className='arrow' icon={ faLongArrowAltRight } color={ 'white' } size={ 'lg' } />{ ' ' }
-						<span className='arrow-text'>
-
-						{endDate}
-						</span>
-				
+						<FontAwesomeIcon className='arrow' icon={faLongArrowAltRight} color={'white'} size={'lg'} /> <span className='arrow-text'>{endDate}</span>
 						<span className='duration'>{duration}</span>
 					</span>
 				</div>
@@ -51,15 +44,16 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 						{position}
 						<br />
 					</div>
-
+					<div className='highlight1'>{highlight1}</div>
 					<div className='why'>
 						<div className='p-bodies'>{p1}</div>
 					</div>
 
-					{p2 ? <div className='why'>
-						<div className='p-bodies'>{p2}</div>
-					</div>: null}
-					
+					{p2 ? (
+						<div className='why'>
+							<div className='p-bodies'>{p2}</div>
+						</div>
+					) : null}
 
 					{textWhenMore ? (
 						<span id={!safe ? 'safe' : 'no-safe'} onClick={onClickMore}>
@@ -103,14 +97,10 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 				</div>
 			</li>
 			<li className='timeline-item-bottom' style={{ boxShadow: 'none', border: 'none' }} ref={(cr) => (arrow2 = cr)}>
-					<span className='dateOf'>
-						<FontAwesomeIcon className='arrow' icon={ faLongArrowAltLeft } color={ 'white' } size={ 'lg' } />{ ' ' }
-						<span className='arrow-text'>
-							
-						{startDate}
-							</span>
-					</span>
-			
+				<span className='dateOf'>
+					<FontAwesomeIcon className='arrow' icon={faLongArrowAltLeft} color={'white'} size={'lg'} /> <span className='arrow-text'>{startDate}</span>
+				</span>
+
 				<div className='timeline-marker-bottom' />
 			</li>
 

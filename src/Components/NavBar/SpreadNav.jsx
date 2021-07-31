@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../../Assets/Button';
 import { Link } from 'react-router-dom';
-import './NavBar.scss'
+import './NavBar.scss';
 
 const SpreadNav = ({ onClick }) => {
 	return (
@@ -11,16 +11,16 @@ const SpreadNav = ({ onClick }) => {
 					<Button>Home</Button>
 				</Link>
 				<Link to='/about' style={{ textDecoration: 'none' }}>
-					<Button>About Me</Button>
+					<Button>Education</Button>
 				</Link>
 				<Link to='/resume' style={{ textDecoration: 'none' }}>
-					<Button>Resume</Button>
+					<Button>Career</Button>
 				</Link>
 				<Link to='/references' style={{ textDecoration: 'none' }}>
-					<Button>Refs</Button>
+					<Button>Endorsements</Button>
 				</Link>
 				<Link to='/projects' style={{ textDecoration: 'none' }}>
-					<Button>Projects</Button>
+					<Button>Examples</Button>
 				</Link>
 			</ul>
 		</nav>
