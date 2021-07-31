@@ -18,9 +18,9 @@ const Bio = () => {
 					<Fragment>
 						<DisplayedIcons />
 					</Fragment>
-				
+
 					<Fragment>
-						<Intro />
+						{/* <Intro /> */}
 
 						<BusinessCharacteristics />
 						<Strengths />

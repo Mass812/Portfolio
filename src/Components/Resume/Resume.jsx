@@ -55,11 +55,15 @@ const Resume = () => {
 				duration={''}
 				position={'FullStack Software Engineer'}
 				icon={faAngleRight}
-				p1={'I currently the solo developer on the Fabletics Fitness App-- changing the fashion of fitness one line of code at a time.'}
+				p1={
+					"I am currently a full stack mobile software engineer at Fabletics (Kate Hudson Fitness Apparel Company) which is a part of Techstyle Fashion Group. Techstyle Fashion Group also has Savage X Fenty (Rihanna's Lingerie Company), Shoedazzle, JustFab and FabKids. Currently I work specifically in a react-native environment with DynamoDb, Strapi, Postgress, Terraform, GraphQl and Urql. Alongside many services such as Segment, SailThru, Emarsys and Firebase Analytics. I am responsible for for every aspect of the Fabletics Fit app for iOS and Android.A cool Badge of Honor I get to wear is that I am currently the only full stack developer at Techstyle Fashion Group."
+				}
 				safe={moreAboutFreeLance}
 				resp1={'Handle all aspects of new in app features: examples I recently added in Canada VIP memberships, implemented infinite scroll pagination, & a much celebrated 30 day challenge event.'}
 				resp2={'Work with the production, graphic design, & marketing teams to successfully reach desired company outcomes.'}
-				resp3={'I am the sole developer on the Fit App but have tons of support throughout Techstyle. I handle the backend, Strapi => Postgress => DynamoDb, graphql, built on EC2, Lambda, via Terraform. And the front end with Segment, SailThru and Firebase Analytics baked into react-native written in typescript'}
+				resp3={
+					'I am the sole developer on the Fit App but have tons of support throughout Techstyle. I handle the backend, Strapi => Postgress => DynamoDb, graphql, built on EC2, Lambda, via Terraform. And the front end with Segment, SailThru and Firebase Analytics baked into react-native written in typescript'
+				}
 				resp4={''}
 				onClickMore={moreFreeLance}
 			/>

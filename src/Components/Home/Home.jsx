@@ -79,7 +79,7 @@ const Home = () => {
 						</div>
 						<div ref={(cr) => (statement = cr)}>
 							<div className='home-subtitle'>JavaScript Enthusiast &</div>
-							<div className='home-subTitle2'>Software Engineer at Fabletics</div>
+							<div className='home-subTitle2'>Software Engineer @ Fabletics</div>
 						</div>
 					</div>
 				</div>

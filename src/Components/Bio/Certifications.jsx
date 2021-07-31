@@ -27,6 +27,16 @@ const Certifications = () => {
 			]
 		},
 		{
+			id    : 22,
+			title : 'App and Play Store Related',
+			items : [
+				' Android Deployment',
+				' iOS Deployment',
+				' AppCenter & CodePush',
+				' Jenkins'
+			]
+		},
+		{
 			id    : 3,
 			title : 'Languages',
 			items : [
