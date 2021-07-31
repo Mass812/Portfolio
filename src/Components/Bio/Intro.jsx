@@ -10,16 +10,15 @@ const Intro = () => {
 				</div>
 				<div className='bio-text-block'>
 					<div className='weakness'>
-						I began truly developing with libraries and frameworks beginning in 2018, although I was language proficient in JavaScript well beforehand--as I wrote a lot of scripts to add functionality to spreadsheets in past. I have worked on numerous projects this year and I plan on
-						working as a freelance developer for some duration as well as dabbling in other modern JS frameworks.
+						I am currently a full stack mobile software engineer at Fabletics (Kate Hudson Fitness Apparel Company) which is a part of Techstyle Fashion Group. Techstyle Fashion Group also has Savage X Fenty (Rihanna's Lingerie Company), Shoedazzle, JustFab and FabKids.
 					</div>
 					<div className='weakness'>
-						I have listed out the more prominent technologies I am efficient in within the last section of this webpage.
+						Currently I work specifically in a react-native environment with DynamoDb, Strapi, Postgress, Terraform, GraphQl and Urql. Alongside many services such as Segment, SailThru, Emarsys and Firebase Analytics. I am responsible for for every aspect of the Fabletics Fit app for iOS
+						and Android.
 						<br />
 					</div>
 					<div className='weakness'>
-						I am always excited by challenges and continually try to learn new ways of doing things because it adds to my ability of being able to approach issues from different perspectives and tackle problems at different angles. I still have a lot to learn but that is what this
-						journey is about.
+						Cool Badge of Honor: I am currently the only full stack developer at Techstyle Fashion Group.
 						<br />
 					</div>
 				</div>

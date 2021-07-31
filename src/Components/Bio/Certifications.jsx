@@ -15,6 +15,7 @@ const Certifications = () => {
 			id    : 2,
 			title : 'BackEnd',
 			items : [
+				' Terraform',
 				' Express',
 				' Node',
 				' MongoDb',

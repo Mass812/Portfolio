@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGit, faJsSquare, faReact, faHtml5, faLess, faNode, faPython, faSass, faMicrosoft, faMdb, faNpm, faGithubSquare, faDochub, faGoogle, faApple, faAndroid, faAws, faBitbucket, faCcStripe } from '@fortawesome/free-brands-svg-icons';
+import { faGit, faJsSquare, faReact, faHtml5, faLess, faNode, faPython, faSass, faMicrosoft, faMdb, faNpm, faGithubSquare, faAppStore, faGoogle, faApple, faAndroid, faAws, faBitbucket, faCcStripe } from '@fortawesome/free-brands-svg-icons';
 
 const DisplayedIcons = () => {
 	let titleArea,
@@ -122,7 +122,7 @@ const DisplayedIcons = () => {
 						</div>
 
 						<div ref={(cr) => (dochub = cr)}>
-							<FontAwesomeIcon icon={faDochub} className='icon-bar-li-bio' size='lg' />
+							<FontAwesomeIcon icon={faAppStore} className='icon-bar-li-bio' size='lg' />
 						</div>
 						<div ref={(cr) => (js = cr)}>
 							<FontAwesomeIcon icon={faJsSquare} className='icon-bar-li-bio' size='lg' />

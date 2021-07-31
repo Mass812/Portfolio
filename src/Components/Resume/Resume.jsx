@@ -49,9 +49,24 @@ const Resume = () => {
 				<FontAwesomeIcon icon={faFileAlt} size={'xs'} className='hard-resume-text' /> <div className='hard-resume-text'>Hard Copy Resume</div>
 			</div>
 			<ResumeCard
-				company={'Full Stack React and React-Native Developer'}
-				startDate={'October 8, 2020'}
+				company={'Fabletics Fit Mobile App'}
+				startDate={'March 22, 2021'}
 				endDate={'Present'}
+				duration={''}
+				position={'FullStack Software Engineer'}
+				icon={faAngleRight}
+				p1={'I currently the solo developer on the Fabletics Fitness App-- changing the fashion of fitness one line of code at a time.'}
+				safe={moreAboutFreeLance}
+				resp1={'Handle all aspects of new in app features: examples I recently added in Canada VIP memberships, implemented infinite scroll pagination, & a much celebrated 30 day challenge event.'}
+				resp2={'Work with the production, graphic design, & marketing teams to successfully reach desired company outcomes.'}
+				resp3={'I am the sole developer on the Fit App but have tons of support throughout Techstyle. I handle the backend, Strapi => Postgress => DynamoDb, graphql, built on EC2, Lambda, via Terraform. And the front end with Segment, SailThru and Firebase Analytics baked into react-native written in typescript'}
+				resp4={''}
+				onClickMore={moreFreeLance}
+			/>
+			<ResumeCard
+				company={'Full Stack React and React-Native Developer'}
+				startDate={'September 1,2020'}
+				endDate={'March 21, 2021'}
 				duration={''}
 				position={'React Developer'}
 				icon={faAngleRight}

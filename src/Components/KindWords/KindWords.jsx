@@ -8,6 +8,7 @@ function ReviewerPhoto() {
 		}, 0.2);
 	}, []);
 
+	const TJ = require('../../Assets/TJ.jpg');
 	const MS = require('../../Assets/MS.jfif');
 	const JM = require('../../Assets/JM.jfif');
 	const AW = require('../../Assets/AW.jfif');
@@ -15,6 +16,14 @@ function ReviewerPhoto() {
 	const JW = require('../../Assets/JW.jfif');
 
 	const urlArray = [
+		{
+			id      : 11,
+			name    : 'Taryn Jang',
+			title   : 'Senior Director, Fabletics FIT.',
+			link    : `${TJ}`,
+			content :
+				'It’s been such a pleasure working with you over the past few months to develop and grow the Fabletics FIT app.  Your dedication to the project and commitment to doing whatever it takes to meet deadlines with quality work has enabled our marketing and product teams meet their business objectives successfully. In addition to work ethic, you have exceeded expectations in your technical and problem-solving skills. You have not only been able to identify and solve roadblocks in a structured and methodical approach, but also have gone above and beyond by frequently making recommendations to the team for how we can improve the overall structure and functionality of the app. I wish you the best of luck in the future and have every confidence that you will be able to excel in your career as a developer.'
+		},
 		{
 			id      : 1,
 			name    : 'Monica Shammel',
