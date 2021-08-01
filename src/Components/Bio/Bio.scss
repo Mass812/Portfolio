@@ -104,7 +104,7 @@ object-fit: contain;
 
  @media all and (max-width: 810px){
 	 .bio-image{
-width: 225px;
+width: 125px;
 object-fit: contain;
 	padding: 30;
 	flex-shrink: 1;
@@ -177,15 +177,26 @@ padding: 10;
 
 .weakness {
 	text-align: left;
-	font-weight: 100;
+	font-weight: 400;
 	font-size: calc(14px + 0.2vw);
 	line-height: 22px;
 	padding: 5px;
 	padding-top: 20px;
 	color: $font-color;
 	letter-spacing: 1.2px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #text {
 	font-weight: 100;
+}
+
+.proof-is-the-pudding {
+	color: rgb(163, 163, 163);
+	font-size: 32px;
+	font-family: "Dr Sugiyama", cursive;
+	letter-spacing: 1.1px;
+	// text-align: left;
+	// padding-left: 2px;
+
 }

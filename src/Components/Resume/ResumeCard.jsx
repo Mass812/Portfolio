@@ -4,7 +4,7 @@ import './Resume.scss';
 import Icon from '../ContactBar/Icon';
 import { faLongArrowAltLeft, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 
-const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, position, icon, p1, p2, textWhenMore, safe, addendum, addendum2, resp1, resp2, resp3, resp4, highlight1 }) => {
+const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, position, icon, p1, p2, textWhenMore, safe, addendum, addendum2, resp1, resp2, resp3, resp4, highlight1, highlight2 }) => {
 	let marker = useRef(null);
 	let body = useRef(null);
 	let arrow = useRef(null);
@@ -45,6 +45,7 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 						<br />
 					</div>
 					<div className='highlight1'>{highlight1}</div>
+					
 					<div className='why'>
 						<div className='p-bodies'>{p1}</div>
 					</div>
@@ -94,6 +95,7 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 						) : null}
 					</ul>
 					<div className='sep' />
+					{highlight2 ? <div className='highlight2'>{highlight2}</div> : null}
 				</div>
 			</li>
 			<li className='timeline-item-bottom' style={{ boxShadow: 'none', border: 'none' }} ref={(cr) => (arrow2 = cr)}>
