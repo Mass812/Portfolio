@@ -15,9 +15,9 @@ const Projects = () => {
 		{
 			id           : 1,
 			title        : 'Topflight Security Plus',
-			src          : `https://topflightsecurityplus.com/static/media/tf_main_plusp.6af455ec.webp`,
+			src          : `https://topflight-plus-security.web.app/static/media/tf_main_plusp.6af455ec.webp`,
 			alt          : 'project',
-			to           : 'https://topflightsecurityplus.com',
+			to           : 'https://topflight-plus-security.web.app',
 			body         : "This site was built for a new and growing Security Company in Louisville Kentucky. Color schema, look and general layout were generated to TFSP's wants. ",
 			details      :
 				'The site itself is simple with contact channels, basic company selling points and testimonials. The site does give visitors the ability to apply for a position within the company. But the brunt of the functionality is actually the business site that exists behind this client website. ',
