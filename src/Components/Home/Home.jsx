@@ -78,8 +78,8 @@ const Home = () => {
 							Matt Wellman
 						</div>
 						<div ref={(cr) => (statement = cr)}>
-							<div className='home-subtitle'>JavaScript Enthusiast &</div>
-							<div className='home-subTitle2'>Software Engineer @ Fabletics</div>
+							<div className='home-subtitle'>Software Engineer @ Fabletics</div>
+							<div className='home-subTitle2'>Code Ninja on Fabletics FIT</div>
 						</div>
 					</div>
 				</div>

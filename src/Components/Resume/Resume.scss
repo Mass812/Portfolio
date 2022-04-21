@@ -317,6 +317,27 @@ a {
 	padding-bottom: 20px;
 	font-weight: 100;
 }
+.m-title {
+	font-size: calc(15px + 0.15vw);
+	padding: 5px;
+	color: $accent;
+	font-family:'Times New Roman', Times, serif;
+}
+.m-bodies {
+	color: $color;
+	font-size: calc(13px + 0.15vw);
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	font-family:'Times New Roman', Times, serif;
+	// padding-bottom: 20px;
+	font-weight: 100;
+}
+
+.h-bodies {
+	color: rgb(9, 194, 207);
+	font-weight: 600;
+	font-family:'Times New Roman', Times, serif;
+}
 
 .icon-parent {
 	color: $color;

@@ -1,16 +1,19 @@
 import React, { useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Milestones from './Milestones';
 import './Resume.scss';
 import Icon from '../ContactBar/Icon';
 import { faLongArrowAltLeft, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 
-const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, position, icon, p1, p2, textWhenMore, safe, addendum, addendum2, resp1, resp2, resp3, resp4, highlight1, highlight2 }) => {
+const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, position, icon, p1, p2, textWhenMore, safe, addendum, addendum2, resp1, resp2, resp3, resp4, highlight1, highlight2, milestones }) => {
 	let marker = useRef(null);
 	let body = useRef(null);
 	let arrow = useRef(null);
 	let arrow2 = useRef(null);
 
+
 	useEffect(() => {
+		
 		window.gsap
 			.timeline({ duration: 0.5 })
 			// .fromTo(title, 0.25, { scale: 1.1 }, { scale: 1, ease: 'Power1.easeOut' })
@@ -26,6 +29,8 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 			)
 			.fromTo(arrow, { opacity: 0, ease: 'Back.easeOut', scale: 1.1 }, { delay: 0.3, duration: 0.3, opacity: 1, ease: 'Back.easeOut', scale: 1 });
 	}, []);
+
+
 
 	return (
 		<div className='edge-down'>
@@ -45,7 +50,7 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 						<br />
 					</div>
 					<div className='highlight1'>{highlight1}</div>
-					
+
 					<div className='why'>
 						<div className='p-bodies'>{p1}</div>
 					</div>
@@ -94,6 +99,10 @@ const ResumeCard = ({ onClickMore, endDate, startDate, duration, company, positi
 							</Icon>
 						) : null}
 					</ul>
+					{milestones ? (
+						<Milestones />
+					) : null}
+					
 					<div className='sep' />
 					{highlight2 ? <div className='highlight2'>{highlight2}</div> : null}
 				</div>

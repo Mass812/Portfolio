@@ -50,6 +50,7 @@ const Resume = () => {
 		window.open('https://drive.google.com/file/d/1eK2vuzQTNN4ZCmWqjts4ieJAy8FY4HCa/view?usp=sharing');
 	};
 
+
 	return (
 		<div className='parent'>
 			<div className='hard-resume-block' onClick={openHardResume}>
@@ -63,7 +64,7 @@ const Resume = () => {
 				position={'FullStack Software Engineer'}
 				icon={faAngleRight}
 				p1={
-					"I am currently a full stack mobile software engineer at Fabletics (Kate Hudson's Fitness Apparel Company). I work specifically in a react-native typescript environment alongside many services such as Segment, SailThru, Emarsys and Firebase Analytics on the front end. The backend stack consists of DynamoDb, Strapi, Postgress, Terraform, GraphQl. Currently, I am responsible for for every aspect of the Fabletics Fit app for iOS and Android."
+					"I am currently the primary full stack mobile developer on the Fabletics FIT app (Kate Hudson's Fitness Apparel Company). I work specifically in a react-native typescript environment alongside many services such as Segment, SailThru, Emarsys and Firebase Analytics on the front end. The backend stack consists of DynamoDb, Strapi, Postgress, Terraform, GraphQl. Currently, I am responsible for for every aspect of the Fabletics Fit app for iOS and Android."
 				}
 				highlight1={'A cool Badge of Honor I get to wear is that I am currently the only full stack developer at Techstyle Fashion Group.'}
 				highlight2={'Neat Fact: In order to get this position I Learned DynamoDb, Graphql, Apollo Server, Typescript and Urql and built the Fitness App in their app stack before the interview. Its on the example page of this site.'}
@@ -72,12 +73,13 @@ const Resume = () => {
 					"Fabletics is a part of Techstyle Fashion Group which also possesses Savage X Fenty (Rihanna's Lingerie Company), Shoedazzle, JustFab and FabKids. Although Fabletics FIT is by far the smallest in scale and scope in Techstyle Mobile catalogs it still curries a solid 60,000 active user base and plays a heavy roll in membership engagement, retention and company analytics. On the other side of Fabletics FIT being the smallest mobile implementation, the FIT App has conferred the omnipotent boon of implementing new and desired application design patterns and processes. Ahead of the other mobile frameworks it spearheads its implementations through TechStyle Fashion Group's mobile family. FIT was the first mobile app to provide Android Play Store availability."
 				}
 				resp1={
-					'Handle all aspects of new in app features: examples our recent focus has been on EU expansion--providing specific content given location. The backend in its origins was narrowly designed for US content only, so the App restructure was pretty expansive. I recently added in multiple country VIP memberships, restructured the backend and frontend to handle EU expansion, optimized backend and frontend performance via pagination, moved filters to the backend, and created new table designs that would allow for faster queries while maintaining full scalability. I also recently created a much celebrated 30 day challenge event.'
+					'A lot of Texh Planning & Development'
 				}
 				resp2={'Work with production, graphic design, & marketing teams to successfully reach desired company outcomes.'}
-				resp3={'Solely responsible for writing all backend and front end changes.'}
-				resp4={'Working with Kevin McVey, the Director of Software Engineering, at points throughout the development of new features in this app has been the greatest reward, he has taught me a world of knowledge.'}
+				resp3={'Solely responsible (Ground up development: feature creation => app store deployments) for writing all backend and front end changes.'}
+				resp4={''}
 				onClickMore={moreAboutFit}
+				milestones
 			/>
 			<ResumeCard
 				company={'Full Stack React and React-Native Developer'}
