@@ -73,7 +73,7 @@ const Resume = () => {
 					"Fabletics is a part of Techstyle Fashion Group which also possesses Savage X Fenty (Rihanna's Lingerie Company), Shoedazzle, JustFab and FabKids. Although Fabletics FIT is by far the smallest in scale and scope in Techstyle Mobile catalogs it still curries a solid 60,000 active user base and plays a heavy roll in membership engagement, retention and company analytics. On the other side of Fabletics FIT being the smallest mobile implementation, the FIT App has conferred the omnipotent boon of implementing new and desired application design patterns and processes. Ahead of the other mobile frameworks it spearheads its implementations through TechStyle Fashion Group's mobile family. FIT was the first mobile app to provide Android Play Store availability."
 				}
 				resp1={
-					'A lot of Texh Planning & Development'
+					'A lot of Tech Planning & Development'
 				}
 				resp2={'Work with production, graphic design, & marketing teams to successfully reach desired company outcomes.'}
 				resp3={'Solely responsible (Ground up development: feature creation => app store deployments) for writing all backend and front end changes.'}
