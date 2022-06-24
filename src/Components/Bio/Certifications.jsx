@@ -66,7 +66,8 @@ const Certifications = () => {
 			title : 'State Management',
 			items : [
 				' Redux, Thunk & Redux-Persist,',
-				' React useContext, useReducer, useState, useMemo, useEffect.'
+				' React useContext, useReducer, useState, useMemo, useEffect.',
+				' Zustand'
 			]
 		}
 	];
