@@ -4,7 +4,7 @@ import { CSSPlugin } from 'gsap/CSSPlugin';
 
 // get our fontawesome imports
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeSquare, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeSquare, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './ContactBar.scss';
@@ -53,7 +53,7 @@ const FontAwesome = () => {
 							<FontAwesomeIcon icon={faGithub} className='IconBarLi' size='lg' />
 						</a>
 						<div>
-							<FontAwesomeIcon icon={faPhone} color={'goldenrod'} className='IconBarLi' size='lg' onClick={() => setShowNumber(!showNumber)} />
+							<FontAwesomeIcon icon={faPhoneAlt} color={'goldenrod'} className='IconBarLi' size='lg' onClick={() => setShowNumber(!showNumber)} />
 						</div>
 					</ul>
 				</div>
@@ -62,7 +62,7 @@ const FontAwesome = () => {
 				<div className='contactBlockIconBlockMirror'>
 					<ul className='IconBar-info'>
 						{' '}
-						<FontAwesomeIcon icon={faPhone} color={'green'} style={{ paddingLeft: '7px' }} /> <a href='tel:+15022320232'>(502) 232-0232</a>
+						<FontAwesomeIcon icon={faPhoneAlt} color={'green'} style={{ paddingLeft: '7px' }} /> <a href='tel:+15022320232'>(502) 232-0232</a>
 					</ul>
 				</div>
 			</section>

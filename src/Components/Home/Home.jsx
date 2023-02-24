@@ -2,6 +2,8 @@ import React, { useRef, useEffect } from 'react';
 import './Home.scss';
 import FontAwesome from '../ContactBar/ContactBar';
 import HelmetMeta from '../HelemetMeta/HelmetMeta';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAndroid, faAppStore } from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
 	const matt = require('../../Assets/mw_black.jpg');
@@ -28,7 +30,7 @@ const Home = () => {
 					y           : 0,
 					delay       : 1.5,
 					duration    : 1.5,
-					height      : 150,
+					height      : 210,
 					borderWidth : 2,
 					ease        : 'Power1.easeOut',
 					rotate      : 540
@@ -78,8 +80,15 @@ const Home = () => {
 							Matt Wellman
 						</div>
 						<div ref={(cr) => (statement = cr)}>
-							<div className='home-subtitle'>Software Engineer  @ Fabletics</div>
-							<div className='home-subTitle2'>Mobile Developer on Fabletics FIT</div>
+							<div className='home-subtitle'>Software Engineer @ Fabletics</div>
+							<div className='home-subTitle2'>Primary Developer on Fabletics FIT
+							<FontAwesomeIcon icon={faAndroid} color={'wheat'} style={{ paddingLeft: '7px', opacity: 0.8 }} /> 
+							<FontAwesomeIcon icon={faAppStore} color={'wheat'} style={{ paddingLeft: '7px' }} /> 
+							<br/>
+                              &
+							  <br/>
+							  Fabletics Omni Retail Software Engineer
+							</div>
 						</div>
 					</div>
 				</div>

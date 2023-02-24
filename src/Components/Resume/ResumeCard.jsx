@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Milestones from "./Milestones";
+import Features from "./Features";
 import "./Resume.scss";
 import Icon from "../ContactBar/Icon";
 import {
@@ -20,6 +21,7 @@ const ResumeCard = ({
   p2,
   textWhenMore,
   safe,
+  featuresArray,
   addendum,
   addendum2,
   resp1,
@@ -117,9 +119,12 @@ const ResumeCard = ({
             </div>
           ) : null}
 
-          <div className="key-responsibility-title">
-            Key Responsibilities {addendum}
-          </div>
+          {resp1 ? 
+		  <div>
+		  <div className="key-responsibility-title">
+              Key Responsibilities {addendum}
+            </div>
+          
 
           <ul className="innerList">
             <div className="addendum-two"> {addendum2}</div>
@@ -144,7 +149,10 @@ const ResumeCard = ({
               </Icon>
             ) : null}
           </ul>
+		  </div>
+: null}
           {milestones ? <Milestones /> : null}
+		 <Features featuresArray={featuresArray} /> 
 
           <div className="sep" />
           {highlight2 ? <div className="highlight2">{highlight2}</div> : null}

@@ -69,6 +69,7 @@ min-height: 70vh;
 	color: goldenrod;
 	text-shadow: #000000 1px 1px;
 	text-align: center;
+	margin-bottom: 15px;
 }
 
 .home-subTitle2 {
@@ -78,11 +79,17 @@ min-height: 70vh;
 	font-family: "Mukta";
 	padding-top: 5px;
 	color: rgb(223, 222, 222);
-
+	align-items: center;
+    text-align: center;
 	background-color: var(--main-secondary);
 	background: transparent;
 	text-shadow: #000000 1px 1px;
-	font-size: 20px;
+	font-size: 14px;
+	
+}
+
+.home-subTitle3 {
+	align-self: center;
 }
 
 
