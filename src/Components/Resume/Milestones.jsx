@@ -9,7 +9,7 @@ const Miletstones = () => {
         <div className="m-title">Awards</div>
 
         <div className="mvp-image-parent">
-        <div className="mvp-text">June 2022: MVP Recognition Award</div>
+        <div className="mvp-text">June 2022: Global MVP Recognition Award</div>
           <img
             src={mvp}
             alt={"mvp award"}
@@ -98,8 +98,8 @@ const Miletstones = () => {
           </li>
           <li className="m-bodies">
             Moved filtering from front end to back end: And Rather than utilize
-            an EastSearch Cluster that runs 24/7, we wrote that keywords'
-            functionality ourselves. Moving the filters to the backend handled
+            an EastSearch Cluster that runs 24/7, I wrote a keywords'
+            functionality to do the same thing. Moving the filters to the backend handled
             the workload exponentially better and{" "}
             <span className="h-bodies">
               {" "}
@@ -120,7 +120,7 @@ const Miletstones = () => {
           <li className="m-bodies">
             <span className="h-bodies">
               {" "}
-              We incorporated Emarsys Integration for 5 world regions{" "}
+              Emarsys Integration for 5 world regions{" "}
             </span>{" "}
             to support the 12 countries the app is available in.
           </li>
@@ -134,7 +134,7 @@ const Miletstones = () => {
             .
           </li>
           <li className="m-bodies">
-            Expanded our country base from 6 to 12{" "}
+            Expanded our app store and google play presence from 6 to 12 countries{" "}
             <span className="h-bodies">
               added Sweden, Canada, Denmark, Austalia, Austria & Belgium
             </span>

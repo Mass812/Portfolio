@@ -43,6 +43,7 @@ const Resume = () => {
         <FontAwesomeIcon
           icon={faFileAlt}
           size={"xs"}
+		  color={"wheat"}
           className="hard-resume-text"
         />{" "}
         <div className="hard-resume-text">Hard Copy Resume</div>
