@@ -57,6 +57,21 @@ const Resume = () => {
 				<FontAwesomeIcon icon={faFileAlt} size={'xs'} className='hard-resume-text' /> <div className='hard-resume-text'>Hard Copy Resume</div>
 			</div>
 			<ResumeCard
+				company={'Fabletics Retail'}
+				startDate={'November 9, 2022'}
+				endDate={'Present'}
+				duration={''}
+				position={'FullStack Software Engineer'}
+				icon={faAngleRight}
+			
+				p1={
+					"In addition to my role as a Full Stack Software Engineer on Fabletics Fit I am also a Full Stack Software Engineer on Fabletics Retail. I am currently working on monotizing the backend into private npm packages."
+				}
+				resp1={'My first project was to create a monorepo for the Fabletics Retail Backend, with the bells and whistles, generating new repo scaffolding, Jest, TSC, and CI-CD pipeline deployments (canary & stable). All operating under the modus operandi of change some code, then run one line of code, in the terminal and done!'}
+
+		
+			/>
+			<ResumeCard
 				company={'Fabletics Fit Mobile App'}
 				startDate={'March 22, 2021'}
 				endDate={'Present'}
