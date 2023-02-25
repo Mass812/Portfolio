@@ -9,8 +9,9 @@ import FoggedGlass from './Components/FoggedGlass/FoggedGlass';
 import KindWords from './Components/KindWords/KindWords';
 import Home from './Components/Home/Home';
 import Resume from './Components/Resume/Resume';
+import More from './Components/More/More';
 
-import Projects from '../src/Components/Projects/Projects';
+import Projects from './Components/Projects/Projects';
 import ScrollReset from './Components/ScrollReset/ScrollReset';
 import NavBar from './Components/NavBar/NavBar';
 
@@ -50,6 +51,7 @@ const App = () => {
 						<Route path='/resume' component={Resume} />
 						<Route path='/references' component={KindWords} />
 						<Route path='/projects' component={Projects} />
+						<Route path='/additional' component={More} />
 					</Switch>
 				</main>
 			</div>

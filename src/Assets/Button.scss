@@ -26,6 +26,8 @@
   transition: 0.1s;
   margin: 1.6em;
   padding: 0.3em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
   &:hover, &:active {
     color: goldenrod;
   }
@@ -46,6 +48,7 @@
 
 .button-li:hover {
   color: black;
+  border-color: yellow;
 }
 
 .button-li:hover span {

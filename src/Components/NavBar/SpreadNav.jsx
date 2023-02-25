@@ -17,10 +17,13 @@ const SpreadNav = ({ onClick }) => {
 					<Button>Career</Button>
 				</Link>
 				<Link to='/references' style={{ textDecoration: 'none' }}>
-					<Button>Endorsements</Button>
+					<Button>Accolades</Button>
 				</Link>
 				<Link to='/projects' style={{ textDecoration: 'none' }}>
 					<Button>Examples</Button>
+				</Link>
+				<Link to='/additional' style={{ textDecoration: 'none' }}>
+					<Button>More</Button>
 				</Link>
 			</ul>
 		</nav>
