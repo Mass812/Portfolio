@@ -56,10 +56,10 @@ const Resume = () => {
         position={"FullStack Software Engineer"}
         icon={faAngleRight}
         p1={
-          "In addition to my role on Fabletics Fit I am also now a dev on Fabletics Retail. I'm thrilled to be added as an additional member of the omni backend development team."
+          "In addition to my role to my Fabletics Fit role I am a developer on Fabletics Retail."
         }
         featuresArray={[
-          'My first project was to create a monorepo for the Fabletics Retail Backend, with the bells and whistles, generating new repo scaffolding, Jest, TSC, and CI-CD pipeline deployments (canary & stable). All operating under the modus operandi of "change some code, then run one line of code", in the terminal and done!',
+          'Created a monorepo for the Fabletics Retail Backend, with all the bells and whistles: generating new repo scaffolding, Jest, TSC, and CI-CD pipeline deployments (canary & stable). All operating under the modus operandi of "change some code, then run one line of code", in the terminal and done!',
     ]}
       />
       <ResumeCard
