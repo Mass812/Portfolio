@@ -59,7 +59,8 @@ const Resume = () => {
           "In addition to my Fabletics Fit role I am also a developer on Fabletics Retail Backend Team."
         }
         featuresArray={[
-          'Created a monorepo for the Fabletics Retail Backend, with all the bells and whistles: generating new repo scaffolding, Jest, TSC, and CI-CD pipeline deployments (canary & stable). All operating under the modus operandi of "change some code, then run one line of code", in the terminal and done!',
+          'I restructured a NestJS backend repository into modular packages for better resource allocation across brands and automated release management using GitHub Actions. With a focus on ease of use and deployment, the Fabletics Retail Backend monorepo integrates automatic repo scaffolding, Jest, TSC, and CI-CD pipeline deployments (canary & stable). Script commands facilitate instant folder and file scaffolding for new packages, symlinking, and non-husky precommit verifications, streamlining the development process with a single terminal command.',
+          'Following the construction of the monorepo with modular packages, I spear-headed Amazon-Today backend integration using this framework.',
     ]}
       />
       <ResumeCard
