@@ -1,22 +1,22 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './KindWords.scss';
+import TJ from '../../Assets/TJ.jpg';
+import MS from '../../Assets/MS.jfif';
+import JM from '../../Assets/JM.jfif';
+import AW from '../../Assets/AW.jfif';
+import SB from '../../Assets/SB.jfif';
+import JW from '../../Assets/JW.jfif';
+import MW from '../../Assets/novich.jpeg';
 
 function ReviewerPhoto() {
-	useEffect(() => {
-		setTimeout(() => {
-			return <h1>Loading</h1>;
-		}, 0.2);
-	}, []);
-
-	const TJ = require('../../Assets/TJ.jpg');
-	const MS = require('../../Assets/MS.jfif');
-	const JM = require('../../Assets/JM.jfif');
-	const AW = require('../../Assets/AW.jfif');
-	const SB = require('../../Assets/SB.jfif');
-	const JW = require('../../Assets/JW.jfif');
-	const MW = require('../../Assets/novich.jpeg');
-
 	const urlArray = [
+		{
+			id: 13,
+			name: 'Armand Albrand',
+			title: 'Retail Product Management Director, Fabletics.',
+			content:
+				"One additional call-out that isn't in the list and really deserves special recognition: Matt Wellman. This would not have happened without Matt's leadership on the core architecture and integration into our existing retail inventory stack. His work was foundational to making this rollout possible."
+		},
 		{
 			id: 12,
 			name: 'Matt Novich',
@@ -75,27 +75,32 @@ function ReviewerPhoto() {
 		}
 	];
 
-	//name= name, link, content
 	const copy = urlArray.map((n) => (
-		<div className='bio-card-block' key={n.id}>
-			<div className='bio-card'>
-				<div className='bio-card-top'>
-					<img src={n.link} className='picture' alt={'This data failed to pull correctly'} key={n.id} />
-					<div className='ref-details'>
-						<div className='name'>{n.name}</div>
-						<div className='title'> {n.title} </div>
-					</div>
+		<li className='ref-item' key={n.id}>
+			<div className='ref-head'>
+				{n.link ? (
+					<img src={n.link} className='ref-photo' alt={n.name} />
+				) : (
+					<div className='ref-photo ref-monogram'>{n.name.charAt(0)}</div>
+				)}
+				<div>
+					<div className='ref-name'>{n.name}</div>
+					<div className='ref-title'>{n.title}</div>
 				</div>
-				<div className='bio-card-bottom'>{n.content}</div>
 			</div>
-		</div>
+			<blockquote className='ref-quote'>{n.content}</blockquote>
+		</li>
 	));
 
 	return (
-		<div className='parent'>
-			<div className='header'>References</div>
+		<div className='ref-page'>
+			<h1 className='ref-header'>Accolades</h1>
+			<p className='ref-lede'>
+				From managers, product partners and colleagues across Fabletics,
+				Techstyle and earlier roles.
+			</p>
 
-			{copy}
+			<ul className='ref-list'>{copy}</ul>
 		</div>
 	);
 }

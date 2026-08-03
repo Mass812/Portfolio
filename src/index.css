@@ -1,13 +1,38 @@
+/* Type system — every font-family in this site resolves to one of these four.
+   Add a font here (and to the <link> in index.html) rather than declaring a
+   one-off stack in a component stylesheet. */
+:root {
+  --font-display: 'Cinzel Decorative', Georgia, serif; /* nav + drawer branding */
+  --font-script: 'Dr Sugiyama', 'Brush Script MT', cursive; /* signature accent */
+  --font-body: 'Tenor Sans', -apple-system, BlinkMacSystemFont, sans-serif; /* body + UI */
+  --font-accent: 'Piazzolla', Georgia, serif; /* pull quotes + section headings */
+  --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+  /* Fluid type scale. Every font-size should reference one of these steps rather
+     than inventing its own calc() — the résumé alone had 21 distinct sizes,
+     including three near-identical variants of the same 10px value. clamp()
+     bounds the growth so text stays sane on very wide and very narrow screens. */
+  --text-2xs: clamp(0.625rem, 0.6rem + 0.1vw, 0.72rem); /* eyebrows, dates, citations */
+  --text-xs: clamp(0.75rem, 0.72rem + 0.12vw, 0.85rem); /* captions, secondary notes */
+  --text-sm: clamp(0.8125rem, 0.78rem + 0.15vw, 0.94rem); /* body copy */
+  --text-base: clamp(0.9375rem, 0.9rem + 0.18vw, 1.08rem); /* sub-headings */
+  --text-md: clamp(1.0625rem, 1rem + 0.25vw, 1.25rem); /* section headings */
+  --text-lg: clamp(1.25rem, 1.12rem + 0.4vw, 1.6rem); /* role / card titles */
+  --text-xl: clamp(1.75rem, 1.4rem + 1.4vw, 2.75rem); /* page titles */
+
+  /* Line heights: tight for headings, generous for reading. */
+  --leading-tight: 1.3;
+  --leading-body: 1.75;
+}
+
 body {
   box-sizing: content-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Tenor Sans',
-    sans-serif;
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: var(--font-mono);
 }

@@ -1,11 +1,15 @@
 $main-title-color: rgba(218, 165, 32, 0.741);
 $sub-title-color: rgb(255, 187, 0);
 $font-color: rgba(216, 216, 216, 0.939);
-$icon-color: #7b7d7c;
-$background-icon-color: rgb(91, 89, 89);
 $background-body-color: rgba(255, 255, 255, 0.224);
 $background-main-body-color: transparent;
-$icon-color: "goldenrod";
+
+/* Resting colour of the Proficiencies icons. This was previously applied by a
+   GSAP tween rather than CSS: `$icon-color` was declared twice and the winning
+   value was the quoted string "goldenrod", which is not a valid colour, so the
+   browser dropped the declaration and the icons inherited the tween's teal.
+   Change this one value to restyle them. */
+$proficiency-icon-color: #219cb4;
 
 :root {
 	--bio-background: url("../../Assets/grey1.jpg");
@@ -40,48 +44,126 @@ $icon-color: "goldenrod";
 	position: relative;
 }
 
-.education-list {
-	margin-left: -25px;
-	margin-top: 25px;
-	font-size: 18px;
-	font-family: 'Tenor Sans', sans-serif;
+/* /about page sections — same language as the résumé's Recognition block:
+   accent-serif gold section titles over a hairline, eyebrow dates, one body size. */
+.bio-intro {
+	max-width: 58ch;
+	margin: 0 auto 38px;
+	padding: 0 18px;
+	font-family: var(--font-body);
+	font-size: var(--text-sm);
+	font-weight: 100;
+	line-height: var(--leading-body);
+	letter-spacing: 0.5px;
+	color: rgba(245, 245, 245, 0.8);
+	text-align: center;
+}
 
-	p {
-		//padding: 2px;
-		font-family: 'Tenor Sans', sans-serif;
-		//	padding-left: -4px;
-		
-		color: #219cb4;
-		line-height: 20px;
-		font-size: calc(14px + 0.2vw);
-		font-weight: 900;
-		margin: 0px;
+.bio-section {
+	max-width: 72ch;
+	margin: 0 auto 46px;
+	padding: 0 18px;
+	text-align: left;
+}
+
+.bio-section-title {
+	margin: 0 0 4px;
+	font-family: var(--font-accent);
+	font-size: var(--text-md);
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: rgb(228, 190, 37);
+	padding-bottom: 14px;
+	border-bottom: 1px solid rgba(228, 190, 37, 0.25);
+}
+
+.edu-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.edu-item {
+	display: flex;
+	gap: 20px;
+	padding: 18px 0;
+	border-bottom: 1px solid rgba(245, 245, 245, 0.07);
+
+	&:last-child {
+		border-bottom: none;
 	}
 }
 
-.bio-subtitle-main {
-	margin: 2px;
-	font-size: 12px;
-	font-weight: 00;
-	color: $main-title-color;
-	border-radius: 20px;
-	//  box-shadow: 3px 3px 3px 0 rgb(123, 125, 124, 1),
-	//    -4px 4px 3px 0 rgba(0, 0, 0, 0.3);
+.edu-years {
+	flex: 0 0 12ch;
+	padding-top: 3px;
+	font-family: var(--font-body);
+	font-size: var(--text-2xs);
+	letter-spacing: 1.1px;
+	text-transform: uppercase;
+	color: rgba(245, 245, 245, 0.45);
 }
 
-.bio-subtitle {
-	font-size: 20px;
-	font-weight: 0;
-	letter-spacing: 2px;
-	padding: 10px;
-	margin: 20px;
-	color: $sub-title-color;
-	border-radius: 20px;
-	box-shadow: 1px 3px 1px 0 rgb(123, 125, 124, 1), -4px -4px 1px -1px rgba(0, 0, 0, 0.3);
-	display: 'flex';
-	
-	// padding-top: 20px;
+.edu-school {
+	font-family: var(--font-body);
+	font-size: var(--text-base);
+	color: rgb(250, 249, 248);
+	padding-bottom: 4px;
 }
+
+.edu-major {
+	font-family: var(--font-body);
+	font-size: var(--text-xs);
+	letter-spacing: 0.8px;
+	color: rgb(9, 194, 207);
+}
+
+.knowledge-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 8px 44px;
+}
+
+.knowledge-group {
+	padding-top: 20px;
+}
+
+.knowledge-group-title {
+	font-family: var(--font-body);
+	font-size: var(--text-xs);
+	letter-spacing: 1.3px;
+	text-transform: uppercase;
+	color: rgb(228, 190, 37);
+	padding-bottom: 6px;
+}
+
+.knowledge-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.knowledge-item {
+	position: relative;
+	padding: 4px 0 4px 16px;
+	font-family: var(--font-body);
+	font-size: var(--text-sm);
+	font-weight: 100;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	color: rgba(245, 245, 245, 0.8);
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0.95em;
+		width: 7px;
+		height: 1px;
+		background: rgba(228, 190, 37, 0.7);
+	}
+}
+
 .inner-bio {
 	display: flex;
 	flex-wrap: wrap;
@@ -122,20 +204,41 @@ padding: 10;
 
 
 }
+/* The wrap/justify here were inert without `display: flex`, so the row layout
+   was coming from GSAP setting `display: inline-block` on the children after
+   mount. Doing it in CSS means the grid is correct on the first paint. */
 .icon-splay {
-	height: auto;
-	max-width: 100%;
-	padding: 5px;
+	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-.icon-bar-li-bio {
-	pointer-events: none;
-	padding: 20px;
+	align-items: center;
 	height: auto;
-	justify-content: space-evenly;
-	color: $icon-color;
-	
+	max-width: 100%;
+	margin: 0;
+	padding: 5px;
+	list-style: none;
+}
+
+/* One flex item per icon. These are <li> rather than <div> so the markup inside
+   the <ul> is actually valid. */
+.icon-splay-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+
+.icon-bar-li-bio {
+	/* Do NOT set `height: auto` here. FontAwesome 6 sizes its SVGs purely from
+	   `.svg-inline--fa { height: 1em }` and derives width from the viewBox, so
+	   overriding height collapses the icon to 0x0 — and because FA also sets
+	   `overflow: visible`, the glyph then paints at full viewBox scale and the
+	   icons smear into each other. FA5 got away with it only because it emitted
+	   explicit `fa-w-*` width classes. Size these with font-size instead. */
+	font-size: 1.6rem;
+	padding: 18px;
+	color: $proficiency-icon-color;
+
 	&::after {
 		content: "";
 	}
@@ -151,52 +254,15 @@ padding: 10;
 
 .business-characteristic-ul {
 	color: rgb(255, 255, 255);
-	font-size: calc(14px + 0.2vw);
+	font-size: var(--text-sm);
 	padding: 1px;
 	padding-left: 1px;
-	font-family: 'Tenor Sans', serif;
+	font-family: var(--font-body);
 
 	// text-shadow: rgb(0, 0, 0) 3.5px 3.3px 2px;
-}
-
-.bullet {
-	flex: 1;
-	flex-direction: column;
-	size: inherit;
-	display: inline-block;
-}
-
-.bullet-pint-description {
-	color: $font_color;
-	padding: 3px;
-	text-align: left;
-
-	font-size: calc(14px + 0.2vw);
-	padding-right: -5px;
-}
-
-.weakness {
-	text-align: left;
-	font-weight: 400;
-	font-size: calc(14px + 0.2vw);
-	line-height: 22px;
-	padding: 5px;
-	padding-top: 20px;
-	color: $font-color;
-	letter-spacing: 1.2px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #text {
 	font-weight: 100;
 }
 
-.proof-is-the-pudding {
-	color: rgb(163, 163, 163);
-	font-size: 32px;
-	font-family: "Dr Sugiyama", cursive;
-	letter-spacing: 1.1px;
-	// text-align: left;
-	// padding-left: 2px;
-
-}

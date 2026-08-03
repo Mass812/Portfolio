@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.scss";
 
-const Button = ({ children = "mmm?" }) => {
+const Button = ({ children = null }) => {
   return (
     <ul className="button-ul">
       <li className="button-li">

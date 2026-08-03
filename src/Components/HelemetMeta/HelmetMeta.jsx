@@ -1,45 +1,21 @@
-import React, { Fragment } from 'react';
-import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 
-const HelmetMeta = ({ titleString = 'Matt Wellman React & React Native Developer', bodyString = '', quoteString = '' }) => {
-	let currentUrl = 'https://www.mattwellman.dev';
+// Sets the document title for the browser tab. Share metadata (og:*, twitter:*)
+// lives statically in index.html — social scrapers don't execute JavaScript, so
+// runtime-injected tags were never visible to them. This replaced
+// react-helmet-async, which had begun silently emitting nothing at runtime.
+const SITE_TITLE = 'Matt Wellman';
 
-	let imageURL = 'https://mattwellman.dev/static/media/mw_black.653963cb.jpg';
+const HelmetMeta = ({ titleString = SITE_TITLE }) => {
+	useEffect(() => {
+		document.title = titleString;
 
-	let hashtagString = '#MattWellmanLouisvilleDev';
+		return () => {
+			document.title = SITE_TITLE;
+		};
+	}, [titleString]);
 
-	return (
-		<Fragment>
-			<Helmet>
-				<title>{titleString}</title>
-				<meta charset='utf-8' />
-				<meta http-equiv='X-UA-Compatible' content='IE=edge' />
-				<meta name='csrf_token' content='' />
-				<meta property='type' content='website' />
-				<meta property='url' content={currentUrl} />
-				<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
-				<meta name='msapplication-TileColor' content='red' />
-				<meta name='msapplication-TileImage' content={imageURL} />
-				<meta name='theme-color' content='#ffffff' />
-				<meta name='_token' content='' />
-				<meta name='robots' content='noodp' />
-				<meta property='title' content={titleString} />
-				<meta property='quote' content={quoteString} />
-				<meta name='description' content={bodyString} />
-				<meta property='image' content={imageURL} />
-				<meta property='og:locale' content='en_US' />
-				<meta property='og:type' content='website' />
-				<meta property='og:title' content={titleString} />
-				<meta property='og:quote' content={quoteString} />
-				<meta property='og:hashtag' content={hashtagString} />
-				<meta property='og:image' content={imageURL} />
-				<meta content='image/*' property='og:image:type' />
-				<meta property='og:url' content={currentUrl} />
-				<meta property='og:site_name' content='TopflightSecurityPlus' />
-				<meta property='og:description' content={bodyString} />{' '}
-			</Helmet>
-		</Fragment>
-	);
+	return null;
 };
 
 export default HelmetMeta;

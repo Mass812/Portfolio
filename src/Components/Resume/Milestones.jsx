@@ -1,8 +1,8 @@
 import React from "react";
 import "./Resume.scss";
+import mvp from "../../Assets/mvp.png";
 
-const Miletstones = () => {
-  const mvp = require("../../Assets/mvp.png");
+const Milestones = () => {
   return (
     <>
       <div>
@@ -18,26 +18,16 @@ const Miletstones = () => {
           />
         </div>
 
-        <div className="m-title" >App Store Statistics</div>
+        <div className="m-title" >Scale</div>
         <ul>
           <li className="m-bodies">
-            Android PlayStore:{" "}
-            <span className="h-bodies">
-              Downloads (+10,373 in March, 221k lifetime)
-            </span>
-            <li className="m-bodies">
-              PlayStore Rating:<span className="h-bodies"> 4.3 Stars</span>
-            </li>
+            Content library: <span className="h-bodies">900+ video classes, 40+ programs, 100+ audio meditations</span>
           </li>
           <li className="m-bodies">
-            iOS AppStore:{" "}
-            <span className="h-bodies">
-              {" "}
-              Downloads (+9,413 in March, 327k lifetime)
-            </span>
-            <li className="m-bodies">
-              AppStore Rating:<span className="h-bodies"> 4.8 Stars</span>
-            </li>
+            Reach: <span className="h-bodies">launched in 12 countries, with content in Spanish, French and German</span>
+          </li>
+          <li className="m-bodies">
+            Lifetime downloads: <span className="h-bodies">327k iOS, 221k Android</span>
           </li>
         </ul>
 
@@ -70,7 +60,7 @@ const Miletstones = () => {
             GSI table designs are a milestones in that they{" "}
             <span className="h-bodies">
               {" "}
-              allow DynamoDb's Engines to operate better on our data
+              allow DynamoDB's Engines to operate better on our data
             </span>
             .
           </li>
@@ -136,7 +126,7 @@ const Miletstones = () => {
           <li className="m-bodies">
             Expanded our app store and google play presence from 6 to 12 countries{" "}
             <span className="h-bodies">
-              added Sweden, Canada, Denmark, Austalia, Austria & Belgium
+              added Sweden, Canada, Denmark, Australia, Austria & Belgium
             </span>
             .
           </li>
@@ -146,4 +136,4 @@ const Miletstones = () => {
   );
 };
 
-export default Miletstones;
+export default Milestones;

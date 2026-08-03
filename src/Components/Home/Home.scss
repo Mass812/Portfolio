@@ -10,14 +10,14 @@
 	box-sizing: content-box;
 }
 
+/* Fill the viewport below the header so the hero centers and the stat row can
+   pin to the bottom via margin-top: auto. */
 .home-container {
 	display: flex;
 	flex-direction: column;
-min-height: 70vh;
-	max-height: 100%;
+	min-height: calc(100vh - 130px);
 	box-sizing: content-box;
 	width: 100%;
-	
 }
 
 .home-top {
@@ -50,46 +50,97 @@ min-height: 70vh;
 	align-items: center;
 }
 
+/* Hero type stack: script signature → uppercase gold role line → muted role
+   detail → stat caption. No text-shadows; hierarchy comes from size, tracking
+   and opacity, matching the Recognition section's language. */
 .home-name {
 	display: flex;
 	margin: auto;
-	color: '#A3B1FD';
 	color: rgb(223, 222, 222);
 	background: transparent;
-	text-shadow: black 1.5px 1.5px 0;
 	font-weight: 100;
-	font-size: 60px;
+	font-size: clamp(2.5rem, 2rem + 1.6vw, 3.4rem);
 	word-spacing: 7px;
-	//margin-top: 4.4em;
-	font-family: "Dr Sugiyama", cursive;
+	font-family: var(--font-script);
 	padding-top: 25px;
 }
 
 .home-subtitle {
 	color: goldenrod;
-	text-shadow: #000000 1px 1px;
+	font-family: var(--font-body);
+	font-size: var(--text-sm);
+	letter-spacing: clamp(1.4px, 0.6vw, 3px);
+	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: 15px;
+	margin: 6px 0 18px;
+	padding: 0 18px;
 }
 
 .home-subTitle2 {
 	align-self: center;
+	font-family: var(--font-body);
+	font-size: var(--text-sm);
 	font-weight: 300;
-	color: black;
-	font-family: "Mukta";
-	padding-top: 5px;
-	color: rgb(223, 222, 222);
-	align-items: center;
-    text-align: center;
-	background-color: var(--main-secondary);
+	letter-spacing: 0.6px;
+	line-height: 2;
+	color: rgba(223, 222, 222, 0.85);
+	text-align: center;
 	background: transparent;
-	text-shadow: #000000 1px 1px;
-	font-size: 14px;
-	
+}
+
+.home-role-sep {
+	padding: 0 12px;
+	color: rgba(228, 190, 37, 0.55);
 }
 
 .home-subTitle3 {
 	align-self: center;
+}
+
+/* Stat row pinned toward the bottom of the hero viewport. The bottom padding
+   clears the fixed contact pill (bottom: 14px, ~50px tall). */
+.home-stats {
+	margin-top: auto;
+	padding: 30px 18px 96px;
+	text-align: center;
+}
+
+.home-stats-eyebrow {
+	font-family: var(--font-body);
+	font-size: var(--text-2xs);
+	letter-spacing: 2.2px;
+	text-transform: uppercase;
+	color: rgba(245, 245, 245, 0.4);
+	padding-bottom: 16px;
+}
+
+.home-stats-row {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	gap: clamp(26px, 6vw, 70px);
+}
+
+.home-stat {
+	display: flex;
+	flex-direction: column;
+}
+
+.home-stat-figure {
+	font-family: var(--font-accent);
+	font-size: var(--text-lg);
+	font-weight: 400;
+	color: goldenrod;
+	line-height: 1;
+}
+
+.home-stat-label {
+	padding-top: 8px;
+	font-family: var(--font-body);
+	font-size: var(--text-2xs);
+	letter-spacing: 1.3px;
+	text-transform: uppercase;
+	color: rgba(245, 245, 245, 0.55);
 }
 
 

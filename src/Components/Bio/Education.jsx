@@ -1,57 +1,40 @@
 import React from 'react';
+import './Bio.scss';
+
+const SCHOOLS = [
+	{
+		school : 'University of Kentucky',
+		major  : 'Chemistry & Biology',
+		years  : '2005 — 2007'
+	},
+	{
+		school : 'Indiana University',
+		major  : 'Biochemistry',
+		years  : '2004 — 2005'
+	},
+	{
+		school : 'Ivy Tech Community College',
+		major  : 'Prerequisites',
+		years  : '2003 — 2004'
+	}
+];
 
 const Education = () => {
 	return (
-		<div>
-			<div className='bio-subtitle'>
-				Education
-				<div className='business-characteristic-parent'>
-					<ul className='business-characteristic-ul'>
-						<ul className='education-list'>
-							{' '}
-							University of Kentucky
-							<p>
-								<b>Major: </b> Chemistry & Biology
-							</p>
-							<p>
-								<b>GPA:</b> 3.2
-							</p>
-							<p>
-								<b>Attended:</b> 2005-2007
-							</p>
-						</ul>
-						<ul className='education-list'>
-							{' '}
-							Indiana University
-							<p>
-								<b>Major: </b> Biochemistry
-							</p>
-							<p>
-								<b>GPA:</b> 3.0
-							</p>
-							<p>
-								<b>Attended:</b> 2004-2005
-							</p>
-						</ul>
-						<ul className='education-list'>
-							{' '}
-							Ivy Tech Community
-							<p>
-								<b>Major: </b> Prerequisites
-							</p>
-							<p>
-								<b>GPA:</b> 3.9
-							</p>
-							<p>
-								<b>Attended:</b> 2003-2004
-							</p>
-						</ul>
-					</ul>
-					<br />
-					<br />
-				</div>
-			</div>
-		</div>
+		<section className='bio-section'>
+			<h2 className='bio-section-title'>Education</h2>
+			<ul className='edu-list'>
+				{SCHOOLS.map((s) => (
+					<li className='edu-item' key={s.school}>
+						<div className='edu-years'>{s.years}</div>
+						<div className='edu-body'>
+							<div className='edu-school'>{s.school}</div>
+							<div className='edu-major'>{s.major}</div>
+						</div>
+					</li>
+				))}
+			</ul>
+		</section>
 	);
 };
 export default Education;

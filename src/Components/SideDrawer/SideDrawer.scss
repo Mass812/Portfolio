@@ -6,7 +6,7 @@
 	background: #1c1c1c;
 	top: 0;
 	right: 0;
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: var(--font-display);
 	box-shadow: 2px 0px 0.1rem rgb(7, 0, 0);
 	z-index: 5;
 	position: fixed;
@@ -22,7 +22,7 @@
 
 .drawer-ul {
 	padding: 15px;
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: var(--font-display);
 	align-items: center;
 
 }
@@ -37,7 +37,7 @@
 	background: #1c1c1c;
 	top: 0;
 	right: 0;
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: var(--font-display);
 	box-shadow: 2px 0px 0.1rem rgb(7, 0, 0);
 	z-index: 5;
 	position: fixed;
@@ -48,7 +48,7 @@ align-content: center;
 
 .drawer-ul {
 	padding: 10px;
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: var(--font-display);
 	justify-content: space-around;
   max-width: 650px;
   align-self: center;

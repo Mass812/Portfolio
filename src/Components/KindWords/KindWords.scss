@@ -1,85 +1,101 @@
-.header {
-	box-sizing: content-box;
-	display: flex;
-	margin: 40px auto;
-	color: goldenrod;
-	font-size: calc(26px + .3vw);
-	font-family: 'Piazzolla', serif;
+/* Accolades page — same language as the résumé's Recognition block: accent-serif
+   gold title over a hairline, eyebrow role labels, one body size, hairline rows. */
+.ref-page {
+	max-width: 72ch;
+	margin: 0 auto;
+	padding: 30px 18px 70px;
 }
 
-.bio-card-block {
-	//display: flex;
-	max-width: 100%;
-	padding: 10px;
+.ref-header {
+	margin: 10px 0 4px;
+	font-family: var(--font-accent);
+	font-size: var(--text-xl);
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: rgb(228, 190, 37);
+	padding-bottom: 14px;
+	border-bottom: 1px solid rgba(228, 190, 37, 0.25);
 }
 
-.bio-card {
-	display: flex;
-	flex-direction: column;
-
-	display: flex;
-	padding: 10px;
-	border-radius: 10px;
-	margin: auto;
-
-	background-color: rgba(46, 44, 44, 0.418);
-	box-shadow: 1px 1px 2px rgb(87, 87, 87), -1px -1px 2px rgb(87, 87, 87);
-}
-
-.bio-card-top {
-	display: flex;
-	justify-content: space-between;
-}
-
-.bio-card-bottom {
-	padding: 20px 20px 30px 20px;
-	color: white;
+.ref-lede {
+	margin: 14px 0 6px;
+	font-family: var(--font-body);
+	font-size: var(--text-xs);
 	font-weight: 100;
-	font-family: 'Tenor Sans', serif;
-	font-size: calc(14px + 0.2vw);
-	word-spacing: 1.3px;
+	line-height: var(--leading-body);
+	letter-spacing: 0.4px;
+	color: rgba(245, 245, 245, 0.82);
 }
 
-.picture {
-	border: solid;
-	border-color: rgb(77, 75, 75);
-	background-repeat: no-repeat;
-
-	margin-left: 10px;
-	background-size: contain;
-	height: 100px;
-	width: 100px;
-	min-height: 100px;
-	min-width: 100px;
-
-	border-radius: 10px;
+.ref-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-.ref-details {
+.ref-item {
+	padding: 28px 0;
+	border-bottom: 1px solid rgba(245, 245, 245, 0.07);
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.ref-head {
 	display: flex;
-	flex-direction: column;
-	justify-content: right;
-
-	margin-left: auto;
-	width: 100%;
-
-	padding: 10px;
+	align-items: center;
+	gap: 16px;
+	padding-bottom: 14px;
 }
 
-.name {
+.ref-photo {
+	flex-shrink: 0;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 1px solid rgba(228, 190, 37, 0.35);
+}
+
+/* Shown when a reference has no headshot on file — keeps the layout identical
+   to the photo variant instead of rendering a broken image. */
+.ref-monogram {
 	display: flex;
-	align-self: flex-end;
-	justify-self: right;
-	font-size: 22px;
-	color: goldenrod;
-	text-align: left;
-	font-family: 'Piazzolla', serif;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	background-color: rgb(38, 38, 38);
+	font-family: var(--font-display);
+	font-size: var(--text-md);
+	color: rgba(228, 190, 37, 0.85);
+	user-select: none;
 }
 
-.title {
-	font-size: 12px;
-	text-align: right;
+.ref-name {
+	font-family: var(--font-body);
+	font-size: var(--text-base);
+	color: rgb(250, 249, 248);
+	padding-bottom: 4px;
+}
 
-	color: rgba(39, 192, 197, 0.959);
-	font-family: 'Piazzolla', serif;
+.ref-title {
+	font-family: var(--font-body);
+	font-size: var(--text-2xs);
+	letter-spacing: 1.1px;
+	text-transform: uppercase;
+	color: rgb(9, 194, 207);
+}
+
+.ref-quote {
+	margin: 0;
+	padding-left: 18px;
+	border-left: 2px solid rgba(228, 190, 37, 0.25);
+	font-family: var(--font-body);
+	font-size: var(--text-sm);
+	font-weight: 100;
+	font-style: italic;
+	line-height: var(--leading-body);
+	letter-spacing: 0.5px;
+	color: rgba(245, 245, 245, 0.8);
 }

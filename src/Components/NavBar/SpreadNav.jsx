@@ -7,7 +7,7 @@ const SpreadNav = ({ onClick }) => {
 	return (
 		<nav className='header-drawer-parent'>
 			<ul className='header-drawer-ul' onClick={onClick}>
-				<Link to='/' exact='true' style={{ textDecoration: 'none' }}>
+				<Link to='/' style={{ textDecoration: 'none' }}>
 					<Button>Home</Button>
 				</Link>
 				<Link to='/about' style={{ textDecoration: 'none' }}>
@@ -18,12 +18,6 @@ const SpreadNav = ({ onClick }) => {
 				</Link>
 				<Link to='/references' style={{ textDecoration: 'none' }}>
 					<Button>Accolades</Button>
-				</Link>
-				<Link to='/projects' style={{ textDecoration: 'none' }}>
-					<Button>Examples</Button>
-				</Link>
-				<Link to='/additional' style={{ textDecoration: 'none' }}>
-					<Button>More</Button>
 				</Link>
 			</ul>
 		</nav>

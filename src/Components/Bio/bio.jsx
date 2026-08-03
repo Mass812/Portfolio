@@ -1,8 +1,6 @@
-import React, { Fragment } from 'react';
-import BusinessCharacteristics from './BusinessCharacteristics';
+import React from 'react';
 import DisplayedIcons from './DisplayedIcons';
 import Education from './Education';
-import Strengths from './Strengths';
 import Certifications from './Certifications';
 import './Bio.scss';
 
@@ -11,19 +9,20 @@ const Bio = () => {
 		<div className='parent'>
 			<div className='bio-wrapper'>
 				<div className='bio-parent'>
-					<div className='bio-subtitle'>
-						<div> Proficiencies </div>
-					</div>
-					<Fragment>
-						<DisplayedIcons />
-					</Fragment>
+					<p className='bio-intro'>
+						Self-taught engineer with a science background. My strength is
+						system design and infrastructure &mdash; real-time event
+						platforms, inventory systems, and the developer tooling that
+						makes the hard work easier for everyone else.
+					</p>
 
-					<Fragment>
-						<BusinessCharacteristics />
-						<Strengths />
-						<Education />
-						<Certifications />
-					</Fragment>
+					<section className='bio-section'>
+						<h2 className='bio-section-title'>Proficiencies</h2>
+						<DisplayedIcons />
+					</section>
+
+					<Education />
+					<Certifications />
 				</div>
 			</div>
 		</div>

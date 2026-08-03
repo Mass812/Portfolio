@@ -21,12 +21,32 @@ const Certifications = () => {
         " Express",
         " NestJS",
         " Node",
-        " MongoDb",
+        " MongoDB",
         " Google Firebase Firestore and Cloud Functions",
-        " AWS Beanstalk, S3 & DynamoDb",
-        " GraphQl",
+        " AWS Beanstalk, S3 & DynamoDB",
+        " GraphQL",
         " Apollo Server",
         " NoSQL",
+        " Postgres (incl. stored procedures)",
+      ],
+    },
+    {
+      id: 8,
+      title: "Messaging & Event Streaming",
+      items: [
+        " Apache Kafka (multi-brand topics, consumer groups)",
+        " RabbitMQ",
+        " Event-driven service architecture",
+      ],
+    },
+    {
+      id: 9,
+      title: "CI / CD, Testing & Observability",
+      items: [
+        " GitHub Actions (canary & stable pipelines)",
+        " Postman / Newman automated API regression",
+        " Jest",
+        " Service monitoring & alerting",
       ],
     },
     {
@@ -43,10 +63,10 @@ const Certifications = () => {
       id: 3,
       title: "Languages",
       items: [
-        " Javascript (ES6 destructuring, async await, try/catch, arrow Fx, ...all the rest)",
+        " JavaScript (ES6+)",
         " JSX",
-        " Typescript",
-        " familiar with python and C++",
+        " TypeScript",
+        " Python and C++ (working knowledge)",
       ],
     },
 
@@ -61,7 +81,6 @@ const Certifications = () => {
         " React Helmet",
         " Moment, DayJs",
         " GSAP (GreenSock Animations)",
-        " Really?! just any Api with docs.",
       ],
     },
     {
@@ -75,35 +94,24 @@ const Certifications = () => {
     },
   ];
 
-  const certifications = cert.map((el, idx) => (
-    <div key={el.id} style={{ paddingTop: 25 }}>
-      <span style={{ fontStyle: "italic", color: `#219cb${9 - idx}` }}>
-        {" "}
-        {el.title}
-      </span>
-      <ul className="business-characteristic-ul">
+  const certifications = cert.map((el) => (
+    <div className="knowledge-group" key={el.id}>
+      <div className="knowledge-group-title">{el.title}</div>
+      <ul className="knowledge-list">
         {el.items.map((n, idx) => (
-          <div key={idx}>
-            {/* <FontAwesomeIcon icon={faAsterisk} size='sm' style={{ color: 'gold' }} /> */}
-
-            <span
-              style={{ color: "lightgrey", width: "95%", textAlign: "right" }}
-            >
-              {n}
-            </span>
-          </div>
+          <li className="knowledge-item" key={idx}>
+            {n.trim()}
+          </li>
         ))}
       </ul>
     </div>
   ));
 
   return (
-    <div>
-      <div className="bio-subtitle">
-        Knowledge
-        <div className="business-characteristic-parent">{certifications}</div>
-      </div>
-    </div>
+    <section className="bio-section">
+      <h2 className="bio-section-title">Knowledge</h2>
+      <div className="knowledge-grid">{certifications}</div>
+    </section>
   );
 };
 export default Certifications;

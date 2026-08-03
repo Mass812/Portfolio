@@ -22,7 +22,7 @@
 	box-sizing: border-box; //ensures lines stay inside of button
 	font-size: calc(24px + .5vw);
 	text-shadow: #000000 1px 1px;
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: var(--font-display);
 	&::first-letter {
 		color: white;
 	}

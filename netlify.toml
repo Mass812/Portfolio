@@ -1,0 +1,56 @@
+# Netlify configuration — single source of truth for build, redirects and headers.
+#
+# Custom domain checklist (one-time, in the Netlify dashboard):
+#   1. Domain settings → Add domain → mattwellman.info (set as primary),
+#      plus www.mattwellman.info as an alias.
+#   2. DNS: either point Squarespace records at Netlify (A @ → 75.2.60.5,
+#      CNAME www → <site>.netlify.app) or move the domain onto Netlify DNS by
+#      switching nameservers at Squarespace.
+#   3. HTTPS is provisioned automatically once DNS resolves.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# --- Domain canonicalization -------------------------------------------------
+# Order matters: this 301 must run before the SPA catch-all.
+
+[[redirects]]
+  from = "https://www.mattwellman.info/*"
+  to = "https://mattwellman.info/:splat"
+  status = 301
+  force = true
+
+# --- SPA fallback ------------------------------------------------------------
+# Deep links (/resume, /about, …) serve index.html and the router takes over.
+# These rules live here rather than in a public/_redirects file because
+# _redirects is processed first and its catch-all would shadow the 301 above.
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# --- Headers -----------------------------------------------------------------
+
+# Vite emits content-hashed filenames under /assets — safe to cache forever.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# The résumé is replaced in-place on redeploys, so keep its cache short.
+[[headers]]
+  for = "/MattWellman-Resume.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"

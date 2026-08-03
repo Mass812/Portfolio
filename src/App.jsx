@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route, Navigate, BrowserRouter as Router } from 'react-router-dom';
 import Bio from './Components/Bio/bio';
 import SideDrawer from './Components/SideDrawer/SideDrawer';
 
@@ -9,9 +9,7 @@ import FoggedGlass from './Components/FoggedGlass/FoggedGlass';
 import KindWords from './Components/KindWords/KindWords';
 import Home from './Components/Home/Home';
 import Resume from './Components/Resume/Resume';
-import More from './Components/More/More';
 
-import Projects from './Components/Projects/Projects';
 import ScrollReset from './Components/ScrollReset/ScrollReset';
 import NavBar from './Components/NavBar/NavBar';
 
@@ -22,11 +20,7 @@ const App = () => {
 	] = useState(false);
 
 	const runHideShow = () => {
-		setSideDrawerOpen((prev) => {
-			const value = setSideDrawerOpen(!prev);
-			console.log(value);
-			return value;
-		});
+		setSideDrawerOpen((prev) => !prev);
 	};
 
 	const exitMenu = () => {
@@ -38,21 +32,26 @@ const App = () => {
 	const expandFog = sideDrawerOpen ? <FoggedGlass unFogGlass={exitMenu} /> : null;
 
 	return (
-		<Router>
+		<Router
+			future={{
+				v7_startTransition   : true,
+				v7_relativeSplatPath : true
+			}}
+		>
 			<ScrollReset />
-			<div style={{ height: '100' }}>
+			<div>
 				<NavBar pushShowHide={runHideShow} />
 				<hr className='header-break' />
 				{expandSide} {expandFog}
 				<main>
-					<Switch>
-						<Route path='/' exact={true} component={Home} />
-						<Route path='/about' component={Bio} />
-						<Route path='/resume' component={Resume} />
-						<Route path='/references' component={KindWords} />
-						<Route path='/projects' component={Projects} />
-						<Route path='/additional' component={More} />
-					</Switch>
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path='/about' element={<Bio />} />
+						<Route path='/resume' element={<Resume />} />
+						<Route path='/references' element={<KindWords />} />
+						{/* Stale bookmarks (/projects, /additional) land on Home. */}
+						<Route path='*' element={<Navigate to='/' replace />} />
+					</Routes>
 				</main>
 			</div>
 		</Router>

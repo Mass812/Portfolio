@@ -1,177 +1,67 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGit, faJsSquare, faReact, faHtml5, faLess, faNode, faPython, faSass, faMicrosoft, faMdb, faNpm, faGithubSquare, faAppStore, faGoogle, faApple, faAndroid, faAws, faBitbucket, faCcStripe } from '@fortawesome/free-brands-svg-icons';
+import { faTowerBroadcast, faEnvelopesBulk } from '@fortawesome/free-solid-svg-icons';
+
+// Rendered in DOM order. FontAwesome ships no Kafka or RabbitMQ brand mark, so
+// those two borrow solid icons that read as "event stream" and "message queue";
+// the `label` is what identifies them to a reader or a screen reader.
+const ICONS = [
+	{ icon: faAndroid, label: 'Android' },
+	{ icon: faBitbucket, label: 'Bitbucket' },
+	{ icon: faApple, label: 'Apple / iOS' },
+	{ icon: faAppStore, label: 'App Store' },
+	{ icon: faJsSquare, label: 'JavaScript' },
+	{ icon: faGit, label: 'Git' },
+	{ icon: faReact, label: 'React & React Native' },
+	{ icon: faHtml5, label: 'HTML5' },
+	{ icon: faNode, label: 'Node.js' },
+	{ icon: faPython, label: 'Python' },
+	{ icon: faSass, label: 'Sass' },
+	{ icon: faLess, label: 'Less' },
+	{ icon: faMdb, label: 'MDB' },
+	{ icon: faGithubSquare, label: 'GitHub' },
+	{ icon: faNpm, label: 'npm' },
+	{ icon: faTowerBroadcast, label: 'Apache Kafka' },
+	{ icon: faEnvelopesBulk, label: 'RabbitMQ' },
+	{ icon: faAws, label: 'AWS' },
+	{ icon: faGoogle, label: 'Google' },
+	{ icon: faMicrosoft, label: 'Microsoft' },
+	{ icon: faCcStripe, label: 'Stripe' }
+];
 
 const DisplayedIcons = () => {
-	let titleArea,
-		icon,
-		js,
-		git,
-		react,
-		html5,
-		node,
-		py,
-		sass,
-		mdb,
-		excel,
-		github,
-		npm,
-		ms,
-		gdrive,
-		word,
-		powerpoint,
-		pie,
-		google,
-		dochub,
-		less = useRef();
+	const iconList = useRef(null);
 
-	useEffect(() => {
-		window.gsap.fromTo(
-			[
-				word,
-				js,
-				github,
-				git,
-				less,
-				react,
-				excel,
-				node,
-				py,
-				dochub,
-				sass,
-				mdb,
-				npm,
-				html5,
-				google,
-				ms,
-				gdrive,
-				powerpoint,
-				pie
-			],
-			{
-				scale    : 0,
-				delay    : 10,
-				duration : 0.3,
-				ease     : 'Sine.easeIn',
-				display  : 'inline-block',
-				stagger  : 0.2,
-				color    : '#566b75'
-			},
-			{
-				scale    : 1.4,
-				stagger  : 0.1,
-				duration : 0.3,
-				color    : '#566b75'
-			}
-		);
-		window.gsap
-			.timeline([
-				icon,
-				{ duration: 0.3, delay: 5 }
-			])
-			.staggerTo(
-				[
-					excel,
-					word,
-					powerpoint,
-					dochub,
-					js,
-					git,
-					react,
-					html5,
-					node,
-					py,
-					github,
-					sass,
-					less,
-					mdb,
-					npm,
-					google,
-					ms,
-					gdrive,
-					pie
-				],
-				{},
-				{
-					delay    : 2.2,
-					duration : 1.8,
-					scale    : 1.4,
-					stagger  : 0.03,
-					color    : '#219CB4',
-					display  : 'inline-block',
-					ease     : 'Power0.easeInOut'
-				}
-			);
+	// useLayoutEffect, not useEffect: the tween's starting state has to be in
+	// place before the browser paints, otherwise the icons flash at full size
+	// for a frame and then snap back to scale 0 to animate in.
+	useLayoutEffect(() => {
+		const ctx = gsap.context(() => {
+			gsap.from(iconList.current.children, {
+				scale      : 0,
+				opacity    : 0,
+				duration   : 0.4,
+				stagger    : 0.045,
+				ease       : 'back.out(1.7)',
+				clearProps : 'scale,opacity'
+			});
+		}, iconList);
 
-		// eslint-disable-next-line
-	}, []); /* eslint-disable-line no-alert, quotes, semi */
+		return () => ctx.revert();
+	}, []);
 
 	return (
 		<div>
-			<div className='bio-title-area' ref={(cr) => titleArea}>
+			<div className='bio-title-area'>
 				<div>
-					<ul className='icon-splay' ref={(cr) => (icon = cr)}>
-						<div ref={(cr) => (excel = cr)}>
-							<FontAwesomeIcon icon={faAndroid} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (word = cr)}>
-							<FontAwesomeIcon icon={faBitbucket} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (powerpoint = cr)}>
-							<FontAwesomeIcon icon={faApple} className='icon-bar-li-bio' size='lg' />
-						</div>
-
-						<div ref={(cr) => (dochub = cr)}>
-							<FontAwesomeIcon icon={faAppStore} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (js = cr)}>
-							<FontAwesomeIcon icon={faJsSquare} className='icon-bar-li-bio' size='lg' />
-						</div>
-
-						<div ref={(cr) => (git = cr)}>
-							<FontAwesomeIcon icon={faGit} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (react = cr)}>
-							<FontAwesomeIcon icon={faReact} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (html5 = cr)}>
-							<FontAwesomeIcon icon={faHtml5} className='icon-bar-li-bio' size='lg' />
-						</div>
-
-						<div ref={(cr) => (node = cr)}>
-							<FontAwesomeIcon icon={faNode} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (py = cr)}>
-							<FontAwesomeIcon icon={faPython} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (sass = cr)}>
-							<FontAwesomeIcon icon={faSass} className='icon-bar-li-bio' size='lg' />
-						</div>
-
-						<div ref={(cr) => (less = cr)}>
-							<FontAwesomeIcon icon={faLess} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (mdb = cr)}>
-							<FontAwesomeIcon icon={faMdb} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (github = cr)}>
-							<FontAwesomeIcon icon={faGithubSquare} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (npm = cr)}>
-							<FontAwesomeIcon icon={faNpm} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (pie = cr)}>
-							<FontAwesomeIcon icon={faAws} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (google = cr)}>
-							<FontAwesomeIcon icon={faGoogle} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (ms = cr)}>
-							<FontAwesomeIcon icon={faMicrosoft} className='icon-bar-li-bio' size='lg' />
-						</div>
-						<div ref={(cr) => (gdrive = cr)}>
-							<FontAwesomeIcon icon={faCcStripe} className='icon-bar-li-bio' size='lg' />
-						</div>
+					<ul className='icon-splay' ref={iconList}>
+						{ICONS.map(({ icon, label }) => (
+							<li className='icon-splay-item' key={label} title={label}>
+								<FontAwesomeIcon icon={icon} className='icon-bar-li-bio' />
+							</li>
+						))}
 					</ul>
 				</div>
 			</div>
