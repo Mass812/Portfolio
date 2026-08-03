@@ -16,6 +16,9 @@
 	display: flex;
 	flex-direction: column;
 	min-height: calc(100vh - 130px);
+	/* Phones: 100vh includes the collapsing URL-bar zone, causing bounce and
+	   phantom space; dvh tracks the real visible viewport (iOS 15.4+). */
+	min-height: calc(100dvh - 130px);
 	box-sizing: content-box;
 	width: 100%;
 }
@@ -24,11 +27,13 @@
 	background-color: transparent;
 	object-position: center;
 	display: flex;
-	margin: auto;
+	/* The hero owns all flexible space; the identity lockup centers within it,
+	   which pushes the title/stats block to the bottom of the viewport. */
+	flex: 1;
+	justify-content: center;
+	margin: 0 auto;
 	flex-direction: column;
 	width: 100%;
-	height: 100%;
-	
 }
 
 
@@ -68,40 +73,85 @@
 .home-subtitle {
 	color: goldenrod;
 	font-family: var(--font-body);
-	font-size: var(--text-sm);
-	letter-spacing: clamp(1.4px, 0.6vw, 3px);
+	font-size: var(--text-xs);
+	letter-spacing: clamp(1.2px, 0.5vw, 2.6px);
 	text-transform: uppercase;
 	text-align: center;
-	margin: 6px 0 18px;
+	margin: 0;
 	padding: 0 18px;
 }
 
-.home-subTitle2 {
+/* Brand strip — typographic wordmarks in one muted tone (logo-cloud convention)
+   so the identities read as a set. Lives under the stat row. */
+.home-brands {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: center;
+	gap: 12px clamp(9px, 1.2vw, 13px);
+	margin: 6px auto 0;
+	padding: 0 18px;
+}
+
+.home-brand-dot {
+	color: rgb(228, 190, 37);
+	font-size: calc(var(--text-xl) * 1.35);
+	line-height: 0.6;
 	align-self: center;
+}
+
+/* Short gold rule between the title and the SUPPORTING stats. */
+.home-stats-sep {
+	width: clamp(120px, 18vw, 210px);
+	height: 1px;
+	margin: 16px auto 20px;
+	background: rgba(228, 190, 37, 0.5);
+}
+
+.home-brand {
+	color: rgba(245, 245, 245, 0.48);
+	cursor: default;
+	transition: color 0.25s ease;
+
+	&:hover {
+		color: rgba(245, 245, 245, 0.92);
+	}
+}
+
+/* Fabletics — clean geometric sans, wide-tracked caps. */
+.home-brand--fabletics {
 	font-family: var(--font-body);
-	font-size: var(--text-sm);
-	font-weight: 300;
-	letter-spacing: 0.6px;
-	line-height: 2;
-	color: rgba(223, 222, 222, 0.85);
-	text-align: center;
-	background: transparent;
+	font-size: var(--text-base);
+	font-weight: 400;
+	letter-spacing: 4px;
+	text-transform: uppercase;
 }
 
-.home-role-sep {
-	padding: 0 12px;
-	color: rgba(228, 190, 37, 0.55);
+/* Savage X Fenty — fashion-serif caps, the X set off in gold. */
+.home-brand--sxf {
+	font-family: var(--font-accent);
+	font-size: var(--text-base);
+	font-weight: 400;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+
+	em {
+		font-style: italic;
+		color: rgba(228, 190, 37, 0.75);
+		padding: 0 2px;
+	}
+
+	&:hover em {
+		color: rgb(228, 190, 37);
+	}
 }
 
-.home-subTitle3 {
-	align-self: center;
-}
-
-/* Stat row pinned toward the bottom of the hero viewport. The bottom padding
-   clears the fixed contact pill (bottom: 14px, ~50px tall). */
+/* Title + stat block: flex pushes it toward the bottom, but the paddings act
+   as floors — a guaranteed gap below the brand lockup above, and enough air
+   beneath the stats that the contact pill (bottom: 14px, ~50px tall) floats
+   clear rather than touching the content. */
 .home-stats {
-	margin-top: auto;
-	padding: 30px 18px 96px;
+	padding: clamp(40px, 6vh, 90px) 18px calc(56px + env(safe-area-inset-bottom, 0px));
 	text-align: center;
 }
 

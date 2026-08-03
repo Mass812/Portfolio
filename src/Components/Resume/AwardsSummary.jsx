@@ -27,7 +27,7 @@ const AWARDS = [
     name: "Inaugural Masters of Innovation",
     scope: "Industry — awarded to Fabletics",
     note:
-      "Presented by Let's Talk Supply Chain and SupplyChainBrain at Manifest: The Future of Supply Chain & Logistics, for the RFID programme I led the core architecture and inventory-stack integration on.",
+      "Presented by Let's Talk Supply Chain and SupplyChainBrain at Manifest: The Future of Supply Chain & Logistics, for the retail-inventory programme I led the core architecture and integration on.",
   },
 ];
 
@@ -37,8 +37,8 @@ const AwardsSummary = () => {
       <div className="awards-summary-title">Recognition</div>
       <p className="awards-summary-lede">
         Two distinct Global Recognition Awards at Fabletics &mdash; one
-        individual, one by team nomination &mdash; plus an industry award for the
-        RFID programme.
+        individual, one by team nomination &mdash; plus an industry award for
+        the inventory platform.
       </p>
 
       <ul className="awards-summary-list">

@@ -362,6 +362,35 @@ a {
 	color: rgb(9, 194, 207);
 }
 
+/* TL;DR — the ten-second read above Recognition. Same language: accent-serif
+   gold title over a hairline, one body measure. */
+.tldr {
+	max-width: 72ch;
+	margin: 0 auto 38px;
+	padding: 0 18px;
+}
+
+.tldr-title {
+	margin: 0 0 4px;
+	font-family: var(--font-accent);
+	font-size: var(--text-md);
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: $accent;
+	padding-bottom: 14px;
+	border-bottom: 1px solid rgba(228, 190, 37, 0.25);
+}
+
+.tldr-body {
+	margin: 14px 0 0;
+	font-family: var(--font-body);
+	font-size: var(--text-sm);
+	font-weight: 100;
+	line-height: var(--leading-body);
+	letter-spacing: 0.5px;
+	color: rgba(245, 245, 245, 0.82);
+}
+
 /* Recognition block, above the career timeline. */
 .awards-summary {
 	max-width: 72ch;

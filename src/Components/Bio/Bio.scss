@@ -57,6 +57,15 @@ $proficiency-icon-color: #219cb4;
 	letter-spacing: 0.5px;
 	color: rgba(245, 245, 245, 0.8);
 	text-align: center;
+
+	/* Stanzas — each lands on a gold selling point. */
+	p {
+		margin: 0 0 18px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .bio-section {

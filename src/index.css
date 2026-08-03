@@ -25,6 +25,14 @@
   --leading-body: 1.75;
 }
 
+html,
+body {
+  /* Real mobile browsers let any transient overflow (animation frames,
+     sub-pixel rounding) pan the page sideways — clip guards against it
+     without creating a new scroll container the way `hidden` would. */
+  overflow-x: clip;
+}
+
 body {
   box-sizing: content-box;
   margin: 0;
@@ -35,4 +43,11 @@ body {
 
 code {
   font-family: var(--font-mono);
+}
+
+/* Sparse gold emphasis for load-bearing phrases in body copy. Use rarely —
+   one per page at most — or it stops meaning anything. */
+.gilt {
+  color: rgb(228, 190, 37);
+  font-weight: 400;
 }

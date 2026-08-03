@@ -54,6 +54,25 @@ const Resume = () => {
         <div className="hard-resume-text">Download R&eacute;sum&eacute; (PDF)</div>
       </div>
 
+      {/* Ten-second read for the non-clicker: trajectory, platform, app.
+          Awards deliberately live in Recognition below — no duplication. */}
+      <section className="tldr">
+        <h2 className="tldr-title">TL;DR</h2>
+        <p className="tldr-body">
+          High-impact developer with a lot of momentum &mdash; six years at
+          Fabletics, <span className="gilt">multiple promotions, and
+          company-wide recognition</span>. I led
+          the core architecture of the real-time inventory
+          platform and its Kafka event framework &mdash; live across 159
+          stores and two brands &mdash; and led the modernization of the
+          retail backend's legacy repositories into a modular monorepo. I
+          also built the Fabletics FIT app and was its sole full-stack
+          developer for most of its life &mdash; 4.8&#9733; on iOS across
+          5,475+ reviews, 548k downloads, 12 countries, and a major driver of
+          member engagement.
+        </p>
+      </section>
+
       <AwardsSummary />
 
       <ResumeCard
@@ -94,12 +113,12 @@ const Resume = () => {
               {
                 label: "Real-time event framework",
                 text:
-                  "I built the Kafka event stream behind RFID, replacing implicit integrations with explicit POS, movement, sold and adjustment events across both the Fabletics and Savage X Fenty brands — multi-brand topic design, consumer group management, and a per-store canary rollout.",
+                  "I built the Kafka event stream behind the platform, replacing implicit integrations with explicit POS, movement, sold and adjustment events across both the Fabletics and Savage X Fenty brands — multi-brand topic design, consumer group management, and a per-store canary rollout.",
               },
               {
                 label: "Monitoring and alerting",
                 text:
-                  "I instrumented the RFID integration before launch, so the platform was observable and its health provable on day one rather than after the first incident.",
+                  "I instrumented the integration before launch, so the platform was observable and its health provable on day one rather than after the first incident.",
               },
               {
                 label: "Inventory integrity",
@@ -162,7 +181,7 @@ const Resume = () => {
         ]}
         safe={moreAboutRetail}
         textWhenMore={
-          "The through-line in this work is that inventory accuracy is an infrastructure problem, not a reporting one. Before RFID, the business could only establish true inventory ownership twice a year through full physical counts, and every omni-channel fulfillment decision in between was made against an estimate. Fixing that meant more than adding a scanner: the integrations had to become explicit events rather than implicit side effects, the fifteen-odd divergent ways the codebase moved stock had to collapse into one reviewable pattern, and reconciliation had to be able to prove the system's numbers against what physically happened. The rollout was deliberately unglamorous — one canary store, then outward — because a platform that writes inventory to production is one you want to be able to roll back."
+          "The through-line in this work is that inventory accuracy is an infrastructure problem, not a reporting one. Before the rollout, the business could only establish true inventory ownership twice a year through full physical counts, and every omni-channel fulfillment decision in between was made against an estimate. Fixing that meant more than adding a scanner: the integrations had to become explicit events rather than implicit side effects, the fifteen-odd divergent ways the codebase moved stock had to collapse into one reviewable pattern, and reconciliation had to be able to prove the system's numbers against what physically happened. The rollout was deliberately unglamorous — one canary store, then outward — because a platform that writes inventory to production is one you want to be able to roll back."
         }
         onClickMore={moreRetail}
         teamAward
@@ -183,10 +202,10 @@ const Resume = () => {
           { period: "Mar 2021 — Oct 2021", title: "Software Engineer, Jr." },
         ]}
         p1={
-          "I am the primary full stack mobile developer on the Fabletics FIT app, a member-exclusive workout experience for iOS and Android. The front end is React Native and TypeScript alongside Segment, SailThru, Emarsys and Firebase Analytics; the backend is DynamoDB, Strapi, Postgres, Terraform and GraphQL. I am responsible for every aspect of the app, from feature creation through app store deployment."
+          "The Fabletics FIT app is a member-exclusive workout experience for iOS and Android — React Native and TypeScript over DynamoDB, Strapi, Postgres, Terraform and GraphQL, alongside Segment, SailThru, Emarsys and Firebase Analytics. For most of its life I was its sole full-stack developer, responsible for every feature from creation through app store deployment."
         }
         highlight1={
-          "The app carries a 4.8-star rating across 5,475+ iOS App Store reviews and 4.6 stars on Android, and I am the only full stack developer at Techstyle Fashion Group."
+          "The app carries a 4.8-star rating across 5,475+ iOS App Store reviews and 4.6 stars on Android, and remains a major driver of member engagement and retention."
         }
         highlight2={
           "Before interviewing for this role, I learned the stack — DynamoDB, GraphQL, Apollo Server, TypeScript, urql — and built a working version of the app in it before the interview."
