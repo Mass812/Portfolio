@@ -816,3 +816,12 @@ a {
 	color:rgb(172, 163, 126);
 	font-size: var(--text-xs);
 }
+
+/* Desktop: the timeline shares the Recognition block's reading measure instead
+   of drifting wider — one aligned column down the whole page. */
+.edge-down {
+	width: 100%;
+	max-width: calc(72ch + 63px);
+	margin-left: auto;
+	margin-right: auto;
+}

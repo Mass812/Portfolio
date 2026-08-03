@@ -99,3 +99,20 @@
 	letter-spacing: 0.5px;
 	color: rgba(245, 245, 245, 0.8);
 }
+
+/* Desktop: testimonials read well two-up; each card stays intact per column. */
+@media (min-width: 1000px) {
+	.ref-page {
+		max-width: 118ch;
+	}
+
+	.ref-list {
+		column-count: 2;
+		column-gap: 56px;
+	}
+
+	.ref-item {
+		break-inside: avoid;
+		-webkit-column-break-inside: avoid;
+	}
+}

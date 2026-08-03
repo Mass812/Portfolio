@@ -57,7 +57,6 @@ const Resume = () => {
       <AwardsSummary />
 
       <ResumeCard
-        defaultOpen
         company={"Fabletics Retail"}
         startDate={"October 2022"}
         endDate={"Present"}
