@@ -54,3 +54,11 @@ align-content: center;
   align-self: center;
 }
   }    
+/* The drawer is the primary nav on phones — its items need touch-target type,
+   not the header bar's compact eyebrow size. */
+.drawer-ul .button-li {
+	font-size: var(--text-base);
+	letter-spacing: 3.2px;
+	padding: 12px 8px;
+	margin: 1.1em 1.1em;
+}
