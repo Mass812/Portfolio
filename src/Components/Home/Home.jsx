@@ -63,8 +63,8 @@ const Home = () => {
 		<div>
 			<HelmetMeta
 				titleString={'Matt Wellman Louisville React & React Native Developer'}
-				quoteString={'Making life easier one app at a time.'}
-				bodyString={"Senior Software Engineer at Fabletics. Self-taught — I learned their stack and built the FIT app in a month, then led the real-time inventory platform across 159 retail stores."}
+				descriptionString={"Senior Software Engineer at Fabletics. Self-taught — I learned their stack and built the FIT app in a month, then led the real-time inventory platform across 159 retail stores."}
+				path={'/'}
 			/>
 			<div className='home-container'>
 				<div className='home-top'>
@@ -72,9 +72,12 @@ const Home = () => {
 						<img src={mattWebP} alt='mw_logo' className='home-icon' ref={img} />
 					</div>
 					<div className='home-bottom'>
-						<div className='home-name' ref={name}>
+						{/* The site's only h1 belongs here, not on a secondary page — it's
+						    the strongest single on-page signal for what this page (and
+						    site) is about: this person's name. */}
+						<h1 className='home-name' ref={name}>
 							Matt Wellman
-						</div>
+						</h1>
 
 						{/* Identity lockup: name with the brand wordmarks tight beneath.
 						    Typographic wordmarks rather than logo images — one muted tone

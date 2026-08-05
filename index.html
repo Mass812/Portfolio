@@ -38,6 +38,28 @@
     />
     <link rel="manifest" href="/manifest.json" />
 
+    <!-- Person structured data — helps Google recognize "Matt Wellman" as this
+         specific entity (a software engineer at Fabletics) rather than any of
+         the other people who share the name. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Matt Wellman",
+        "url": "https://mattwellman.info/",
+        "image": "https://mattwellman.info/og-image.jpg",
+        "jobTitle": "Senior Software Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Fabletics"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/matt-wellman-154301a3",
+          "https://github.com/Mass812"
+        ]
+      }
+    </script>
+
     <title>Matt Wellman</title>
   </head>
   <body>

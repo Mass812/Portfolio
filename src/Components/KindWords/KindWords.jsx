@@ -1,4 +1,5 @@
 import React from 'react';
+import HelmetMeta from '../HelemetMeta/HelmetMeta';
 import './KindWords.scss';
 import TJ from '../../Assets/TJ.jpg';
 import MS from '../../Assets/MS.jfif';
@@ -94,6 +95,11 @@ function ReviewerPhoto() {
 
 	return (
 		<div className='ref-page'>
+			<HelmetMeta
+				titleString={'Matt Wellman — Accolades & Recommendations'}
+				descriptionString={'Kind words for Matt Wellman from managers, product partners and colleagues across Fabletics.'}
+				path={'/references'}
+			/>
 			<h1 className='ref-header'>Accolades</h1>
 			<p className='ref-lede'>
 				From managers, product partners and colleagues across Fabletics,

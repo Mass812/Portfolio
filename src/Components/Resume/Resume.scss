@@ -377,9 +377,12 @@ a {
 	width: 100%;
 	max-width: 72ch;
 	margin: 0 auto 38px;
-	/* Left padding dropped to 0 (right kept) so this text lands flush with
-	   the Career cards' left edge instead of 18px right of it. */
-	padding: 0 18px 0 0;
+	/* Left padding matched to the Career cards' own effective left inset
+	   (.timeline-item's padding-left:30px + .role-header's 4px) rather than
+	   the site's usual 18px, so this text lands at that same baseline. Not 0:
+	   that left this text with no breathing room at all on narrow screens,
+	   riding flush against the edge on phones like an iPhone 12 or Pixel 7. */
+	padding: 0 18px 0 34px;
 }
 
 .tldr-title {
@@ -410,14 +413,14 @@ a {
 /* `width: 100%` — see the note on .tldr above; without it, Progression's
    short rows shrink-to-fit and drift out of alignment with Recognition. */
 .awards-summary {
-	/* See the box-sizing note on .tldr above — same fix, same reason. Left
-	   padding dropped to 0 (right kept) so Recognition/Progression's title
-	   and lede text land flush with the Career cards' left edge. */
+	/* See the box-sizing note and the .tldr comment above on the left padding
+	   value — matched to Career's own inset instead of 0, which left this
+	   text with no breathing room on narrow screens. */
 	box-sizing: border-box;
 	width: 100%;
 	max-width: 72ch;
 	margin: 0 auto 40px;
-	padding: 0 18px 0 0;
+	padding: 0 18px 0 34px;
 }
 
 .awards-summary-title {
@@ -444,16 +447,29 @@ a {
    busy diagonal background rather than lightening it, so each list reads as
    inlaid, standing apart from what's behind it. */
 .awards-panel {
-	/* margin-left pulls this panel's gold bar left to line up with the
-	   Career timeline's own gold marker line (.timeline-marker:after) —
-	   padding-left grows by the same amount so the text itself doesn't move. */
-	margin: 4px 0 0 -19px;
-	padding: 4px 0 4px 29px;
+	/* Base (narrow-viewport) case: the page has no outer gutter to borrow
+	   from below ~940px (.parent's max-width:900px stops adding side margin
+	   at that point), so this stays flush with the container's own edge. */
+	margin: 4px 0 0;
+	padding: 4px 0 4px 10px;
 	background: rgba(0, 0, 0, 0.1);
 	border-left: 2px solid rgba(228, 190, 37, 0.35);
 
 	.awards-summary-item:last-child {
 		border-bottom: none;
+	}
+}
+
+/* Wide-viewport case: once .parent's max-width:900px starts adding real
+   side margin (≥940px, leaving ≥19px of gutter on each side), pull the gold
+   bar 19px left to line up with the Career timeline's own gold marker line
+   (.timeline-marker:after) — padding-left grows by the same amount so the
+   text itself doesn't move. Doing this unconditionally overflowed the bar
+   off-screen at any narrower width, where that gutter doesn't exist. */
+@media all and (min-width: 940px) {
+	.awards-panel {
+		margin-left: -19px;
+		padding-left: 29px;
 	}
 }
 

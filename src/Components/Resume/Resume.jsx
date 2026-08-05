@@ -6,6 +6,7 @@ import { faAngleRight, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import ResumeCard from "./ResumeCard";
 import AwardsSummary from "./AwardsSummary";
 import CareerProgression from "./CareerProgression";
+import HelmetMeta from "../HelemetMeta/HelmetMeta";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -45,6 +46,13 @@ const Resume = () => {
 
   return (
     <div className="parent">
+      <HelmetMeta
+        titleString={"Matt Wellman — Career & Résumé"}
+        descriptionString={
+          "Matt Wellman's career at Fabletics — Senior Software Engineer. Six years, five titles, and the real-time inventory platform across 159 retail stores."
+        }
+        path={"/resume"}
+      />
       <div className="hard-resume-block" onClick={openHardResume}>
         <FontAwesomeIcon
           icon={faFileAlt}

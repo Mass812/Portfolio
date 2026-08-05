@@ -2,11 +2,17 @@ import React from 'react';
 import DisplayedIcons from './DisplayedIcons';
 import Education from './Education';
 import Certifications from './Certifications';
+import HelmetMeta from '../HelemetMeta/HelmetMeta';
 import './Bio.scss';
 
 const Bio = () => {
 	return (
 		<div className='parent'>
+			<HelmetMeta
+				titleString={'About Matt Wellman — Education, Proficiencies & Certifications'}
+				descriptionString={'Integration-focused Software Engineer at Fabletics — education, technical proficiencies and certifications.'}
+				path={'/about'}
+			/>
 			<div className='bio-wrapper'>
 				<div className='bio-parent'>
 					{/* Each stanza lands on its gold selling point. */}
