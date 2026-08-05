@@ -23,6 +23,14 @@
   /* Line heights: tight for headings, generous for reading. */
   --leading-tight: 1.3;
   --leading-body: 1.75;
+
+  /* Date-stamp colour — the small uppercase timestamps beside Recognition,
+     Progression and Education entries. A muted warm taupe reads as metadata
+     at a glance, sits closer to the site's warm gold/whitesmoke palette than
+     a cool blue would, and stays clear of gold (structure), teal
+     (current-role / status labels) and orange (award-scope chips) elsewhere
+     on the page. */
+  --color-datestamp: #9a968c;
 }
 
 html,

@@ -5,6 +5,7 @@ import { faUps, faReact } from "@fortawesome/free-brands-svg-icons";
 import { faAngleRight, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import ResumeCard from "./ResumeCard";
 import AwardsSummary from "./AwardsSummary";
+import CareerProgression from "./CareerProgression";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -75,6 +76,8 @@ const Resume = () => {
 
       <AwardsSummary />
 
+      <CareerProgression />
+
       <ResumeCard
         company={"Fabletics Retail"}
         startDate={"October 2022"}
@@ -88,18 +91,6 @@ const Resume = () => {
         highlight1={
           "I support omni retail systems across 134 Fabletics retail stores in the US, 10 stores across the EU, and 15 Savage X Fenty stores in the US."
         }
-        progression={[
-          {
-            period: "Oct 2024 — Present",
-            title: "Senior Software Engineer",
-            current: true,
-          },
-          { period: "Aug 2024 — Oct 2024", title: "Software Engineer II" },
-          {
-            period: "Oct 2022 — Aug 2024",
-            title: "Fabletics Omni / Retail Software Engineer",
-          },
-        ]}
         featureGroups={[
           {
             period: "Oct 2024 — Present",
@@ -164,7 +155,7 @@ const Resume = () => {
           },
           {
             period: "Oct 2022 — Aug 2024",
-            title: "Omni / Retail Software Engineer → Software Engineer II",
+            title: "Software Engineer I → Software Engineer II",
             items: [
               {
                 label: "Monorepo architecture",
@@ -193,14 +184,6 @@ const Resume = () => {
         duration={""}
         position={"Primary Software Engineer, Fabletics FIT"}
         icon={faAngleRight}
-        progression={[
-          {
-            period: "Oct 2021 — Present",
-            title: "Primary Software Engineer, Fabletics FIT",
-            current: true,
-          },
-          { period: "Mar 2021 — Oct 2021", title: "Software Engineer, Jr." },
-        ]}
         p1={
           "The Fabletics FIT app is a member-exclusive workout experience for iOS and Android — React Native and TypeScript over DynamoDB, Strapi, Postgres, Terraform and GraphQL, alongside Segment, SailThru, Emarsys and Firebase Analytics. For most of its life I was its sole full-stack developer, responsible for every feature from creation through app store deployment."
         }

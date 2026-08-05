@@ -22,6 +22,20 @@ backdrop-filter: opacity(.2);
 }
 
 
+/* Home drops this rule entirely, at every width — desktop already separates
+   the identity bar from the nav row without it, and mobile swaps the
+   hamburger + this rule for a static link row (SpreadNav's `mobile` variant,
+   styled in NavBar.scss). See NavBar.jsx's `isHome` prop and App.jsx. */
+.header-break-home {
+	display: none;
+}
+
+@media all and (max-width: 1119px) {
+	.toggle-block-home {
+		display: none;
+	}
+}
+
 .parent{
   display: flex;
   flex-direction: column;

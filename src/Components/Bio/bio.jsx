@@ -12,32 +12,36 @@ const Bio = () => {
 					{/* Each stanza lands on its gold selling point. */}
 					<div className='bio-intro'>
 						<p>
+							Integration is where systems become complex, and
+							the architectural decisions made early often
+							determine long-term success.{' '}
 							<span className='gilt'>
-								Integration is where systems get complicated
-							</span>
-							, and the design approach chosen early is pivotal to
-							long-term success &mdash;{' '}
-							<span className='gilt'>
-								this is where my experience matters
+								This is where my experience matters
 							</span>
 							.
 						</p>
 						<p>
+							My work spans traditional enterprise integrations
+							as well as AI-enabled systems&mdash;including
+							agentic workflows, automation pipelines, and Model
+							Context Protocol (MCP) integrations that connect AI
+							tools with the systems and context they need to
+							operate effectively.{' '}
 							<span className='gilt'>
-								There aren&rsquo;t many tools, frameworks or libraries
-								I haven&rsquo;t used &mdash; or built
+								I have worked with&mdash;and built&mdash;a broad
+								range of tools, frameworks, and libraries
 							</span>
-							{' '}&mdash; there are whole lists of my capabilities
-							below. What matters is:{' '}
+							, but the principle remains the same:{' '}
 							<span className='gilt'>
-								the stack changes, my discipline doesn&rsquo;t
+								the stack changes; my discipline doesn&rsquo;t
 							</span>
 							.
 						</p>
 						<p>
-							It&rsquo;s not just knowing the technologies &mdash;{' '}
+							It&rsquo;s not just knowing the technologies&mdash;
 							<span className='gilt'>
-								it&rsquo;s knowing how to use them successfully
+								it&rsquo;s knowing how to integrate and apply
+								them successfully
 							</span>
 							.
 						</p>

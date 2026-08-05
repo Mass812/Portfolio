@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Milestones from "./Milestones";
 import TeamAward from "./TeamAward";
 import Features from "./Features";
-import RoleProgression from "./RoleProgression";
 import "./Resume.scss";
 import Icon from "../ContactBar/Icon";
 import {
@@ -37,7 +36,6 @@ const ResumeCard = ({
   milestones,
   teamAward,
   featureGroups,
-  progression,
   defaultOpen = false,
 }) => {
   const [open, setOpen] = useState(defaultOpen);
@@ -121,8 +119,6 @@ const ResumeCard = ({
 
           {open ? (
             <div className="role-body" ref={body}>
-              {progression ? <RoleProgression roles={progression} /> : null}
-
               <div className="highlight1">{highlight1}</div>
 
               <div className="why">

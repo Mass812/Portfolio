@@ -2,9 +2,9 @@ import React from "react";
 import "./Resume.scss";
 
 // Sits above the career timeline. Attribution matters here: the Masters of
-// Innovation is an industry award given to Fabletics for the RFID programme,
-// not an individual award, so it is credited to the project with the role
-// stated rather than claimed personally.
+// Innovation is a company award presented to Fabletics, not a personal one —
+// it's credited to Fabletics with Matt's role in earning it stated plainly,
+// rather than claimed as an individual award.
 const AWARDS = [
   {
     id: "mvp",
@@ -25,9 +25,9 @@ const AWARDS = [
     id: "manifest",
     when: "2026",
     name: "Inaugural Masters of Innovation",
-    scope: "Industry — awarded to Fabletics",
+    scope: "Company Award — Major Contributor",
     note:
-      "Presented by Let's Talk Supply Chain and SupplyChainBrain at Manifest: The Future of Supply Chain & Logistics, for the retail-inventory programme I led the core architecture and integration on.",
+      "Presented to Fabletics by Let's Talk Supply Chain and SupplyChainBrain at Manifest: The Future of Supply Chain & Logistics. I was a major contributor to the recognition — I led the core architecture and integration of the retail-inventory programme it was awarded for.",
   },
 ];
 
@@ -36,25 +36,27 @@ const AwardsSummary = () => {
     <div className="awards-summary">
       <div className="awards-summary-title">Recognition</div>
       <p className="awards-summary-lede">
-        Two distinct Global Recognition Awards at Fabletics &mdash; one
+        2 distinct Global Recognition Awards at Fabletics &mdash; one
         individual, one by team nomination &mdash; plus an industry award for
         the inventory platform.
       </p>
 
-      <ul className="awards-summary-list">
-        {AWARDS.map((a) => (
-          <li className="awards-summary-item" key={a.id}>
-            <div className="awards-summary-when">{a.when}</div>
-            <div className="awards-summary-body">
-              <div className="awards-summary-name">
-                {a.name}{" "}
-                <span className="awards-summary-scope">{a.scope}</span>
+      <div className="awards-panel">
+        <ul className="awards-summary-list">
+          {AWARDS.map((a) => (
+            <li className="awards-summary-item" key={a.id}>
+              <div className="awards-summary-when">{a.when}</div>
+              <div className="awards-summary-body">
+                <div className="awards-summary-name">
+                  {a.name}{" "}
+                  <span className="awards-summary-scope">{a.scope}</span>
+                </div>
+                <div className="awards-summary-note">{a.note}</div>
               </div>
-              <div className="awards-summary-note">{a.note}</div>
-            </div>
-          </li>
-        ))}
-      </ul>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

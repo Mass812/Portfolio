@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Routes, Route, Navigate, BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route, Navigate, BrowserRouter as Router, useLocation } from 'react-router-dom';
 import Bio from './Components/Bio/bio';
 import SideDrawer from './Components/SideDrawer/SideDrawer';
 
@@ -12,12 +12,17 @@ import Resume from './Components/Resume/Resume';
 
 import ScrollReset from './Components/ScrollReset/ScrollReset';
 import NavBar from './Components/NavBar/NavBar';
+import SpreadNav from './Components/NavBar/SpreadNav';
 
-const App = () => {
+// Split out so useLocation has a Router ancestor — App itself renders <Router>,
+// so it can't call the hook directly.
+const AppShell = () => {
 	const [
 		sideDrawerOpen,
 		setSideDrawerOpen
 	] = useState(false);
+	const { pathname } = useLocation();
+	const isHome = pathname === '/';
 
 	const runHideShow = () => {
 		setSideDrawerOpen((prev) => !prev);
@@ -32,6 +37,31 @@ const App = () => {
 	const expandFog = sideDrawerOpen ? <FoggedGlass unFogGlass={exitMenu} /> : null;
 
 	return (
+		<div>
+			<NavBar pushShowHide={runHideShow} isHome={isHome} />
+			{/* On Home, mobile widths swap the hamburger for a static link row and
+			    drop this rule entirely — other pages keep both the drawer and
+			    the rule, since they don't need the same one-tap access back to
+			    the other sections. */}
+			{isHome ? <SpreadNav mobile isHome /> : null}
+			<hr className={isHome ? 'header-break header-break-home' : 'header-break'} />
+			{expandSide} {expandFog}
+			<main>
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/about' element={<Bio />} />
+					<Route path='/resume' element={<Resume />} />
+					<Route path='/references' element={<KindWords />} />
+					{/* Stale bookmarks (/projects, /additional) land on Home. */}
+					<Route path='*' element={<Navigate to='/' replace />} />
+				</Routes>
+			</main>
+		</div>
+	);
+};
+
+const App = () => {
+	return (
 		<Router
 			future={{
 				v7_startTransition   : true,
@@ -39,21 +69,7 @@ const App = () => {
 			}}
 		>
 			<ScrollReset />
-			<div>
-				<NavBar pushShowHide={runHideShow} />
-				<hr className='header-break' />
-				{expandSide} {expandFog}
-				<main>
-					<Routes>
-						<Route path='/' element={<Home />} />
-						<Route path='/about' element={<Bio />} />
-						<Route path='/resume' element={<Resume />} />
-						<Route path='/references' element={<KindWords />} />
-						{/* Stale bookmarks (/projects, /additional) land on Home. */}
-						<Route path='*' element={<Navigate to='/' replace />} />
-					</Routes>
-				</main>
-			</div>
+			<AppShell />
 		</Router>
 	);
 };
