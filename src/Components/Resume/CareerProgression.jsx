@@ -39,7 +39,9 @@ const CareerProgression = () => {
   return (
     <div className="awards-summary">
       <div className="awards-summary-title">Progression</div>
-      <p className="awards-summary-lede">6 years at Fabletics, 5 titles.</p>
+      <p className="awards-summary-lede">
+        <span className="gilt">6 years 5 titles</span>.
+      </p>
 
       <div className="awards-panel">
         <ul className="awards-summary-list">

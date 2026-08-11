@@ -435,8 +435,10 @@ a {
 .awards-summary-lede {
 	margin: 14px 0 22px;
 	font-family: var(--font-body);
-	font-size: calc(var(--text-xs) * 1.1);
-	font-weight: 100;
+	/* One full step up from the old calc(--text-xs * 1.1), plus a touch more
+	   weight — at 100 it stayed thin even after the size bump. */
+	font-size: var(--text-sm);
+	font-weight: 300;
 	line-height: 1.75;
 	letter-spacing: 0.4px;
 	color: rgba(245, 245, 245, 0.82);
@@ -511,7 +513,7 @@ a {
 	font-family: var(--font-body);
 	font-size: var(--text-sm);
 	color: rgb(250, 249, 248);
-	padding-bottom: 5px;
+	padding-bottom: 12px;
 }
 
 .awards-summary-scope {

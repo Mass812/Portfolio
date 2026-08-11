@@ -36,9 +36,9 @@ const AwardsSummary = () => {
     <div className="awards-summary">
       <div className="awards-summary-title">Recognition</div>
       <p className="awards-summary-lede">
-        2 distinct Global Recognition Awards at Fabletics &mdash; one
-        individual, one by team nomination &mdash; plus an industry award for
-        the inventory platform.
+        <span className="gilt">2 distinct Global Recognition Awards</span> at
+        Fabletics &mdash; one individual, one by team nomination &mdash; plus
+        an industry award for the inventory platform.
       </p>
 
       <div className="awards-panel">
