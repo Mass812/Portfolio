@@ -12,13 +12,17 @@
      than inventing its own calc() — the résumé alone had 21 distinct sizes,
      including three near-identical variants of the same 10px value. clamp()
      bounds the growth so text stays sane on very wide and very narrow screens. */
-  --text-2xs: clamp(0.625rem, 0.6rem + 0.1vw, 0.72rem); /* eyebrows, dates, citations */
-  --text-xs: clamp(0.75rem, 0.72rem + 0.12vw, 0.85rem); /* captions, secondary notes */
-  --text-sm: clamp(0.8125rem, 0.78rem + 0.15vw, 0.94rem); /* body copy */
-  --text-base: clamp(0.9375rem, 0.9rem + 0.18vw, 1.08rem); /* sub-headings */
-  --text-md: clamp(1.0625rem, 1rem + 0.25vw, 1.25rem); /* section headings */
-  --text-lg: clamp(1.25rem, 1.12rem + 0.4vw, 1.6rem); /* role / card titles */
-  --text-xl: clamp(1.75rem, 1.4rem + 1.4vw, 2.75rem); /* page titles */
+  /* Bumped ~15% across the board (both ends of every clamp) — body copy was
+     floor-ing at 13px on phones and only reaching 15px on desktop; metadata
+     (dates, eyebrows) floored as low as 10px. --text-xl got a smaller ~5%
+     nudge since page titles were already comfortably large. */
+  --text-2xs: clamp(0.6875rem, 0.66rem + 0.12vw, 0.8125rem); /* eyebrows, dates, citations */
+  --text-xs: clamp(0.8125rem, 0.78rem + 0.14vw, 0.9375rem); /* captions, secondary notes */
+  --text-sm: clamp(0.9375rem, 0.9rem + 0.17vw, 1.0625rem); /* body copy */
+  --text-base: clamp(1.0625rem, 1rem + 0.2vw, 1.25rem); /* sub-headings */
+  --text-md: clamp(1.1875rem, 1.1rem + 0.28vw, 1.4375rem); /* section headings */
+  --text-lg: clamp(1.4375rem, 1.28rem + 0.46vw, 1.8125rem); /* role / card titles */
+  --text-xl: clamp(1.875rem, 1.5rem + 1.45vw, 2.9375rem); /* page titles */
 
   /* Line heights: tight for headings, generous for reading. */
   --leading-tight: 1.3;

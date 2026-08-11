@@ -1,6 +1,5 @@
 /* Contact bar — dark glass pill with gold icons, matching the site's hairline
-   language. The reveal panel (phone number) slides out via the GSAP tween in
-   ContactBar.jsx, which depends on the 170px container width. */
+   language. */
 a {
 	text-decoration: none;
 }
@@ -28,7 +27,6 @@ a {
 		left: 50%;
 	}
 
-	.contactBlockIconBlockMirror,
 	.contactBlockIconBlock {
 		position: relative;
 		left: -50%;
@@ -83,35 +81,3 @@ a {
 	transform: translateY(-1px);
 }
 
-.IconBar-info {
-	box-sizing: content-box;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	margin: 0;
-	padding: 13px 6px;
-	background: rgba(18, 18, 18, 0.9);
-	backdrop-filter: blur(10px);
-	border: 1px solid rgba(228, 190, 37, 0.35);
-	border-radius: 999px;
-	font-family: var(--font-body);
-	font-size: var(--text-sm);
-	letter-spacing: 1px;
-
-	a {
-		color: rgb(250, 249, 248);
-
-		&:hover {
-			color: goldenrod;
-		}
-	}
-}
-
-.contactBlockContainerMirror {
-	position: absolute;
-	width: 170px;
-	box-sizing: content-box;
-	bottom: 14px;
-	left: 15px;
-	z-index: 0;
-}

@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 // react-helmet-async, which had begun silently emitting nothing at runtime.
 const SITE_TITLE = 'Matt Wellman';
 const SITE_DESCRIPTION =
-	'Matt Wellman — Senior Software Engineer at Fabletics. React, React Native and Node. I led the real-time inventory platform across 159 retail stores.';
+	'Matt Wellman — Senior Software Engineer at Fabletics. Architected the real-time inventory platform across 159 retail stores and built the Fabletics FIT app to 548k downloads worldwide.';
 const SITE_URL = 'https://mattwellman.info';
 
 // Canonical and description are also JS-only (same caveat as the title above:

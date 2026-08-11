@@ -63,7 +63,7 @@ const Home = () => {
 		<div>
 			<HelmetMeta
 				titleString={'Matt Wellman Louisville React & React Native Developer'}
-				descriptionString={"Senior Software Engineer at Fabletics. Self-taught — I learned their stack and built the FIT app in a month, then led the real-time inventory platform across 159 retail stores."}
+				descriptionString={"Senior Software Engineer at Fabletics — architected the real-time inventory platform across 159 retail stores and built the Fabletics FIT app to 548k downloads worldwide."}
 				path={'/'}
 			/>
 			<div className='home-container'>
