@@ -122,7 +122,12 @@ const Resume = () => {
               {
                 label: "Inventory integrity",
                 text:
-                  "Consolidated more than fifteen code paths for moving inventory into one consistent pattern, and built the reconciliation and order-lifecycle processes that keep inventory accounting honest against what physically moved.",
+                  "Consolidated more than fifteen code paths for moving inventory into one consistent pattern, so inventory accounting stays honest against what physically moved.",
+              },
+              {
+                label: "Reconciliation and self-correction",
+                text:
+                  "Built scheduled, idempotent reconciliation for receiving and BOPIS that automatically corrects inventory drift and surfaces only the exceptions that need a person.",
               },
               {
                 label: "Platform modernization",
