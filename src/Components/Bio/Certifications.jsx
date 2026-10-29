@@ -11,7 +11,7 @@ const Certifications = () => {
     {
       id: 7,
       title: "Frameworks",
-      items: [" React-Native"],
+      items: [" React-Native", " Electron"],
     },
     {
       id: 2,
@@ -28,7 +28,15 @@ const Certifications = () => {
         " Apollo Server",
         " NoSQL",
         " Postgres (incl. stored procedures)",
+        " JSONata (data transformation templates)",
+        " Google Cloud Storage",
+        " OpenAPI / Swagger",
       ],
+    },
+    {
+      id: 10,
+      title: "Search & Discovery",
+      items: [" Constructor (catalog connectors, search & discovery)"],
     },
     {
       id: 8,

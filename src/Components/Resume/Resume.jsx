@@ -70,15 +70,15 @@ const Resume = () => {
         <p className="tldr-body">
           High-impact developer with a lot of momentum &mdash; six years at
           Fabletics, <span className="gilt">multiple promotions, and
-          company-wide recognition</span>. I led
-          the core architecture of the real-time inventory
-          platform and its Kafka event framework &mdash; live across 159
-          stores and two brands &mdash; and led the modernization of the
-          retail backend's legacy repositories into a modular monorepo. I
-          also built the Fabletics FIT app and was its sole full-stack
-          developer for most of its life &mdash; 4.8&#9733; on iOS across
-          5,475+ reviews, 548k downloads, 12 countries, and a major driver of
-          member engagement.
+          company-wide recognition</span>. Owned the
+          core architecture of the RFID inventory platform and its Kafka
+          event framework &mdash; live across 159 stores and two brands
+          &mdash; and works across search and discovery, inventory
+          integrity, and the modernization of the retail backend into a
+          modular monorepo. Also built the Fabletics FIT app and was its
+          sole full-stack developer for most of its life &mdash; 4.8&#9733;
+          on iOS across 5,475+ reviews, 548k downloads, 12 countries, and a
+          major driver of member engagement.
         </p>
       </section>
 
@@ -97,7 +97,7 @@ const Resume = () => {
           "System design and infrastructure for the Fabletics Retail backend — inventory movement, reconciliation, and the real-time event platform that keeps store inventory accurate."
         }
         highlight1={
-          "I support omni retail systems across 134 Fabletics retail stores in the US, 10 stores across the EU, and 15 Savage X Fenty stores in the US."
+          "Supporting omni retail systems across 134 Fabletics retail stores in the US, 10 stores across the EU, and 15 Savage X Fenty stores in the US."
         }
         featureGroups={[
           {
@@ -107,52 +107,32 @@ const Resume = () => {
               {
                 label: "RFID inventory platform",
                 text:
-                  "I owned the core architecture and the integration of RFID into the existing retail inventory stack. The rollout reached every store in six months, on time and within budget, replacing twice-yearly physical counts with inventory ownership visibility every 30 minutes.",
+                  "Owned the core architecture and integration of RFID into the retail inventory stack. The rollout reached every store in six months, on time and within budget, replacing twice-yearly physical counts with inventory visibility every 30 minutes.",
               },
               {
                 label: "Real-time event framework",
                 text:
-                  "I built the Kafka event stream behind the platform, replacing implicit integrations with explicit POS, movement, sold and adjustment events across both the Fabletics and Savage X Fenty brands — multi-brand topic design, consumer group management, and a per-store canary rollout.",
+                  "Built the Kafka event stream behind the platform, replacing implicit integrations with explicit events across both the Fabletics and Savage X Fenty brands, and instrumented it before launch so its health was provable from day one.",
               },
               {
-                label: "Monitoring and alerting",
+                label: "Search and discovery",
                 text:
-                  "I instrumented the integration before launch, so the platform was observable and its health provable on day one rather than after the first incident.",
+                  "Extended our catalog connectors to broaden what customers can filter and search by.",
               },
               {
                 label: "Inventory integrity",
                 text:
-                  "I consolidated more than fifteen different code paths for moving inventory into one consistent pattern, and fixed a transfer defect where manufacturer-direct stock was added to a store without being removed from the warehouse, silently duplicating inventory.",
+                  "Consolidated more than fifteen code paths for moving inventory into one consistent pattern, and built the reconciliation and order-lifecycle processes that keep inventory accounting honest against what physically moved.",
               },
               {
-                label: "Reconciliation systems",
+                label: "Platform modernization",
                 text:
-                  "I built the BOPIS and receiving reconciliation processes — the receiving job from the ground up, stored procedures through service and endpoint. These keep inventory accounting honest against what physically moved.",
+                  "Moved legacy CRON workstreams into the NestJS monorepo and packaged shared services as libraries, so every service builds on one consistent pattern.",
               },
               {
-                label: "CRON modernization",
+                label: "Quality and developer tooling",
                 text:
-                  "I moved several CRON workstreams off a legacy Node service into the NestJS monorepo — cart expiry and deletion sweeps, the store event job, and the store-master sync — re-architected to NestJS patterns rather than lifted across.",
-              },
-              {
-                label: "BOPIS order lifecycle",
-                text:
-                  "I wired cancel, auto-cancel and movement-blocking behaviour so buy-online-pickup-in-store orders resolve correctly at every stage.",
-              },
-              {
-                label: "Shared address validation",
-                text:
-                  "I packaged Smarty address validation as a NestJS library so every service in the monorepo validates the same way instead of each rolling its own.",
-              },
-              {
-                label: "Automated API regression",
-                text:
-                  "I added a Postman/Newman GitHub Action that runs collections against QA nightly, with selectable environments for on-demand runs — a standing regression net that needs no manual trigger.",
-              },
-              {
-                label: "Developer tooling and AI workflow",
-                text:
-                  "Seven improvements over six weeks to an internal Electron/React API testing client used daily by the engineering team, plus an AI-assisted routine that made our delivery process easier to follow.",
+                  "Automated nightly API regression, and improved the internal developer tooling and AI-assisted workflows the engineering team uses daily.",
               },
               {
                 label: "SMS platform",
@@ -168,12 +148,12 @@ const Resume = () => {
               {
                 label: "Monorepo architecture",
                 text:
-                  "I consolidated the retail backends into modular npm packages so shared functionality could serve every brand — Fabletics, Savage X Fenty, JustFab, ShoeDazzle and Yitty — with automated release management in GitHub Actions, canary and stable pipelines, Jest and TSC gates, and single-command scaffolding for new packages.",
+                  "Consolidated the retail backends into modular packages that serve every brand — Fabletics, Savage X Fenty, JustFab, ShoeDazzle and Yitty — with automated releases, quality gates, and single-command scaffolding for new packages.",
               },
               {
                 label: "Amazon Today",
                 text:
-                  "I led the backend integration, built on that monorepo framework.",
+                  "Led the backend integration, built on that monorepo framework.",
               },
             ],
           },
